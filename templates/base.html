@@ -25,14 +25,14 @@
 <body>
     <noscript>This website will run when Javascript has been enabled.</noscript>
     {% if navbar != False %}
-    {% include 'components/navbar.html' %}
+    {% include 'peripheral/navbar.html' %}
     {% endif %}
 
     {% block content %}
     {% endblock %}
 
     {% if footer != False %}
-    {% include 'components/footer.html' %}
+    {% include 'peripheral/footer.html' %}
     {% endif %}
 
     <!-- JS Library for Bootstrap -->
