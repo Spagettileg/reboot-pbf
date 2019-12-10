@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Special Padding / Margin / Text */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #001514; /* Rich Black */
+}
