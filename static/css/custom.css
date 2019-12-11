@@ -14,13 +14,7 @@ body {
     /*as above*/
 }
 
-/* Containers */
-
-.banner {
-    /*Homepage rugby huddle graphic*/
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* Colours */
 
 /* Navbar */
 
@@ -28,8 +22,8 @@ body {
   background-image: url('my-custom-navbar-bg.png');
   background-repeat: repeat-x;
   position: relative;
-    height: 65vh;
-    background: url(../images/huddle4.jpg) no-repeat center center fixed;
+    height: 40vh;
+    background: url(../images/scrumtime.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,3 +34,17 @@ body {
     /*required to manage the horixontal centering of the 
     group image design*/
 }
+
+/* Containers */
+
+/* 404 error formatting */
+
+/* Block Dividers */
+
+/* Buttons */
+
+/* Social Media */
+
+/* Footer */
+
+/* Media Queries */
