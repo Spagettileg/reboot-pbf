@@ -6,3 +6,37 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #001514; /* Rich Black */
 }
+
+.row {
+    margin-left: 0;
+    /*helps remove unecessary white space on right vertical*/
+    margin-right: 0;
+    /*as above*/
+}
+
+/* Containers */
+
+.banner {
+    /*Homepage rugby huddle graphic*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar */
+
+.navbar-inner{
+  background-image: url('my-custom-navbar-bg.png');
+  background-repeat: repeat-x;
+  position: relative;
+    height: 65vh;
+    background: url(../images/huddle4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*required to manage the horixontal centering of the 
+    group image design*/
+}
