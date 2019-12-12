@@ -64,10 +64,22 @@ A live demo can be found (placeholder)
 ### Wireframes
 My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.com/) to showcase the 'Re-Boot' website responsivenesson mobile, tablet and desktop devices.
 
+•	[Home](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Home_v1.zip)
 
+•	[About](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/About_v1.zip)
 
+•	[BootRoom](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/BootRoom_v1.zip)
 
-My [wireframe mock up design](https://github.com/Spagettileg/pbf-third-milestone-project/tree/master/plans/wireframes) has been developed as a fully responsive application capable of running on mobile, tablet & desktop devices. All mock up material was created in Balsamiq and has been appended as .bmpr file on GitHub. The mock up design has stayed consistent with the original planning. 
+•	[Help](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Help_v1.zip)
+
+•	[Search](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Search_v1.zip)
+
+•	[Register & Login](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/RegisterandLogin_v1.zip)
+
+•	[MyReBoot](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/MyReBoot_v1.zip)
+
+•	[Cart](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Cart_v1.zip)
+
 
 ### User Stories
 > I need an app that provides quick and intuitive access to understand how to donate & purchase either new or used rugby boots [READ]
