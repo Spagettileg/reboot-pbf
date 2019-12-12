@@ -19,12 +19,15 @@ from accounts import urls as urls_accounts
 from home.views import home
 from home import urls as urls_home
 from cart import urls as urls_cart
+from products import urls as urls_products
+from products.views import all_products
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', home, name="home"),
+    url(r'^$', all_products, name="home"),
     url(r'^home/', include(urls_home)),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^cart/', include(urls_cart)),
+    url(r'^products/', include(urls_products)),
 ]
