@@ -94,19 +94,6 @@ My [wireframe mock up design](https://github.com/Spagettileg/pbf-third-milestone
 
 > Delivery costs of replacement rugby boots should be borne by the original boot donator [READ]  
 
-## Information Architecture
-### Application Framework
-Django application framework was a prerequisite in the design of this project, according to the project brief.
-
-### Database Selection
-Django framework is fast, secure and scalable. Provides a dynamic CRUD (create, read, update and delete) interface, configured with admin models and generated via introspection. requiring SQL database 
- - SQLITE3 database was used for development of this project on my local machine  
- - PostgresSQL was used support the full production of the Re-Boot website. An enterprise-level, object-relational DBMS that uses procedural languages like Perl and Python, in addition to SQL-level code  
-
-### Data Models
-
-TBC...
-
 ### CSS Framework
 Bootstrap 4 was the chosen framework for styling my project. I used the bootstrap grid extensively to support responsiveness on mobile, tablet and desktop devices.  
 
@@ -123,6 +110,21 @@ Font Awesome 5 icon graphics were used in conjunction with Bootstrap 4... (More 
 
 TBC
 TBC
+
+
+## Information Architecture
+### Application Framework
+Django application framework was a prerequisite in the design of this project, according to the project brief.
+
+### Database Selection
+Django framework is fast, secure and scalable. Provides a dynamic CRUD (create, read, update and delete) interface, configured with admin models and generated via introspection. requiring SQL database 
+ - SQLITE3 database was used for development of this project on my local machine  
+ - PostgresSQL was used support the full production of the Re-Boot website. An enterprise-level, object-relational DBMS that uses procedural languages like Perl and Python, in addition to SQL-level code  
+
+### Data Models
+
+TBC...
+
 
 ## Technologies Applied
 ### Databases
