@@ -18,6 +18,7 @@ from django.contrib import admin
 from accounts import urls as urls_accounts
 from home.views import home
 from home import urls as urls_home
+from cart import urls as urls_cart
 
 
 urlpatterns = [
@@ -25,4 +26,5 @@ urlpatterns = [
     url(r'^$', home, name="home"),
     url(r'^home/', include(urls_home)),
     url(r'^accounts/', include(urls_accounts)),
+    url(r'^cart/', include(urls_cart)),
 ]
