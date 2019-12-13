@@ -49,6 +49,22 @@ body {
 
 /* Social Media */
 
+.fa-facebook-square,
+.fa-linkedin {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 /* Footer */
+
+#footer {
+  background-color: #001514;
+}
+
+.footer-text li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff
+}
 
 /* Media Queries */
