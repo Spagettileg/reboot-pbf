@@ -12,7 +12,7 @@
     <div id="navbar-icons-mobile" class="d-lg-none">
         <a class="nav-link nav-link-icon" href="#" title="Shopping cart">
             <div>
-                <i class="fas fa-shopping-cart navbar-icon"></i>
+                <i class="cart fas fa-shopping-cart navbar-icon"></i>
                 {% if request.session.cart.count and request.session.cart.count != 0 %}
                 <div id="cart-counter">{% if request.session.cart.count > 9 %}9+
                     {% else %}{{ request.session.cart.count }}{% endif %}</div>
@@ -120,7 +120,7 @@
     <div id="navbar-icons-desktop" class="d-none d-lg-inline-block">
         <a class="nav-link nav-link-icon" href="#" title="Shopping cart" aria-label="View shopping cart">
             <div>
-                <i class="fas fa-shopping-cart navbar-icon"></i>
+                <i class="cart fas fa-shopping-cart navbar-icon"></i>
                 {% if request.session.cart.count and request.session.cart.count != 0 %}
                 <div id="cart-counter">{% if request.session.cart.count > 9 %}9+
                     {% else %}{{ request.session.cart.count }}{% endif %}</div>
