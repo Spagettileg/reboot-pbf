@@ -112,6 +112,14 @@ Bootstrap 4 was the chosen framework for styling my project. I used the bootstra
 ### Colour Palette
 Colours used in this project were sourced through consultation with my mentor [Simen Daehlin](simen.dehlin@gmail.com). Essentially, the colours are seeking to capture key attrbutes of rugby through energy, assertiveness and co-ordination.
 
+Colour                       | Hex Code
+-----------------------------|----------
+Rich Black                   | #001514
+White                        | #FFFFFF
+Vivid Tangelo (Orange)       | #F26826
+Blue Sapphire (Dark Green)   | #135A68
+Space Cadet (Dark Blue)      | #21295C
+
 ### Typography
 Open Sans & Sans Serif fonts were used throughout this project. H1 header was used in the home page to help qualify 'Why Re-Boot?'to the user. Thereafter, H2 & H3 was used for sub-heading narrative. 
 
