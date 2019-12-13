@@ -1,16 +1,12 @@
 {% load staticfiles %}
 
-
-</div>
-<nav class="navbar-expand-lg navbar-light bg-light small-box-shadow">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light small-box-shadow">
     
-    <div class="banner">
-    <a class="navbar fixed-top navbar-brand px-1 mr-md-1" href="{% url 'home' %}">
-        <img id="mainbrand" src="{% static 'images/mainbrand.png' %}" alt="Re-boot brand">
+    <div>
+    <a class="navbar-brand px-1 mr-md-1" href="{% url 'home' %}">
+        <img id="logobrand" src="{% static 'images/logobrand.png' %}" alt="Re-boot brand">
     </a>
-        
     </div>
-    <!-- More navbar functions / dropdown to add below -->
     
     <!-- Cart icon positioned to left of toggler for mobile devices -->
     <div id="navbar-icons-mobile" class="d-lg-none">
