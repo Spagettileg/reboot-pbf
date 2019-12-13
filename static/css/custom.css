@@ -18,11 +18,11 @@ body {
 
 /* Navbar */
 
-.navbar-inner{
+.banner {
   background-image: url('my-custom-navbar-bg.png');
   background-repeat: repeat-x;
   position: relative;
-    height: 40vh;
+    height: 30vh;
     background: url(../images/scrumtime.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
