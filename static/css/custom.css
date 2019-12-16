@@ -41,6 +41,19 @@ body {
 
 /* Containers */
 
+/* Carousel */
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: #21295C;
+    background-color: #21295C;
+}
+.carousel-indicators {
+    bottom: -1.1rem;
+}
+
 /* 404 error formatting */
 
 /* Block Dividers */
