@@ -21,6 +21,7 @@ from home import urls as urls_home
 from cart import urls as urls_cart
 from products import urls as urls_products
 from products.views import all_products
+from django.views import static
 
 
 urlpatterns = [
