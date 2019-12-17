@@ -76,8 +76,8 @@ ul {
 /* Carousel */
 
 .carousel-indicators li {
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 100%;
     color: #21295C;
     background-color: #21295C;
