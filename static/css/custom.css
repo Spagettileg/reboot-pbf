@@ -40,6 +40,11 @@ ul {
 
 /* Navbar */
 
+.navbar {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .banner {
   background-image: url('my-custom-navbar-bg.png');
   background-repeat: repeat-x;
