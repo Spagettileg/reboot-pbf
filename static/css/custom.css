@@ -64,6 +64,7 @@ ul {
 
 .cart {
   font-size: 2rem;
+  color: #F26826;
 }
 
 /* Containers */
@@ -90,6 +91,14 @@ ul {
 
 /* Block Dividers */
 
+.block-divider-short {
+  text-align: center;
+  width: 6rem;
+  height: 1px;
+  border: 0;
+  background-color: #fafafa;
+}
+
 /* Buttons */
 
 /* Social Media */
@@ -97,19 +106,20 @@ ul {
 .fa-facebook-square,
 .fa-linkedin {
   font-size: 2.5rem;
-  color: #fff;
+  color: #fafafa;
 }
 
 /* Footer */
 
 #footer {
-  background-color: #001514;
+  background-color: #21295C;
+  border-color: #21295C;
 }
 
 .footer-text li a {
   font-size: 1rem;
   font-weight: 400;
-  color: #fff
+  color: #fafafa;
 }
 
 /* Media Queries */
