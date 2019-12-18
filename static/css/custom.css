@@ -36,6 +36,11 @@ h5 {
   font-weight: 600;
 }
 
+h6 {
+  color: #fafafa;
+  font-weight: 500;
+}
+
 .cheer-text {
   color: #fafafa;
 }
@@ -93,7 +98,8 @@ ul {
 }
 
 .quick-steps,
-.latest-arrivals {
+.latest-arrivals,
+.customer-reviews {
   background-color: #21295C;
   color: #fafafa;
 }
@@ -115,6 +121,13 @@ ul {
   border: 0.01rem solid #f2f2f2;
   border-radius: 0.5rem;
   background-color: #f2f2f2;
+}
+
+blockquote {
+  border-left: 2px;
+  border-left-color: #F26826;
+  border-left-style: solid;
+  padding-left: 1rem;
 }
 
 /* Carousel */
