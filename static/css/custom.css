@@ -63,6 +63,7 @@ ul {
 .navbar {
   font-size: 1.2rem;
   font-weight: 500;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .banner {
