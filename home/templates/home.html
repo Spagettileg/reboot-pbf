@@ -1,6 +1,4 @@
-{% extends 'base.html' %} {% load staticfiles %} {% block title %}Re-Boot | Online exchange of new and used rugby boots{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% load staticfiles %} {% block title %}Re-Boot | Online exchange of new and used rugby boots{% endblock %} {% block content %}
 
 <!-- Rugby image banner -->
 <div class="banner"></div>
@@ -9,37 +7,38 @@
 <div class="row">
     <header id="frontpage-header" class="col-12 text-center cheer-text">
         <div class="pt-2">
-        <h1>Why <i>Re-Boot</i> ?</h1>
+            <h1>Why <i>Re-Boot</i> ?</h1>
         </div>
         <h3 class="cheer-title mb-3">Reasons to be cheerful...</h3>
         <div class="container">
             <div class="row">
-        <div class="col-lg-3 ml-auto text-left">
-        <p><i class="fas fa-shoe-prints"></i> Re-Boot is an online exchange that encourages customers to register, donate unwanted rugby boots and purchase replacement boots at a fraction of normal retail prices. </p>
-        </div>
-        <div class="col-lg-3 mc-auto text-left">
-        <p><i class="fas fa-shoe-prints"></i> A 'one stop shop' experience can save both time and expense of travelling to the shops and being online, there are no restrictions on trading hours.  </p>
-        </div>
-        <div class="col-lg-3 mr-auto text-left">
-        <p><i class="fas fa-shoe-prints"></i> Recyling of unwanted rugby boots also helps contribute to an improved carbon footprint through reducing the quantity of material that enters landfill waste. </p>
-        </div>
+                <div class="col-lg-3 ml-auto text-left">
+                    <p><i class="fas fa-shoe-prints"></i> Re-Boot is an online exchange that encourages customers to register, donate unwanted rugby boots and purchase replacement boots at a fraction of normal retail prices. </p>
+                </div>
+                <div class="col-lg-3 mc-auto text-left">
+                    <p><i class="fas fa-shoe-prints"></i> A 'one stop shop' experience can save both time and expense of travelling to the shops and being online, there are no restrictions on trading hours. </p>
+                </div>
+                <div class="col-lg-3 mr-auto text-left">
+                    <p><i class="fas fa-shoe-prints"></i> Recyling of unwanted rugby boots also helps contribute to an improved carbon footprint through reducing the quantity of material that enters landfill waste. </p>
+                </div>
             </div>
         </div>
         <div class="pb-3">
-        <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" class="btn btn-primary">Learn More</a>
         </div>
     </header>
 </div>
 
 <!-- 5 Process Steps to use 'Re-Boot' -->
+<div class="pt-2 pb-1 col-12 quick-steps text-center">
+    <h3>Quick step guide</h3>
+</div>
+
 <div id="process-steps-section" class="pt-2 container-fluid">
     <div class="row">
         <div class="col-12">
             <div id="process-steps-container" class="container">
                 <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <h3>Quick step guide | Re-Boot</h3>
-                    </div>
                     <div class="col-12">
                         <!-- process steps carousel -->
                         <div id="process-steps-carousel" class="carousel slide pb-4" data-ride="carousel">
@@ -52,44 +51,44 @@
                             </ul>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                          <div class="container">
-                                            <h4>1. Browse current stock</h4>
-                                            <p>Find boots that are right for you.</p>
-                                            <img src="{% static 'images/stepone.png' %}" alt="Browse stock" />
-                                          </div>
+                                    <div class="container">
+                                        <h5>1. Browse current stock</h5>
+                                        <p>Find boots that are right for you.</p>
+                                        <img src="{% static 'images/stepone.png' %}" alt="Browse stock" />
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                          <div class="container">
-                                            <h4>2. Register & Login</h4>
-                                            <p>This is a mandatory requirement for boot donation and purchase.</p>
-                                            <img src="{% static 'images/steptwo.jpg' %}" alt="Register & Login" />
-                                          </div>
+                                    <div class="container">
+                                        <h5>2. Register & Login</h5>
+                                        <p>This is a mandatory requirement for boot donation and purchase.</p>
+                                        <img src="{% static 'images/steptwo.jpg' %}" alt="Register & Login" />
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                          <div class="container">
-                                            <h4>3. Donate unwanted rugby boots.</h4>
-                                            <p>A clear and simple process for collecting your data.</p>
-                                            <img src="{% static 'images/stepthree.png' %}" alt="Donate" />
-                                          </div>
+                                    <div class="container">
+                                        <h5>3. Donate unwanted rugby boots.</h5>
+                                        <p>A clear and simple process for collecting your data.</p>
+                                        <img src="{% static 'images/stepthree.png' %}" alt="Donate" />
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                          <div class="container">
-                                            <h4>4. Purchase replacement rugby boots.</h4>
-                                            <p>A simple and secure process for selection, payment and delivery of rugby boots.</p>
-                                            <img src="{% static 'images/stepfour.png' %}" alt="Purchase" />
-                                          </div>
+                                    <div class="container">
+                                        <h5>4. Purchase replacement rugby boots.</h5>
+                                        <p>A simple and secure process for selection, payment and delivery of rugby boots.</p>
+                                        <img src="{% static 'images/stepfour.png' %}" alt="Purchase" />
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                          <div class="container">
-                                            <h4>5. Leave your feedback.</h4>
-                                            <p>Please tell us about your Re-Boot experience.</p>
-                                            <img src="{% static 'images/stepfive.png' %}" alt="Feedback" />
-                                          </div>
+                                    <div class="container">
+                                        <h5>5. Leave your feedback.</h5>
+                                        <p>Please tell us about your Re-Boot experience.</p>
+                                        <img src="{% static 'images/stepfive.png' %}" alt="Feedback" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="pb-3">
                         <!-- Insert link to 'About'/'Re-Boot Explained' -->
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -98,44 +97,73 @@
         </div>
     </div>
 </div>
-<hr>
 
 <!-- Latest Arrivals -->
-<div id="latest-arrivals-section" class="pt-2 container-fluid">
-    <div class="row">
+<div class="pt-2 pb-1 col-12 latest-arrivals text-center">
+    <h3>Latest Arrivals</h3>
+</div>
+<div id="latest-arrivals-section" class="pt-3 container-fluid">
+    <div class="row justify-content-center text-center">
         <div class="col-12">
-            <div id="latest-arrivals-container" class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <h3>Latest Arrivals | Re-Boot</h3>
-                    </div>
-                    <div class="col-12">
-                        <!-- latest rugby boot arrivals carousel -->
-                        <div id="process-steps-carousel" class="carousel slide pb-4" data-ride="carousel">
-                            <ul class="carousel-indicators carousel-steps">
-                                <li data-target="#latest-arrivals-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#latest-arrivals-carousel" data-slide-to="1"></li>
-                                <li data-target="#latest-arrivals-carousel" data-slide-to="2"></li>
-                                <li data-target="#latest-arrivals-carousel" data-slide-to="3"></li>
-                                <li data-target="#latest-arrivals-carousel" data-slide-to="4"></li>
-                            </ul>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                        <div class="container card-style col-lg-3 ml-auto text-left">
-                                            <div class="row d-block text-center">
-                                                <img src="{% static 'images/boots/adidasYellow.png' %}" class="img-fluid" alt="adidas yellow boot" />
-                                                <div class="justify-content-center text-center">
-                                                    <h5><strong>New Boots</strong></h5>
-                                                        <p class="card-text"><strong>Make:</strong> Adidas</p>
-                                                        <p class="card-text"><strong>Size:</strong> 10</p>
-                                                        <p class="card-text"><strong>Colour:</strong> Yellow</p>
-                                                        <p class="card-text"><strong>Stud:</strong> Screw in</p>
-                                                        <p class="card-text"><strong>Price:</strong> £10.00</p>
-                                                        <a href="#" class="btn btn-primary">Buy</a>
-                                                        <div class="pt-2"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+            <!-- latest rugby boot arrivals carousel -->
+            <div id="process-steps-carousel" class="carousel slide pb-4" data-ride="carousel">
+                <ul class="carousel-indicators carousel-steps">
+                    <li data-target="#latest-arrivals-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#latest-arrivals-carousel" data-slide-to="1"></li>
+                    <li data-target="#latest-arrivals-carousel" data-slide-to="2"></li>
+                    <li data-target="#latest-arrivals-carousel" data-slide-to="3"></li>
+                    <li data-target="#latest-arrivals-carousel" data-slide-to="4"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 card-style">
+                            <div class="d-block text-center">
+                                <img src="{% static 'images/boots/adidasYellow.png' %}" class="img-fluid" alt="adidas yellow boot" />
+                                <div class="boot-detail justify-content-center width="200" text-center">
+                                    <h4>New Boots</h4>
+                                    <i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i>
+                                    <p class="card-text"><strong>Make:</strong> Adidas</p>
+                                    <p class="card-text"><strong>Size:</strong> 10</p>
+                                    <p class="card-text"><strong>Colour:</strong> Yellow</p>
+                                    <p class="card-text"><strong>Stud:</strong> Screw in</p>
+                                    <p class="card-text"><strong>Price:</strong> £10.00</p>
+                                    <div class="pt-2"></div>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <div class="pt-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 card-style ">
+                            <div class="d-block text-center">
+                                <img src="{% static 'images/boots/asicsWhite.png' %}" class="img-fluid" alt="asics white boot" />
+                                <div class="boot-detail justify-content-center width="200" text-center">
+                                    <h4>Almost New</h4>
+                                    <i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i>
+                                    <p class="card-text"><strong>Make:</strong> Asics</p>
+                                    <p class="card-text"><strong>Size:</strong> 2</p>
+                                    <p class="card-text"><strong>Colour:</strong> White</p>
+                                    <p class="card-text"><strong>Stud:</strong> Screw in</p>
+                                    <p class="card-text"><strong>Price:</strong> £5.00</p>
+                                    <div class="pt-2"></div>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <div class="pt-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 card-style">
+                            <div class="d-block text-center">
+                                <img src="{% static 'images/boots/canterburyBlack.png' %}" class="img-fluid" alt="canterbury black boot" />
+                                <div class="boot-detail justify-content-center width="200" text-center">
+                                    <h4>Used Boots</h4>
+                                    <i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i>
+                                    <p class="card-text"><strong>Make:</strong> Canterbury</p>
+                                    <p class="card-text"><strong>Size:</strong> 7</p>
+                                    <p class="card-text"><strong>Colour:</strong> Black</p>
+                                    <p class="card-text"><strong>Stud:</strong> Screw in</p>
+                                    <p class="card-text"><strong>Price:</strong> £10.00</p>
+                                    <div class="pt-2"></div>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <div class="pt-2"></div>
                                 </div>
                             </div>
                         </div>
@@ -145,6 +173,5 @@
         </div>
     </div>
 </div>
-<hr>
 
 {% endblock %}
