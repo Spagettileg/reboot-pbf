@@ -159,4 +159,56 @@
         </div>
 </div>
 
+<!-- Customer Reviews' -->
+<div class="pt-2 pb-1 col-12 customer-reviews text-center">
+    <h3>Customer Reviews</h3>
+</div>
+
+<div id="process-steps-section" class="pt-2 container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div id="process-steps-container" class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <!-- process steps carousel -->
+                        <div id="process-steps-carousel" class="carousel slide pb-4" data-ride="carousel">
+                            <ul class="carousel-indicators carousel-steps">
+                                <li data-target="#process-steps-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#process-steps-carousel" data-slide-to="1"></li>
+                                <li data-target="#process-steps-carousel" data-slide-to="2"></li>
+                                <li data-target="#process-steps-carousel" data-slide-to="3"></li>
+                                <li data-target="#process-steps-carousel" data-slide-to="4"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container col-md-5 float-left">
+                                        <div class="row">
+                                        <h5>"Very Good Quality..."</h5>
+                                        <img src='{{ MEDIA_URL }}images/boots/gilbertBlack.png' alt="Gilbert black boots">
+                                        </div>
+                                    </div>
+                                    <div class="container col-md-7 float-right">
+                                        <div class="row text-left">
+                                        <blockquote cite="Re-Boot">
+                                            <p>I don't normally take the time to provide feedback. However, the 
+                                            replacement rugby boots were of a very good quality at a very
+                                            reasonable price. Thank you Re-Boot.</p>
+                                            <footer>- John Smith, <cite>18-12-2019</cite></footer>
+                                        </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <!-- Insert link to 'About'/'Re-Boot Explained' -->
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
