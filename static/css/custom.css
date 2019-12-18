@@ -4,14 +4,15 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #001514; /* Rich Black */
+  color: #001514;
+  /* Rich Black */
 }
 
 .row {
-    margin-left: 0;
-    /*helps remove unecessary white space on right vertical*/
-    margin-right: 0;
-    /*as above*/
+  margin-left: 0;
+  /*helps remove unecessary white space on right vertical*/
+  margin-right: 0;
+  /*as above*/
 }
 
 h1,
@@ -20,8 +21,19 @@ h1,
   color: #fafafa;
 }
 
-h2, h3 {
+h2 {
   font-weight: 700;
+}
+
+h4 {
+  color: #F26826;
+  font-weight: 600;
+  text-align: center;
+}
+
+h5 {
+  color: #F26826;
+  font-weight: 600;
 }
 
 .cheer-text {
@@ -35,10 +47,13 @@ h2, h3 {
 .card-text {
   font-size: 0.9rem;
   font-weight: 500;
+  margin: 3px;
+  max-width: 12.5rem;
 }
 
 ul {
-  list-style-type: none; /* removes bullet points from unordered list */
+  list-style-type: none;
+  /* removes bullet points from unordered list */
 }
 
 /* Colours */
@@ -54,16 +69,16 @@ ul {
   background-image: url('my-custom-navbar-bg.png');
   background-repeat: repeat-x;
   position: relative;
-    height: 30vh;
-    background: url(../images/scrumtime.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*required to manage the horixontal centering of the 
+  height: 30vh;
+  background: url(../images/scrumtime.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
     group image design*/
 }
 
@@ -78,26 +93,42 @@ ul {
   background-color: #F26826;
 }
 
+.quick-steps,
+.latest-arrivals {
+  background-color: #21295C;
+  color: #fafafa;
+}
+
 .card-header {
   background-color: #fff;
 }
 
 .card-style {
-  border: 2px solid #21295C;
+  border: 1px solid #f2f2f2;
   border-radius: 0.5rem;
+  float: left;
+  width: 33.33%;
+  padding: 0.625rem;
+}
+
+.boot-detail {
+  border: 0.01rem solid #f2f2f2;
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
 }
 
 /* Carousel */
 
 .carousel-indicators li {
-    width: 0.625rem;
-    height: 0.625rem;
-    border-radius: 100%;
-    color: #21295C;
-    background-color: #21295C;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  color: #21295C;
+  background-color: #21295C;
 }
+
 .carousel-indicators {
-    bottom: -1.1rem;
+  bottom: -1.1rem;
 }
 
 /* 404 error formatting */
@@ -106,7 +137,7 @@ ul {
 
 .block-divider-short {
   text-align: center;
-  width: 6rem;
+  width: 100%;
   height: 1px;
   border: 0;
   background-color: #fafafa;
@@ -136,3 +167,5 @@ ul {
 }
 
 /* Media Queries */
+
+
