@@ -159,6 +159,20 @@ blockquote {
 
 /* Buttons */
 
+.btn-learn-more {
+  background-color: #00667a;
+  border: #00667a;
+  color: #fafafa;
+  font-weight: 600;
+}
+
+.btn-learn-more:hover {
+  background-color: #135A68;
+  border: #135A68;
+  color: #fafafa;
+  font-weight: 600;
+}
+
 /* Social Media */
 
 .fa-facebook-square,
