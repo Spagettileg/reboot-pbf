@@ -107,6 +107,7 @@ ul {
 
 .card-header {
   background-color: #fff;
+  font-weight: 600;
 }
 
 .card-style {
@@ -159,14 +160,16 @@ blockquote {
 
 /* Buttons */
 
-.btn-learn-more {
+.btn-learn-more,
+.btn-read-more {
   background-color: #00667a;
   border: #00667a;
   color: #fafafa;
   font-weight: 600;
 }
 
-.btn-learn-more:hover {
+.btn-learn-more:hover,
+.btn-read-more:hover {
   background-color: #135A68;
   border: #135A68;
   color: #fafafa;
