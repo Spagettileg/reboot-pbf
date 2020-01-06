@@ -82,19 +82,8 @@
                 </a>
             </li>
             {% if user.is_authenticated %}
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{% url 'profile' %}" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                MyReBoot
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Summary</a>
-                    <a class="dropdown-item" href="#">Personal Details</a>
-                    <a class="dropdown-item" href="#">Donations</a>
-                    <a class="dropdown-item" href="#">Purchases</a>
-                    <a class="dropdown-item" href="#">Change Password</a>
-                    <div class="dropdown-divider"></div>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'profile' %}">MyReBoot</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'logout' %}">Logout</a>
