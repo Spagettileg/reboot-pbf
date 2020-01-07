@@ -258,7 +258,10 @@
                     </div>
                     <div class="pb-3">
                         <!-- Insert link to 'About'/'Re-Boot Explained' -->
-                        <a href="#" class="btn btn-primary">Add Review</a>
+                        {% if user.is_authenticated %}
+                        <a href="#" class="btn btn-add-review">Add Review</a>
+                        {% else %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
