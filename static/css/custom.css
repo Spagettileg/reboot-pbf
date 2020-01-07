@@ -18,7 +18,7 @@ body {
 h1,
 .cheer-title {
   font-weight: 700;
-  color: #fafafa;
+  color: #fafafa; /* off-white */
 }
 
 h2 {
@@ -26,23 +26,23 @@ h2 {
 }
 
 h4 {
-  color: #F26826;
+  color: #F26826; /* vivid tangelo - orange */
   font-weight: 600;
   text-align: center;
 }
 
 h5 {
-  color: #F26826;
+  color: #F26826; /* vivid tangelo - orange */
   font-weight: 600;
 }
 
 h6 {
-  color: #fafafa;
+  color: #fafafa; /* off-white */
   font-weight: 500;
 }
 
 .cheer-text {
-  color: #fafafa;
+  color: #fafafa; /* off-white */
 }
 
 .cheer-text p {
@@ -53,6 +53,12 @@ h6 {
   font-size: 0.9rem;
   font-weight: 500;
   margin: 0.25rem;
+}
+
+.blog-header-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F26826; /* vivid tangelo - orange */
 }
 
 ul {
@@ -158,14 +164,20 @@ blockquote {
   background-color: #fafafa;
 }
 
+.block-divider-blog-card {
+  background-color: #F26826;
+  width: 7rem;
+  height: 0.05rem;
+}
+
 /* Buttons */
 
 .btn-learn-more,
 .btn-read-more,
 .btn-add-review {
-  background-color: #00667a;
-  border: #00667a;
-  color: #fafafa;
+  background-color: #fafafa;
+  border: 0.1rem solid #135A68;
+  color: #135A68;
   font-weight: 600;
 }
 
@@ -173,9 +185,25 @@ blockquote {
 .btn-read-more:hover,
 .btn-add-review:hover {
   background-color: #135A68;
-  border: #135A68;
+  border: 0.1rem solid #135A68;
   color: #fafafa;
   font-weight: 600;
+}
+
+.btn-continue-reading {
+  background-color: #fafafa;
+  border: 0.1rem solid #135A68;
+  color: #135A68;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.btn-continue-reading:hover {
+  background-color: #135A68;
+  border: 0.1rem solid #135A68;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
 /* Social Media */
