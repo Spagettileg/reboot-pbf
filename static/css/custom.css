@@ -161,7 +161,8 @@ blockquote {
 /* Buttons */
 
 .btn-learn-more,
-.btn-read-more {
+.btn-read-more,
+.btn-add-review {
   background-color: #00667a;
   border: #00667a;
   color: #fafafa;
@@ -169,7 +170,8 @@ blockquote {
 }
 
 .btn-learn-more:hover,
-.btn-read-more:hover {
+.btn-read-more:hover,
+.btn-add-review:hover {
   background-color: #135A68;
   border: #135A68;
   color: #fafafa;
