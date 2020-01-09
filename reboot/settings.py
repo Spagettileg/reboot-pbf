@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [os.getenv('AWSC9_HOST')]
 # Application definition
 
 INSTALLED_APPS = [
+    # django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,10 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
+    
+    # custom apps
     'accounts',
     'home',
     'cart',
-    'products'
+    'products',
+    
+    # specialist app
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -140,5 +146,7 @@ STATICFILES_DIRS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
