@@ -18,6 +18,6 @@ class Product(models.Model):
         return self.name  # A string will be returned with the name
         
         
-        
+
     
 
