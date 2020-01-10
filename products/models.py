@@ -9,6 +9,8 @@ category_choices = (
 class Product(models.Model):
     make = models.CharField(max_length=254, default='')
     """ No default product will be added into the database """
+    category = models.CharField(max_length=254, choices=category_choices, default='')
+    """ Category choices include view all, juniors and adults """
     size = models.IntegerField()
     """ Size of the product """
     colour = models.TextField()
