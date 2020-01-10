@@ -20,7 +20,6 @@ from home.views import home
 from home import urls as urls_home
 from cart import urls as urls_cart
 from products import urls as urls_products
-from products.views import ProductCreateView
 from django.views import static
 from .settings import MEDIA_ROOT 
 
