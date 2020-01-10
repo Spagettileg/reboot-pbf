@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row single-product">
+    <div class="col-xs-12 col-md-6">
+        <div class="panel-body">
+                <div class="single-product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+        </div>
+    </div>
+    <div class='col-xs-12 col-md-6'>
+        <p class='single-product-name'>{{ product.name }}</p>
+
+        <p class='product-price'><span class="fas fa-pound-sign"
+            aria-hidden="true"></span>{{ product.price }}</p>
+        <form method="post" action="{% url 'add_to_cart' product.id %}">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="input-group">
+                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1">
+                <span class="input-group-btn">
+                    <button class="btn btn-cart-add" type="submit">Add To Cart</button>
+                </span>
+            </div>
+        </form>
+        <p class="product-description">{{ product.description }}</p>
+  
+    </div>
+
+</div>
+{% endblock %}
