@@ -1,10 +1,14 @@
-from django.shortcuts import render
-from django.views.generic import CreateView
+from django.shortcuts import render, get_object_or_404
 from .models import Product
 
-def ProductCreateView(request, CreateView):
-    model = Product
-    products = ('make', 'size', 'colour', 'studs', 'price', 'image')
-    return render(request, "products.html", {"products": products, "model": model})
+"""
+Create product views
+"""
+def all_products(request):
+    products = Product.objects.all()
+    return render(request, "products.html", {"products": products})
 
 
+def product_detail(request, pk):
+    products = get_object_or_404(Product, pk=pk)
+    return render(request, "productdetail.html", {"product": products})
