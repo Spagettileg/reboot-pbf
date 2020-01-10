@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% load bootstrap_tags %} {% block content %}
 <div class="row row-flex">
     {% for item in cart_items %}
 
@@ -11,7 +11,7 @@
             <p class='product-price'><span class="fas fa-pound-sign" aria-hidden="true"></span>{{ item.product.price }}</p>
 
             <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                {% csrf_token %} {{ form|crispy }}
+                {% csrf_token %} 
                 <div class="form-group">
                     <label for="exampleInputAmount" class="sr-only">New Qty</label>
                     <div class="input-group">
