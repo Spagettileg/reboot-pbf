@@ -76,12 +76,14 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+            <!-- Search function for all products held on Re-Boot website -->
             <li class="nav-item {% if page == 'search' %}active{% endif %}">
                 <a class="nav-link" href="#">
                     <i class="fas fa-search navbar-search-icon" title="Search"></i>
                     {% if page == "search" %}<span class="sr-only">(current)</span>{% endif %}
                 </a>
             </li>
+            <!-- User registration and authentication -->
             {% if user.is_authenticated %}
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'profile' %}">MyReBoot</a>
@@ -104,12 +106,11 @@
 
     <!-- Cart icon positioned to right of navbar for uncollapsed navbar -->
     <div id="navbar-icons-desktop" class="d-none d-lg-inline-block">
-        <a class="nav-link nav-link-icon" href="#" title="Shopping cart" aria-label="View shopping cart">
+        <a class="nav-link nav-link-icon" href="{% url 'view_cart' %}" title="Shopping cart" aria-label="View shopping cart">
             <div>
                 <i class="cart fas fa-shopping-cart navbar-icon"></i>
-                {% if request.session.cart.count and request.session.cart.count != 0 %}
-                <div id="cart-counter">{% if request.session.cart.count > 9 %}9+
-                    {% else %}{{ request.session.cart.count }}{% endif %}</div>
+                {% if product_count > 0 %}
+                    <label class="badge badge-warning">{{ product_count }}</label>
                 {% endif %}
             </div>
         </a>
