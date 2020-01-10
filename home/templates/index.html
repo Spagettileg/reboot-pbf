@@ -1,0 +1,303 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block title %}Re-Boot | Online exchange of new and used rugby boots{% endblock %} {% block content %}
+
+<!-- Re-Boot Introduction -->
+<div class="row">
+    <header id="frontpage-header" class="col-12 text-center cheer-text">
+        <div class="pt-2">
+            <h1>Why <i>Re-Boot</i> ?</h1>
+        </div>
+        <h3 class="cheer-title mb-3">Reasons to be cheerful...</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-left">
+                    <p><i class="fas fa-shoe-prints"></i> Re-Boot is an online exchange that encourages customers to register, donate unwanted rugby boots and purchase replacement boots at a fraction of normal retail prices. </p>
+                </div>
+                <div class="col-lg-3 text-left">
+                    <p><i class="fas fa-shoe-prints"></i> A 'one stop shop' experience can save both time and expense of travelling to the shops and being online, there are no restrictions on trading hours. </p>
+                </div>
+                <div class="col-lg-3 text-left">
+                    <p><i class="fas fa-shoe-prints"></i> Good choice of replacement rugby boots on offer, covering both juniors and adults. A simple registration process is required to realise the full Re-Boot benefits. </p>
+                </div>
+                <div class="col-lg-3 text-left">
+                    <p><i class="fas fa-shoe-prints"></i> Recyling of unwanted rugby boots also helps contribute to an improved carbon footprint through reducing the quantity of material that enters landfill waste. </p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 pb-5">
+            <a href="#" class="btn btn-learn-more">Learn More</a>
+        </div>
+    </header>
+</div>
+
+<!-- 4 Process Steps to use 'Re-Boot' -->
+<div class="pt-2 pb-1 col-12 quick-steps text-center">
+    <h3>Quick step guide</h3>
+</div>
+
+<div class="pt-3 container text-center">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card-header">
+                Step 1
+            </div>
+            <div class="pt-3"></div>
+            <img src='{{ MEDIA_URL }}images/quicksteps/stepone.png' alt="Browse stock">
+            <div class="card-body">
+                <h5 class="card-title">Browse Current Stock</h5>
+                <p class="card-text">Find boots that are right for you.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card-header">
+                Step 2
+            </div>
+            <div class="pt-3"></div>
+            <img src='{{ MEDIA_URL }}images/quicksteps/steptwo.jpg' alt="Register & Login">
+            <div class="card-body">
+                <h5 class="card-title">Register & Login</h5>
+                <p class="card-text">This is a mandatory requirement for boot donation and purchase.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card-header">
+                Step 3
+            </div>
+            <div class="pt-3"></div>
+            <img src='{{ MEDIA_URL }}images/quicksteps/stepthree.png' alt="Donate">
+            <div class="card-body">
+                <h5 class="card-title">Donate rugby boots</h5>
+                <p class="card-text">A clear and simple process for donating unwanted boots.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card-header">
+                Step 4
+            </div>
+            <div class="pt-3"></div>
+            <img src='{{ MEDIA_URL }}images/quicksteps/stepfour.png' alt="Purchase">
+            <div class="card-body">
+                <h5 class="card-title">Purchase rugby boots</h5>
+                <p class="card-text">Select, payment and delivery of rugby boots.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pt-3 pb-3">
+        <!-- Insert link to 'About'/'Re-Boot Explained' -->
+        <a href="#" class="btn btn-read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Latest Arrivals -->
+<div class="pt-2 pb-1 col-12 latest-arrivals text-center">
+    <h3>Latest Arrivals</h3>
+</div>
+<div class="container">
+    <div class="row justify-content-center text-center">
+        <!-- latest rugby boot arrivals on show -->
+        <div class="col-md-4 col-lg-4 card-style">
+            <div class="text-center">
+                <img src='{{ MEDIA_URL }}images/boots/adidasYellow.png' class="img-fluid" alt="adidas yellow boot">
+                <div class="boot-detail justify-content-center text-center">
+                    <h4>New Boots</h4>
+                    <i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i>
+                    <p class="card-text"><strong>Make:</strong> Adidas</p>
+                    <p class="card-text"><strong>Size:</strong> 10</p>
+                    <p class="card-text"><strong>Colour:</strong> Yellow</p>
+                    <p class="card-text"><strong>Stud:</strong> Screw in</p>
+                    <p class="card-text"><strong>Price:</strong> £10.00</p>
+                    <div class="pt-2"></div>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                    <div class="pt-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 card-style">
+            <div class="text-center">
+                <img src='{{ MEDIA_URL }}images/boots/asicsWhite.png' class="img-fluid" alt="asics white boot">
+                <div class="boot-detail justify-content-center text-center">
+                    <h4>Almost New</h4>
+                    <i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i>
+                    <p class="card-text"><strong>Make:</strong> Asics</p>
+                    <p class="card-text"><strong>Size:</strong> 2</p>
+                    <p class="card-text"><strong>Colour:</strong> White</p>
+                    <p class="card-text"><strong>Stud:</strong> Screw in</p>
+                    <p class="card-text"><strong>Price:</strong> £5.00</p>
+                    <div class="pt-2"></div>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                    <div class="pt-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 card-style">
+            <div class="text-center">
+                <img src='{{ MEDIA_URL }}images/boots/canterburyBlack.png' class="img-fluid" alt="canterbury black boot">
+                <div class="boot-detail justify-content-center text-center">
+                    <h4>Used Boots</h4>
+                    <i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i><i class="fas fa-shoe-prints"></i>
+                    <p class="card-text"><strong>Make:</strong> Canterbury</p>
+                    <p class="card-text"><strong>Size:</strong> 7</p>
+                    <p class="card-text"><strong>Colour:</strong> Black</p>
+                    <p class="card-text"><strong>Stud:</strong> Screw in</p>
+                    <p class="card-text"><strong>Price:</strong> £10.00</p>
+                    <div class="pt-2"></div>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                    <div class="pt-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Customer Reviews' -->
+<div class="pt-2 pb-1 col-12 customer-reviews text-center">
+    <h3>Customer Reviews</h3>
+</div>
+
+<div id="customer-reviews-section" class="pt-2 container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div id="customer-reviews-container" class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <!-- process steps carousel -->
+                        <div id="customer-reviews-carousel" class="carousel slide pb-4" data-ride="carousel">
+                            <ul class="carousel-indicators carousel-steps">
+                                <li data-target="#customer-reviews-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#customer-reviews-carousel" data-slide-to="1"></li>
+                                <li data-target="#customer-reviews-carousel" data-slide-to="2"></li>
+                                <li data-target="#customer-reviews-carousel" data-slide-to="3"></li>
+                                <li data-target="#customer-reviews-carousel" data-slide-to="4"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container col-md-5 float-left">
+                                        <div class="row">
+                                            <h5>"Very Good Quality..."</h5>
+                                            <img src='{{ MEDIA_URL }}images/boots/gilbertBlack.png' alt="Gilbert black boots">
+                                        </div>
+                                    </div>
+                                    <div class="container col-md-7 float-right">
+                                        <div class="row text-left">
+                                            <blockquote cite="Re-Boot">
+                                                <p>I don't normally take the time to provide feedback. However, the replacement rugby boots were of a very good quality at a very reasonable price. Thank you Re-Boot.</p>
+                                                <footer>- John Smith, <cite>18-12-2019</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container col-md-5 float-left">
+                                        <div class="row">
+                                            <h5>"Excellent boot range..."</h5>
+                                            <img src='{{ MEDIA_URL }}images/boots/mizunoRed.png' alt="Mizuno red boots">
+                                        </div>
+                                    </div>
+                                    <div class="container col-md-7 float-right">
+                                        <div class="row text-left">
+                                            <blockquote cite="Re-Boot">
+                                                <p>Excellent selection of rugby boots to choose from and really spoilt for choice. I've always worn Mizuno boots and wanted to keep to the same brand.</p>
+                                                <footer>- Harry Carey, <cite>17-12-2019</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container col-md-5 float-left">
+                                        <div class="row">
+                                            <h5>"Inexpensive purchase price..."</h5>
+                                            <img src='{{ MEDIA_URL }}images/boots/optimumBlue.png' alt="Optimum blue boots">
+                                        </div>
+                                    </div>
+                                    <div class="container col-md-7 float-right">
+                                        <div class="row text-left">
+                                            <blockquote cite="Re-Boot">
+                                                <p>My daughter is just starting junior rugby. I wanted to avoid paying a lot of money knowing full well that her feet will continue to grow and soon more boots needed. Re-Boot helps me keep the running costs
+                                                    to a healthy minimum.</p>
+                                                <footer>- Theresa Green, <cite>16-12-2019</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container col-md-5 float-left">
+                                        <div class="row">
+                                            <h5>"Enviromentally friendly..."</h5>
+                                            <img src='{{ MEDIA_URL }}images/boots/pumaBlack.png' alt="Puma black boots">
+                                        </div>
+                                    </div>
+                                    <div class="container col-md-7 float-right">
+                                        <div class="row text-left">
+                                            <blockquote cite="Re-Boot">
+                                                <p>I hate the idea of throwing perfectly good boots away. Re-Boot has restored my faith in humanity through accepting donated boots that will be enjoyed by a fellow rugby player. Well done.</p>
+                                                <footer>- Ruby Murray, <cite>15-12-2019</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container col-md-5 float-left">
+                                        <div class="row">
+                                            <h5>"Out of this world..."</h5>
+                                            <img src='{{ MEDIA_URL }}images/boots/optimumGreen.png' alt="Optimum green boots">
+                                        </div>
+                                    </div>
+                                    <div class="container col-md-7 float-right">
+                                        <div class="row text-left">
+                                            <blockquote cite="Re-Boot">
+                                                <p>I'm always feeling the force on the rugby pitch. Choosing the right footwear is important. Re-Boot has given me a great platform to quickly purchase quality replacement boots. </p>
+                                                <footer>- Yoda Dio, <cite>14-12-2019</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <!-- Insert link to 'About'/'Re-Boot Explained' -->
+                        {% if user.is_authenticated %}
+                        <a href="#" class="btn btn-add-review">Add Review</a> {% else %} {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Customer Blog -->
+<div class="pt-2 pb-1 col-12 customer-blog text-center">
+    <h3>Latest from Our Blog </h3>
+</div>
+
+<!-- Latest blog topics created in a card format -->
+
+<div class="pt-3 pb-2 container">
+    <div class="row">
+        <div class="pb-3 col-md-6">
+            <div class="card h-100 flex-md-row mb-4 shadow-sm h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <div class="d-inline-block mb-2 blog-header-text">Calling out for junior sized 8 boots...</div>
+                    <p class="card-text mb-auto">Will anyone be shortly donating a junior sized 8 pair of boots? </p>
+                    <div class="mb-1 pl-1 text-muted small">Published on 18/12/2019, 21.42pm</div>
+                    <div class="mb-1 pl-1 pb-1 text-muted small">Views: 7</div>
+                    <a class="btn btn-continue-reading" role="button" href="#">Continue reading</a>
+                </div>
+                <img class="card-img-right flex-auto d-none d-lg-block" src='{{ MEDIA_URL }}images/blog/megaphone.jpg' alt="call for boots">
+            </div>
+        </div>
+        <div class="pb-3 col-md-6">
+            <div class="card h-100 flex-md-row mb-4 shadow-sm h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <div class="d-inline-block mb-2 blog-header-text">Recommendations for a parcel carrier...</div>
+                    <p class="card-text mb-auto">Does anyone have a preferred reliable parcel carrier?  </p>
+                    <div class="mb-1 pl-1 text-muted small">Published on 17/12/2019, 10.25am</div>
+                    <div class="mb-1 pl-1 pb-1 text-muted small">Views: 32</div>
+                    <a class="btn btn-continue-reading" role="button" href="#">Continue reading</a>
+                </div>
+                <img class="card-img-right flex-auto d-none d-lg-block" src='{{ MEDIA_URL }}images/blog/deliverytruck.jpg' alt="parcel carrier">
+            </div>
+        </div>
+    </div>
+   </div>
+
+{% endblock %}
