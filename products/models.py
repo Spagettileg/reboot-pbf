@@ -25,7 +25,7 @@ class Product(models.Model):
     """ Allow images to be uploaded for our products """
     
     def __str__(self):
-        return self.name  # A string will be returned with the name
+        return self.make  # A string will be returned with the make of rugby boot
         
         
 
