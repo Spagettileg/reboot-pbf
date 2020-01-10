@@ -13,11 +13,11 @@ class Product(models.Model):
     """ Category choices include view all, juniors and adults """
     size = models.IntegerField()
     """ Size of the product """
-    colour = models.TextField()
+    colour = models.CharField(max_length=50)
     """ Product colour """
-    studs = models.TextField()
+    studs = models.CharField(max_length=50)
     """ Stud configuration of boot. Either moulded or screwin """
-    quality = models.TextField(null=True)
+    quality = models.TextField(max_length=50, null=True)
     """ Brand new, almost new and general wear """ 
     price = models.DecimalField(max_digits=6, decimal_places=2)
     """ Pricing model will be less than £1m and decimal places = pence """
