@@ -17,7 +17,7 @@ class Product(models.Model):
     """ Product colour """
     studs = models.CharField(max_length=50)
     """ Stud configuration of boot. Either moulded or screwin """
-    quality = models.TextField(max_length=50, null=True)
+    quality = models.CharField(max_length=50, null=True)
     """ Brand new, almost new and general wear """ 
     price = models.DecimalField(max_digits=6, decimal_places=2)
     """ Pricing model will be less than £1m and decimal places = pence """
