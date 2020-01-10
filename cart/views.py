@@ -2,14 +2,14 @@ from django.shortcuts import render, redirect, reverse
 
 def view_cart(request):
     """
-    A view that renders the cart showing all contents page
+    A view that renders the shopping cart showing all contents page
     """
     return render(request, "cart.html")
     
 def add_to_cart(request, id):
     """
-    Add a quantity of the specified product to the cart within the session.
-    Cart item are not stored in the database, but in the cart.
+    Add a quantity of selected product to shopping cart within the session.
+    Cart item are not stored in the database, but in the shopping cart.
     """
     quantity=int(request.POST.get('quantity'))
     
@@ -24,7 +24,7 @@ def add_to_cart(request, id):
         cart[id] = cart.get(id, quantity) 
     
     request.session['cart'] = cart
-    return redirect(reverse('index'))
+    return redirect(reverse('home'))
     
 def adjust_cart(request, id):
     """
@@ -40,4 +40,14 @@ def adjust_cart(request, id):
         
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
-    
+
+def remove_from_cart(request, id):
+    """
+    Remove chosen product from the shopping cart
+    """
+    cart = request.session.get('cart', {})
+
+    cart.pop(id)
+
+    request.session['cart'] = cart
+    return redirect(reverse('view_cart'))
