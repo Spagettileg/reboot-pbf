@@ -3,7 +3,6 @@ awscli==1.16.286
 botocore==1.13.22
 colorama==0.4.1
 Django==1.11.24
-django-crispy-forms==1.8.1
 django-forms-bootstrap==3.1.0
 docutils==0.15.2
 ikp3db==1.4.1
