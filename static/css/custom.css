@@ -174,7 +174,8 @@ blockquote {
 
 .btn-learn-more,
 .btn-read-more,
-.btn-add-review {
+.btn-add-review,
+.btn-cart-add {
   background-color: #fafafa;
   border: 0.1rem solid #135A68;
   color: #135A68;
@@ -183,7 +184,8 @@ blockquote {
 
 .btn-learn-more:hover,
 .btn-read-more:hover,
-.btn-add-review:hover {
+.btn-add-review:hover,
+.btn-cart-add {
   background-color: #135A68;
   border: 0.1rem solid #135A68;
   color: #fafafa;
