@@ -78,7 +78,7 @@
         <ul class="navbar-nav ml-auto">
             <!-- Search function for all products held on Re-Boot website -->
             <li class="nav-item {% if page == 'search' %}active{% endif %}">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{% url 'search' %}">
                     <i class="fas fa-search navbar-search-icon" title="Search"></i>
                     {% if page == "search" %}<span class="sr-only">(current)</span>{% endif %}
                 </a>
