@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'cart',
     'products',
     'categories',
+    'search',
     
     # specialist app
     'crispy_forms',
