@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load crispy_forms_tags %}
+{% load bootstrap_tags %}
 
 {% block content %}
 <div class="row single-product">
@@ -15,7 +15,6 @@
             aria-hidden="true"></span>{{ product.price }}</p>
         <form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
-            {{ form|crispy }}
             <div class="input-group">
                 <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1">
                 <span class="input-group-btn">
