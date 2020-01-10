@@ -57,11 +57,11 @@
                     BootShop
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">View All</a>
+                    <a class="dropdown-item" href="{% url 'product-filter' category='View_All' %}">View All</a>
                     <div class="dropdown-divider"></div>
 
-                    <a class="dropdown-item" href="#">Juniors</a>
-                    <a class="dropdown-item" href="#">Adults</a>
+                    <a class="dropdown-item" href="{% url 'product-filter' category='Juniors' %}">Juniors</a>
+                    <a class="dropdown-item" href="{% url 'product-filter' category='Adults' %}">Adults</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
