@@ -9,10 +9,14 @@
         </div>
     </div>
     <div class='col-xs-12 col-md-6'>
-        <p class='single-product-name'>{{ product.name }}</p>
+        <p class='single-product-name'><strong>Make: </strong>{{ product.make }}</p>
+        <p class='single-product-name'><strong>Size: </strong>{{ product.size }}</p>
+        <p class='single-product-name'><strong>Colour: </strong>{{ product.colour }}</p>
+        <p class='single-product-name'><strong>Studs: </strong>{{ product.studs }}</p>
+        <p class='single-product-name'><strong>Quality: </strong>{{ product.quality }}</p>
 
-        <p class='product-price'><span class="fas fa-pound-sign"
-            aria-hidden="true"></span>{{ product.price }}</p>
+        <p class='product-price'><strong>Price: </strong><span class="fas fa-pound-sign"
+            aria-hidden="true"></span> {{ product.price }}</p>
         <form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
             <div class="input-group">
