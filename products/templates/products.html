@@ -7,7 +7,7 @@
         <div class="panel-body">
             <a href="{% url 'product-detail' product.id %}">
                 <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-                <p>{{ product.name }}</p>
+                <p>{{ product.make }}</p>
                 <strong>
                     <p class='product-price'><span class="fas fa-pound-sign"
                         aria-hidden="true"></span>{{ product.price }}</p>
