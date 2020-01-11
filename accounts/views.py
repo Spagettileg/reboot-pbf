@@ -84,9 +84,9 @@ def logout(request):
     return redirect(reverse('index'))
 
 
-def user_profile(request):
+def user_profile(request): 
     """
-    The users profile page
+    ****** The users profile page > YET TO COMPLETE ******** 
     """
     user = User.objects.get(email=request.user.email)
     return render(request, 'profile.html', {"profile": user})
