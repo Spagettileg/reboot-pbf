@@ -16,7 +16,6 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from accounts import urls as urls_accounts
-from home.views import home
 from home import urls as urls_home
 from cart import urls as urls_cart
 from products import urls as urls_products
