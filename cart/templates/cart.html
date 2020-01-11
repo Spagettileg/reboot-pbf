@@ -22,7 +22,7 @@
                 </div>
                 <button type="submit" class="btn info-btn"><span class="fas fa-edit"
                         aria-hidden="true"></span></button>
-                <form action="{% url 'remove' item.product.id %}">
+                <form action="{% url 'remove_from_cart' item.product.id %}">
                     <button type="submit" class="btn info-btn"><span class="far fa-trash-alt"
                             aria-hidden="true"></span></button>
                 </form>
