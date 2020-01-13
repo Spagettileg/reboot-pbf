@@ -9,25 +9,26 @@
         </div>
     </div>
     <div class='col-xs-12 col-md-6'>
-        <p class='single-product-name'><strong>Make: </strong>{{ product.make }}</p>
-        <p class='single-product-name'><strong>Size: </strong>{{ product.size }}</p>
-        <p class='single-product-name'><strong>Colour: </strong>{{ product.colour }}</p>
-        <p class='single-product-name'><strong>Studs: </strong>{{ product.studs }}</p>
-        <p class='single-product-name'><strong>Quality: </strong>{{ product.quality }}</p>
+        <p class="pt-2"><strong>Make: </strong>{{ product.make }}</p>
+        <p><strong>Size: </strong>{{ product.size }}</p>
+        <p><strong>Colour: </strong>{{ product.colour }}</p>
+        <p><strong>Studs: </strong>{{ product.studs }}</p>
+        <p><strong>Quality: </strong>{{ product.quality }}</p>
 
-        <p class='product-price'><strong>Price: </strong><span class="fas fa-pound-sign"
+        <p><strong>Price: </strong><span class="fas fa-pound-sign"
             aria-hidden="true"></span> {{ product.price }}</p>
+        {% if user.is_authenticated %}
         <form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
-            <div class="input-group">
+            <div class="pb-2 input-group">
                 <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1">
                 <span class="input-group-btn">
                     <button class="btn btn-cart-add" type="submit">Add To Cart</button>
                 </span>
             </div>
         </form>
-        <p class="product-description">{{ product.description }}</p>
-  
+        {% else %}
+        {% endif %}
     </div>
 
 </div>
