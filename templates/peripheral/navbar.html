@@ -9,18 +9,14 @@
     </div>
 
     <!-- Cart icon positioned to left of toggler for mobile devices -->
-    <div id="navbar-icons-mobile" class="d-lg-none">
+    <div class="d-lg-none">
         <a class="pr-1 nav-link nav-link-icon" href="{% url 'view_cart' %}" title="Shopping cart" aria-label="View shopping cart">
             <div>
                 <i class="cart fas fa-shopping-cart navbar-icon"></i>
             </div>
         </a>
     </div>
-    <div class="pr-3">
-        {% if product_count > 0 %}
-        <div class="badge">{{ product_count }}</div>
-        {% endif %}
-    </div>
+    
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -101,7 +97,7 @@
     </div>
 
     <!-- Cart icon positioned to right of navbar for uncollapsed navbar -->
-    <div id="navbar-icons-desktop" class="d-none d-lg-inline-block">
+    <div class="d-none d-lg-inline-block">
         <a class="pr-1 nav-link nav-link-icon" href="{% url 'view_cart' %}" title="Shopping cart" aria-label="View shopping cart">
             <div>
                 <i class="cart fas fa-shopping-cart navbar-icon"></i>
