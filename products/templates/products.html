@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="row row-flex">
+<div class="row row-cols-1 row-cols-md-4">
     {% for product in products %}
-    <div class="mx-auto">
+    <div class="col mb-1">
         <div class="panel-body">
             <a href="{% url 'product-detail' product.id %}">
                 <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
