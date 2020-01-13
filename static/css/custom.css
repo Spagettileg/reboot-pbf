@@ -120,7 +120,8 @@ ul {
 .quick-steps,
 .latest-arrivals,
 .customer-reviews,
-.customer-blog {
+.customer-blog,
+.product-category {
   background-color: #21295C;
   color: #fafafa;
 }
