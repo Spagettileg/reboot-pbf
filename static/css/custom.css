@@ -245,3 +245,17 @@ blockquote {
 
 /* Media Queries */
 
+@media (max-width: 768px) {
+    /*Mobile - Move product counter to top right corner of shopping cart icon*/
+    .badge {
+        margin: -6.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Mobile - Move shopping cart icon slightly to left */
+    .nav-link-icon {
+        padding: 0;
+    }
+}
