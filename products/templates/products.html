@@ -3,7 +3,7 @@
 {% block content %}
 <div class="row row-flex">
     {% for product in products %}
-    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
+    <div class="mx-auto">
         <div class="panel-body">
             <a href="{% url 'product-detail' product.id %}">
                 <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
