@@ -204,8 +204,9 @@ blockquote {
 .btn-learn-more,
 .btn-read-more,
 .btn-add-review,
-.btn-cart-add {
-  background-color: #fafafa;
+.btn-cart-add,
+.btn-product-detail {
+  background-color: #ffffff;
   border: 0.1rem solid #135A68;
   color: #135A68;
   font-weight: 600;
@@ -214,11 +215,13 @@ blockquote {
 .btn-learn-more:hover,
 .btn-read-more:hover,
 .btn-add-review:hover,
-.btn-cart-add {
+.btn-cart-add:hover,
+.btn-product-detail:hover {
   background-color: #135A68;
   border: 0.1rem solid #135A68;
   color: #fafafa;
   font-weight: 600;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-continue-reading {
