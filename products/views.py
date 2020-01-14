@@ -8,6 +8,9 @@ def all_products(request):
     products = Product.objects.all()
     return render(request, "products.html", {"products": products})
 
+def categories(request):
+    categories = Product.objects.all()
+    return render(request, "products.html", {"categories": categories})
 
 def product_detail(request, pk):
     products = get_object_or_404(Product, pk=pk)

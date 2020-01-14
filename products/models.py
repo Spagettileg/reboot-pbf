@@ -11,6 +11,10 @@ class Product(models.Model):
     """ No default product will be added into the database """
     category = models.CharField(max_length=254, choices=category_choices, default='')
     """ Category choices include view all, juniors and adults """
+    juniors = models.CharField(max_length=50, default=True)
+    """ Junior rugby players """
+    adults = models.CharField(max_length=50, default=True)
+    """ Adult rugby players """
     size = models.IntegerField()
     """ Size of the product """
     colour = models.CharField(max_length=50)
