@@ -22,13 +22,13 @@
     {% for item in cart_items %}
     <div class="col mb-1">
         <div class="panel-body">
-            <p><strong>{{ product.customer }}</strong></p>
-                <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
-                <p><strong>Make: </strong>{{ product.make }}</p>
-                <p><strong>Size: </strong>{{ product.size }}</p>
+            <p><strong>{{ item.product.customer }}</strong></p>
+                <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
+                <p><strong>Make: </strong>{{ item.product.make }}</p>
+                <p><strong>Size: </strong>{{ item.product.size }}</p>
                 <strong>
                     <p><span class="fas fa-pound-sign"
-                        aria-hidden="true"></span>{{ product.price }}</p>
+                        aria-hidden="true"></span>{{ item.product.price }}</p>
                 </strong>
         </div>
     </div>
