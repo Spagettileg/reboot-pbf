@@ -21,6 +21,9 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" />
     
+    <!-- checkout.html will only be injected into base.html when clicking on a checkout button -->
+    {% block head_js %}
+    {% endblock head_js %}
 </head>
 <body>
     
