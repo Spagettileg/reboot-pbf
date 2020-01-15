@@ -34,4 +34,10 @@ def checkout(request):
                 )
                 order_line_item.save()
             
-            
+            try:
+                customer = stripe.Charge.create(
+                    amount=int(total * 100),
+                    currency="EUR",
+                    description=request.user.email,
+                    card=payment_form.cleaned_data['stripe_id']
+                )
