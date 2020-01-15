@@ -36,11 +36,12 @@
     </div>
     {% endfor %}
 </div>
+
+<!-- User navigates from shopping cart to checkout upon clicking the checkout button --> 
 <div class='row'>
     <p>Total</p>
     <p><span class="fas fa-pound-sign" aria-hidden="true"></span>{{ total }}</p>
-    <!-- Add {% url 'checkout' %} once checkout app created -->
-    <a href="#" class="btn info-btn" role="button"><span class="far fa-credit-card"
+    <a href="{% url 'checkout' %}" class="btn info-btn" role="button"><span class="far fa-credit-card"
             aria-hidden="true"></span>Checkout</a>
 </div>
 {% endblock %}
