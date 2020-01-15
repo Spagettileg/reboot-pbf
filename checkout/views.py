@@ -41,3 +41,21 @@ def checkout(request):
                     description=request.user.email,
                     card=payment_form.cleaned_data['stripe_id']
                 )
+                
+            except stripe.error.CardError:
+                messages.error(request, "Your card was declined!")
+            
+            if customer.paid:
+                messages.error(request, "You have successfully paid")
+                request.session['cart'] = {}
+                return redirect(reverse('home'))
+            else:
+                messages.error(request, "Unable to take payment")
+        else:
+            print(payment_form.errors)
+            messages.error(request, "We were unable to take a payment with that card!")
+    else:
+        payment_form = MakePaymentForm()
+        order_form = OrderForm()
+    
+    return render(request, "checkout.html", {"order_form": order_form, "payment_form": payment_form, "publishable": settings.STRIPE_PUBLISHABLE})
