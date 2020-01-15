@@ -3,9 +3,14 @@
 
 {% block content %}
 <div class="row single-product">
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-2">
+        <div>
+            <h2><strong>{{ product.customer }}</strong></h2>    
+        </div>
+    </div>
+    <div class="pt-2 col-xs-12 col-md-4">
         <div class="panel-body">
-                <div class="single-product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
+                <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
         </div>
     </div>
     <div class='col-xs-12 col-md-6'>
@@ -21,7 +26,7 @@
         <form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
             <div class="pb-2 input-group">
-                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1">
+                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1" style="height: 39.19px;">
                 <span class="input-group-btn">
                     <button class="btn btn-cart-add" type="submit">Add To Cart</button>
                 </span>
