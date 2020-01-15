@@ -16,3 +16,23 @@ key authenticates the users access to stripe from the browser.
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
 
+{% block content %}
+<div class="pt-2 pb-1 col-12 product-category text-center">
+    <h3>Boot Shop</h3>
+</div>
+<div class="row row-cols-1 row-cols-md-4">
+    {% for item in cart_items %}
+    <div class="col mb-1">
+        <div class="panel-body">
+            <p><strong>{{ product.customer }}</strong></p>
+                <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
+                <p><strong>Make: </strong>{{ product.make }}</p>
+                <p><strong>Size: </strong>{{ product.size }}</p>
+                <strong>
+                    <p><span class="fas fa-pound-sign"
+                        aria-hidden="true"></span>{{ product.price }}</p>
+                </strong>
+        </div>
+    </div>
+    {% endfor %}
+</div>
