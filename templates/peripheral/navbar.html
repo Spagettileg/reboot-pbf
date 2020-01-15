@@ -62,15 +62,10 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <!-- Search function for all products held on Re-Boot website -->
-            <li class="nav-item {% if page == 'search' %}active{% endif %}">
-                <a class="nav-link" href="{% url 'search' %}">
-                    <i class="fas fa-search navbar-search-icon" title="Search"></i>
-                    {% if page == "search" %}<span class="sr-only">(current)</span>{% endif %}
-                </a>
-            </li>
-
-
+            <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="GET">
+            <input class="form-control" type="text" placeholder="Search.." name="search" style="width: 100px; height: 34px;">
+            <button type"submit"><i class="fas fa-search"></i></button>
+            </form>
             <!-- User registration and authentication -->
             {% if user.is_authenticated %}
             <li class="nav-item">
@@ -87,9 +82,7 @@
                 <a class="nav-link" href="{% url 'login' %}">Login</a>
             </li>
             {% endif %}
-
         </ul>
-
     </div>
 
     <!-- Cart icon positioned to right of navbar for uncollapsed navbar -->
