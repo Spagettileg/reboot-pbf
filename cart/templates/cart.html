@@ -27,11 +27,9 @@
                         <div class="input-group-addon">{{item.quantity}}</div>
                     </div>
                 </div>
-                <button type="submit" class="btn info-btn"><span class="fas fa-edit"
-                        aria-hidden="true"></span></button>
+                <button type="submit" class="btn btn-edit-quantity" aria-hidden="true">Change</button>
                 <form action="{% url 'remove_from_cart' item.product.id %}">
-                    <button type="submit" class="btn info-btn"><span class="far fa-trash-alt"
-                            aria-hidden="true"></span></button>
+                    <button type="submit" class="btn btn-delete-item" aria-hidden="true">Delete</button>
                 </form>
             </form>
             <div class="pb-2"></div>
