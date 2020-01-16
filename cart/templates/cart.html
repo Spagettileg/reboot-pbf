@@ -3,22 +3,20 @@
 <div class="pt-2 pb-1 col-12 product-category text-center">
     <h3>Cart Contents</h3>
 </div>
-<div class="row row-flex">
+
+<div class="row row-cols-1 row-cols-md-4">
     {% for item in cart_items %}
     <!-- The for loop is looping over item in cart_items because we're only going to show what's currently in our cart. -->
-    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
-
-        <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
-        <!-- item.product.image being used as we are only focused upon items in the cart -->
-        <div class="caption">
+    <div class="col mb-1">
+        <div class="panel-body">
+            <p><strong>{{ item.product.customer }}</strong></p>
+            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
             <p><strong>Make: </strong>{{ item.product.make }}</p>
             <p><strong>Size: </strong>{{ item.product.size }}</p>
-            <p><strong>Colour: </strong>{{ item.product.colour }}</p>
-            <p><strong>Studs: </strong>{{ item.product.studs }}</p>
-            <p><strong>Quality: </strong>{{ item.product.quality }}</p>
-            <p><strong>Price: </strong><span class="fas fa-pound-sign"
-            aria-hidden="true"></span> {{ item.product.price }}</p>
-
+            <strong>
+                    <p><span class="fas fa-pound-sign"
+                        aria-hidden="true"></span>{{ item.product.price }}</p>
+                </strong>
             <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                 {% csrf_token %} 
                 <div class="form-group">
@@ -36,18 +34,18 @@
                             aria-hidden="true"></span></button>
                 </form>
             </form>
+            <div class="pb-2"></div>
         </div>
     </div>
     {% endfor %}
 </div>
 
 <!-- User navigates from shopping cart to checkout upon clicking the checkout button --> 
-<div class="container">
-<div class='row'>
-    <p>Total</p>
-    <p><span class="fas fa-pound-sign" aria-hidden="true"></span>{{ total }}</p>
-    <a href="{% url 'checkout' %}" class="btn info-btn" role="button"><span class="far fa-credit-card"
+<div class="pt-3 pb-3 container cart-contents-outer">
+    <div class="pt-1 cart-contents">
+        <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
+        <a href="{% url 'checkout' %}" class="btn info-btn" role="button"><span class="far fa-credit-card"
             aria-hidden="true"></span>Checkout</a>
-</div>
+    </div>
 </div>
 {% endblock %}
