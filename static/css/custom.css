@@ -226,7 +226,8 @@ blockquote {
 .btn-add-review,
 .btn-cart-add,
 .btn-product-detail,
-.btn-submit-payment {
+.btn-submit-payment,
+.btn-checkout {
   background-color: #ffffff;
   border: 0.1rem solid #135A68;
   color: #135A68;
@@ -238,7 +239,8 @@ blockquote {
 .btn-add-review:hover,
 .btn-cart-add:hover,
 .btn-product-detail:hover,
-.btn-submit-payment:hover {
+.btn-submit-payment:hover,
+.btn-checkout:hover {
   background-color: #135A68;
   border: 0.1rem solid #135A68;
   color: #fafafa;
