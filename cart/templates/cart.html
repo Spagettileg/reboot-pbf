@@ -17,18 +17,8 @@
                     <p><span class="fas fa-pound-sign"
                         aria-hidden="true"></span>{{ item.product.price }}</p>
                 </strong>
-            <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                {% csrf_token %} 
-                <div class="form-group">
-                    <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">Qty</div>
-                        <input name="quantity" type="number" min="0" max="999" class="form-control">
-                        <div class="input-group-addon">{{item.quantity}}</div>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-edit-quantity" aria-hidden="true">Change</button>
                 <form action="{% url 'remove_from_cart' item.product.id %}">
+                    {% csrf_token %}
                     <button type="submit" class="btn btn-delete-item" aria-hidden="true">Delete</button>
                 </form>
             </form>
