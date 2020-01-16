@@ -1,20 +1,12 @@
-{% extends "base.html" %}
-{% load static from staticfiles %}
-{% load bootstrap_tags %}
-
-# Javascript blockhead created in order to interface with Stripe
-# A publishable key authenticates the users access to stripe from the browser
-{% block head_js %}
+{% extends "base.html" %} {% load static from staticfiles %} {% load bootstrap_tags %} # Javascript blockhead created in order to interface with Stripe # A publishable key authenticates the users access to stripe from the browser {% block head_js %}
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
     //<![CDATA[
-        Stripe.publishableKey = '{{ publishable }}';
+    Stripe.publishableKey = '{{ publishable }}';
     //]]>
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <div class="pt-2 pb-1 col-12 product-category text-center">
     <h3>Checkout</h3>
 </div>
@@ -23,10 +15,10 @@
     <div class="col mb-1">
         <div class="panel-body">
             <p><strong>{{ item.product.customer }}</strong></p>
-                <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
-                <p><strong>Make: </strong>{{ item.product.make }}</p>
-                <p><strong>Size: </strong>{{ item.product.size }}</p>
-                <strong>
+            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
+            <p><strong>Make: </strong>{{ item.product.make }}</p>
+            <p><strong>Size: </strong>{{ item.product.size }}</p>
+            <strong>
                     <p><span class="fas fa-pound-sign"
                         aria-hidden="true"></span>{{ item.product.price }}</p>
                 </strong>
@@ -36,26 +28,32 @@
 </div>
 
 <!-- Show the Total Cost of what User is purchasing = out side above loop -->
-<div class="row">
-    <p> Total</p>
-    <p><span class="fas fa-pound-sign" aria-hidden="true"></span>{{ total }}</p>
+
+<div class="pt-3 pb-3 container checkout-total-outer">
+    <div class="pt-1 checkout-total">
+        <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
+    </div>
 </div>
+
 
 <!-- Both order and payment forms are added to the html page -->
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <legend>Payment Details</legend>
+    <div class="pt-2 pb-1 col-12 product-category text-center">
+        <h3>Payment Details</h3>
+    </div>
     <div id="credit-card-errors" style="display:none">
         <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
-    
-    <div class="form-group col-md-6">
-        {{ order_form|as_bootstrap }}
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            {{ order_form|as_bootstrap }}
+        </div>
+        <div class="form-group col-md-6">
+            {{ payment_form|as_bootstrap }}
+        </div>
     </div>
-    
-    <div class="form-group col-md-6">
-        {{ payment_form|as_bootstrap }}
-    </div>
-    
+
     {% csrf_token %}
     <div class="form-group col-md-12">
         <input class="btn btn-submit-payment" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
