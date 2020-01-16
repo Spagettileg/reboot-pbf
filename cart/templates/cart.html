@@ -44,8 +44,9 @@
 <div class="pt-3 pb-3 container cart-contents-outer">
     <div class="pt-1 cart-contents">
         <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
-        <a href="{% url 'checkout' %}" class="btn info-btn" role="button"><span class="far fa-credit-card"
-            aria-hidden="true"></span>Checkout</a>
+    </div>
+    <div class="px-3 py-3 row">
+        <button class="btn btn-checkout" href="{% url 'checkout' %}" role="button" type="submit" aria-hidden="true">Checkout</button>
     </div>
 </div>
 {% endblock %}
