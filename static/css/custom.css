@@ -167,13 +167,15 @@ blockquote {
   margin: auto;
 }
 
-.checkout-total-outer { /* Ensures the checkout payment total view is centre of screen */
+.cart-contents-outer,
+.checkout-total-outer { /* Ensures the payemnt summary views are centre of screen */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.checkout-total { /* Checkout total container given light grey background and vivid orange text */
+.cart-contents,
+.checkout-total { /* Containers given light grey background and vivid orange text */
   border: 0.1rem solid #f2f2f2;
   border-radius: 0.5rem;
   background-color: #f2f2f2;
