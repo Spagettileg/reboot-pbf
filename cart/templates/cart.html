@@ -46,7 +46,7 @@
         <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
     </div>
     <div class="px-3 py-3 row">
-        <button class="btn btn-checkout" href="{% url 'checkout' %}" role="button" type="submit" aria-hidden="true">Checkout</button>
+        <a href="{% url 'checkout' %}" class="btn btn-checkout" role="button" aria-hidden="true">Checkout</a>
     </div>
 </div>
 {% endblock %}
