@@ -248,7 +248,9 @@ blockquote {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn-continue-reading {
+.btn-continue-reading,
+.btn-edit-quantity,
+.btn-delete-item {
   background-color: #fafafa;
   border: 0.1rem solid #135A68;
   color: #135A68;
@@ -256,7 +258,9 @@ blockquote {
   font-size: 0.875rem;
 }
 
-.btn-continue-reading:hover {
+.btn-continue-reading:hover,
+.btn-edit-quantity:hover,
+.btn-delete-item:hover {
   background-color: #135A68;
   border: 0.1rem solid #135A68;
   color: #fafafa;
