@@ -10,6 +10,9 @@
 <div class="pt-2 pb-1 col-12 product-category text-center">
     <h3>Checkout</h3>
 </div>
+{% if total == 0 %}
+<p>Unable to proceed as shopping cart is empty. Our BootShop has many products you may be interested in.</p>
+{% else %}
 <div class="row row-cols-1 row-cols-md-4">
     {% for item in cart_items %}
     <div class="col mb-1">
@@ -53,11 +56,11 @@
             {{ payment_form|as_bootstrap }}
         </div>
     </div>
-
+    
     {% csrf_token %}
     <div class="form-group col-md-12">
         <input class="btn btn-submit-payment" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
-
+{% endif %}
 {% endblock %}
