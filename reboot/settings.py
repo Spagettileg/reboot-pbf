@@ -151,13 +151,14 @@ AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000',
 }
-
 AWS_STORAGE_BUCKET_NAME = 'reboot-pbf'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_REGION_NAME = 'eu-west-1'
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
+
+# Static Files ------------------------------------
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 STATIC_URL = '/static/'
@@ -165,10 +166,16 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
     )
 
+
+# Media Files -------------------------------------
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+
+# Stripe Files ------------------------------------
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
+
+# Controls where Django stores message data
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
