@@ -10,9 +10,23 @@
 <div class="pt-2 pb-1 col-12 product-category text-center">
     <h3>Checkout</h3>
 </div>
+
+<!-- Message to user to browse Re-Boot stock if they have an empty shopping cart -->
 {% if total == 0 %}
-<p>Unable to proceed as shopping cart is empty. Our BootShop has many products you may be interested in.</p>
+<div class="pt-4 col-md-6 container">
+    <div class="row">
+        <h3>Empty Shopping Cart?</h3>
+        <p>Please note you're unable to proceed with an empty shopping cart.</p>
+        <p>Our <strong>Bootshop</strong> has many products you may be interested in.</p>
+    </div>
+    <div class="col-md-6 container">
+        <div class="row">
+            <img class="card-img-right flex-auto" src='{{ MEDIA_URL }}images/blog/megaphone.jpg' alt="call for boots" height:200px; width:200px>
+        </div>
+    </div>
+</div>
 {% else %}
+<!-- If users shopping cart contains a product, then review and proceed to submit payment -->
 <div class="row row-cols-1 row-cols-md-4">
     {% for item in cart_items %}
     <div class="col mb-1">
@@ -56,11 +70,10 @@
             {{ payment_form|as_bootstrap }}
         </div>
     </div>
-    
+
     {% csrf_token %}
     <div class="form-group col-md-12">
         <input class="btn btn-submit-payment" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
-{% endif %}
-{% endblock %}
+{% endif %} {% endblock %}
