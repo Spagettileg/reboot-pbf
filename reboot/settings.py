@@ -161,7 +161,7 @@ AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
 # Static Files ------------------------------------
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-
+STATICFILES_LOCATION = 'static'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
