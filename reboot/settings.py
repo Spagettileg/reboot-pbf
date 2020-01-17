@@ -147,6 +147,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+#-----------------------------------------------------------
+# AWS_S3_OBJECT_PARAMETERS = set object parameters on your object
+# AWS_STORAGE_BUCKET_NAME = Your Amazon Web Services storage bucket name
+# AWS_DEFAULT_ACL = To stop UserWarning message
+# AWS_ACCESS_KEY_ID = Your Amazon Web Services access key
+# AWS_SECRET_ACCESS_KEY = Your Amazon Web Services secret access key
 
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
@@ -161,6 +167,13 @@ AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
 
 # Static Files ------------------------------------
+# STATIC_ROOT - Absolute Path to the directory where collectstatic will collect
+# static files for deployment
+# STATIC_URL- URL to use when referring to static files located in STATIC ROOT
+# STATICFILES_DIRS - Look for static files here
+# STATICFILES_STORAGE - The file storage engine to use when collecting static
+# files with the collectstatic management command.
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATICFILES_LOCATION = 'static'
 STATIC_URL = '/static/'
