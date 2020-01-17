@@ -1,11 +1,13 @@
 astroid==1.6.6
 awscli==1.16.286
-botocore==1.13.22
+boto3==1.11.4
+botocore==1.14.4
 colorama==0.4.1
 dj-database-url==0.5.0
 Django==1.11.24
 django-crispy-forms==1.8.1
 django-forms-bootstrap==3.1.0
+django-storages==1.8
 docutils==0.15.2
 ikp3db==1.4.1
 isort==4.3.21
@@ -26,7 +28,7 @@ pytz==2019.3
 PyYAML==5.1.2
 requests==2.22.0
 rsa==3.4.2
-s3transfer==0.2.1
+s3transfer==0.3.1
 six==1.13.0
 stevedore==1.31.0
 stripe==2.42.0
