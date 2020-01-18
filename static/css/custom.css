@@ -80,7 +80,7 @@ ul {
   background-repeat: repeat-x;
   position: relative;
   height: 30vh;
-  background: url(../../media/images/brand/scrumtime.jpg) no-repeat center center fixed;
+  background: url(../../static/img/scrumtime.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
