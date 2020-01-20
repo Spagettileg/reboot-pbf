@@ -106,9 +106,6 @@
                     <p class="card-text"><strong>Colour:</strong> Yellow</p>
                     <p class="card-text"><strong>Stud:</strong> Screw in</p>
                     <p class="card-text"><strong>Price:</strong> £10.00</p>
-                    <div class="pt-2"></div>
-                    <a href="#" class="btn btn-primary">Buy</a>
-                    <div class="pt-2"></div>
                 </div>
             </div>
         </div>
@@ -123,9 +120,6 @@
                     <p class="card-text"><strong>Colour:</strong> White</p>
                     <p class="card-text"><strong>Stud:</strong> Screw in</p>
                     <p class="card-text"><strong>Price:</strong> £5.00</p>
-                    <div class="pt-2"></div>
-                    <a href="#" class="btn btn-primary">Buy</a>
-                    <div class="pt-2"></div>
                 </div>
             </div>
         </div>
@@ -140,25 +134,22 @@
                     <p class="card-text"><strong>Colour:</strong> Black</p>
                     <p class="card-text"><strong>Stud:</strong> Screw in</p>
                     <p class="card-text"><strong>Price:</strong> £10.00</p>
-                    <div class="pt-2"></div>
-                    <a href="#" class="btn btn-primary">Buy</a>
-                    <div class="pt-2"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <a href="{% url 'product-filter' category='Juniors' %}"> See More Juniors Boots</a>
+    <!-- Link to send user to BootShop to view either juniors or adults rugby boots -->
+    <div class="px-3 py-3 row justify-content-center">
+        <div class="px-3 py-3">
+            <a class="btn btn-learn-more" href="{% url 'product-filter' category='Juniors' %}">See More Juniors Boots</a>
+        </div>
+        <div class="px-3 py-3">
+            <a class="btn btn-learn-more" href="{% url 'product-filter' category='Adults' %}">See More Adults Boots</a>
+        </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <a href="{% url 'product-filter' category='Adults' %}"> See More Adults Boots</a>
-    </div>
-</div>
-
 
 <!-- Customer Reviews' -->
 <div class="pt-2 pb-1 col-12 customer-reviews text-center">
@@ -301,7 +292,7 @@
             <div class="card h-100 flex-md-row mb-4 shadow-sm h-md-250">
                 <div class="card-body d-flex flex-column align-items-start">
                     <div class="d-inline-block mb-2 blog-header-text">Recommendations for a parcel carrier...</div>
-                    <p class="card-text mb-auto">Does anyone have a preferred reliable parcel carrier?  </p>
+                    <p class="card-text mb-auto">Does anyone have a preferred reliable parcel carrier? </p>
                     <div class="mb-1 pl-1 text-muted small">Published on 17/12/2019, 10.25am</div>
                     <div class="mb-1 pl-1 pb-1 text-muted small">Views: 32</div>
                     <a class="btn btn-continue-reading" role="button" href="#">Continue reading</a>
@@ -310,6 +301,6 @@
             </div>
         </div>
     </div>
-   </div>
+</div>
 
 {% endblock %}
