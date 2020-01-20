@@ -4,6 +4,8 @@ from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
+from products.models import Product
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def register(request):
     """
@@ -84,13 +86,31 @@ def logout(request):
     return redirect(reverse('index'))
 
 
-def user_profile(request): 
-    """
-    ****** The users profile page > YET TO COMPLETE ******** 
-    """
+@login_required()
+def profile(request):
+    """User profile page"""
     user = User.objects.get(email=request.user.email)
-    return render(request, 'profile.html', {"profile": user})
+    products_list = Product.objects.filter(creator=user.id, paid=True)
+    page = request.GET.get('page', 1)
     
+    products_paginator = Paginator(products_list, 2)
+    
+    try:
+        products = products_paginator.page(page)
+        
+    except PageNotAnInteger:
+        products = products_paginator.page(1)
+        
+    except EmptyPage:
+        products = products_paginator.page(products_paginator.num_pages)
+    
+    
+    context = {
+        'profile': user,
+        'products': products,
+    }
+    
+    return render(request, 'profile.html', context)
     
     
     
