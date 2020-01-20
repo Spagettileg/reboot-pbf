@@ -1,11 +1,22 @@
 {% extends 'base.html' %}
-
-{% block page_title %}{{ user }}'s profile{% endblock %}
-
-{% block page_heading %}{{ user }}'s profile{% endblock %}
-
+{% load static %}
 {% block content %}
 
-<p>{{ profile.email }}</p>
+<!-- Users image and ID -->
+<div class="container col-sm-12 col-md-3">
+        <div class="row">
+            <figure>
+                <img src="{% static 'img/stepone.png' %}" alt="gravatar image">
+            </figure>
+            <h4 class="name-heading">Name: {{ current_user['name'] }}</h4>
+        </div>
+    </div>
+
+<!-- User Re-boot membership summary -->
+<div class="container col-sm-12 col-md-9">
+    <div class="row">
+        
+    </div> 
+</div>
 
 {% endblock %}
