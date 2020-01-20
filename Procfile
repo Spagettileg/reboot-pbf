@@ -1,1 +1,1 @@
-web: gunicorn reboot-pbf.wsgi:application
+web: gunicorn reboot.wsgi:application
