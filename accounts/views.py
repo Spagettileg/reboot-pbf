@@ -90,20 +90,7 @@ def logout(request):
 def profile(request):
     """User profile page"""
     user = User.objects.get(email=request.user.email)
-    products_list = Product.objects.filter(creator=user.id, paid=True)
-    page = request.GET.get('page', 1)
-    
-    products_paginator = Paginator(products_list, 2)
-    
-    try:
-        products = products_paginator.page(page)
-        
-    except PageNotAnInteger:
-        products = products_paginator.page(1)
-        
-    except EmptyPage:
-        products = products_paginator.page(products_paginator.num_pages)
-    
+    products = Product.objects.filter(creator=user.id)
     
     context = {
         'profile': user,
