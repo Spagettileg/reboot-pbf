@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.utils import timezone
 
 category_choices = (
     ('Juniors','Juniors'),
@@ -24,11 +26,24 @@ class Product(models.Model):
     """ Pricing model will be less than £1m and decimal places = pence """
     image = models.ImageField(upload_to='images')
     """ Allow images to be uploaded for our products """
+    creator = models.ForeignKey(User, on_delete=models.CASCADE)
+    """ Secure creator of rugby boot product profile """
+    created_date = models.DateTimeField(auto_now_add=True)
+    """ Date rugby boot product was created """
     
     def __str__(self):
         return self.make  # A string will be returned with the make of rugby boot
         
-        
+class ProductComment(models.Model):
+    """Rugby Boot Product Comments"""
+    products = models.ForeignKey(Product, on_delete=models.CASCADE)
+    creator = models.ForeignKey(User, on_delete=models.CASCADE)
+    comment = models.TextField(max_length=256, blank=False)
+    created_date = models.DateTimeField(auto_now_add=True)
+    
+    
+    def __str__(self):
+        return '{0}: {1}'.format(self.feature.title, self.creator.username)
 
     
 
