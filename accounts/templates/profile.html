@@ -6,7 +6,7 @@
         <div class="px-3 py-3 gravatar-image text-center">
             <img src="{% static 'img/gravatar.png' %}" alt="gravatar image">
         </div>
-        <h4 class="text-center">Name: {{ creator }}</h4>
+        <h4 class="text-center">Name: {{ user|capfirst }}</h4>
         <div class="px-2 py-2 text-center"><a href="{% url 'create_a_product' %}" class="btn btn-read-more">Donate Rugby Boots</a></div>
         <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Update Personal Details</a></div>
         <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Change Password</a></div>
