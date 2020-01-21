@@ -1,22 +1,33 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <!-- Users image and ID -->
-<div class="container col-sm-12 col-md-3">
+<div class="row">
+    <div class="px-3 py-3 col-sm-3">
+        <div class="px-3 py-3 gravatar-image text-center">
+            <img src="{% static 'img/gravatar.png' %}" alt="gravatar image">
+        </div>
+        <h4 class="text-center">Name: {{ creator }}</h4>
+        <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Update Personal Details</a></div>
+        <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Change Password</a></div>
+    </div>
+    <!-- User Re-boot membership summary -->
+    <div class="pt-3 pb-3 col-sm-9">
+        <h4>Your membership summary:</h4>
         <div class="row">
-            <figure>
-                <img src="{% static 'img/gravatar.png' %}" alt="gravatar image">
-            </figure>
-            <h4 class="name-heading">Name: {{ creator }}</h4>
+            <p class="pl-5"><strong>Date last logged on:</strong></p>
+        </div>
+        <div class="row">
+            <p class="pl-5"><strong>Date joined Re-Boot:</strong></p>
+        </div>
+        <!-- Summary of Boot donations & Boot purchases -->
+        <div class="container">
+            <div class="jumbotron">
+                <h5>Donations:</h5>
+            </div>
+            <div class="jumbotron">
+                <h5>Purchases:</h5>
+            </div>
         </div>
     </div>
-
-<!-- User Re-boot membership summary -->
-<div class="container col-sm-12 col-md-9">
-    <div class="row">
-        
-    </div> 
 </div>
-
 {% endblock %}
