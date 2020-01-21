@@ -269,6 +269,21 @@ blockquote {
   font-size: 0.875rem;
 }
 
+.btn-donate-boots {
+  background-color: #ffffff;
+  border: 0.1rem solid #F26826;
+  color: #F26826;
+  font-weight: 600;
+}
+
+.btn-donate-boots:hover {
+  background-color: #F26826;
+  border: 0.1rem solid #F26826;
+  color: #fafafa;
+  font-weight: 600;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* Social Media */
 
 .fa-facebook-square,
