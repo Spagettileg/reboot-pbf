@@ -3,14 +3,16 @@
 {% block title %}Create a product{% endblock %}
 
 {% block content %}
-<div class="container">
-    {% block heading %} <h1>Create a product</h1> {% endblock %}
+<div class="pt-2 container">
+    {% block heading %} <h4>Donate your rugby boots here</h4> {% endblock %}
 <div class="row">
     <div class="col-sm-12">
         <form method="POST">
             {% csrf_token %}
             {{ form | as_bootstrap }}
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="pb-3">
+            <button type="submit" class="btn btn-add-review">Submit</button>
+            </div>
         </form>
     </div>
 </div>
