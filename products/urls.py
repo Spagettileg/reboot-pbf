@@ -6,6 +6,6 @@ urlpatterns = [
     url(r'^$', categories, name='categories'),
     url(r'^(?P<pk>\d+)/$', product_detail, name='product-detail'),
     url(r'^(?P<pk>\d+)/$', single_product_view, name="single_product_view"),
-    url(r'^(?P<pk>\d+)/delete_feature/$', delete_a_product, name="delete_a_product"),
+    url(r'^(?P<pk>\d+)/delete_product/$', delete_a_product, name="delete_a_product"),
     url(r'^create_product/$', create_a_product, name='create_a_product'),
 ]
