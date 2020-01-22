@@ -33,7 +33,7 @@ def product_detail(request, pk):
     }
     return render(request, "productdetail.html", context)
 
-""" Route to view a single rugby boot product on one page """
+""" Route to view a single Re-Boot user comment on one page """
 def single_product_view(request, pk):
     product = get_object_or_404(Product, pk=pk)
     
