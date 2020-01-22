@@ -23,6 +23,8 @@ def cart_contents(request):
         product = get_object_or_404(Product, pk=id)
         total += quantity * product.price
         product_count += quantity
+        print ("quantity: " + quantity)
         cart_items.append({'id': id, 'quantity': quantity, 'product': product})
         
     return { 'cart_items': cart_items, 'total': total, 'product_count': product_count}
+    
