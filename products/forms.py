@@ -9,4 +9,4 @@ class ProductCommentForm(forms.ModelForm):
 class ProductCreationForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ('make', 'category', 'customer', 'size', 'colour', 'studs', 'quality', 'price', 'image', 'creator')
+        fields = ('make', 'category', 'customer', 'size', 'colour', 'studs', 'quality', 'price', 'image')
