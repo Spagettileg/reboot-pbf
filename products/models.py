@@ -26,10 +26,7 @@ class Product(models.Model):
     """ Pricing model will be less than £1m and decimal places = pence """
     image = models.ImageField(upload_to='images')
     """ Allow images to be uploaded for our products """
-    creator = models.ForeignKey(User, on_delete=models.CASCADE)
-    """ Secure creator of rugby boot product profile """
-    created_date = models.DateTimeField(auto_now_add=True)
-    """ Date rugby boot product was created """
+    
     
     def __str__(self):
         return self.make  # A string will be returned with the make of rugby boot
