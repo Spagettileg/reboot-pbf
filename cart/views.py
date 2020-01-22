@@ -9,7 +9,7 @@ def view_cart(request):
     
 def add_to_cart(request, id):
     """
-    Add a quantity of selected product to shopping cart within the session.
+    Add a unique product to shopping cart within the session.
     Cart item are not stored in the database, but in the shopping cart.
     """
     quantity = int(request.POST.get('quantity'))

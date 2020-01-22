@@ -17,6 +17,15 @@
                     <p><span class="fas fa-pound-sign"
                         aria-hidden="true"></span>{{ item.product.price }}</p>
                 </strong>
+            <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="exampleInputAmount" class="sr-only">New Qty</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">Qty</div>
+                        <input name="quantity" type="number" min="1" max="1" class="form-control">
+                    </div>
+                </div>
                 <form action="{% url 'remove_from_cart' item.product.id %}">
                     {% csrf_token %}
                     <button type="submit" class="btn btn-delete-item" aria-hidden="true">Delete</button>
@@ -28,7 +37,7 @@
     {% endfor %}
 </div>
 
-<!-- User navigates from shopping cart to checkout upon clicking the checkout button --> 
+<!-- User navigates from shopping cart to checkout upon clicking the checkout button -->
 <div class="pt-3 pb-3 container cart-contents-outer">
     <div class="pt-1 cart-contents">
         <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
