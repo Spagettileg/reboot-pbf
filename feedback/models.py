@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 
-class ProductComment(models.Model):
+class FeedbackComment(models.Model):
     """Re-Boot Member Feedback"""
     feedbacks = models.ForeignKey(Feedback, on_delete=models.CASCADE)
     creator = models.ForeignKey(User, on_delete=models.CASCADE)
