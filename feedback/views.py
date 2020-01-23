@@ -57,10 +57,13 @@ def create_a_feedback(request):
             feedback = form.save(commit=False)
             feedback.creator = request.user
             feedback.save()
-            
-            return redirect('index')
+            messages.success(request, "Thank you {0}, {1} has been added."
+                             .format(request.user, feedback.title),
+                             extra_tags="alert-primary")
+            return redirect('profile')
     else:
         form = FeedbackCreationForm()
+        messages.error(request, '{} sorry, your feedback cannot be added.'.format(request.user), extra_tags="alert-primary")
     
     context = {
         'form' : form
@@ -88,6 +91,7 @@ def edit_a_feedback(request, pk):
     
     else:
         form = FeedbackCreationForm(instance=feedback)
+        messages.error(request, '{} sorry, your feedback cannot be updated.'.format(request.user), extra_tags="alert-primary")
         
     context = {
         'form': form,
