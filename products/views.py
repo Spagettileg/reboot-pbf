@@ -33,35 +33,6 @@ def product_detail(request, pk):
     }
     return render(request, "productdetail.html", context)
 
-""" Route to view a single Re-Boot user comment on one page """
-def single_product_view(request, pk):
-    product = get_object_or_404(Product, pk=pk)
-    
-    if request.method == 'POST':
-        product_comment_form = ProductCommentForm(request.POST or None)
-        if product_comment_form.is_valid():
-            comment = request.POST.get('comment')
-            product_comment = ProductComment.objects.create(product=product, creator=request.user, comment=comment)
-            product_comment.save()
-            messages.success(request, 'Thank you {} your comment has posted'.format(request.user), extra_tags="alert-success")
-            return redirect(request.META.get('HTTP_REFERER'))
-    else:
-        product_comment_form = ProductCommentForm()
-        product.views += 1
-        product.save()
-    
-    comments = ProductComment.objects.filter(product=product)
-    
-    product_comment_form = ProductCommentForm()
-            
-    context = {
-        'product' : product,
-        'product_comment_form': product_comment_form,
-        'comments': comments,
-    }
-    
-    return render(request, 'single_product.html', context)
-
 """ Route allows the user to create (donate) a product """    
 @login_required
 def create_a_product(request):
