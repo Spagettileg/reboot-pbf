@@ -95,17 +95,17 @@ def edit_a_feedback(request, pk):
     return render(request, 'edit_feedback.html', context)
 
 @login_required
-def delete_a_feature(request, pk):
+def delete_a_feedback(request, pk):
     """
-    Route to allow users to delete their features
+    Route to allow Re-Boot members to delete their feedback
     """
     
-    feature = get_object_or_404(Feature, pk=pk)
+    feedback = get_object_or_404(Feedback, pk=pk)
     
     if request.method == "POST":
-        feature.delete()
-        messages.success(request, '{} your feature has been deleted!'.format(request.user), extra_tags="alert-success")
+        feedback.delete()
+        messages.success(request, '{} your feedback has been deleted!'.format(request.user), extra_tags="alert-success")
         return redirect(request.META.get('HTTP_REFERER'))
     else:
-        messages.error(request, '{} unfortunatley at this time your feature cannot be deleted.'.format(request.user), extra_tags="alert-primary")
+        messages.error(request, '{} sorry, your feedback cannot be deleted.'.format(request.user), extra_tags="alert-primary")
         return redirect(request.META.get('HTTP_REFERER'))
