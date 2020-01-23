@@ -12,38 +12,37 @@ def show_all_feedbacks(request):
     }
     return render(request, "feedback.html", context)
 
-def single_feature_view(request, pk):
+def single_feedback_view(request, pk):
     """
-    Route to view a single feature on
-    one page
+    Route to view a single feedback on one page
     """
-    feature = get_object_or_404(Feature, pk=pk)
+    feedback = get_object_or_404(Feedback, pk=pk)
     
     if request.method == 'POST':
-        feature_comment_form = FeatureCommentForm(request.POST or None)
-        if feature_comment_form.is_valid():
+        feedback_comment_form = FeedbackCommentForm(request.POST or None)
+        if feedback_comment_form.is_valid():
             comment = request.POST.get('comment')
-            feature_comment = FeatureComment.objects.create(feature=feature, creator=request.user, comment=comment)
-            feature_comment.save()
-            messages.success(request, 'Thanks {} your comment has posted'.format(request.user), extra_tags="alert-success")
+            feedback_comment = FeedbackComment.objects.create(feedback=feedback, creator=request.user, comment=comment)
+            feedback_comment.save()
+            messages.success(request, 'Thank you {} your feedback has posted'.format(request.user), extra_tags="alert-success")
             return redirect(request.META.get('HTTP_REFERER'))
     else:
-        feature_comment_form = FeatureCommentForm()
-        feature.views += 1
-        feature.save()
+        feedback_comment_form = FeedbackCommentForm()
+        feedback.views += 1
+        feedback.save()
     
-    comments = FeatureComment.objects.filter(feature=feature)
+    comments = FeedbackComment.objects.filter(feedback=feedback)
     
-    feature_comment_form = FeatureCommentForm()
+    feedback_comment_form = FeedbackCommentForm()
             
     context = {
-        'feature' : feature,
-        'feature_comment_form': feature_comment_form,
+        'feedback' : feedback,
+        'feedback_comment_form': feedback_comment_form,
         'comments': comments,
     }
     
     
-    return render(request, 'single_feature.html', context)
+    return render(request, 'single_feedback.html', context)
     
     
 @login_required
