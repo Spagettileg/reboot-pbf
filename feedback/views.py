@@ -46,31 +46,31 @@ def single_feedback_view(request, pk):
     
     
 @login_required
-def create_a_feature(request):
+def create_a_feedback(request):
     """
-    Route to allow our users to create a feature
+    Route to allow Re-boot members to create feedback 
     """
-    form = FeatureCreationForm(request.POST)
+    form = FeedbackCreationForm(request.POST)
     if request.method == "POST":
         
         if form.is_valid():
-            feature = form.save(commit=False)
-            feature.creator = request.user
-            feature.save()
+            feedback = form.save(commit=False)
+            feedback.creator = request.user
+            feedback.save()
             
             cart = request.session.get('cart', {})
-            id = feature.id
+            id = feedback.id
             cart[id] = cart.get(id, 1)
             request.session['cart'] = cart
             return redirect('checkout')
     else:
-        form = FeatureCreationForm()
+        form = FeedbackCreationForm()
     
     context = {
         'form' : form
     }
     
-    return render(request, 'create_feature.html', context)
+    return render(request, 'create_feedback.html', context)
     
 @login_required
 def edit_a_bug(request, pk):
