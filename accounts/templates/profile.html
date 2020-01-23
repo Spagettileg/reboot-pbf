@@ -33,19 +33,19 @@
     </div>
     <!-- User specific feedback -->
     <h4 class="mt-3">Your feedback:</h4>
-    {% if products %} {% for product in products %}
+    {% for feedback in feedbacks %}
     <div class="row">
         <div class="col-12">
             <div class="card border-primary mb-3">
                 <div class="card-body">
-                    <h4 class="card-title">{{ product.title|capfirst }}</h4>
-                    <p class="card-text">{{ product.description|capfirst }}</p>
+                    <h4 class="card-title">{{ feedback.title|capfirst }}</h4>
+                    <p class="card-text">{{ feedback.description|capfirst }}</p>
                     <div class="card-footer text-muted">
-                        <span>{{ product.creator|capfirst }} | {{ product.created_date }}</span>
-                        <a href="{% url 'single_feature_view' product.id %}" class="card-link">View product</a>
+                        <span>{{ feedback.creator|capfirst }} | {{ feedback.created_date }}</span>
+                        <a href="{% url 'single_feedback_view' feedback.id %}" class="card-link">View feedback</a>
                         <div class="inline justify-content-center mt-2">
                             <a href="#" class="px-1"><button type="button" class="btn btn-outline-info p5">Edit</button></a>
-                            <form method="POST" action="{% url 'delete_a_product' product.id %}" id="delete_a_product" class="px-1">{% csrf_token %}<button type="submit" class="btn btn-outline-warning p5">Delete</button></form>
+                            <form method="POST" action="{% url 'delete_a_feedback' product.id %}" id="delete_a_feedback" class="px-1">{% csrf_token %}<button type="submit" class="btn btn-outline-warning p5">Delete</button></form>
                         </div>
                     </div>
                 </div>
