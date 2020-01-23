@@ -58,11 +58,7 @@ def create_a_feedback(request):
             feedback.creator = request.user
             feedback.save()
             
-            cart = request.session.get('cart', {})
-            id = feedback.id
-            cart[id] = cart.get(id, 1)
-            request.session['cart'] = cart
-            return redirect('checkout')
+            return redirect('index')
     else:
         form = FeedbackCreationForm()
     
@@ -73,30 +69,30 @@ def create_a_feedback(request):
     return render(request, 'create_feedback.html', context)
     
 @login_required
-def edit_a_bug(request, pk):
+def edit_a_feedback(request, pk):
     """
-    Route to allow users to edit their bugs
+    Route to permit Re-Boot members to edit their feedback
     """
-    bug = get_object_or_404(Bug, pk=pk)
+    feedback = get_object_or_404(Feedback, pk=pk)
     
     if request.method == "POST":
-        form = BugCreationForm(request.POST, instance=bug)
+        form = FeedbackCreationForm(request.POST, instance=feedback)
         if form.is_valid():
-            bug = form.save(commit=False)
-            bug.creator = request.user
-            bug.save()
-            messages.success(request, "Thanks {0}, {1} has been updated."
-                             .format(request.user, bug.title),
+            feedback = form.save(commit=False)
+            feedback.creator = request.user
+            feedback.save()
+            messages.success(request, "Thank you {0}, {1} has been updated."
+                             .format(request.user, feedback.title),
                              extra_tags="alert-primary")
             return redirect(reverse('profile'))
     
     else:
-        form = BugCreationForm(instance=bug)
+        form = FeedbackCreationForm(instance=feedback)
         
     context = {
         'form': form,
     }
-    return render(request, 'edit_bug.html', context)
+    return render(request, 'edit_feedback.html', context)
 
 @login_required
 def delete_a_feature(request, pk):
