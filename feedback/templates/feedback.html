@@ -1,0 +1,39 @@
+{% extends 'base.html' %} {% block features_active %}active {% endblock %} {% block title %}Features{% endblock %}
+
+<div class="container">
+    {% block heading %}
+    <!-- Create Feedback. Re-Boot members only -->
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>4
+                <span>Member Feedback</span>
+                <a href="{% url 'create_a_feedback' %}"><button type="button" class="btn btn-primary pull-right p5">Add Feedback</button></a>
+                </h4>
+        </div>
+    </div>
+    {% endblock %}
+
+    <!-- Template for showing Re-Boot member feedback -->
+    {% for feedback in feedbacks %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card border-primary mb-3">
+                <div class="card-header">
+                    <span class="card-link"><i class="fa fa-eye p5"></i>{{ feedback.views }}
+        <div class="card-body">
+          <h4 class="card-title">{{ feedback.title|capfirst }}</h4>
+          <p class="card-text">{{ feedback.description|capfirst }}</p>
+          <div class="card-footer text-muted">
+            <span>
+            {{ feedback.creator|capfirst }} | {{ feedback.created_date }}
+            </span>
+                    <a href="{% url 'single_feedback_view' feedback.id %}" class="card-link">View feedback</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
