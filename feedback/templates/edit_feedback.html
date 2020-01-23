@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load bootstrap_tags %}
+{% block title %}Edit Feedback{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    {% block heading %} <h4>Edit your feedback</h4> {% endblock %}
+<div class="row">
+    <div class="col-sm-12">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form | as_bootstrap }}
+            <button type="submit" class="btn btn-add-review">Submit</button>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}
