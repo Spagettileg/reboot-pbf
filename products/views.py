@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from .models import Product, ProductComment
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from .models import Product
 from django.utils import timezone
 from django.contrib import messages
 from .forms import ProductCommentForm, ProductCreationForm
@@ -43,20 +43,46 @@ def create_a_product(request):
             product = form.save(commit=False)
             product.creator = request.user
             product.save()
-            
-            cart = request.session.get('cart', {})
-            id = product.id
-            cart[id] = cart.get(id, 1)
-            request.session['cart'] = cart
-            return redirect('checkout')
+            messages.success(request, "Thank you {0}, {1} has been added."
+                             .format(request.user, product.make),
+                             extra_tags="alert-primary")
+            return redirect('profile')
     else:
         form = ProductCreationForm()
+        messages.error(request, '{} sorry, your product cannot be added.'.format(request.user), extra_tags="alert-primary")
     
     context = {
         'form' : form
     }
     
     return render(request, 'create_product.html', context)
+    
+@login_required
+def edit_a_product(request, pk):
+    """
+    Route to permit Re-Boot members to edit their rugby boot product
+    """
+    product = get_object_or_404(Product, pk=pk)
+    
+    if request.method == "POST":
+        form = ProductCreationForm(request.POST, instance=product)
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.creator = request.user
+            product.save()
+            messages.success(request, "Thank you {0}, {1} has been updated."
+                             .format(request.user, product.make),
+                             extra_tags="alert-primary")
+            return redirect(reverse('profile'))
+    
+    else:
+        form = ProductCreationForm(instance=product)
+        messages.error(request, '{} sorry, your product cannot be updated.'.format(request.user), extra_tags="alert-primary")
+        
+    context = {
+        'form': form,
+    }
+    return render(request, 'edit_product.html', context)
 
 """ Route permits user to delete their product(s) """     
 @login_required
