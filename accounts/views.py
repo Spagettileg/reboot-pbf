@@ -5,8 +5,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 from products.models import Product
+from feedback.models import Feedback 
 
 def register(request):
+    
     """
     Render the registration page
     """
@@ -44,6 +46,7 @@ def register(request):
 
 
 def login(request):
+    
     """
     Return a Login page
     """
@@ -76,6 +79,7 @@ def login(request):
 
 @login_required    
 def logout(request):
+    
     """
     Log the user out
     """
@@ -87,19 +91,14 @@ def logout(request):
 
 @login_required()
 def profile(request):
+    
     """User profile page"""
     user = User.objects.get(email=request.user.email)
-    products = Product.objects.filter(creator=user.id)
+    feedbacks = Feedback.objects.filter(creator=user.id)
     
     context = {
         'profile': user,
-        'products': products,
+        'feedbacks': feedbacks,
     }
     
     return render(request, 'profile.html', context)
-    
-    
-    
-    
-    
-    
