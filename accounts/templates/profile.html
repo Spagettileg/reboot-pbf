@@ -10,7 +10,7 @@
         <div class="px-2 py-2 text-center"><a href="{% url 'create_a_product' %}" class="btn btn-read-more">Donate Rugby Boots</a></div>
         <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Update Personal Details</a></div>
         <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Change Password</a></div>
-        <div class="px-2 py-2 text-center"><a href="{% url 'single_product_view' %}" class="btn btn-read-more">Member Feedback</a></div>
+        <div class="px-2 py-2 text-center"><a href="{% url 'single_feedback_view' %}" class="btn btn-read-more">Member Feedback</a></div>
     </div>
     <!-- User Re-boot membership summary -->
     <div class="pt-3 pb-3 col-sm-9">
@@ -44,7 +44,7 @@
                         <span>{{ feedback.creator|capfirst }} | {{ feedback.created_date }}</span>
                         <a href="{% url 'single_feedback_view' feedback.id %}" class="card-link">View feedback</a>
                         <div class="inline justify-content-center mt-2">
-                            <a href="#" class="px-1"><button type="button" class="btn btn-outline-info p5">Edit</button></a>
+                            <a href="{% url 'edit_a_feedback' feedback.id %}" class="px-1"><button type="button" class="btn btn-outline-info p5">Edit</button></a>
                             <form method="POST" action="{% url 'delete_a_feedback' product.id %}" id="delete_a_feedback" class="px-1">{% csrf_token %}<button type="submit" class="btn btn-outline-warning p5">Delete</button></form>
                         </div>
                     </div>
