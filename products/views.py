@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Product
 from django.utils import timezone
 from django.contrib import messages
-from .forms import ProductCommentForm, ProductCreationForm
+from .forms import ProductCreationForm
 from django.contrib.auth.decorators import login_required
 
 """
