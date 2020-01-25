@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 from products.models import Product
-from feedbacks.models import Feedback 
+from feedback.models import Feedback 
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
