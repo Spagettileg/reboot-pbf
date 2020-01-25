@@ -24,7 +24,8 @@
         <!-- Summary of Boot donations & Boot purchases -->
         <div class="container">
             <div class="jumbotron">
-                <h5>Donations:</h5><!-- Not Paid -->
+                <h5>Donations:</h5>
+                <!-- Not Paid -->
                 <div class="row row-cols-1 row-cols-md-4">
                     {% for product in products %}
                     <!-- Summary of selected rugby boot product -->
@@ -45,7 +46,8 @@
                 </div>
             </div>
             <div class="jumbotron">
-                <h5>Purchases:</h5><!-- Paid -->
+                <h5>Purchases:</h5>
+                <!-- Paid -->
                 <div class="row row-cols-1 row-cols-md-4">
                     {% for product in products %}
                     <!-- Summary of selected rugby boot product -->
@@ -81,7 +83,7 @@
                         <a href="{% url 'single_feedback_view' feedback.id %}" class="card-link">View feedback</a>
                         <div class="inline justify-content-center mt-2">
                             <a href="{% url 'edit_a_feedback' feedback.id %}" class="px-1"><button type="button" class="btn btn-outline-info p5">Edit</button></a>
-                            <form method="POST" action="{% url 'delete_a_feedback' product.id %}" id="delete_a_feedback" class="px-1">{% csrf_token %}<button type="submit" class="btn btn-outline-warning p5">Delete</button></form>
+                            <form method="POST" action="{% url 'delete_a_feedback' feedback.id %}" id="delete_a_feedback" class="px-1">{% csrf_token %}<button type="submit" class="btn btn-outline-warning p5">Delete</button></form>
                         </div>
                     </div>
                 </div>
@@ -89,5 +91,42 @@
         </div>
     </div>
     {% endfor %}
+    <!-- Pagination setting for user feedback reviews -->
+    <div class="container">
+        {% if feedbacks.has_other_pages %}
+        <ul class="pagination pagination-sm">
+            {% if feedbacks.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ feedbacks.previous_page_number }}">&laquo;</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link">&laquo;</a>
+            </li>
+            {% endif %} {% for i in feedbacks.paginator.page_range %} {% if feedbacks.number == i %}
+            <li class="page-item active">
+                <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+            </li>
+            {% endif %} {% endfor %} {% if feedbacks.has_next %}
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ feedbacks.next_page_number }}">&raquo;</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link">&raquo;</a>
+            </li>
+            {% endif %}
+        </ul>
+        {% endif %}
+    </div>
+
+    {% else %}
+    <p>Currently, you have 0 feedback reviews created. Add your feedback <a href="{% url 'create_a_feature' %}">here.</a></p>
+    {% endif %}
 </div>
 {% endblock %}
