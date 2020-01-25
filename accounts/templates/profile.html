@@ -129,4 +129,10 @@
     <p>Currently, you have 0 feedback reviews created. Add your feedback <a href="{% url 'create_a_feature' %}">here.</a></p>
     {% endif %}
 </div>
+{% endblock %} {% block js %}
+<script>
+  $(document).on('click', '#delete_a_feedback', function() {
+    return confirm('Are you sure you want to delete this feedback?');
+  });
+</script>
 {% endblock %}
