@@ -4,13 +4,30 @@ from django.utils import timezone
 from django.contrib import messages
 from .forms import FeedbackCommentForm, FeedbackCreationForm
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 
 def show_all_feedbacks(request):
-    feedbacks = Feedback.objects.all()
+    
+    """
+    View to show all our features on one page
+    """
+    feedback_list = Feedback.objects.filter(created_date__lte=timezone.now()).order_by('created_date')
+    page = request.GET.get('page', 1)
+    
+    paginator = Paginator(feedback_list, 5)
+    
+    try:
+        feedbacks = paginator.page(page)
+    except PageNotAnInteger:
+        feedbacks = paginator.page(1)
+    except EmptyPage:
+        feedbacks = paginator.page(paginator.num_pages)
+    
     context = {
         'feedbacks': feedbacks
     }
-    return render(request, "feedback.html", context)
+    return render(request, 'feedback.html', context)
 
 def single_feedback_view(request, pk):
     """
