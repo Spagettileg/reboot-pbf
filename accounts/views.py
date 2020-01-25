@@ -5,7 +5,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 from products.models import Product
-from feedback.models import Feedback 
+from feedbacks.models import Feedback 
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 
 def register(request):
     
@@ -94,7 +96,17 @@ def profile(request):
     
     """User profile page"""
     user = User.objects.get(email=request.user.email)
-    feedbacks = Feedback.objects.filter(creator=user.id)
+    feedback_list = Feedback.objects.filter(creator=user.id)
+    page = request.GET.get('page', 1)
+    
+    feedback_paginator = Paginator(feedback_list, 2)
+    
+    try:
+        feedbacks = feedback_paginator.page(page)
+    except PageNotAnInteger:
+        feedbacks = feedback_paginator.page(1)
+    except EmptyPage:
+        feedbacks = feedback_paginator.page(feedback_paginator.num_pages)
     
     context = {
         'profile': user,
