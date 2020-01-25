@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.contrib import messages
 from .forms import ProductCreationForm
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 """
 Create product views
@@ -32,6 +33,28 @@ def product_detail(request, pk):
         'product': products
     }
     return render(request, "productdetail.html", context)
+
+def show_all_purchases(request):
+    
+    """
+    Route to show all user purchases on one page
+    """
+    product_list = Product.objects.filter(created_date__lte=timezone.now(), paid=True).order_by('created_date')
+    page = request.GET.get('page', 1)
+    
+    paginator = Paginator(product_list, 5)
+    
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    
+    context = {
+        'products': products
+    }
+    return render(request, 'products.html', context)
 
 """ Route allows the user to create (donate) a product """    
 @login_required
