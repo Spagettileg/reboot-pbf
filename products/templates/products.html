@@ -1,6 +1,4 @@
-{% extends 'base.html' %}
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <div class="pt-2 pb-1 col-12 product-category text-center">
     <h3>Boot Shop</h3>
 </div>
@@ -10,17 +8,52 @@
     <div class="col mb-1">
         <div class="panel-body">
             <p><strong>{{ product.customer }}</strong></p>
-                <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
-                <p><strong>Make: </strong>{{ product.make }}</p>
-                <p><strong>Size: </strong>{{ product.size }}</p>
-                <strong>
+            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
+            <p><strong>Make: </strong>{{ product.make }}</p>
+            <p><strong>Size: </strong>{{ product.size }}</p>
+            <strong>
                     <p><span class="fas fa-pound-sign"
                         aria-hidden="true"></span>{{ product.price }}</p>
                 </strong>
-                <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
+            <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
         </div>
     </div>
     {% endfor %}
 </div>
-{% endblock %}
+<!-- Pagination setting for product summary views -->
+<div class="container">
+    {% if products.has_other_pages %}
+    <ul class="pagination pagination-sm">
+        {% if products.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ products.previous_page_number }}">&laquo;</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link">&laquo;</a>
+        </li>
+        {% endif %} {% for i in products.paginator.page_range %} {% if products.number == i %}
+        <li class="page-item active">
+            <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+        </li>
+        {% else %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+        </li>
+        {% endif %} {% endfor %} {% if products.has_next %}
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="?page={{ products.next_page_number }}">&raquo;</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link">&raquo;</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
+</div>
 
+{% else %}
+<p>Currently, you have 0 products created. Add your product <a href="{% url 'create_a_product' %}">here.</a></p>
+{% endif %} {% endblock %}
