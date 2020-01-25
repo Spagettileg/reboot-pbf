@@ -22,9 +22,11 @@ class Product(models.Model):
     """ Brand new, almost new and general wear """ 
     price = models.DecimalField(max_digits=6, decimal_places=2)
     """ Pricing model will be less than £1m and decimal places = pence """
+    paid = models.BooleanField(default=False)
+    """ Allow images to be uploaded for our products """
     image = models.ImageField(upload_to='images')
     """ Allow images to be uploaded for our products """
-    
+
     
     def __str__(self):
         return self.make  # A string will be returned with the make of rugby boot
