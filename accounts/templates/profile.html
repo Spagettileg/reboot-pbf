@@ -48,6 +48,7 @@
             <div class="jumbotron">
                 <h5>Purchases:</h5>
                 <!-- Paid -->
+                {% if product.paid == True %}
                 <div class="row row-cols-1 row-cols-md-4">
                     {% for product in products %}
                     <!-- Summary of selected rugby boot product -->
@@ -66,6 +67,8 @@
                     </div>
                     {% endfor %}
                 </div>
+                {% else %}
+                <p>There are no rugby boot purchases to show. Please take time to browse our latest stock in the <strong>BootShop</strong>.</p>
             </div>
         </div>
     </div>
