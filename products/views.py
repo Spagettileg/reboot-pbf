@@ -54,7 +54,7 @@ def show_all_purchases(request):
     context = {
         'products': products
     }
-    return render(request, 'products.html', context)
+    return render(request, 'profile.html', context)
 
 """ Route allows the user to create (donate) a product """    
 @login_required
