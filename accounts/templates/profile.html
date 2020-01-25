@@ -24,10 +24,28 @@
         <!-- Summary of Boot donations & Boot purchases -->
         <div class="container">
             <div class="jumbotron">
-                <h5>Donations:</h5>
+                <h5>Donations:</h5><!-- Not Paid -->
+                <div class="row row-cols-1 row-cols-md-4">
+                    {% for product in products %}
+                    <!-- Summary of selected rugby boot product -->
+                    <div class="col mb-1">
+                        <div class="panel-body">
+                            <p><strong>{{ product.customer }}</strong></p>
+                            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
+                            <p><strong>Make: </strong>{{ product.make }}</p>
+                            <p><strong>Size: </strong>{{ product.size }}</p>
+                            <strong>
+                    <p><span class="fas fa-pound-sign"
+                        aria-hidden="true"></span>{{ product.price }}</p>
+                </strong>
+                            <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
             <div class="jumbotron">
-                <h5>Purchases:</h5>
+                <h5>Purchases:</h5><!-- Paid -->
                 <div class="row row-cols-1 row-cols-md-4">
                     {% for product in products %}
                     <!-- Summary of selected rugby boot product -->
