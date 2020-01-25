@@ -11,3 +11,4 @@ urlpatterns = [
     url(r'^(?P<pk>\d+)/delete_feedback/$', delete_a_feedback,
                                         name="delete_a_feedback"),
     ]
+    
