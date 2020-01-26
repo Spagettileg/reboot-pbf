@@ -96,7 +96,7 @@
     {% endfor %}
     <!-- Pagination setting for user feedback reviews -->
     <div class="container">
-        {% if feedbacks.has_other_pages %}
+       
         <ul class="pagination pagination-sm">
             {% if feedbacks.has_previous %}
             <li class="page-item">
@@ -128,9 +128,7 @@
         {% endif %}
     </div>
 
-    {% else %}
-    <p>Currently, you have 0 feedback reviews created. Add your feedback <a href="{% url 'create_a_feature' %}">here.</a></p>
-    {% endif %}
+    
 </div>
 {% endblock %} {% block js %}
 <script>
