@@ -22,7 +22,6 @@
 </div>
 <!-- Pagination setting for product summary views -->
 <div class="container">
-    {% if products.has_other_pages %}
     <ul class="pagination pagination-sm">
         {% if products.has_previous %}
         <li class="page-item">
@@ -51,9 +50,5 @@
         </li>
         {% endif %}
     </ul>
-    
 </div>
-
-{% else %}
-<p>Currently, you have 0 products created. Add your product <a href="{% url 'create_a_product' %}">here.</a></p>
-{% endif %} {% endblock %}
+{% endblock %}
