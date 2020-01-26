@@ -35,6 +35,8 @@ def single_feedback_view(request, pk):
     """
     feedback = get_object_or_404(Feedback, pk=pk)
     
+    print(get_object_or_404(Feedback, pk=pk))
+    
     if request.method == 'POST':
         feedback_comment_form = FeedbackCommentForm(request.POST or None)
         if feedback_comment_form.is_valid():
