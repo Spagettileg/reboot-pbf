@@ -63,7 +63,6 @@ def single_feedback_view(request, pk):
     
     return render(request, 'single_feedback.html', context)
     
-    
 @login_required
 def create_a_feedback(request):
     """
