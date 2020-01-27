@@ -22,7 +22,7 @@ def contact(request):
             message = request.POST.get('message', '')
 
             # Email the user with their contact information
-            template = get_template('reply_template.txt')
+            template = get_template('response_template.txt')
             context = {
                 'contact_name': contact_name,
                 'contact_email': contact_email,
