@@ -3,24 +3,22 @@
 
 {% block content %}
 <!-- CONTACT FORM -->
-<div class="container contact-container">
+<div class="pt-3 container contact-container">
     <h4> Contact ReBoot <i class="fas fa-inbox"></i></h4>
     
     <div class="row">
-        <div id="form-area" class="col-md-6 mt-4">
-            <form method="post">
-                <fieldset>
-                    <div class="form-group">
-                        <legend>Contact Form</legend>
-                        {% csrf_token %} {{ form | as_bootstrap }}
-                        <p class="req-field"> * Required fields </p>
-                        <input class="btn btn-success" type="submit" value="Submit Enquiry">
+        <div class="pt-3 pb-3 col-md-6">
+                <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
+                    <legend>Contact Form</legend> 
+                    {% csrf_token %}
+                    {{ contact_form | as_bootstrap }}
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-add-review" action="submit">Submit Enquiry</button>
                     </div>
-                </fieldset>
-            </form>
-        </div>
+                </form>
+            </div>
         
-        <div class="col-md-6 mt-4 contact-card">
+        <div class="pt-3 pb-3 col-md-6 contact-card">
             <fieldset>
             <ul class="list-group">
                 <legend>Contact Info</legend> 
@@ -38,6 +36,7 @@
                     <h5><b> Company uk vat no : </b></h5> GB 111 222 333 </li>
             </ul>
             </fieldset>
+        </div>
         </div>
 </div>
 {% endblock %}
