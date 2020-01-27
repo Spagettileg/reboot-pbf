@@ -1,0 +1,21 @@
+Hello {{ contact_name }}!
+
+Many thanks for your recent enquiry. We'll be responding as soon as possible.
+
+Please find your details and enquiry message below.
+
+Contact Name:
+{{ contact_name }}
+
+Email:
+{{ contact_email }}
+
+Phone:
+{{ phone_number }}
+
+Enquiry:
+{{ message|safe|striptags }}
+
+best regards
+
+ReBoot
