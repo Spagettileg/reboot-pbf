@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
-from django.core.mail import EmailMessage
+from django.conf import settings
 from django.contrib import messages
-from django.template.loader import get_template
+from django.core.mail import send_mail, BadHeaderError
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import ContactForm
 
 def index(request):
@@ -10,40 +10,29 @@ def index(request):
 
 
 def contact(request):
-    form = ContactForm
-
-    if request.method == 'POST':
-        form = form(data=request.POST)
-
+    """
+    Directs the customer to a contact us form
+    """
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
+        form = ContactForm(request.POST)
         if form.is_valid():
-            contact_name = request.POST.get('contact_name', '')
-            contact_email = request.POST.get('contact_email', '')
-            phone_number = request.POST.get('phone_number', '')
-            message = request.POST.get('message', '')
-
-            # Email the user with their contact information
-            template = get_template('response_template.txt')
-            context = {
-                'contact_name': contact_name,
-                'contact_email': contact_email,
-                'phone_number': phone_number,
-                'message': message,
-            }
-            content = template.render(context)
-
-            email = EmailMessage(
-                "Your contact form enquiry",
-                content,
-                "ReBoot" + '',
-                ['paul.friel.b@gmail.com'],
-                headers = {'Reply To': contact_email}
-            )
-            email.send()
-            messages.success(request, 'Thank you for connecting with us. We will respond to you as soon as possible.')
-            return redirect('index')
-        else:
-            print(form.errors)
-
-    return render(request, "contact.html", {
-        'form': form,
-    })
+            subject = form.cleaned_data['subject']
+            from_email = settings.EMAIL_HOST_USER
+            email_address = form.cleaned_data['email_address']
+            message = form.cleaned_data['message']
+            to_list = [email_address]
+            send_mail(
+                subject,
+                message,
+                from_email,
+                to_list,
+                fail_silently=False)
+            messages.success(
+                request,
+                """We\'ve received your message,
+                and shall be back with you shortly""")
+        return redirect('products')
+    context = {'contact_form': form}
+    return render(request, 'contact.html', context)
