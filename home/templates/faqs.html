@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block title %}Frequently Asked Questions | ReBoot{% endblock %}
+{% block content %}
+
+<div class="pt-3 container">
+    <div class="row">
+        <div class="col-12">
+            <h4>Frequently Asked Questions</h4>
+            <hr>
+            <h5>Is Re-Boot free to join?</h5>
+            <p>Yes, there is no fee payable to join Re-Boot. This is a non-profit making rugby boot recycling portal that
+            is designed to encourage people to either view, donate &/or purchase rugby boots from the comfort of your own home.</p>
+            
+            <h5>How does ReBoot work?</h5>
+            <p>Re-Boot primary goal is to create a market place for both donation and purchase of either brand new or second hand
+            rugby boots. You dont need to register to view the current stock of rugby boots as this will always be available to the
+            general public. However, if you wish to either donate &/or purchase rugby boots, then full registration to Re-Boot
+            will be required.</p>
+            
+            <p>The general public can view the make, size, colour, stud type, quality and image of all boots in stock.</p>
+            
+            <p>All users will need to register by uploading their personal details and then enter their login credentials.
+            Registered users will be able to donate their rugby boots via completing the online contact form. The boot donator
+            is <strong>fully responsible</strong> for cost of packaging and sending unwanted boots to Re-Boots' registered address
+            (accessed when clicking on <strong>Help > <a href="{% url 'contact' %}">Contact</a></strong>) in Re-Boot home page. </p>
+            
+            <p>Replacement rugby boots can be viewed by the detailed listing or the user can use the 'Search' facility to locate a
+            specific boot offering.  All selected replacements boots will then be captured into the shopping cart. Upon clicking
+            the shopping cart icon (positioned at the top of the page), the registered user will proceed to a formal checkout
+            process until they receive formal confirmation of a sale. </p>
+            
+            <p><strong>Registered user</strong> can add a review / feedback to cover their experience of using Re-Boot. The
+            feedback is not mandatory, but completion of the same will help improve quality and future customer experience too.</p>
+
+            <h5>What controls exist on rugby boot quality?</h5>
+            <p>All registered members will have to voluntarily agree to an undertaking that donated rugby boots are no older
+            than 12 months and the boots are categorised, as folows</p>
+            
+            <ul>
+                <li><strong>Brand New:</strong> Boots may have been tried on but not used. Leather upper, laces & studs in
+                perfect condition. There maybe an original box too.</li>
+                <li><strong>Almost New:</strong> Boots have been used once or twice. Very good condition.</li>
+                <li><strong>General Wear & Tear:</strong> Boots have been worn extensively. Marks and abrasions highly likely.</li>
+            </ul>
+            
+            <p><em><strong>Important:
+            </strong> All boots are donated & purchased through upmost good faith. There is no right of action against Re-Boot
+            in the event a purchased rugby boot falls below the set quality standards. If there is sufficent evidence of a purchased
+            boot not being correctly represented in Re-Boot then the responsible boot donators membership will be cancelled with
+            immediate effect. </em></p>
+            
+            <h5>What happens if my donated boots dont sell?</h5>
+            <p>ReBoot will continue to advertise your donated boots until sold. There is an unwritten agreement that if the boots
+            are not sold after 6 months then you should <a href="{% url 'contact' %}">contact</a> Re-Boot to request the boots to be removed from the website. </p>
+
+            <h5>Why dont I receive money for my donated rugby boots?</h5>
+            <p>Under normal circumstances, unwanted rugby boots are either disposed of or given to charity, with zero compensation.
+            The boot donation to Re-Boot contributes to creating a market place where a boot donator would want to secure a
+            replacement pair of rugby boots. </p>
+            
+            <p>Donated stock allows the registered user to purchase quality replacement rugby boots at a fraction of shop retail prices.</p>
+            
+            <h5>Who receives the money for all rugby boot purchases?ses</h5>
+            <p> Re-Boot receives the money and funds are both reinvested into the maintenance of the website and packaging / delivery costs of replacement
+            boot purchases. No profit is generated via the replacement boot transactions.  </p>
+
+            <h5>How much are replacement rugby boots?</h5>
+            <p>Junior rugby boots (sizes from 8 - 2.5) are all priced at £5.00. Adults rugby boots (sizes from 3 - 15) are all priced at £10. </p>
+            
+            <h5>What countries does Re-Boot operate in?</h5>
+            <p>UK only, excluding Republic of Ireland (ROI) </p>
+            
+            <h5>Who is responsible for the postal / shipping costs of the replacement rugby boots?</h5>
+            <p>Re-Boot will cover the cost of delivering your replacement rugby boots. Registered postal service will be used. </p>
+            
+            <h5>Who is able to provide reviews and feedback?</h5>
+            <p>Only registered users can provide reviews / feeback on their 'Re-Boot' experience. </p>
+            
+            <h5>Can I donate or purchase more than 1 pair of rugby boots?</h5>
+            <p>Yes. There is no upper limit on your boot donations, subject to quality criteria being met. Replacement boots will always be subject to
+            availability in latest published stock. </p>
+            
+            <h5>Can I wait to buy replacement boots even though I'm ready to donate my old pair?</h5>
+            <p>Yes. Sometimes your preferred replacment boot may not be held in the current published stock. Re-Boot is happy to take your donated rugby boots
+            in the interim. The members blog is useful to understand what replacment boots maybe in the pipeline, but not yest appearing in published
+            stock. There is also a chance to send a message to the Re-Boot member community via the blog to place your request for replacement boots.  </p>
+
+            <hr>
+
+            <div class="text-center m-4">
+                <p>Unable to find an answer to your question here? Feel free to contact Re-Boot and we'll will be happy to help.</p>
+
+                <a href="{% url 'contact' %}" class="btn btn-add-review">Get in touch</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
