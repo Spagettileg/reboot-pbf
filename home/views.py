@@ -39,3 +39,6 @@ def contact(request):
     
 def explained(request, *args, **kwargs):
     return render(request, "explained.html", {"home": "explained"})
+    
+def faqs(request, *args, **kwargs):
+    return render(request, "faqs.html", {"home": "faqs"})
