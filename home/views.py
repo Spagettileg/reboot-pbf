@@ -36,3 +36,6 @@ def contact(request):
         return redirect('products')
     context = {'contact_form': form}
     return render(request, 'contact.html', context)
+    
+def explained(request, *args, **kwargs):
+    return render(request, "explained.html", {"home": "explained"})
