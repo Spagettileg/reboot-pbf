@@ -41,13 +41,21 @@ def explained(request, *args, **kwargs):
     
     # Directs the customer to Re-Boot explained page
     return render(request, "explained.html", {"home": "explained"})
+
     
 def faqs(request, *args, **kwargs):
     
     # Directs the customer to FAQ'S page
     return render(request, "faqs.html", {"home": "faqs"})
+
     
 def juniors(request, *args, **kwargs):
     
     # Directs the customer to the juniors page, setting out pricing & sizes
     return render(request, "juniors.html", {"home": "juniors"})
+
+    
+def adults(request, *args, **kwargs):
+    
+    # Directs the customer to the adults page, setting out pricing & sizes
+    return render(request, "adults.html", {"home": "adults"})
