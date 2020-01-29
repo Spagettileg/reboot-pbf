@@ -117,7 +117,11 @@ ul {
   background-color: #F26826;
 }
 
-.short-banner { /* Short banner is positioned at top of a container to alert user of what they're reading */
+.quick-steps,
+.latest-arrivals,
+.customer-reviews,
+.customer-blog,
+.product-category {
   background-color: #21295C;
   color: #fafafa;
 }
@@ -167,7 +171,7 @@ blockquote {
 .checkout-total-outer,
 .gravatar-image,
 .juniors-image,
-.adults-image { /* Ensures the payemnt summary views are centre of screen */
+.adults-image{ /* Ensures the payemnt summary views are centre of screen */
   display: flex;
   align-items: center;
   justify-content: center;
