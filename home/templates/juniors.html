@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Junior Rugby Image -->
+<div class="pt-3 pb-1 col-12 text-center">
+    <h4>Juniors - Price & Boot Sizes</h4>
+</div>
+<div class="row">
+    <!-- Juniors clipart image of rugby group -->
+    <div class="px-3 py-3 col-sm-3">
+        <div class="px-3 py-3 juniors-image text-center">
+            <img src="{% static 'img/juniorrugby.png' %}" alt="junior group image">
+        </div>
+        <hr>
+        <p class="text-center">All junior boots are <strong>£5.00</strong> only when purchased from the <a href="{% url 'product-filter' category='Juniors' %}">BootShop</a></p>
+    </div>
+    <!-- Boot size conversion (UK to Euro) table for juniors -->
+    <div class="px-3 py-3 col-sm-9">
+        
+        <table class="table table-sm table-hover text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>UK</th>
+                    <th>Euro</th>
+                    <th>UK</th>
+                    <th>Euro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8</td>
+                    <td>25</td>
+                    <td>12</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>8.5</td>
+                    <td>26</td>
+                    <td>12.5</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>27</td>
+                    <td>13</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>9.5</td>
+                    <td>27</td>
+                    <td>14</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>28</td>
+                    <td>1</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>10.5</td>
+                    <td>29</td>
+                    <td>1.5</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>30</td>
+                    <td>2</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>11.5</td>
+                    <td>30</td>
+                    <td>2.5</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</div>
+{% endblock %}
