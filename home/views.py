@@ -10,9 +10,8 @@ def index(request):
 
 
 def contact(request):
-    """
-    Directs the customer to a contact us form
-    """
+    
+    # Directs the customer to a contact us form
     if request.method == 'GET':
         form = ContactForm()
     else:
@@ -36,9 +35,19 @@ def contact(request):
         return redirect('products')
     context = {'contact_form': form}
     return render(request, 'contact.html', context)
-    
+
+
 def explained(request, *args, **kwargs):
+    
+    # Directs the customer to Re-Boot explained page
     return render(request, "explained.html", {"home": "explained"})
     
 def faqs(request, *args, **kwargs):
+    
+    # Directs the customer to FAQ'S page
     return render(request, "faqs.html", {"home": "faqs"})
+    
+def juniors(request, *args, **kwargs):
+    
+    # Directs the customer to the juniors page, setting out pricing & sizes
+    return render(request, "juniors.html", {"home": "juniors"})
