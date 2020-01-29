@@ -1,0 +1,95 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Adult Rugby Image -->
+<div class="pt-3 pb-1 col-12 text-center">
+    <h4>Adults - Price & Boot Sizes</h4>
+</div>
+<div class="row">
+    <!-- Adults clipart image of rugby player -->
+    <div class="px-3 py-3 col-sm-3">
+        <div class="px-3 py-3 adults-image text-center">
+            <img src="{% static 'img/adultrugby.png' %}" alt="adult player image">
+        </div>
+        <hr>
+        <p class="text-center">All adult boots are <strong>£10.00</strong> only when purchased from the <a href="{% url 'product-filter' category='Adults' %}">BootShop</a></p>
+    </div>
+    <!-- Boot size conversion (UK to Euro) table for adults -->
+    <div class="px-3 py-3 col-sm-9">
+        
+        <table class="table table-sm table-hover text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>UK</th>
+                    <th>Euro</th>
+                    <th>UK</th>
+                    <th>Euro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>3.5</td>
+                    <td>36</td>
+                    <td>8.5</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>37</td>
+                    <td>9</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>4.5</td>
+                    <td>37</td>
+                    <td>9.5</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>38</td>
+                    <td>10</td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>5.5</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>39</td>
+                    <td>12</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>6.5</td>
+                    <td>40</td>
+                    <td>13</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>40</td>
+                    <td>14</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>7.5</td>
+                    <td>41</td>
+                    <td>15</td>
+                    <td>49</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</div>
+{% endblock %}
