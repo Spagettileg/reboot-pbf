@@ -7,7 +7,9 @@
 {% block page_heading %}User Registration{% endblock %}
 
 {% block content %}
-<main class="pt-3 container form-container" id="main">
+
+<!-- Form created to collect User's email, username, password & repeat password --> 
+<main class="pt-3 container" id="main">
 {% block heading %}<h4>Register Page</h4>{% endblock %}
 <form method="POST">
         {% csrf_token %}
@@ -18,4 +20,3 @@
     <p>Already Registered? Click <a href="{% url 'login' %}">here.</a></p>
 </main>
 {% endblock %}
-
