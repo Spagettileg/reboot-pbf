@@ -59,3 +59,8 @@ def adults(request, *args, **kwargs):
     
     # Directs the customer to the adults page, setting out pricing & sizes
     return render(request, "adults.html", {"home": "adults"})
+    
+def bootquality(request, *args, **kwargs):
+    
+    # Directs the customer to the boot quality page. Accepted quality standards
+    return render(request, "bootquality.html", {"home": "bootquality"})
