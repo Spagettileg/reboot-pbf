@@ -7,12 +7,12 @@
 {% block page_heading %}User Registration{% endblock %}
 
 {% block content %}
-<main class="pt-2 container form-container" id="main">
+<main class="pt-3 container form-container" id="main">
 {% block heading %}<h4>Register Page</h4>{% endblock %}
 <form method="POST">
         {% csrf_token %}
         {{ registration_form | as_bootstrap }}
-        <button type="submit" class="btn btn-md btn-primary">Register</button>
+        <button type="submit" class="btn btn-read-more">Register</button>
     </form>
     <br>
     <p>Already Registered? Click <a href="{% url 'login' %}">here.</a></p>
