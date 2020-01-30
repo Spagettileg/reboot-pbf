@@ -1,10 +1,12 @@
 {% extends 'base.html' %} {% load bootstrap_tags %} {% block page_title %}Login Page{% endblock %} {% block page_heading %}User Login{% endblock %} {% block content %}
-<main class="pt-2 container form-container" id="main">
+
+<!-- User Login form requesting username and password -->
+<main class="pt-3 container form-container" id="main">
         {% block heading %}
         <h4>Login Page</h4>{% endblock %}
         <form method="POST">
                 {% csrf_token %} {{ login_form | as_bootstrap }}
-                <button type="submit" class="btn btn-md btn-primary">Login</button>
+                <button type="submit" class="btn btn-read-more">Login</button>
         </form>
 
         <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
