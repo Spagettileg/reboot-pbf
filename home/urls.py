@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
-from .views import index, contact, explained, faqs, juniors, adults, bootquality
+from .views import (index, contact, explained, faqs, juniors, adults,
+                    bootquality, cookie)
 
 urlpatterns = [
     url(r'^$', index, name="index"),
@@ -9,4 +10,5 @@ urlpatterns = [
     url(r'^juniors/$', juniors, name='juniors'),
     url(r'^adults/$', adults, name='adults'),
     url(r'^bootquality/$', bootquality, name='bootquality'),
+    url(r'^cookie/$', cookie, name='cookie'),
 ]
