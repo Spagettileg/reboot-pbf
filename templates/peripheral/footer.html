@@ -8,8 +8,8 @@
                     <div class="col-12 col-sm-6 col-lg-4 text-center">
                         <h6 class="pt-3 text-uppercase">Trading</h6>
                         <ul class="pr-5 footer-text text-left">
-                            <li><a href="#">For Juniors</a></li>
-                            <li><a href="#">For Adults</a></li>
+                            <li><a href="{% url 'product-filter' category='Juniors' %}">For Juniors</a></li>
+                            <li><a href="{% url 'product-filter' category='Adults' %}">For Adults</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 text-center">
@@ -28,11 +28,11 @@
                     <div class="col-12 col-sm-6 col-lg-4 text-center">
                         <h6 class="pt-3 text-uppercase">Site Links</h6>
                         <ul class="footer-text text-left">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="{% url 'explained' %}">About</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
                             <li><a href="{% url 'cookie' %}">Cookies</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+                            <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div>
