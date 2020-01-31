@@ -37,8 +37,10 @@
                     <div class="pt-3"></div>
                     <img src="{% static 'img/stepone.png' %}" alt="Browse stock">
                     <div class="card-body">
-                        <h5 class="card-title">Browse Current Stock</h5>
-                        <p class="card-text">Find boots that are right for you.</p>
+                        <h5 class="card-title">Browse Stock</h5>
+                        <p class="card-text">Find <a href="{% url 'product-filter' category='Juniors' %}">
+                            <strong>junior</strong></a> or <a href="{% url 'product-filter' category='Adults' %}">
+                                <strong>adult</strong></a> boots that are right for you.</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -49,7 +51,8 @@
                     <img src="{% static 'img/steptwo.jpg' %}" alt="Register & Login">
                     <div class="card-body">
                         <h5 class="card-title">Register & Login</h5>
-                        <p class="card-text">This is a mandatory requirement for boot donation and purchase.</p>
+                        <p class="card-text">This is a <a href="{% url 'register' %}">
+                            <strong>mandatory</strong></a> requirement for boot donation and purchase.</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -59,8 +62,9 @@
                     <div class="pt-3"></div>
                     <img src="{% static 'img/stepthree.png' %}" alt="Donate">
                     <div class="card-body">
-                        <h5 class="card-title">Donate rugby boots</h5>
-                        <p class="card-text">A clear and simple process for donating unwanted boots.</p>
+                        <h5 class="card-title">Donate</h5>
+                        <p class="card-text">A clear and simple process for <a href="{% url 'contact' %}">
+                            <strong>donating</strong></a> unwanted boots.</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -70,7 +74,7 @@
                     <div class="pt-3"></div>
                     <img src="{% static 'img/stepfour.png' %}" alt="Purchase">
                     <div class="card-body">
-                        <h5 class="card-title">Purchase rugby boots</h5>
+                        <h5 class="card-title">Purchase</h5>
                         <p class="card-text">Select, payment and delivery of rugby boots.</p>
                     </div>
                 </div>
