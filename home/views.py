@@ -69,3 +69,8 @@ def cookie(request, *args, **kwargs):
     
     # Directs the customer to the cookie page. User guidance notes
     return render(request, "cookie.html", {"home": "cookie"})
+    
+def privacy(request, *args, **kwargs):
+    
+    # Directs the customer to the privay policy page. User guidance notes
+    return render(request, "privacy.html", {"home": "privacy"})
