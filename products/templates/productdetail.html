@@ -4,18 +4,18 @@
 
 {% block content %}
 
-<div class="pt-2 row single-product">
-    <div class="col-xs-12 col-md-2">
+<div class="pt-3 row single-product">
+    <div class="pt-3 col-xs-12 col-md-2">
         <div class="text-center">
             <h2><strong>{{ product.customer }}</strong></h2>    
         </div>
     </div>
-    <div class="pt-2 col-xs-12 col-md-4">
+    <div class="pt-3 col-xs-12 col-md-3">
         <div class="panel-body">
                 <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
         </div>
     </div>
-    <div class='col-xs-12 col-md-3'>
+    <div class='pt-2 pb-2 ml-4 col-xs-12 col-md-3'>
         <p class="pt-2"><strong>Make: </strong>{{ product.make }}</p>
         <p><strong>Size: </strong>{{ product.size }}</p>
         <p><strong>Colour: </strong>{{ product.colour }}</p>
@@ -36,7 +36,7 @@
         {% else %}
         {% endif %}
     </div>
-    <div class="px-3 py-3 col-xs-12 col-md-3 adults-image text-center">
+    <div class="pb-3 px-2 py-2 col-xs-12 col-md-3 adults-image text-center">
         <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
     </div>
 </div>
