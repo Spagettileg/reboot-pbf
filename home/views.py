@@ -64,3 +64,8 @@ def bootquality(request, *args, **kwargs):
     
     # Directs the customer to the boot quality page. Accepted quality standards
     return render(request, "bootquality.html", {"home": "bootquality"})
+    
+def cookie(request, *args, **kwargs):
+    
+    # Directs the customer to the cookie page. User guidance notes
+    return render(request, "cookie.html", {"home": "cookie"})
