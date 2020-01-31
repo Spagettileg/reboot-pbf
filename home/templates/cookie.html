@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Junior Rugby Image -->
+<div class="pt-3 pb-1 col-12 text-center">
+    <h4>Cookies explained...</h4>
+</div>
+<div class="row">
+    <!-- Cookies clipart image -->
+    <div class="px-3 py-3 col-sm-3">
+        <div class="pb-3 juniors-image text-center">
+            <img src="{% static 'img/cookie.png' %}" alt="junior group image">
+        </div>
+        <hr>
+        <p class="px-3 py-3 m-0"><small><em><strong>Hint:</strong> Most browsers allow you to turn off the cookie function. If you want to know how to do this please look at the help
+        menu on your browser. As described above this will restrict the online 'Re-Boot' services you can use. </em></small></p>
+    </div>
+    <!-- Cookies information -->
+    <div class="px-3 py-3 col-sm-9">
+        <div class="jumbotron px-3 py-3 m-2">
+        <p>"Cookies" are small pieces of information sent by a web server to a web browser, which enables the server to collect
+        information from the browser. You can find out more about the way cookies work on http://www.cookiecentral.com. Re-Boot
+        uses cookies for a number of purposes, for instance to enable us to simplify the logging on process for registered users,
+        to help ensure the security and authenticity of registered users, to provide the mechanisms for online shopping and to
+        enable traffic monitoring. </p>
+        <hr>
+        <p>Non-registered visitors of the site are sent anonymous cookies to keep track of their browsing patterns and build up
+        a demographic profile. </p>
+        <hr>
+        <p>Whilst you do not need to allow your browser to accept cookies in order to browse much of our web site or to access
+        many of our services, you must have cookies enabled if you wish to shop online or access any areas reserved for registered
+        users. </p>
+    </div>
+</div>
+</div>
+{% endblock %}
