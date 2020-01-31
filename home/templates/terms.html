@@ -1,0 +1,65 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Page sets out ReBoots terms and conditions for all registered users -->
+<div class="pt-3 pb-1 col-12 text-center">
+    <h4>Terms & Conditions <i class="fas fa-exclamation-triangle"></i></h4>
+</div>
+<div class="row">
+    <!-- Document writing imagery -->
+    <div class="px-3 py-3 col-sm-3">
+        <div class="pb-3 product-image text-center">
+            <img src="{% static 'img/terms.png' %}" alt="terms & conditions">
+        </div>
+        <hr>
+        <p class="text-center"><small><strong>Glossary:</strong></small></p>
+        <ul>
+            <li><small><strong>Re-Boot:</strong> A non-profit making website portal designed to host a market place for the
+            donation and purchase of good quality rugby boots.</small></li>
+            <li><small><strong>Donator:</strong> A registered user who undertakes to offer their free of charge rugby boots
+            for a future sale.</small></li>
+            <li><small><strong>Purchaser:</strong> A registered user who commits to buy a pair of rugby boots that appear
+            for sale on the official Re-Boot website.</small></li>
+            <li><small><strong>Product:</strong> A donated rugby boot that appears on the official 'Re-Boot' website for
+            future sale. </small></li>
+        </ul>
+    </div>
+    <!-- Detailed narrative for ReBoot terms and conditions  -->
+    <div class="px-3 py-3 col-sm-9">
+        <div class="jumbotron px-3 py-3">
+        <h5>Boot Quality</h5>
+        <p>Your pair of donated rugby boots must be in a good and clean condition (no rips, holes or tears) and must be
+        complete, laces, inner soles & studs. </p>
+        
+        <p>Re-Boot reserves the right to refuse the donated rugby boots, remove advertising records from the Re-Boot
+        website and possibly cancel the membership of the registered user if the pair donated is not to the required
+        standard. </p>
+        
+        <p>Where possible, all regstered members should seek a 'like for like' replacement and not seek betterment when
+        replacing their rugby boots. </p>
+        <h5>Boot Delivery</h5>
+        <p>Once the 'purchaser' has identified a pair of replacement boots, then from the date of confirmed sale ReBoot
+        will have upto 5 working days to send the sold boots to the 'purchasers' nominated safe delivery address by 
+        registered post. </p>
+        
+        <p>Re-Boot cannot accept any responsibility for the non-delivery of rugby boots. Any product deemed to be lost in
+        transit will be the responsibility of the nominates postal carrier company. </p>
+        <h5>Refunds & Returns</h5>
+        <p>'Re-Boot' are under no obligation to offer refund of the cost of replacing your rugby boots should you become
+        dissatisfied with the purchased product. </p>
+        
+        <p>In the event of you becoming disatisfied, Re-Boot would be happy to receive formal feedback via the website
+        <a href="{% url 'contact' %}">contact</a> form, setting out the reasons. In return, 'Re-Boot' can then review the
+        merits of your dissatisfaction. In the most severe cases, Re-Boot reserves the right to cancel the membership
+        of a registered user that has not fully complied with Re-Boots' terms and conditions. </p>
+        
+        <p>Re-Boot and all its registered users operates under an 'upmost good fath' policy where all products appearing
+        on the website are genuine and are of a good quality. Mis-representation of a product appearing on the Re-Boot
+        website is completely unacceptable. </p>
+        
+        <p>If donated rugby boots that remain unsold for a period of 6 months, the affected member should <a href="{% url 'contact' %}">contact</a> ReBoot
+        and arrangements will be made to remove the unsold product from the Re-Boot website. Valuable website space will
+        be freed up for the Re-Boot community. </p>
+    </div>
+</div>
+</div>
+{% endblock %}
