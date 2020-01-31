@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Spagettileg/reboot.svg?branch=master)](https://travis-ci.com/Spagettileg/reboot)
+[![Build Status](https://travis-ci.com/Spagettileg/reboot-pbf.svg?branch=master)](https://travis-ci.com/Spagettileg/reboot-pbf)
 
 # Re-Boot | Online exchange for new and used rugby boots 
 ###### Full Stack Frameworks with Django - Code Institute 
