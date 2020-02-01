@@ -12,8 +12,10 @@
                     <legend>Contact Form</legend> 
                     {% csrf_token %}
                     {{ contact_form | as_bootstrap }}
-                    <p class="text-center"><small><em>Important: Only <a href="{% url 'register' %}">
-                            registered</a> Re-Boot members are permitted to donate boots.</em></small></p>
+                    <p class="text-left"><small><em><strong>Important:</strong> Only <a href="{% url 'register' %}">
+                    registered</a> Re-Boot members are permitted to donate rugby boots. Re-Boot hopes you have found
+                    everything you've been looking for. If your question remains unanswered, then please refer to 
+                    <a href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
                     <div class="d-flex justify-content-center">
                         <button class="btn btn-add-review" action="submit">Submit Enquiry</button>
                     </div>
