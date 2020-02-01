@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 from products.models import Product
-from feedback.models import Feedback 
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
@@ -96,21 +95,21 @@ def profile(request):
     
     """User profile page"""
     user = User.objects.get(email=request.user.email)
-    feedback_list = Feedback.objects.filter(creator=user.id)
+    product_list = Product.objects.filter(creator=user.id)
     page = request.GET.get('page', 1)
     
-    feedback_paginator = Paginator(feedback_list, 2)
+    product_paginator = Paginator(product_list, 2)
     
     try:
-        feedbacks = feedback_paginator.page(page)
+        products = product_paginator.page(page)
     except PageNotAnInteger:
-        feedbacks = feedback_paginator.page(1)
+        products = product_paginator.page(1)
     except EmptyPage:
-        feedbacks = feedback_paginator.page(feedback_paginator.num_pages)
+        products = product_paginator.page(product_paginator.num_pages)
     
     context = {
         'profile': user,
-        'feedbacks': feedbacks,
+        'products': products,
     }
     
     return render(request, 'profile.html', context)
