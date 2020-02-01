@@ -6,9 +6,9 @@ category_choices = (
 )
 
 class Product(models.Model):
-    make = models.CharField(max_length=254, default='')
+    make = models.CharField(max_length=254)
     """ No default product will be added into the database """
-    category = models.CharField(max_length=254, choices=category_choices, default='')
+    category = models.CharField(max_length=254, choices=category_choices)
     """ Category choices include view all, juniors and adults """
     customer = models.CharField(max_length=50, choices=category_choices, null=True)
     """ Junior rugby players """
@@ -23,10 +23,11 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     """ Pricing model will be less than £1m and decimal places = pence """
     paid = models.BooleanField(default=False)
-    """ Allow images to be uploaded for our products """
+    """ To show only sold products """
     image = models.ImageField(upload_to='images')
     """ Allow images to be uploaded for our products """
 
     
     def __str__(self):
         return self.make  # A string will be returned with the make of rugby boot
+        

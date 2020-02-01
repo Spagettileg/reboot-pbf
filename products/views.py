@@ -4,7 +4,6 @@ from django.utils import timezone
 from django.contrib import messages
 from .forms import ProductCreationForm
 from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 """
 Create product views
@@ -34,22 +33,11 @@ def product_detail(request, pk):
     }
     return render(request, "productdetail.html", context)
 
-def show_all_purchases(request):
-    
+def show_all_purchases(request, pk):
+    products = get_object_or_404(Product, pk=pk)
     """
     Route to show all user purchases on one page
     """
-    product_list = Product.objects.filter(created_date__lte=timezone.now(), paid=True).order_by('created_date')
-    page = request.GET.get('page', 1)
-    
-    paginator = Paginator(product_list, 5)
-    
-    try:
-        products = paginator.page(page)
-    except PageNotAnInteger:
-        products = paginator.page(1)
-    except EmptyPage:
-        products = paginator.page(paginator.num_pages)
     
     context = {
         'products': products
@@ -58,24 +46,31 @@ def show_all_purchases(request):
 
 """ Route allows the user to create (donate) a product """    
 @login_required
-def create_a_product(request):
-    form = ProductCreationForm(request.POST)
+def create_a_product(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    
     if request.method == "POST":
+        form = ProductCreationForm(request.POST)
         
         if form.is_valid():
-            product = form.save(commit=False)
-            product.creator = request.user
+            form_obj = form.save(commit=False)
+            product.user = request.user
             product.save()
             messages.success(request, "Thank you {0}, {1} has been added."
                              .format(request.user, product.make),
                              extra_tags="alert-primary")
-            return redirect('profile')
+                             
+            create_product_object = Product.objects.get(pk=form_obj.pk)                 
+            return redirect('create_product_object')
+        else:
+            form = ProductCreationForm()
+            messages.error(request, '{} sorry, your product cannot be added.'.format(request.user), extra_tags="alert-primary")
+    
     else:
         form = ProductCreationForm()
-        messages.error(request, '{} sorry, your product cannot be added.'.format(request.user), extra_tags="alert-primary")
     
     context = {
-        'form' : form
+        'form': form,
     }
     
     return render(request, 'create_product.html', context)

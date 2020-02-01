@@ -4,9 +4,10 @@ from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import ContactForm
 
-def index(request):
-    """ A view that displays the index page """
-    return render(request, "index.html")
+def index(request, *args, **kwargs):
+    
+    # A view that displays the index page
+    return render(request, "index.html", {"home": "index"})
 
 
 def contact(request):

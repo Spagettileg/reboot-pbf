@@ -95,21 +95,9 @@ def profile(request):
     
     """User profile page"""
     user = User.objects.get(email=request.user.email)
-    product_list = Product.objects.filter(creator=user.id)
-    page = request.GET.get('page', 1)
-    
-    product_paginator = Paginator(product_list, 2)
-    
-    try:
-        products = product_paginator.page(page)
-    except PageNotAnInteger:
-        products = product_paginator.page(1)
-    except EmptyPage:
-        products = product_paginator.page(product_paginator.num_pages)
     
     context = {
         'profile': user,
-        'products': products,
     }
     
     return render(request, 'profile.html', context)
