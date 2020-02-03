@@ -1,75 +1,47 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<!-- Users image and ID -->
+<h4 class="pt-3 pb-1 col-12 text-center">{{ user|capfirst }}'s Re-Boot:</h4>
+<hr>
 <div class="row">
-    <div class="px-3 py-3 col-sm-3">
+    <!-- Users image and ID -->
+    <div class="col-lg-3">
         <div class="px-3 py-3 gravatar-image text-center">
             <img src="{% static 'img/gravatar.png' %}" alt="gravatar image">
         </div>
-        <h4 class="text-center">Name: {{ user|capfirst }}</h4>
-        <div class="px-2 py-2 text-center"><a href="{% url 'create_a_product' %} " class="btn btn-read-more">Donate Rugby Boots</a></div>
-        <div class="px-2 py-2 text-center"><a href="#" class="btn btn-read-more">Create a Blog</a></div>
-        <div class="px-2 py-2 text-center"><a href="{% url 'password_reset' %}" class="btn btn-read-more">Change Password</a></div>
+        <h4 class="text-center">Welcome: {{ user|capfirst }}</h4>
     </div>
-    <!-- User Re-boot membership summary -->
-    <div class="pt-3 pb-3 col-sm-9">
-        <h4>Your membership summary:</h4>
-        <div class="row">
-            <p class="pl-5"><strong>Date last logged on:</strong></p>
-        </div>
-        <div class="row">
-            <p class="pl-5"><strong>Date joined Re-Boot:</strong></p>
-        </div>
-        <!-- Summary of Boot donations & Boot purchases -->
-        <div class="container">
-            <div class="jumbotron">
-                <h5>Donations:</h5>
-                <!-- Not Paid -->
-                <div class="row row-cols-1 row-cols-md-4">
-                    {% for product in products %}
-                    <!-- Summary of selected rugby boot product -->
-                    <div class="col mb-1">
-                        <div class="panel-body">
-                            <p><strong>{{ product.customer }}</strong></p>
-                            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
-                            <p><strong>Make: </strong>{{ product.make }}</p>
-                            <p><strong>Size: </strong>{{ product.size }}</p>
-                            <strong>
-                    <p><span class="fas fa-pound-sign"
-                        aria-hidden="true"></span>{{ product.price }}</p>
-                </strong>
-                            <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="jumbotron">
-                <h5>Purchases:</h5>
-                <!-- Paid -->
-                {% if product.paid == True %}
-                <div class="row row-cols-1 row-cols-md-4">
-                    {% for product in products %}
-                    <!-- Summary of selected rugby boot product -->
-                    <div class="col mb-1">
-                        <div class="panel-body">
-                            <p><strong>{{ product.customer }}</strong></p>
-                            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
-                            <p><strong>Make: </strong>{{ product.make }}</p>
-                            <p><strong>Size: </strong>{{ product.size }}</p>
-                            <strong>
-                    <p><span class="fas fa-pound-sign"
-                        aria-hidden="true"></span>{{ product.price }}</p>
-                </strong>
-                            <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                {% else %}
-                <p>There are no rugby boot purchases to show. Please take time to browse our latest stock in the <strong>BootShop</strong>.</p>
-                {% endif %}
-            </div>
+    <!-- Rugby Boot Donation -->
+    <div class="col-lg-3">
+        <h5 class="text-center">Unwanted Boots</h5>
+        <div class="px-3 py-3 text-center">
+            <img src="{% static 'img/stepthree.png' %}" alt="donate">
+        
+        <div class="pt-3"></div> 
+            <div class="text-center"><a href="{% url 'create_a_product' %} " class="btn btn-read-more">Donate</a></div>
         </div>
     </div>
+    <!-- Create a Blog conversation -->
+    <div class="col-lg-3">
+        <h5 class="text-center">Start a Blog</h5>
+        <div class="px-3 py-3 text-center">
+            <img src="{% static 'img/blog.png' %}" alt="blog">
+        
+        <div class="pt-3"></div> 
+            <div class="text-center"><a href="#" class="btn btn-read-more">Blog</a></div>
+        </div>
+    </div>
+    <!-- Change password to maintain personal data security -->
+    <div class="col-lg-3">
+        <h5 class="text-center">Password Change</h5>
+        <div class="px-3 py-3 text-center">
+            <img src="{% static 'img/privacy.png' %}" alt="change password">
+        
+        <div class="pt-3"></div> 
+            <div class="text-center"><a href="{% url 'password_reset' %}" class="btn btn-read-more">Reset</a></div>
+        </div>
+    </div>
+    
+    
+
+</div>
 {% endblock %}
