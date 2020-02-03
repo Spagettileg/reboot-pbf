@@ -46,19 +46,18 @@ def show_all_purchases(request, id):
 
 """ Route allows the user to create (donate) a product """    
 @login_required
-def create_a_product(request, id):
-    product = get_object_or_404(Product, id=id)
+def create_a_product(request):
     
     if request.method == "POST":
-        form = ProductCreationForm(request.POST)
+        form = ProductCreationForm(request.POST, request.FILES)
         
         if form.is_valid():
-            product = form.save()
-            messages.success(request, "Thank you {0}, {1} has been added."
-                             .format(request.user, product.make),
+            form.save()
+            messages.success(request, "Thank you {0}, {1} have been added."
+                             .format(request.user, "your donated boots"),
                              extra_tags="alert-primary")
                            
-            return redirect('product_detail, product.id')
+            return redirect('profile')
         else:
             form = ProductCreationForm()
             messages.error(request, '{} sorry, your product cannot be added.'.format(request.user), extra_tags="alert-primary")
@@ -77,10 +76,10 @@ def edit_a_product(request, id):
     """
     Route to permit Re-Boot members to edit their rugby boot product
     """
-    product = get_object_or_404(Product, id=id)
+    product = get_object_or_404(Product, pk=id)
     
     if request.method == "POST":
-        form = ProductCreationForm(request.POST)
+        form = ProductCreationForm(request.POST, instance=product)
         if form.is_valid():
             product = form.save()
             messages.success(request, "Thank you {0}, {1} has been updated."
@@ -89,7 +88,7 @@ def edit_a_product(request, id):
             return redirect(reverse('profile'))
     
     else:
-        form = ProductCreationForm()
+        form = ProductCreationForm(instance=product)
         messages.error(request, '{} sorry, your product cannot be updated.'.format(request.user), extra_tags="alert-primary")
         
     context = {
@@ -100,7 +99,7 @@ def edit_a_product(request, id):
 """ Route permits user to delete their product(s) """     
 @login_required
 def delete_a_product(request, id):
-    product = get_object_or_404(Product, id=id)
+    product = get_object_or_404(Product, pk=id)
     
     if request.method == "POST":
         product.delete()
