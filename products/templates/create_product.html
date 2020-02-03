@@ -7,7 +7,7 @@
     {% block heading %} <h4>Donate your rugby boots here</h4> {% endblock %}
 <div class="row">
     <div class="col-sm-12">
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form | as_bootstrap }}
             <div class="pb-3">
