@@ -24,7 +24,7 @@ class Product(models.Model):
     """ Pricing model will be less than £1m and decimal places = pence """
     paid = models.BooleanField(default=False)
     """ To show only sold products """
-    image = models.ImageField(upload_to='images')
+    image = models.ImageField(upload_to='images', blank=True, null=True)
     """ Allow images to be uploaded for our products """
 
     
