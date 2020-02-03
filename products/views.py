@@ -55,7 +55,7 @@ def create_a_product(request, pk):
         if form.is_valid():
             form_obj = form.save(commit=False)
             product.user = request.user
-            product.save()
+            form_obj.save()
             messages.success(request, "Thank you {0}, {1} has been added."
                              .format(request.user, product.make),
                              extra_tags="alert-primary")
