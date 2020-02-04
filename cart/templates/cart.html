@@ -22,14 +22,18 @@
                 <div class="form-group">
                     <label for="product-input-amount" class="sr-only">New Qty</label>
                     <div class="input-group">
-                        <div class="input-group-addon">Qty</div>
-                        <input name="quantity" type="number" min="0" max="1" class="form-control">
-                        <div class="input-group-addon">{{item.quantity}}</div>
+                        <div class="pr-2 input-group-addon text-center"><strong>Qty:</strong></div>                        
+                        <div class="pr-2 input-group-addon">{{item.quantity}}</div>
                     </div>
+                </div>
+                <div class="px-2 py-2">
+                <input name="quantity" type="number" min="0" max="1" class="form-control">
                 </div>
                 <form method="POST" action="{% url 'remove_from_cart' item.id %}">
                     <input type="hidden" name="id" value="{{ item.id }}">
+                    <div class="content-justify-center">
                     <button type="submit" class="btn btn-delete-item" aria-hidden="true">Delete</button>
+                    </div>
                 </form>
                 <p class="pt-2 text-center"><small>Hint: To delete product, Enter zero value and click delete button.</small></p>
             </form>
