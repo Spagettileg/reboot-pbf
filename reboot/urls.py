@@ -22,6 +22,7 @@ from products import urls as urls_products
 from categories import urls as urls_categories
 from search import urls as urls_search
 from checkout import urls as urls_checkout
+from blog import urls as urls_blog
 from django.views import static
 from .settings import MEDIA_ROOT 
 
@@ -35,5 +36,6 @@ urlpatterns = [
     url(r'^categories/', include(urls_categories)),
     url(r'^search/', include(urls_search)),
     url(r'^checkout/', include(urls_checkout)),
+    url(r'^blog/', include(urls_blog)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
 ]
