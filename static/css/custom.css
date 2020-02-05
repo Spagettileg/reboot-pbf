@@ -190,18 +190,12 @@ blockquote {
   text-align: center;
 }
 
-/* Carousel */
+/* Blog */
 
-.carousel-indicators li {
-  width: 0.625rem;
-  height: 0.625rem;
-  border-radius: 100%;
-  color: #21295C;
-  background-color: #21295C;
-}
-
-.carousel-indicators {
-  bottom: -1.1rem;
+.story-img {
+    display: block;
+    text-align: center;
+    margin: auto;
 }
 
 /* 404 error formatting */
