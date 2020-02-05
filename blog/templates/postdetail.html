@@ -3,7 +3,7 @@
     <!-- User to import their preferred image and user name injected via jinja template -->
     <div class="col-md-2 col-sm-3 text-center">
         <div class="story-image" style="background-image: url('{{ MEDIA_URL }}{{ post.image }}'); height:200px; width:200px"></div>
-        <p><span><strong>Author:</strong></span>{{ user|capfirst }}</p>
+        <p><span><strong>Author:</strong></span>{{ post.author|capfirst }}</p>
     </div>
     <!-- Main header, blog content with buttons to navigate back to blog or edit blog -->
     <div class="col-sm-10 col-md-9">
