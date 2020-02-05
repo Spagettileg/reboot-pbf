@@ -6,4 +6,4 @@ class BlogPostForm(forms.ModelForm):
     class Meta:
         model = Post
         # Below are editable fields
-        fields = ('title', 'content', 'image', 'tag', 'published_date')
+        fields = ('title', 'author', 'content', 'image', 'tag', 'published_date')
