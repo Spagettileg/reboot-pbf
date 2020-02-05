@@ -91,8 +91,12 @@ def logout(request):
 @login_required()
 def profile(request):
     
-    """User profile page"""
-    user = User.objects.get(email=request.user.email)
+    """
+    User profile page. Filter () used to return multiple records and help
+    avoid an error message is using get () instead. The latter method is 
+    limited to getting oen result only.
+    """
+    user = User.objects.filter(email=request.user.email)
     
     context = {
         'profile': user,
