@@ -13,7 +13,7 @@ def get_posts(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()
         ).order_by('-published_date')
     return render(request, "blogposts.html", {'posts': posts})
-    
+
 
 def post_detail(request, pk):
     """
@@ -28,4 +28,22 @@ def post_detail(request, pk):
     post.save()
     return render(request, "postdetail.html", {'post': post})
 
-    
+
+def create_or_edit_post(request, pk=None):
+    """
+    Create a view that allows us to create
+    or edit a post depending if the Post ID
+    is null or not
+    """
+    post = get_object_or_404(Post, pk=pk) if pk else None
+    if request.method == "POST":  # User to POST a blog
+        form = BlogPostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            post = form.save()  # Full and valid blog is saved
+            return redirect(post_detail, post.pk)
+    else:
+        form = BlogPostForm(instance=post)
+        """
+        If blog not valid then user returns back to original list of blog posts
+        """
+    return render(request, 'blogpostform.html', {'form': form})
