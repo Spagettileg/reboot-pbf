@@ -14,7 +14,7 @@
                 <p>{{ post.content|truncatewords:30 }}</p>
                 <p><a href="{% url 'post_detail' post.id %}" class="btn btn-read-more">Read more</a></p>
                 <p><span><strong>Published on:</strong></span> {{ post.published_date }} </p>
-                <p><span><strong>Views:</strong></span> {{post.views}}</p>
+                <p><span><strong>Views:</strong></span> {{ post.views }}</p>
                 <p><span><strong>Tag:</strong></span> {{ post.tag }}</p>
             </div>
         </div>
