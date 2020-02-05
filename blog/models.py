@@ -6,6 +6,7 @@ class Post(models.Model):
     Single Re-Boot blog post
     """
     title = models.CharField(max_length=200)
+    author = models.CharField(max_length=75, null=True)
     content = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(blank=True, null=True, default=timezone.now)
