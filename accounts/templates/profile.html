@@ -15,8 +15,8 @@
         <h5 class="text-center">Unwanted Boots</h5>
         <div class="px-3 py-3 text-center">
             <img src="{% static 'img/stepthree.png' %}" alt="donate">
-        
-        <div class="pt-3"></div> 
+
+            <div class="pt-3"></div>
             <div class="text-center"><a href="{% url 'create_a_product' %} " class="btn btn-read-more">Donate</a></div>
         </div>
     </div>
@@ -25,9 +25,9 @@
         <h5 class="text-center">Start a Blog</h5>
         <div class="px-3 py-3 text-center">
             <img src="{% static 'img/blog.png' %}" alt="blog">
-        
-        <div class="pt-3"></div> 
-            <div class="text-center"><a href="#" class="btn btn-read-more">Blog</a></div>
+
+            <div class="pt-3"></div>
+            <div class="text-center"><a href="{% url 'new_post' %}" class="btn btn-read-more">Blog</a></div>
         </div>
     </div>
     <!-- Change password to maintain personal data security -->
@@ -35,13 +35,10 @@
         <h5 class="text-center">Password Change</h5>
         <div class="px-3 py-3 text-center">
             <img src="{% static 'img/privacy.png' %}" alt="change password">
-        
-        <div class="pt-3"></div> 
+
+            <div class="pt-3"></div>
             <div class="text-center"><a href="{% url 'password_reset' %}" class="btn btn-read-more">Reset</a></div>
         </div>
     </div>
-    
-    
-
 </div>
 {% endblock %}
