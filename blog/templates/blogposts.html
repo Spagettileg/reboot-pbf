@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for post in posts %}
+    <!-- Loop created to use html template everytime a post is posted in blog -->
+        <div class="row">
+            <div class="col-md-2 col-sm-3 text-center">
+                <div class="story-image" style="background-image: url('{{ MEDIA_URL }}{{ post.image }}'); height:200px; width:200px"></div>
+                <p><span><strong>Author:</strong></span>{{ user|capfirst }}</p>
+            </div>
+            <div class="col-md-10 col-sm-9">
+                <h4>{{ post.title }}</h4>
+                <div class="row">
+                    <div class="col-xs-9">
+                        <p>{{ post.content|truncatewords:30 }}</p>
+                        <p><a href="{% url 'post_detail' post.id %}"  class="btn btn-read-more">Read more</a></p>
+                        <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
+                        <p><span class="boldtext">Views:</span> {{post.views}}</p>
+                        <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    {% endfor %}
+
+{% endblock %}
+
