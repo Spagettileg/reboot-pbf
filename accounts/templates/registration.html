@@ -2,35 +2,35 @@
 
 <!-- Form created to collect User's email, username, password & repeat password -->
 <div class="pt-3 pb-3 container">
-        <div class="row">
-                <div class="pb-3 col-md-5 text-center">
-                        <div class="jumbotron bg-dark text-white">
-                                <h4>Welcome to Re-Boot!</h4>
-                                <p>We're thrilled that you are about to become a Re-Boot member and can't wait for you to get involved. </p>
-                        </div>
-                        <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
-                </div>
-                <div class="col-md-7 bg-light">
-
-                        <div class="row">
-                                <div class="pt-2 col col-12 text-center">
-                                        <h4>Register here</h4>
-                                        <p class="text-secondary"><small>"Re-Boot membership is so close..."</small></p>
-                                </div>
-                        </div>
-
-                        <div class="row">
-                                <div class="col col-12">
-                                        <form method="POST">
-                                                {% csrf_token %} {{ registration_form | as_bootstrap }}
-                                                <button class="btn btn-read-more" type="submit">Register</button>
-                                                <div class="text-center mt-4">
-                                                        <p><small>Already Registered? Click <a href="{% url 'login' %}">here.</a></small></p>
-                                                </div>
-                                        </form>
-                                </div>
-                        </div>
-                </div>
+    <div class="row">
+        <div class="pb-3 col-md-5 text-center">
+            <div class="jumbotron bg-dark text-white">
+                <h4>Welcome to Re-Boot!</h4>
+                <p>We're thrilled that you are about to become a Re-Boot member and can't wait for you to get involved. </p>
+            </div>
+            <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
         </div>
+        <div class="col-md-7 bg-light">
+
+            <div class="row">
+                <div class="pt-2 col col-12 text-center">
+                    <h4>Register here</h4>
+                    <p class="text-secondary"><small>"Re-Boot membership is so close..."</small></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-12">
+                    <form method="POST">
+                        {% csrf_token %} {{ registration_form | as_bootstrap }}
+                        <button class="btn btn-read-more" type="submit">Register</button>
+                        <div class="text-center mt-4">
+                            <p><small>Already Registered? Click <a href="{% url 'login' %}">here.</a></small></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
