@@ -2,12 +2,12 @@
 <!-- Loop created to use html template everytime a post is posted in blog -->
 <div class="pt-3 row">
     <!-- User to import their preferred image and user name injected via jinja template -->
-    <div class="col-md-2 col-sm-3 text-center">
+    <div class="col-sm-3 text-center">
         <div class="story-image" style="background-image: url('{{ MEDIA_URL }}{{ post.image }}'); height:200px; width:200px"></div>
         <p><span><strong>Author : </strong></span>{{ post.author|capfirst }}</p>
     </div>
     <!-- Main header & blog content -->
-    <div class="col-md-10 col-sm-9">
+    <div class="col-sm-9">
         <h4>{{ post.title }}</h4>
         <div class="row">
             <div class="col-xs-9">

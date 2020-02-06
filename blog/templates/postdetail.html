@@ -3,6 +3,11 @@
     <h4>{{ post.title }}</h4>
     <!-- Main header, blog content with buttons to navigate back to blog or edit blog -->
     <div class="row">
+        <!-- User to import their preferred image and user name injected via jinja template -->
+        <div class="col-sm-3 text-center">
+            <div class="story-image" style="background-image: url('{{ MEDIA_URL }}{{ post.image }}'); height:200px; width:200px"></div>
+            <p><span><strong>Author : </strong></span>{{ post.author|capfirst }}</p>
+        </div>
         <div class="col-sm-9">
             <p>{{ post.content }}</p>
             <p><span><strong>Published on : </strong></span> {{ post.published_date }} </p>
@@ -11,11 +16,6 @@
             <a href="{% url 'get_posts' %}" class="btn btn-read-more">Back to Blog</a>
             <a href="{% url 'edit_post' post.id %}" class="btn btn-read-more">Edit Post</a>
             <hr>
-        </div>
-        <!-- User to import their preferred image and user name injected via jinja template -->
-        <div class="col-sm-3 text-center">
-            <div class="story-image" style="background-image: url('{{ MEDIA_URL }}{{ post.image }}'); height:200px; width:200px"></div>
-            <p><span><strong>Author : </strong></span>{{ post.author|capfirst }}</p>
         </div>
     </div>
 </div>
