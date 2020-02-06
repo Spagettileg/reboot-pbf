@@ -3,18 +3,16 @@
 {% block title %}Create a product{% endblock %}
 
 {% block content %}
-<div class="pt-2 container">
-    {% block heading %} <h4>Donate your rugby boots here</h4> {% endblock %}
-<div class="row">
-    <div class="col-sm-12">
+<!-- Form structure to enable user to donate their unwanted rugby boots -->
+<div class="pt-3 pb-1 col-12 text-center">
+    <h4>Donate your rugby boots here | <i class="far fa-handshake"></i></h4>
+</div>
+<div class="mt-3 mb-3 col col-sm-8 container bg-light adults-image">
+    <div class="pt-3 pb-3 row">
         <form method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form | as_bootstrap }}
-            <div class="pb-3">
+            {% csrf_token %} {{ form | as_bootstrap }}
             <button type="submit" class="btn btn-add-review">Submit</button>
-            </div>
         </form>
     </div>
-</div>
 </div>
 {% endblock %}
