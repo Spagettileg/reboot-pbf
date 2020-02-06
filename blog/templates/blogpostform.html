@@ -1,9 +1,16 @@
 {% extends "base.html" %} {% load bootstrap_tags %} {% block content %}
 
 <!-- Form structure to enable user to add their blog message -->
-<h4>New Post</h4>
-<form method="POST" enctype="multipart/form-data">
-    {% csrf_token %} {{ form | as_bootstrap }}
-    <button type="submit" class="btn btn-add-review">Save</button>
-</form>
+<div class="pt-3 pb-1 col-12 text-center">
+    <h4>Blog Post <i class="far fa-envelope"></i></h4>
+</div>
+<div class="mt-3 mb-3 col col-sm-8 container bg-light adults-image">
+    <div class="pt-3 pb-3 row">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %} {{ form | as_bootstrap }}
+            <button type="submit" class="btn btn-add-review">Save</button>
+        </form>
+    </div>
+</div>
+
 {% endblock %}
