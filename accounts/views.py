@@ -94,7 +94,7 @@ def profile(request):
     """
     User profile page. Filter () used to return multiple records and help
     avoid an error message is using get () instead. The latter method is 
-    limited to getting oen result only.
+    limited to getting one result only.
     """
     user = User.objects.filter(email=request.user.email)
     
