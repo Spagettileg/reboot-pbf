@@ -7,15 +7,17 @@
     <!-- Summary of selected rugby boot product -->
     <div class="col mb-1">
         <div class="panel-body">
-            <p><strong>{{ product.customer }}</strong></p>
+            <h5 class="px-2 py-2">{{ product.customer }}</h5>
             <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
-            <p><strong>Make: </strong>{{ product.make }}</p>
-            <p><strong>Size: </strong>{{ product.size }}</p>
+            <p class="pl-2"><strong>Make: </strong>{{ product.make }}</p>
+            <p class="pl-2"><strong>Size: </strong>{{ product.size }}</p>
             <strong>
-                    <p><span class="fas fa-pound-sign"
+                    <p><span class="pl-2 fas fa-pound-sign"
                         aria-hidden="true"></span>{{ product.price }}</p>
                 </strong>
+            <div class="pb-2 text-center">
             <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
+            </div>
         </div>
     </div>
     {% endfor %}
