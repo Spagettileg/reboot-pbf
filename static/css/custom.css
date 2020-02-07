@@ -238,6 +238,7 @@ ul {
   /*Green*/
   color: #135A68;
   font-weight: 600;
+  cursor: pointer; /* Add a mouse pointer on hover */
 }
 
 .btn-learn-more:hover,
@@ -264,6 +265,7 @@ ul {
   /*Green*/
   font-weight: 600;
   font-size: 0.875rem;
+  cursor: pointer; /* Add a mouse pointer on hover */
 }
 
 .btn-edit-quantity:hover,
