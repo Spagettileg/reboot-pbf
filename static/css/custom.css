@@ -9,16 +9,16 @@ body {
 }
 
 .row {
-  margin-left: 0;
   /*helps remove unecessary white space on right vertical*/
+  margin-left: 0;
   margin-right: 0;
-  /*as above*/
 }
 
 h1,
 .cheer-title {
   font-weight: 700;
-  color: #fafafa; /* off-white */
+  color: #fafafa;
+  /* off-white */
 }
 
 h2 {
@@ -26,23 +26,27 @@ h2 {
 }
 
 h4 {
-  color: #F26826; /* vivid tangelo - orange */
+  color: #F26826;
+  /* vivid tangelo - orange */
   font-weight: 600;
   text-align: center;
 }
 
 h5 {
-  color: #F26826; /* vivid tangelo - orange */
+  color: #F26826;
+  /* vivid tangelo - orange */
   font-weight: 600;
 }
 
 h6 {
-  color: #fafafa; /* off-white */
+  color: #fafafa;
+  /* off-white */
   font-weight: 500;
 }
 
 .cheer-text {
-  color: #fafafa; /* off-white */
+  color: #fafafa;
+  /* off-white */
 }
 
 .cheer-text p {
@@ -58,15 +62,14 @@ h6 {
 .blog-header-text {
   font-size: 1rem;
   font-weight: 600;
-  color: #F26826; /* vivid tangelo - orange */
+  color: #F26826;
+  /* vivid tangelo - orange */
 }
 
 ul {
-  list-style-type: none;
   /* removes bullet points from unordered list */
+  list-style-type: none;
 }
-
-/* Colours */
 
 /* Navbar */
 
@@ -77,6 +80,7 @@ ul {
 }
 
 .banner {
+  /*Intense rugby image depicting energy & coordination that flows into this application*/
   background-repeat: repeat-x;
   position: relative;
   height: 30vh;
@@ -95,10 +99,12 @@ ul {
 .cart {
   font-size: 2rem;
   color: #F26826;
+  /* vivid tangelo - orange */
 }
 
 .badge {
-  margin: -1rem; /* moves the product counter to slightly overlap shopping cart */
+  margin: -1rem;
+  /* moves the product counter to slightly overlap shopping cart */
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-bottom: 2rem;
@@ -108,13 +114,16 @@ ul {
   font-size: 0.8rem;
   font-weight: 600;
   background-color: #135A68;
+  /*Green*/
   color: #ffffff;
+  /*White*/
 }
 
 /* Containers */
 
 #frontpage-header {
   background-color: #F26826;
+  /* vivid tangelo - orange */
 }
 
 .quick-steps,
@@ -122,12 +131,16 @@ ul {
 .customer-reviews,
 .customer-blog,
 .product-category {
+  /*Front page block headers signposting important ReBoot features*/
   background-color: #21295C;
+  /*Blue*/
   color: #fafafa;
+  /*Off-White*/
 }
 
 .card-header {
   background-color: #fff;
+  /*White*/
   font-weight: 600;
 }
 
@@ -137,31 +150,20 @@ ul {
   padding-bottom: 1rem;
   margin: 0.5rem;
   max-width: 18.125rem;
-  
-} 
-
-.boot-detail {
-  border: 0.01rem solid #f2f2f2;
-  border-radius: 0.5rem;
-  background-color: #f2f2f2;
 }
 
-blockquote {
-  border-left: 2px;
-  border-left-color: #F26826;
-  border-left-style: solid;
-  padding-left: 1rem;
-}
-
-.panel-body { /* All rugby boot product container views given blue border and slight box shadow to elevate the display */  
+.panel-body {
+  /* All rugby boot product container views given blue border and slight box shadow to elevate the display */
   padding: 0.3rem;
   margin: 0.3rem;
   border: 0.1rem solid #21295C;
+  /*Blue*/
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(199, 204, 235, 0.5), 0 6px 20px 0 rgba(199, 204, 235, 0.49);
 }
 
-.product-image { /* All rugby boot product views are fully responsive with good control over marging spacing and display */
+.product-image {
+  /* All rugby boot product views are fully responsive with good control over marging spacing and display */
   text-align: center;
   display: block;
   margin: auto;
@@ -171,14 +173,16 @@ blockquote {
 .checkout-total-outer,
 .gravatar-image,
 .juniors-image,
-.adults-image { /* Ensures the payemnt summary views are centre of screen */
+.adults-image {
+  /* Ensures the payemnt summary views are centre of screen */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .cart-contents,
-.checkout-total { /* Containers given light grey background and vivid orange text */
+.checkout-total {
+  /* Containers given light grey background and vivid orange text */
   border: 0.1rem solid #f2f2f2;
   border-radius: 0.5rem;
   background-color: #f2f2f2;
@@ -192,10 +196,11 @@ blockquote {
 
 /* Blog */
 
-.story-img {
-    display: block;
-    text-align: center;
-    margin: auto;
+.story-img { 
+  /*Allows imported image to be centred and be full responsive on all devices*/
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 /* 404 error formatting */
@@ -208,10 +213,12 @@ blockquote {
   height: 1px;
   border: 0;
   background-color: #fafafa;
+  /*Off-White*/
 }
 
 .block-divider-blog-card {
   background-color: #F26826;
+  /* vivid tangelo - orange */
   width: 7rem;
   height: 0.05rem;
 }
@@ -226,7 +233,9 @@ blockquote {
 .btn-submit-payment,
 .btn-checkout {
   background-color: #ffffff;
+  /*White*/
   border: 0.1rem solid #135A68;
+  /*Green*/
   color: #135A68;
   font-weight: 600;
 }
@@ -245,22 +254,26 @@ blockquote {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn-continue-reading,
 .btn-edit-quantity,
 .btn-delete-item {
   background-color: #fafafa;
+  /*Off-White*/
   border: 0.1rem solid #135A68;
+  /*Green*/
   color: #135A68;
+  /*Green*/
   font-weight: 600;
   font-size: 0.875rem;
 }
 
-.btn-continue-reading:hover,
 .btn-edit-quantity:hover,
 .btn-delete-item:hover {
   background-color: #135A68;
+  /*Green*/
   border: 0.1rem solid #135A68;
+  /*Green*/
   color: #fafafa;
+  /*Off-White*/
   font-weight: 600;
   font-size: 0.875rem;
 }
@@ -271,35 +284,38 @@ blockquote {
 .fa-linkedin {
   font-size: 2.5rem;
   color: #fafafa;
+  /*Off-White*/
 }
 
 /* Footer */
 
 #footer {
   background-color: #21295C;
+  /*Blue*/
   border-color: #21295C;
+  /*Blue*/
 }
 
 .footer-text li a {
   font-size: 1rem;
   font-weight: 400;
   color: #fafafa;
+  /*Off-White*/
 }
 
 /* Media Queries */
 
 @media (max-width: 768px) {
-    /*Mobile - Move product counter to top right corner of shopping cart icon*/
-    .badge {
-        margin: -6.5rem;
-        margin-bottom: 2rem;
-    }
+  /*Mobile - Move product counter to top right corner of shopping cart icon*/
+  .badge {
+    margin: -6.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    /*Mobile - Move shopping cart icon slightly to left */
-    .nav-link-icon {
-        padding: 0;
-    }
+  /*Mobile - Move shopping cart icon slightly to left */
+  .nav-link-icon {
+    padding: 0;
+  }
 }
-
