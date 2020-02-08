@@ -7,8 +7,8 @@ class UserLoginForm(forms.Form):
     """
     Form to be used to log users input
     """
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(label='Username *', widget=forms.TextInput({'placeholder': 'Enter your Username'}), required=True)
+    password = forms.CharField(widget=forms.PasswordInput({'placeholder': 'Enter Password'}), required=True)
     
 class UserRegistrationForm(UserCreationForm):
     """
@@ -16,10 +16,10 @@ class UserRegistrationForm(UserCreationForm):
     """
     password1 = forms.CharField(
         label="Password",
-        widget=forms.PasswordInput)
+        widget=forms.PasswordInput({'placeholder': 'Enter Password'}), required=True)
     password2 = forms.CharField(
         label="Password Confirmation",
-        widget=forms.PasswordInput)
+        widget=forms.PasswordInput({'placeholder': 'Re-Enter Password'}), required=True)
     
     class Meta:
         """
