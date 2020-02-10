@@ -16,11 +16,11 @@ chevron==0.13.1
 Click==7.0
 colorama==0.4.1
 cookiecutter==1.6.0
+coverage==5.0.3
 dateparser==0.7.2
 dj-database-url==0.5.0
 Django>=1.11.27
 django-forms-bootstrap==3.1.0
-django-phonenumber-field==4.0.0
 django-storages==1.8
 docker==4.1.0
 docutils==0.15.2
