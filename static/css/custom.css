@@ -17,7 +17,7 @@ body {
 h1,
 .cheer-title {
   font-weight: 700;
-  color: #fafafa;
+  color: #FAFAFA;
   /* off-white */
 }
 
@@ -39,13 +39,13 @@ h5 {
 }
 
 h6 {
-  color: #fafafa;
+  color: #FAFAFA;
   /* off-white */
   font-weight: 500;
 }
 
 .cheer-text {
-  color: #fafafa;
+  color: #FAFAFA;
   /* off-white */
 }
 
@@ -70,6 +70,22 @@ ul {
   /* removes bullet points from unordered list */
   list-style-type: none;
 }
+
+/* Colours Used in ReBoot design */
+
+/*  #001514 - 'rich Black' - Black  */
+
+/*  #F26826 - 'vivid tangelo' - Orange */
+
+/*  #135A68 - 'blue sapphire' - Green */
+
+/*  #21295C - 'space cadet' - Blue */
+
+/*  #FFFFFF - White */
+
+/*  #F2F2F2 - Grey  */
+
+/*  #FAFAFA - Off-White */
 
 /* Navbar */
 
@@ -115,7 +131,7 @@ ul {
   font-weight: 600;
   background-color: #135A68;
   /*Green*/
-  color: #ffffff;
+  color: #FFFFFF;
   /*White*/
 }
 
@@ -134,18 +150,18 @@ ul {
   /*Front page block headers signposting important ReBoot features*/
   background-color: #21295C;
   /*Blue*/
-  color: #fafafa;
+  color: #FAFAFA;
   /*Off-White*/
 }
 
 .card-header {
-  background-color: #fff;
+  background-color: #FFFFFF;
   /*White*/
   font-weight: 600;
 }
 
 .card-style {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #F2F2F2;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
   margin: 0.5rem;
@@ -183,9 +199,9 @@ ul {
 .cart-contents,
 .checkout-total {
   /* Containers given light grey background and vivid orange text */
-  border: 0.1rem solid #f2f2f2;
+  border: 0.1rem solid #F2F2F2;
   border-radius: 0.5rem;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   color: #F26826;
   font-size: 1.25rem;
   font-weight: 600;
@@ -196,14 +212,12 @@ ul {
 
 /* Blog */
 
-.story-img { 
+.story-img {
   /*Allows imported image to be centred and be full responsive on all devices*/
   display: block;
   text-align: center;
   margin: auto;
 }
-
-/* 404 error formatting */
 
 /* Block Dividers */
 
@@ -232,13 +246,14 @@ ul {
 .btn-product-detail,
 .btn-submit-payment,
 .btn-checkout {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   /*White*/
   border: 0.1rem solid #135A68;
   /*Green*/
   color: #135A68;
   font-weight: 600;
-  cursor: pointer; /* Add a mouse pointer on hover */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
 }
 
 .btn-learn-more:hover,
@@ -250,14 +265,14 @@ ul {
 .btn-checkout:hover {
   background-color: #135A68;
   border: 0.1rem solid #135A68;
-  color: #fafafa;
+  color: #FAFAFA;
   font-weight: 600;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-edit-quantity,
 .btn-delete-item {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   /*Off-White*/
   border: 0.1rem solid #135A68;
   /*Green*/
@@ -265,7 +280,8 @@ ul {
   /*Green*/
   font-weight: 600;
   font-size: 0.875rem;
-  cursor: pointer; /* Add a mouse pointer on hover */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
 }
 
 .btn-edit-quantity:hover,
@@ -274,7 +290,7 @@ ul {
   /*Green*/
   border: 0.1rem solid #135A68;
   /*Green*/
-  color: #fafafa;
+  color: #FAFAFA;
   /*Off-White*/
   font-weight: 600;
   font-size: 0.875rem;
@@ -285,7 +301,7 @@ ul {
 .fa-facebook-square,
 .fa-linkedin {
   font-size: 2.5rem;
-  color: #fafafa;
+  color: #FAFAFA;
   /*Off-White*/
 }
 
@@ -301,7 +317,7 @@ ul {
 .footer-text li a {
   font-size: 1rem;
   font-weight: 400;
-  color: #fafafa;
+  color: #FAFAFA;
   /*Off-White*/
 }
 
