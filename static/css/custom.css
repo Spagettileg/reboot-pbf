@@ -66,6 +66,13 @@ h6 {
   /* vivid tangelo - orange */
 }
 
+.user-intro {
+  /*Introduction welcome message to user in their MyReBoot page*/
+  font-size: 4rem;
+  color: #001514;
+  /*Rich Black*/
+}
+
 ul {
   /* removes bullet points from unordered list */
   list-style-type: none;
