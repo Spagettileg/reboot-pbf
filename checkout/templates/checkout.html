@@ -17,8 +17,8 @@
     <div class="row">
         <h3>Empty Shopping Cart?</h3>
         <div class="row">
-        <p>Please note you're unable to proceed with an empty shopping cart.</p>
-        <p>Our <strong>Bootshop</strong> has many products you may be interested in.</p>
+            <p>Please note you're unable to proceed with an empty shopping cart.</p>
+            <p>Our <strong>Bootshop</strong> has many products you may be interested in.</p>
         </div>
     </div>
     <div class="col-md-6 container">
@@ -29,16 +29,16 @@
 </div>
 {% else %}
 <!-- If users shopping cart contains a product, then review and proceed to submit payment -->
-<div class="row row-cols-1 row-cols-md-4">
+<div class="pt-3 row row-cols-1 row-cols-md-4">
     {% for item in cart_items %}
     <div class="col mb-1">
         <div class="panel-body">
-            <p><strong>{{ item.product.customer }}</strong></p>
+            <h5 class="px-2 py-2">{{ item.product.customer }}</h5>
             <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
-            <p><strong>Make: </strong>{{ item.product.make }}</p>
-            <p><strong>Size: </strong>{{ item.product.size }}</p>
+            <p class="pl-2"><strong>Make: </strong>{{ item.product.make }}</p>
+            <p class="pl-2"><strong>Size: </strong>{{ item.product.size }}</p>
             <strong>
-                    <p><span class="fas fa-pound-sign"
+                    <p><span class="pl-2 fas fa-pound-sign"
                         aria-hidden="true"></span>{{ item.product.price }}</p>
                 </strong>
         </div>
@@ -48,7 +48,7 @@
 
 <!-- Show the Total Cost of what User is purchasing = outside above loop -->
 
-<div class="pt-3 pb-3 container checkout-total-outer">
+<div class="pt-4 pb-4 container checkout-total-outer">
     <div class="pt-1 checkout-total">
         <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
     </div>
@@ -64,17 +64,19 @@
         <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
 
-    <div class="row">
-        <div class="form-group col-md-6">
-            {{ order_form|as_bootstrap }}
-        </div>
-        <div class="form-group col-md-6">
-            {{ payment_form|as_bootstrap }}
+    <div class="px-3 py-3 col col-12">
+        <div class="row">
+            <div class="px-2 py-2 form-group col-md-6 bg-light">
+                {{ order_form|as_bootstrap }}
+            </div>
+            <div class="px-2 py-2 form-group col-md-6 bg-light">
+                {{ payment_form|as_bootstrap }}
+            </div>
         </div>
     </div>
 
     {% csrf_token %}
-    <div class="form-group col-md-12">
+    <div class="pb-3 pl-0 pr-0 form-group col-md-12 text-center">
         <input class="btn btn-submit-payment" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
