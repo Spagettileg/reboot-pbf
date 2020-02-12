@@ -44,7 +44,8 @@
 </div>
 
 <!-- User navigates from shopping cart to checkout upon clicking the checkout button -->
-<div class="pt-3 pb-3 container cart-contents-outer">
+<hr>
+<div class="pt-5 pb-5 container cart-contents-outer">
     <div class="pt-1 cart-contents">
         <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
     </div>
@@ -52,4 +53,5 @@
         <a href="{% url 'checkout' %}" class="btn btn-checkout" role="button" aria-hidden="true">Checkout</a>
     </div>
 </div>
+<hr>
 {% endblock %}
