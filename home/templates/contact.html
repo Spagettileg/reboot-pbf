@@ -7,14 +7,14 @@
         <!-- User to input full name, email address, subject and detailed message -->
         <div class="pt-3 pb-3 col-md-6 bg-light">
             <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
-                <legend>Contact Form</legend>
+                <h3>Fill Form</h3>
                 {% csrf_token %} {{ contact_form | as_bootstrap }}
                 <p class="text-left"><small><em><strong>Important:</strong> Only <a href="{% url 'register' %}">
                     registered</a> Re-Boot members are permitted to donate rugby boots. Re-Boot hopes you have found
                     everything you've been looking for. If your question remains unanswered, then please refer to 
                     <a href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-add-review" action="submit">Submit Enquiry</button>
+                    <input class="btn btn-add-review" id="submit_enquiry_btn" name="enquiry" type="submit" value="Submit Enquiry">
                 </div>
             </form>
         </div>
@@ -22,8 +22,8 @@
         <!-- Contact card to help user access ReBoot -->
         <div class="pt-3 pb-3 col-md-6 contact-card">
             <fieldset>
+                <h3>Find us</h3>
                 <ul class="list-group">
-                    <legend>Contact Info</legend>
                     <li class="list-group-item first-one">
                         <h5><b> Address</b></h5> ReBoot, Unit 15, Scrum Business Centre, Hooker Lane, Hampshire, SP15 0AA </li>
                     <li class="list-group-item">
