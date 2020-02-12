@@ -14,8 +14,8 @@
             <p class="pl-2"><strong>Make: </strong>{{ item.product.make }}</p>
             <p class="pl-2"><strong>Size: </strong>{{ item.product.size }}</p>
             <strong>
-                    <p><span class="pl-2 fas fa-pound-sign"
-                        aria-hidden="true"></span>{{ item.product.price }}</p>
+                    <span class="pl-2 fas fa-pound-sign"
+                        aria-hidden="true"></span>{{ item.product.price }}
                 </strong>
             <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                 {% csrf_token %}
