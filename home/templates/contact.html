@@ -1,47 +1,44 @@
-{% extends 'base.html' %} 
-{% load bootstrap_tags %} 
-
-{% block content %}
+{% extends 'base.html' %} {% load bootstrap_tags %} {% block content %}
 <!-- CONTACT FORM -->
 <div class="pt-3 container contact-container">
     <h4> Contact ReBoot <i class="fas fa-inbox"></i></h4>
-    
-    <div class="row">
-        <div class="pt-3 pb-3 col-md-6">
-                <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
-                    <legend>Contact Form</legend> 
-                    {% csrf_token %}
-                    {{ contact_form | as_bootstrap }}
-                    <p class="text-left"><small><em><strong>Important:</strong> Only <a href="{% url 'register' %}">
+
+    <div class="pt-2 pb-3 row">
+        <!-- User to input full name, email address, subject and detailed message -->
+        <div class="pt-3 pb-3 col-md-6 bg-light">
+            <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
+                <legend>Contact Form</legend>
+                {% csrf_token %} {{ contact_form | as_bootstrap }}
+                <p class="text-left"><small><em><strong>Important:</strong> Only <a href="{% url 'register' %}">
                     registered</a> Re-Boot members are permitted to donate rugby boots. Re-Boot hopes you have found
                     everything you've been looking for. If your question remains unanswered, then please refer to 
                     <a href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-add-review" action="submit">Submit Enquiry</button>
-                    </div>
-                </form>
-            </div>
-        
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-add-review" action="submit">Submit Enquiry</button>
+                </div>
+            </form>
+        </div>
+
         <!-- Contact card to help user access ReBoot -->
         <div class="pt-3 pb-3 col-md-6 contact-card">
             <fieldset>
-            <ul class="list-group">
-                <legend>Contact Info</legend> 
-                <li class="list-group-item first-one">
-                    <h5><b> Address</b></h5> ReBoot, Unit 15, Scrum Business Centre, Hooker Lane, Hampshire, SP15 0AA </li> 
-                <li class="list-group-item">
-                    <h5><b> Telephone </b></h5> 01234 987654 </li>
-                <li class="list-group-item">
-                    <h5><b> Email </b></h5> <a href="mailto:info@reboot.co.uk"> info@reboot.co.uk </a></li>
-                <li class="list-group-item">
-                    <h5><b> Business Hours </b></h5> 09:00 to 17.30 GMT </li>
-                <li class="list-group-item">
-                    <h5><b> Collections </b></h5> All replacement boot orders and boot donations are processed from ReBoot trading address. </li>
-                <li class="list-group-item">    
-                    <h5><b> Company uk vat no : </b></h5> GB 111 222 333 </li>
-            </ul>
+                <ul class="list-group">
+                    <legend>Contact Info</legend>
+                    <li class="list-group-item first-one">
+                        <h5><b> Address</b></h5> ReBoot, Unit 15, Scrum Business Centre, Hooker Lane, Hampshire, SP15 0AA </li>
+                    <li class="list-group-item">
+                        <h5><b> Telephone </b></h5> 01234 987654 </li>
+                    <li class="list-group-item">
+                        <h5><b> Email </b></h5> <a href="mailto:info@reboot.co.uk"> info@reboot.co.uk </a></li>
+                    <li class="list-group-item">
+                        <h5><b> Business Hours </b></h5> 09:00 to 17.30 GMT </li>
+                    <li class="list-group-item">
+                        <h5><b> Collections </b></h5> All replacement boot orders and boot donations are processed from ReBoot trading address. </li>
+                    <li class="list-group-item">
+                        <h5><b> Company uk vat no : </b></h5> GB 111 222 333 </li>
+                </ul>
             </fieldset>
         </div>
-        </div>
+    </div>
 </div>
 {% endblock %}
