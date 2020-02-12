@@ -4,17 +4,17 @@
     <h3>Cart Contents</h3>
 </div>
 
-<div class="row row-cols-1 row-cols-md-4">
+<div class="pt-3 row row-cols-1 row-cols-md-4">
     {% for item in cart_items %}
     <!-- The for loop is looping over item in cart_items because we're only going to show what's currently in our cart. -->
     <div class="col mb-1">
         <div class="panel-body">
-            <p><strong>{{ item.product.customer }}</strong></p>
+            <h5 class="px-2 py-2">{{ item.product.customer }}</h5>
             <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}'); height:200px; width:200px"></div>
-            <p><strong>Make: </strong>{{ item.product.make }}</p>
-            <p><strong>Size: </strong>{{ item.product.size }}</p>
+            <p class="pl-2"><strong>Make: </strong>{{ item.product.make }}</p>
+            <p class="pl-2"><strong>Size: </strong>{{ item.product.size }}</p>
             <strong>
-                    <p><span class="fas fa-pound-sign"
+                    <p><span class="pl-2 fas fa-pound-sign"
                         aria-hidden="true"></span>{{ item.product.price }}</p>
                 </strong>
             <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
@@ -22,7 +22,7 @@
                 <div class="form-group">
                     <label for="product-input-amount" class="sr-only">New Qty</label>
                     <div class="input-group">
-                        <div class="pr-2 input-group-addon text-center"><strong>Qty:</strong></div>                        
+                        <div class="pl-2 input-group-addon text-center"><strong>Qty:</strong></div>                        
                         <div class="pr-2 input-group-addon">{{item.quantity}}</div>
                     </div>
                 </div>
