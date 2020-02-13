@@ -19,11 +19,11 @@ class TestAccountsLoginForm(TestCase):
         form = UserLoginForm(data=user)
         self.assertTrue(form.is_valid)
 
-
     def test_login_form_invalid_data(self):
-        form = UserLoginForm(data={'username':'','password':''})
-        self.assertEqual(form.errors, {'username': ['This field is required.'],
-                                       'password': ['This field is required.']})
+        form = UserLoginForm(data={'username': '', 'password': ''})
+        self.assertEqual(form.errors,
+                         {'username': ['This field is required.'],
+                          'password': ['This field is required.']})
 
 
 class TestAccountsRegistrationForm(TestCase):
@@ -31,23 +31,21 @@ class TestAccountsRegistrationForm(TestCase):
     Ensure registration form is operating as expected
     """
     def test_successfull_register(self):
-        form = UserRegistrationForm({'username':"test123",
+        form = UserRegistrationForm({'username': "test123",
                                      "password1": "#Qwertyu",
                                      "password2": "#Qwertyu",
                                      "email": "test@123test.com"})
         self.assertTrue(form.is_valid())
 
-
     def test_register_with_already_created_username(self):
         setUp(self)
-        form = UserRegistrationForm({'username':"test123",
+        form = UserRegistrationForm({'username': "test123",
                                      "password1": "#Qwertyu",
                                      "password2": "#Qwertyu",
                                      "email": "test@123test.com"})
         self.assertFalse(form.is_valid())
         self.assertEqual(form.errors['username'],
-                                    ['A user with that username already exists.'])
-
+                                    ['That username already exists.'])
 
     def test_passwords_match(self):
         form = UserRegistrationForm({'username': 'test123',
@@ -56,10 +54,10 @@ class TestAccountsRegistrationForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertEqual(form.errors, {'password2': ['Passwords must match!']})
 
-
     def test_required_fields(self):
         form = UserRegistrationForm({})
         self.assertFalse(form.is_valid())
-        self.assertEqual(form.errors, {'username': ['This field is required.'],
-                                       'password1': ['This field is required.'],
-                                       'password2': ['This field is required.']})
+        self.assertEqual(form.errors,
+                         {'username': ['This field is required.'],
+                          'password1': ['This field is required.'],
+                          'password2': ['This field is required.']})
