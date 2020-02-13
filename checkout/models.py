@@ -1,15 +1,16 @@
 from django.db import models
 from products.models import Product
 
+
 # Create your models here.
 class Order(models.Model):
     """
-    Model to store order customer information. 
+    Model to store order customer information.
     """
     full_name = models.CharField(max_length=50, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
     country = models.CharField(max_length=40, blank=False)
-    postcode = models.CharField(max_length=20, blank=True) # Can be left blank
+    postcode = models.CharField(max_length=20, blank=True)  # Can be left blank
     town_or_city = models.CharField(max_length=40, blank=False)
     street_address1 = models.CharField(max_length=40, blank=False)
     street_address2 = models.CharField(max_length=40, blank=False)
@@ -18,7 +19,8 @@ class Order(models.Model):
 
     def __str__(self):
         return "{0}-{1}-{2}".format(self.id, self.date, self.full_name)
-        
+
+
 class OrderLineItem(models.Model):
     """
     Model to store individual order items, the Order and Product they relate
