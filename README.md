@@ -350,11 +350,11 @@ The following browsers were used in testing the Re-Boot application. Internet Ex
 
 platform | version
 ---------|--------
-Chrome   |
-Edge     |
-Firefox  |
-Safari   |
-Opera    |
+Chrome   |80.0.3987.87
+Edge     |44.18362.449.0
+Firefox  |74.0.2
+Safari   |12.4.5
+Opera    |66.0.3515.72
 
 ## Deployment
 
