@@ -4,14 +4,15 @@ from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import ContactForm
 
+
 def index(request, *args, **kwargs):
-    
+
     # A view that displays the index page
     return render(request, "index.html", {"home": "index"})
 
 
 def contact(request):
-    
+
     # Directs the customer to a contact us form
     if request.method == 'GET':
         form = ContactForm()
@@ -39,44 +40,48 @@ def contact(request):
 
 
 def explained(request, *args, **kwargs):
-    
+
     # Directs the customer to Re-Boot explained page
     return render(request, "explained.html", {"home": "explained"})
 
-    
+
 def faqs(request, *args, **kwargs):
-    
+
     # Directs the customer to FAQ'S page
     return render(request, "faqs.html", {"home": "faqs"})
 
-    
+
 def juniors(request, *args, **kwargs):
-    
+
     # Directs the customer to the juniors page, setting out pricing & sizes
     return render(request, "juniors.html", {"home": "juniors"})
 
-    
+
 def adults(request, *args, **kwargs):
-    
+
     # Directs the customer to the adults page, setting out pricing & sizes
     return render(request, "adults.html", {"home": "adults"})
-    
+
+
 def bootquality(request, *args, **kwargs):
-    
+
     # Directs the customer to the boot quality page. Accepted quality standards
     return render(request, "bootquality.html", {"home": "bootquality"})
-    
+
+
 def cookie(request, *args, **kwargs):
-    
+
     # Directs the customer to the cookie page. User guidance notes
     return render(request, "cookie.html", {"home": "cookie"})
-    
+
+
 def privacy(request, *args, **kwargs):
-    
+
     # Directs the customer to the privacy policy page. User guidance notes
     return render(request, "privacy.html", {"home": "privacy"})
-    
+
+
 def terms(request, *args, **kwargs):
-    
+
     # Directs the customer to the terms & conditions page. User guidance notes
     return render(request, "terms.html", {"home": "terms"})

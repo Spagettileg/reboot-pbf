@@ -12,7 +12,6 @@ class test_home_directory_pages(TestCase):
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'index.html')
 
-
     """
     Adults page tested to return a positive 200 error code.
     """
@@ -20,7 +19,6 @@ class test_home_directory_pages(TestCase):
         url = self.client.get('/')
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'adults.html')
-
 
     """
     Boot quality page tested to return a positive 200 error code.
@@ -30,7 +28,6 @@ class test_home_directory_pages(TestCase):
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'bootquality.html')
 
-
     """
     Contact page tested to return a positive 200 error code.
     """
@@ -38,7 +35,6 @@ class test_home_directory_pages(TestCase):
         url = self.client.get('/')
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'contact.html')
-
 
     """
     Cookie page tested to return a positive 200 error code.
@@ -48,7 +44,6 @@ class test_home_directory_pages(TestCase):
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'cookie.html')
 
-
     """
     Re-Boot explained page tested to return a positive 200 error code.
     """
@@ -56,7 +51,6 @@ class test_home_directory_pages(TestCase):
         url = self.client.get('/')
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'explained.html')
-
 
     """
     FAQ's page tested to return a positive 200 error code.
@@ -66,7 +60,6 @@ class test_home_directory_pages(TestCase):
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'faqs.html')
 
-
     """
     Juniors page tested to return a positive 200 error code.
     """
@@ -75,7 +68,6 @@ class test_home_directory_pages(TestCase):
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'juniors.html')
 
-
     """
     User privacy page tested to return a positive 200 error code.
     """
@@ -83,7 +75,6 @@ class test_home_directory_pages(TestCase):
         url = self.client.get('/')
         self.assertEqual(url.status_code, 200)
         self.assertTemplateUsed(url, 'privacy.html')
-
 
     """
     Terms and conditions page tested to return a positive 200 error code.
