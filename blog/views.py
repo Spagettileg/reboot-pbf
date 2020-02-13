@@ -11,7 +11,7 @@ def get_posts(request):
     and render them to the 'blogposts.html' template
     """
     posts = Post.objects.filter(published_date__lte=timezone.now()
-        ).order_by('-published_date')
+                                ).order_by('-published_date')
     return render(request, "blogposts.html", {'posts': posts})
 
 
