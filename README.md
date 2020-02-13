@@ -246,27 +246,27 @@ TBC...
 
 Code       | Url Link                    | App / Directory          | Filename                     | Outcome | Comments
 -----------|-----------------------------|--------------------------|------------------------------|---------|---------
-HTML5      |https://validator.w3.org     |Accounts                  |login.html                    |Pass     |Style attribute for background-image used = ok. Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Accounts                  |login.html                    |Pass     |Jinja templating language used = ok     
 HTML5      |https://validator.w3.org     |Accounts                  |password_reset_complete.html  |Pass     |Jinja templating language used = ok        
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_confirm.html   |Pass     |Style attribute for background-image used = ok. Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_done.html      |Pass     |Style attribute for background-image used = ok. Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_email.html     |Pass     |Style attribute for background-image used = ok. Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Accounts                  |password_reset_confirm.html   |Pass     |Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Accounts                  |password_reset_done.html      |Pass     |Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Accounts                  |password_reset_email.html     |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Accounts                  |password_reset_form.html      |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Accounts                  |profile.html                  |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Accounts                  |registration.html             |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Blog                      |blogpostform.html             |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Blog                      |blogposts.html                |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Blog                      |postdetail.html               |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Cart                      |cart.html                     |Pass     |HR stray end tag reported,but all ok. Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Cart                      |cart.html                     |Pass     |p stray end tag reported,but all ok. Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Checkout                  |checkout.html                 |Pass     |Jinja templating language used = ok  
-HTML5      |https://validator.w3.org     |Home                      |adults.html                   |Pass     |Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Home                      |adults.html                   |Pass     |Stray end tag reported,but all ok.Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |bootquality.html              |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |contact.html                  |Pass     |Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Home                      |contact.html                  |Pass     |Legend attribute replaced by h3. Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |cookie.html                   |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |explained.html                |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |faqs.html                     |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |index.html                    |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |juniors.html                  |Pass     |Jinja templating language used = ok
+HTML5      |https://validator.w3.org     |Home                      |juniors.html                  |Pass     |Stray end tag reported,but all ok.Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |privacy.html                  |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Home                      |terms.html                    |Pass     |Jinja templating language used = ok
 HTML5      |https://validator.w3.org     |Products                  |create_product.html           |Pass     |Jinja templating language used = ok
@@ -339,7 +339,7 @@ Code       | Url Link                    | App / Directory          | Filename  
 -----------|-----------------------------|--------------------------|------------------------------|---------|---------
 CSS3       |https://jigsaw.w3.org/       |Static                    |style.css                     |Pass     |W3C CSS Validator results - CSS level 3 + SVG - negative padding -1rem triggered a warning message = ok
 Javascript |https://jshint.com/          |Static                    |stripe.js                     |Pass     |No errors found
-Javascript |https://jshint.com/          |Checkout                  |checkout.html                 |Pass     |Some instances of $ being undefined due to using jQuery. No errors found    
+Javascript |https://jshint.com/          |Checkout                  |checkout.html                 |Pass     |Code recognised by Stripe.com = ok    
 
 
 ### Responsiveness & Rendering
