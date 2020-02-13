@@ -10,6 +10,8 @@ Create product views
 """
 
 """ View to show all products on a single page """
+
+
 def all_products(request):
     products = Product.objects.all()
     context = {
@@ -17,7 +19,10 @@ def all_products(request):
     }
     return render(request, "products.html", context)
 
+
 """ View to show Junior & Adult category for rugby boot shopping """
+
+
 def categories(request):
     categories = Product.objects.all()
     context = {
@@ -25,7 +30,10 @@ def categories(request):
     }
     return render(request, "products.html", context)
 
-""" View to show rugby boot product detail, per product """ 
+
+""" View to show rugby boot product detail, per product """
+
+
 def product_detail(request, id):
     products = get_object_or_404(Product, id=id)
     context = {
@@ -34,29 +42,33 @@ def product_detail(request, id):
     return render(request, "productdetail.html", context)
 
 
-""" Route allows the user to create (donate) a product """    
+""" Route allows the user to create (donate) a product """
+
+
 @login_required
 def create_a_product(request):
-    
+
     if request.method == "POST":
         form = ProductCreationForm(request.POST, request.FILES)
-        
+
         if form.is_valid():
             form.save()
             messages.success(request, "Thank you {0}, {1} have been added."
                              .format(request.user, "your donated boots"),
                              extra_tags="alert-primary")
-                           
+
             return redirect('profile')
         else:
             form = ProductCreationForm()
-            messages.error(request, '{} sorry, your product cannot be added.'.format(request.user), extra_tags="alert-primary")
-    
+            messages.error(request,
+                           '{} sorry, your product cannot be added.'
+                           .format(request.user), extra_tags="alert-primary")
+
     else:
         form = ProductCreationForm()
-    
+
     context = {
         'form': form,
     }
-    
+
     return render(request, 'create_product.html', context)

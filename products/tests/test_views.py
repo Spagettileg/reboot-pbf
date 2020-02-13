@@ -20,18 +20,18 @@ class test_product_pages(TestCase):
 
     """
     Check rugby boot detail can be viewed.
-    """    
+    """
     def test_product_detail(self):
         self.user = User.objects.get(username="test123")
         product = Product(title="Test title", category="Test category",
-                  colour="Test colour")
+                          colour="Test colour")
         product.save()
         response = self.client.get('/products/{}'.format(product.id))
         self.assertEqual(response.status_code, 301)
 
     """
     Check to see that a new product creation will successfully render.
-    """      
+    """
     def test_create_a_product(self):
         response = self.client.get('/products/create_product/')
         self.assertEqual(response.status_code, 200)
