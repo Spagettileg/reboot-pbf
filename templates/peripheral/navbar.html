@@ -1,5 +1,5 @@
 {% load static %}
-
+<!-- Navbar design to cover user logged in and logged out -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white small-box-shadow">
 
     <div>
@@ -16,13 +16,14 @@
             </div>
         </a>
     </div>
-
+    <!-- Navbar collapses in a mobile view. Full navbar restored in both tablet & desktop views -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
+            <!-- Dropdown options include Home, About, Bootshop & Help -->
             <li class="nav-item {% if page == 'home' %}active{% endif %}">
                 <a class="nav-link" href="{% url 'index' %}">Home {% if page == "home" %}<span
                         class="sr-only">(current)</span>{% endif %}</a>
@@ -37,7 +38,7 @@
 
                     <a class="dropdown-item" href="{% url 'juniors' %}">Juniors</a>
                     <a class="dropdown-item" href="{% url 'adults' %}">Adults</a>
-                    <a class="dropdown-item" href="{% url 'bootquality' %}">Boot Quality</a> 
+                    <a class="dropdown-item" href="{% url 'bootquality' %}">Boot Quality</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -60,9 +61,10 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+            <!-- Search function enables user to locate rugby boot products by product make -->
             <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="GET">
-            <input class="form-control" type="text" placeholder="Find Brand.." name="search" style="width: 120px; height: 34px;">
-            <button type"submit"><i class="fas fa-search"></i></button>
+                <input class="form-control" type="text" placeholder="Find Brand.." name="search" style="width: 120px; height: 34px;">
+                <button type "submit"><i class="fas fa-search"></i></button>
             </form>
             <!-- User registration and authentication -->
             {% if user.is_authenticated %}
@@ -91,6 +93,7 @@
             </div>
         </a>
     </div>
+    <!-- Product counter positioned at top right corner of shopping cart -->
     <div class="pr-3">
         {% if product_count > 0 %}
         <div class="badge">{{ product_count }}</div>
