@@ -47,7 +47,6 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 - Start a blog conversation upon availability of rugby boots not yet appearing on Re-Boot website, etc
 - Happy to browse current stock, without obligation to purchase
 - Assured that personal details are secure from unauthorised access
-- All purchased rugby boots delivered to a pre-nominated safe delivery address
 
 #### Business
 - Only registered users can donate and purchase Re-Boot products to help deliver assurance on personal data security and trading
@@ -86,27 +85,26 @@ My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.co
 ### User Stories
 > I need an app that provides quick and intuitive access to understand how to donate & purchase either new or used rugby boots [READ]
 
-> I want to detailed information on make, size, colour and stud type of a replacement rugby boot [READ]
+> I want detailed information on make, size, colour and stud type of a replacement rugby boot [READ]
 
-> My personal information must be secure and password protected {CREATE, READ, UPDATE & DELETE]
+> My personal information must be secure and password protected {CREATE, READ & UPDATE]
 
 > My donated rugby boot information must be kept in a secure environment and protected from unauthorised edit & or deletion [UPDATE & DELETE]
 
-> I want to be informed if my donated rugby boots dont get purchased from 6 months from the original date of donation [READ & UPDATE] 
-
 > Obsolete rugby boot donations can be removed from my profile by an authorised user [READ & DELETE]
 
-> To have access to a blog function to understand availability of replacement rugby boots that may not be appearing on Re-Boot website [CREATE, READ, UPDATE & DELETE]
+> To have access to a blog function to understand availability of replacement rugby boots that may not be appearing on Re-Boot website [CREATE, READ & UPDATE]
 
 > I would like the opportunity to write a review / provide feedback of my user experience [CREATE, READ & UPDATE]
 
-> I'd like to upload my rugby boot donation by adding make, size, colour, stud configuration and image too [CREATE & UPDATE]
+> I'd like to upload my rugby boot donation by adding make, size, colour, stud configuration and image too [CREATE, READ & UPDATE]
 
 > I would like the flexibility to donate and purchase rugby boots at different times. Replacement boots may not be available at the time of boot donation [CREATE, READ & UPDATE]
 
+> I want to be able to delete unwanted rugby boot products from my shopping cart [DELETE]
+
 > Replacement boots - I'm willing to pay £5.00 for junior boots and £10.00 for adult boots [READ]
 
-> Delivery costs of replacement rugby boots should be borne by the original boot donator [READ]  
 
 ### CSS Framework
 Bootstrap 4 was the chosen framework for styling my project. I used the bootstrap grid extensively to support responsiveness on mobile, tablet and desktop devices.  
