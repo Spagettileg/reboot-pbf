@@ -30,7 +30,7 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 
 [Testing](#testing) || [Introduction](#introduction) | [Systems Based Testing](#systems-based-testing) | [Manual Testing](#manual-testing) | [Code Validation](#code-validation) | [Responsiveness & Rendering](#responsiveness--rendering) 
 
-[Browser Compatibility](#browser-compatibility) ||
+[Browser Compatability](#browser-compatability) ||
 
 [Deployment](#deployment) || [Local Deployment](#local-deployment) | [Deployment To Heroku](#deployment-to-heroku)
 
@@ -330,7 +330,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	Clear and definitive guidelines on donated rugby boot tolerance
 
-    -	New Boots: Original box included
+    -   New Boots: Original box included
     -   Almost New: Super condition
     -   Used Boots: Worn in, avoiding blisters
 
