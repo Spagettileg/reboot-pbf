@@ -9,7 +9,7 @@
 
 A marketplace is created by the registered customer through donating unwanted rugby boots. For juniors, foot growth is the main reason for changing their boots, whereas adults may look to change for improved performance or manage issue of wear & tear. Irrespective of age or gender, Re-Boot aims to serve a rugby playing community with low-cost and good quality replacement boots at a fraction of the retail price.     
 
-Once registered, customers will enjoy secure access to their own 'MyReBoot' webpage where personal details can be created, read, updated and deleted. Furthermore, the logged in user can also view their transaction history for both donations and purchases, together with any applicable customer feedback relating to a specfic transaction.    
+Once registered, customers will enjoy secure access to their own 'MyReBoot' webpage where the logged in user can donate unwanted rugby boots, create a blog post and reset their Re-Boot password.     
 
 Furthermore, a reduced carbon footprint can be achieved through avoiding the purchase of brand new rugby boots and shift to product reuse to reduce unecessary landfill waste.
 
@@ -51,7 +51,7 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 #### Business
 - Only registered users can donate and purchase Re-Boot products to help deliver assurance on personal data security and trading
 - Creation of a MyReBoot account is only for registered users to ensure bonafide credentials
-- Provide a simple and intuitive site for the user to click, search, read, create, add, update & delete own data. Access levels are determined through whether user has successfully registered 
+- Provide a simple and intuitive site for the user to click, search, read, create, add, update & delete own data. Access levels are determind through whether user has successfully registered 
 - Use customer feedback to further improve the offerings of Re-Boot
 - Monitor product demand to help generate positive marketing campaigns 
 
@@ -68,7 +68,7 @@ My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.co
 
 •	[About](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/About_v1.zip)
 
-•	[BootRoom](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/BootRoom_v1.zip)
+•	[BootRoom](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/BootShop_v1.zip)
 
 •	[Help](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Help_v1.zip)
 
@@ -147,8 +147,65 @@ Django framework is fast, secure and scalable. Provides a dynamic CRUD (create, 
 
 ### Data Models
 
-TBC...
+#### User
+A User model used to support this project is the default standard provided by `django.contrib.auth.models`
 
+#### Blog app model
+Name            | DB Key              | Field Type    | Validation
+----------------|---------------------|---------------|---------------------------------------------
+Title           | post.title          | CharField     | max_length=200
+Author          | post.author         | CharField     | max_length=75, null=True
+Content         | post.content        | TextField     |
+Created Date    | post.created_date   | DateTimeField | auto_now_add=True
+Published Date  | post.published_date | DateTimeField | blank=True, null=True, default=timezone.now
+Views           | post.views          | IntegerField  | default=0
+Tag             | post.tag            | CharField     | max_length=30, blank=True, null=True
+Image           | post.image          | ImageField    | upload_to="images", blank=True, null=True
+
+- Blog post creation occurs within MyReBoot, once user has logged in  
+- Blog images are stored in the `media` directory 
+
+#### Checkout app model
+Within the checkout app, `Order` and `OrderLineItem` models hold the data needed for users to create and pay for their orders.
+
+##### Order model
+Name              | DB Key          | Field Type    | Validation
+------------------|-----------------|---------------|---------------------------------------------
+Full name         | full_name       | CharField     | max_length=50, blank=False
+Phone number      | phone_number    | CharField     | max_length=20, blank=False
+Country           | country         | Charfield     | max_length=40, blank=False
+Postcode          | postcode        | CharField     | max_length=20, blank=True
+Town or City      | town_or_city    | CharField     | max_length=40, blank=False
+Street address 1  | street_address1 | CharField     | max_length=40, blank=False
+Street address 2  | street_address2 | CharField     | max_length=40, blank=False
+County            | county          | CharField     | max_length=40, blank=False
+Date              | date            | DateTimeField |             
+
+- An `Order` model instance is created before any `OrderLineItems`. `OrderLineItems` rely on the `Order` model for a `ForeignKey`.
+
+##### OrderLineItem model
+Name     | DB Key   | Field Type                 | Validation
+---------|----------|----------------------------|---------------------------------------------
+Order    | order    | ForeignKey to Order        | Order, null=False, on_delete=models.CASCADE
+Product  | product  | ForeignKey to Product      | Product, null=False, on_delete=models.CASCADE
+Quantity | quantity | PositiveSmallIntegerField  | 
+
+- An OrderLineItem instance is created for each unique product in the users cart, linking a users existing Order, product and quantity the user elects to purchase
+
+#### Products app model
+Name      | DB Key           | Field Type    | Validation
+----------|------------------|---------------|---------------------------------------------
+Make      | product.make     | CharField     | max_length=254
+Category  | product.category | CharField     | max_length=254, choices=category_choices
+Customer  | product.customer | CharField     | max_length=50, choices=category_choices, null=True
+Size      | product.size     | IntegerField  | 
+Colour    | product.colour   | CharField     | max_length=50
+Studs     | product.studs    | CharField     | max_length=50
+Quality   | product.quality  | CharField     | max_length=50, null=True
+Price     | product.price    | DecimalField  | max_digits=6, decimal_places=2
+Image     | product.image    | ImageField    | upload_to='images', blank=True, null=True
+
+- `Category choices` are defined within the `Product` model
 
 ## Technologies Applied
 ### Databases
@@ -345,6 +402,11 @@ Javascript |https://jshint.com/          |Checkout                  |checkout.ht
 
 
 ### Responsiveness & Rendering
+Chrome DevTools together with a selection of mobile, table and desktop devices were relied upon through the entire software development cycle. A key objective was to test both the rendering and responsiveness of the software application against multiple screen resolutions and web browser platforms. Any bugs identified were debugged in real time with special observations noted in a [testing matrix control document](https://github.com/Spagettileg/reboot-pbf/tree/master/tests).
+
+The Re-Boot application has been tested by students from the Slack community, together with friends and family members. Feedback on what worked well and what did not was recorded and suitable corrections to the code were keyed.
+
+In the final analysis, this application can be passed as fully responsive across all devices that participated in testing.
 
 ## Browser Compatability
 
