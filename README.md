@@ -125,10 +125,15 @@ Open Sans & Sans Serif fonts were used throughout this project. H1 header was us
 Font-weight of 400 & 700 was used to help draw attention to the user for both branding and instruction too.
 
 ### Icon Graphics
-Font Awesome 5 icon graphics were used in conjunction with Bootstrap 4... (More info required)
+Font Awesome 5 icon graphics were used in conjunction with Bootstrap 4, primarily to support information page headers
 
-TBC
-TBC
+- latest arrivals & boot quality = `fas fa-shoe-prints`
+- faq's = `fas fa-comments`
+- contact us - `far fa-inbox`
+- privacy policy - `fas fa-lock`
+- terms & conditions - `fas fa-exclamation-triangle`
+- donate rugby boots - `far fa-handshake`
+- blog post - `far fa-envelope`
 
 
 ## Information Architecture
