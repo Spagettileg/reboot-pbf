@@ -445,8 +445,6 @@ Opera    |66.0.3515.72
 
 - Favicon image was created by myself
 
-- Shoe sizing charts from [shoesizingcharts.com](https://www.shoesizingcharts.com/)  
-
 - Images for Browse, Donate, Purchase, Feedback and Empty Shopping Cart [pixabay](https://www/pixabay.com)
 
 - User register image [flickr.com](www.flickr.com/photos )
