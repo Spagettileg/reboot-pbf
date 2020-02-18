@@ -51,10 +51,9 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 #### Business
 - Only registered users can donate and purchase Re-Boot products to help deliver assurance on personal data security and trading
 - Creation of a MyReBoot account is only for registered users to ensure bonafide credentials
-- Provide a simple and intuitive site for the user to click, search, read, create, add, update & delete records. Access levels are determined through whether user has successfully registered 
+- Provide a simple and intuitive site for the user to click, search, read, create, add, update & delete own data. Access levels are determined through whether user has successfully registered 
 - Use customer feedback to further improve the offerings of Re-Boot
 - Monitor product demand to help generate positive marketing campaigns 
-- Next stage generation is to move on from a personal recipe application to enterprise scale where professional kitchens and learning institutions leverage the power of code in the cloud to access quality recipes to create industry best practice and blue print models for recipe innovation.  
 
 #### Next Stage Generation
 - Increase product density through expanding scope of sports footwear genres
