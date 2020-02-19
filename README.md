@@ -448,7 +448,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
     - `category': "amateur"`
 
 ## Tests
-Test analysis and reporting can be viewed in a separate [TESTS.md]() file.
+Test analysis and reporting can be viewed in a separate [TESTS.md](https://github.com/Spagettileg/reboot-pbf/blob/master/TESTS.md) file.
 
 ## Deployment
 
