@@ -5,6 +5,22 @@ category_choices = (
     ('Adults', 'Adults'),
 )
 
+quality_choices = (
+    ('Brand New', 'Brand New'),
+    ('Almost New', 'Almost New'),
+    ('Used Boots', 'Used Boots'),
+)
+
+stud_choices = (
+    ('Screw in', 'Screw in'),
+    ('Moulded', 'Moulded'),
+)
+
+price_choices = (
+    ('5.00', '5.00'),
+    ('10.00', '10.00'),
+)
+
 
 class Product(models.Model):
     make = models.CharField(max_length=254)
@@ -18,11 +34,13 @@ class Product(models.Model):
     """ Size of the product """
     colour = models.CharField(max_length=50)
     """ Product colour """
-    studs = models.CharField(max_length=50)
+    studs = models.CharField(max_length=50, choices=stud_choices)
     """ Stud configuration of boot. Either moulded or screwin """
-    quality = models.CharField(max_length=50, null=True)
+    quality = models.CharField(max_length=50, choices=quality_choices,
+                               null=True)
     """ Brand new, almost new and general wear """
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2,
+                                choices=price_choices)
     """ Pricing model will be less than £1m and decimal places = pence """
     image = models.ImageField(upload_to='images', blank=True, null=True)
     """ Allow images to be uploaded for our products """
