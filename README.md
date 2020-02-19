@@ -1,9 +1,6 @@
 [![Build Status](https://travis-ci.com/Spagettileg/reboot-pbf.svg?branch=master)](https://travis-ci.com/Spagettileg/reboot-pbf)
 
 # Re-Boot | Online exchange for new and used rugby boots 
-###### Full Stack Frameworks with Django - Code Institute 
-
-[Re-Boot](https://reboot-pbf.herokuapp.com/) was designed, built and deployed by Paul Friel as his final project for the Code Institute Full Stack Web Development diploma. 
 
 Re-Boot is a non-profit making product exchange portal that provides a secure hub for the recyling of good quality rugby boots. The website targets the rugby playing community through keeping the cost of participation to an inexpensive level.  
 
