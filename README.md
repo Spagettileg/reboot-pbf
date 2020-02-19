@@ -24,13 +24,11 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 
 [Technologies Applied](#technologies-applied) || [Databases](#databases) | [Languages](#languages) | [Libraries](#libraries) | [Tools](#tools) | [Hosting](#hosting)
 
-[ReBoot Summary Functions](#reboot-summary-functions) ||
+[ReBoot Summary Functions](#reboot-summary-functions) 
 
 [Features](#features) || [Features Left to Implement](#features-left-to-implement)
 
-[Testing](#testing) || [Introduction](#introduction) | [Systems Based Testing](#systems-based-testing) | [Manual Testing](#manual-testing) | [Code Validation](#code-validation) | [Responsiveness & Rendering](#responsiveness--rendering) 
-
-[Browser Compatability](#browser-compatability) ||
+[Tests](#tests)
 
 [Deployment](#deployment) || [Local Deployment](#local-deployment) | [Deployment To Heroku](#deployment-to-heroku)
 
@@ -449,134 +447,8 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
     - `category': "professional"`
     - `category': "amateur"`
 
-## Testing
-
-### Introduction
-
-
-### Systems Based Testing 
-
-### Manual Testing
-##### Registration Testing
-
-### Code Validation
-
-Code       | Url Link                    | App / Directory          | Filename                     | Outcome | Comments
------------|-----------------------------|--------------------------|------------------------------|---------|---------
-HTML5      |https://validator.w3.org     |Accounts                  |login.html                    |Pass     |Jinja templating language used = ok     
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_complete.html  |Pass     |Jinja templating language used = ok        
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_confirm.html   |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_done.html      |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_email.html     |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |password_reset_form.html      |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |profile.html                  |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Accounts                  |registration.html             |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Blog                      |blogpostform.html             |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Blog                      |blogposts.html                |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Blog                      |postdetail.html               |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Cart                      |cart.html                     |Pass     |p stray end tag reported,but all ok. Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Checkout                  |checkout.html                 |Pass     |Jinja templating language used = ok  
-HTML5      |https://validator.w3.org     |Home                      |adults.html                   |Pass     |Stray end tag reported,but all ok.Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |bootquality.html              |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |contact.html                  |Pass     |Legend attribute replaced by h3. Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |cookie.html                   |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |explained.html                |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |faqs.html                     |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |index.html                    |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |juniors.html                  |Pass     |Stray end tag reported,but all ok.Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |privacy.html                  |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Home                      |terms.html                    |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Products                  |create_product.html           |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Products                  |productdetail.html            |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Products                  |products.html                 |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Templates                 |base.html                     |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Templates > Peripheral    |navbar.html                   |Pass     |Jinja templating language used = ok
-HTML5      |https://validator.w3.org     |Templates > Peripheral    |footer.html                   |Pass     |Jinja templating language used = ok
-
-Code       | Url Link                    | App / Directory          | Filename                     | Outcome | Comments
------------|-----------------------------|--------------------------|------------------------------|---------|---------
-Python3    |http://pep8online.com        |Accounts                  |test_app.py                   |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |test_forms.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |test_views.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |admin.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |apps.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |backends.py                   |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |forms.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |models.py                     |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |urls.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |urls_reset.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Accounts                  |views.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |test_app.py                   |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |test_forms.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |test_models.py                |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |test_views.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |admin.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |apps.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |forms.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |models.py                     |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |urls.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Blog                      |views.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |test_views.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |admin.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |apps.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |contexts.py                   |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |models.py                     |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |urls.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Cart                      |views.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |test_forms.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |test_models.py                |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |test_views.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |admin.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |apps.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |forms.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |models.py                     |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |urls.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Checkout                  |views.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |test_views.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |admin.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |apps.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |contexts.py                   |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |models.py                     |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |urls.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Home                      |views.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |test_forms.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |test_models.py                |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |test_views.py                 |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |admin.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |apps.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |forms.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |models.py                     |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |urls.py                       |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Products                  |views.py                      |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Root Directory            |custom_storages.py            |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Root Directory            |env.py                        |Pass     |All convention errors corrected = ok
-Python3    |http://pep8online.com        |Root Directory            |manage.py                     |Pass     |All convention errors corrected = ok
-
-Code       | Url Link                    | App / Directory          | Filename                     | Outcome | Comments
------------|-----------------------------|--------------------------|------------------------------|---------|---------
-CSS3       |https://jigsaw.w3.org/       |Static                    |style.css                     |Pass     |W3C CSS Validator results - CSS level 3 + SVG - negative padding -1rem triggered a warning message = ok
-Javascript |https://jshint.com/          |Static                    |stripe.js                     |Pass     |No errors found
-Javascript |https://jshint.com/          |Checkout                  |checkout.html                 |Pass     |Code recognised by Stripe.com = ok    
-
-
-### Responsiveness & Rendering
-Chrome DevTools together with a selection of mobile, table and desktop devices were relied upon through the entire software development cycle. A key objective was to test both the rendering and responsiveness of the software application against multiple screen resolutions and web browser platforms. Any bugs identified were debugged in real time with special observations noted in a [testing matrix control document](https://github.com/Spagettileg/reboot-pbf/tree/master/tests).
-
-The Re-Boot application has been tested by students from the Slack community, together with friends and family members. Feedback on what worked well and what did not was recorded and suitable corrections to the code were keyed.
-
-In the final analysis, this application can be passed as fully responsive across all devices that participated in testing.
-
-## Browser Compatability
-
-The following browsers were used in testing the Re-Boot application. Internet Explorer was out of scope for testing due to obsolete capability
-
-platform | version
----------|--------
-Chrome   |80.0.3987.87
-Edge     |44.18362.449.0
-Firefox  |74.0.2
-Safari   |12.4.5
-Opera    |66.0.3515.72
+## Tests
+Test analysis and reporting can be viewed in a separate [TESTS.md]() file.
 
 ## Deployment
 
@@ -766,3 +638,14 @@ Expert guidance on how to do these steps can be found in the [heroku devcenter d
 - Junior and adult rugby images [clipart](https://www.clipartof.com/gallery/clipart/rugby.html)
 
 ### Acknowledgements
+
+**Simen Daehlin** (Current Mentor) - For clear guidance on opportunities to improve website design using improved normal HTML & CSS conventions. Simpler coding practice makes for better output. 
+**Theo Despoudis** (Previous Mentor) - For his guidance in previous milestone projects and helping understand the finer detail of Javascript & Python coding 
+
+Slack Community and the following experts to keep me honest and focused.
+
+**Stephen Moody** - Tutor,
+**Michael Park** - Tutor &
+**Samantha Dartnell** - Tutor 
+
+*This is for educational use.* 
