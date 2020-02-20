@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.contrib import messages
 from .forms import ProductCreationForm
 from django.contrib.auth.decorators import login_required
+import sweetify
 
 """
 Create product views
@@ -53,16 +54,16 @@ def create_a_product(request):
 
         if form.is_valid():
             form.save()
-            messages.success(request, "Thank you {0}, {1} have been added."
-                             .format(request.user, "your donated boots"),
-                             extra_tags="alert-primary")
+            sweetify.success(request,
+                             "Thank you {0}, {1} have been added."
+                             .format(request.user, "your donated boots"))
 
             return redirect('profile')
         else:
             form = ProductCreationForm()
-            messages.error(request,
+            sweetify.error(request,
                            '{} sorry, your product cannot be added.'
-                           .format(request.user), extra_tags="alert-primary")
+                           .format(request.user), persistent=':(')
 
     else:
         form = ProductCreationForm()

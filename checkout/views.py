@@ -7,6 +7,8 @@ from django.conf import settings
 from django.utils import timezone
 from products.models import Product
 import stripe
+import sweetify
+
 
 # Create your views here.
 stripe.api_key = settings.STRIPE_SECRET
@@ -44,18 +46,20 @@ def checkout(request):
                 )
 
             except stripe.error.CardError:
-                messages.error(request, "Your card was declined!")
+                sweetify.warning(request, "Your card was declined!")
 
             if customer.paid:
-                messages.error(request, "You have successfully paid")
+                sweetify.success(request, "You have successfully paid")
                 request.session['cart'] = {}
                 return redirect(reverse('index'))
             else:
-                messages.error(request, "Unable to take payment")
+                sweetify.error(request,
+                               "Unable to take payment", persistent=':(')
         else:
             print(payment_form.errors)
-            messages.error(request,
-                           "We were unable to take a payment with that card!")
+            sweetify.error(request,
+                           "We were unable to take a payment with that card!",
+                            persistent=':(')
     else:
         payment_form = MakePaymentForm()
         order_form = OrderForm()

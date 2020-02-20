@@ -4,6 +4,7 @@ from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
+import sweetify
 
 
 def register(request):
@@ -11,8 +12,8 @@ def register(request):
     Render the registration page
     """
     if request.user.is_authenticated:
-        messages.success(request, "You are already logged in",
-                         extra_tags="alert-primary")
+        sweetify.info(request, "You are already logged in",
+                         button='Ok', timer=3000)
         return redirect(reverse('index'))
 
     if request.method == "POST":
@@ -26,12 +27,13 @@ def register(request):
 
             if user:
                 auth.login(user=user, request=request)
-                messages.success(request, "You have successfully registered")
+                sweetify.success(request,
+                                 "You have successfully registered")
                 return redirect(reverse('index'))
             else:
-                messages.error(request,
-                               "Unable to register your account at this time!",
-                               extra_tags="alert-primary")
+                sweetify.info(request,
+                              "Unable to register your account at this time!",
+                              button='Ok', timer=3000)
     else:
         # Create an instance of reg form
         registration_form = UserRegistrationForm()
@@ -48,8 +50,8 @@ def login(request):
     Return a Login page
     """
     if request.user.is_authenticated:
-        messages.success(request, "You are already logged in!",
-                         extra_tags="alert-primary")
+        sweetify.info(request, "You are already logged in!",
+                         button='OK', timer=3000)
         return redirect(reverse('index'))
 
     if request.method == "POST":
@@ -60,8 +62,9 @@ def login(request):
 
             if user:
                 auth.login(user=user, request=request)
-                messages.success(request, "You have successfully logged in!",
-                                 extra_tags="alert-primary")
+                sweetify.success(request,
+                                 "You have successfully logged in!")
+
                 if request.GET.get('next', False):
                     return HttpResponseRedirect(request.GET.get('next'))
                 else:
@@ -80,8 +83,8 @@ def logout(request):
     Log the user out
     """
     auth.logout(request)
-    messages.success(request, "You have successfully been logged out!",
-                     extra_tags="alert-primary")
+    sweetify.success(request, "You have successfully been logged out!")
+
     return redirect(reverse('index'))
 
 

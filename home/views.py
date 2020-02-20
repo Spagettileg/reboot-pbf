@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import ContactForm
+import sweetify
 
 
 def index(request, *args, **kwargs):
@@ -30,10 +31,10 @@ def contact(request):
                 from_email,
                 to_list,
                 fail_silently=False)
-            messages.success(
+            sweetify.info(
                 request,
                 """We\'ve received your message,
-                and shall be back with you shortly""")
+                and shall be back with you shortly""", button='Ok', timer=3000)
         return redirect('products')
     context = {'contact_form': form}
     return render(request, 'contact.html', context)
