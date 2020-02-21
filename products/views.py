@@ -6,6 +6,7 @@ from .forms import ProductCreationForm
 from django.contrib.auth.decorators import login_required
 import sweetify
 
+
 """
 Create product views
 """
@@ -55,15 +56,15 @@ def create_a_product(request):
         if form.is_valid():
             form.save()
             sweetify.success(request,
-                             "Thank you {0}, {1} have been added."
-                             .format(request.user, "your donated boots"))
+                             "Thank you {}, BootShop has been updated."
+                             .format(request.user))
 
             return redirect('profile')
         else:
             form = ProductCreationForm()
             sweetify.error(request,
                            '{} sorry, your product cannot be added.'
-                           .format(request.user), persistent=':(')
+                           .format(request.user))
 
     else:
         form = ProductCreationForm()
