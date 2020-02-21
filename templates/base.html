@@ -32,27 +32,21 @@
     <noscript>This website will run when Javascript has been enabled.</noscript> {% if navbar != False %} {% include 'peripheral/navbar.html' %}
     <!-- Rugby image banner -->
     <div class="banner"></div>
-    {% endif %} 
-    
-    
-    
-    {% block content %} {% endblock %} {% if footer != False %} {% include 'peripheral/footer.html' %} {% endif %}
+    {% endif %} {% block content %} {% endblock %} {% if footer != False %} {% include 'peripheral/footer.html' %} {% endif %}
 
     <!-- JS Library for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- JS Library for SweetAlert --> 
+    <!-- JS Library for SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.2/dist/sweetalert2.min.js" integrity="sha256-Dng0DAztFltQj4IlZTa91l0nsxzbCMXPji0VwEdpwvQ=" crossorigin="anonymous"></script>
-
-    
 
     <!-- checkout.html will only be injected into base.html when clicking on a checkout button -->
     {% block head_js %} {% endblock head_js %}
-
-    {% load sweetify %}
-    {% sweetify %}
+    
+    <!-- Sweetify to inject into templates with forms built with outcome messaging --> 
+    {% load sweetify %} {% sweetify %}
 </body>
 
 </html>
