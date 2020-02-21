@@ -6,22 +6,20 @@
     <div class="px-3 py-3 col-md-4 adults-image text-center">
             <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
         </div>
-    <div class="col-md-4 bg-light">
-        
+    <div class="col-md-4 bg-dark text-white">
         <div class="row">
             <div class="pt-2 col col-12 text-center">
                 <h4>Sign In</h4>
                 <p><small>"Re-Boot is just a click away..."</small></p>
             </div>
         </div>
-
         <div class="row">
             <div class="col col-12">
                 <form method="POST">
                     {% csrf_token %}
                     {{ login_form | as_bootstrap }}
                     <div class="text-left"><small>Click
-                        <a href="{% url 'password_reset' %}" class="text-secondary"><strong>here</strong></a> if password forgotten</small>
+                        <a href="{% url 'password_reset' %}" class="text-important"><strong>here</strong></a> if password forgotten</small>
                     </div>
                     <div class="pt-2">
                     <button class="btn btn-read-more" type="submit">Log in</button>
@@ -32,7 +30,6 @@
                 </form>
             </div>
         </div>
-        
     </div>
     <div class="px-3 py-3 col-md-4 adults-image text-center">
             <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
