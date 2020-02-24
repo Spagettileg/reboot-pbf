@@ -20,13 +20,13 @@
                     {% csrf_token %}
                     {{ login_form | as_bootstrap }}
                     <div class="text-left"><small>Click
-                        <a href="{% url 'password_reset' %}" class="text-important"><strong>here</strong></a> if password forgotten</small>
+                        <a href="{% url 'password_reset' %}" class="text-warning"><strong>here</strong></a> if password forgotten</small>
                     </div>
                     <div class="pt-2">
                     <button class="btn btn-read-more" type="submit">Log in</button>
                     </div>
                     <div class="text-center mt-4">
-                        <p><small>Not yet registered? <a href="{% url 'register' %}">Join Re-Boot</a></small></p>
+                        <p><small>Not yet registered? <a class="text-warning" href="{% url 'register' %}">Join Re-Boot</a></small></p>
                     </div>
                 </form>
             </div>

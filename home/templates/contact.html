@@ -5,14 +5,14 @@
 
     <div class="pt-2 pb-3 row">
         <!-- User to input full name, email address, subject and detailed message -->
-        <div class="pt-3 pb-3 col-md-6 bg-light">
+        <div class="pt-3 pb-3 col-md-6 bg-dark text-white">
             <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
                 <h3>Fill Form</h3>
                 {% csrf_token %} {{ contact_form | as_bootstrap }}
-                <p class="text-left"><small><em><strong>Important:</strong> Only <a href="{% url 'register' %}">
+                <p class="text-left"><small><em><strong>Important:</strong> Only <a class="text-warning" href="{% url 'register' %}">
                     registered</a> Re-Boot members are permitted to donate rugby boots. Re-Boot hopes you have found
                     everything you've been looking for. If your question remains unanswered, then please refer to 
-                    <a href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
+                    <a class="text-warning" href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
                 <div class="d-flex justify-content-center">
                     <input class="btn btn-add-review" id="submit_enquiry_btn" name="enquiry" type="submit" value="Submit Enquiry">
                 </div>

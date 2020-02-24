@@ -26,7 +26,7 @@
                         {% csrf_token %} {{ registration_form | as_bootstrap }}
                         <button class="btn btn-read-more" type="submit">Register</button>
                         <div class="text-center mt-4">
-                            <p><small>Already Registered? Click <a href="{% url 'login' %}">here.</a></small></p>
+                            <p><small>Already Registered? Click <a class="text-warning" href="{% url 'login' %}">here.</a></small></p>
                         </div>
                     </form>
                 </div>
