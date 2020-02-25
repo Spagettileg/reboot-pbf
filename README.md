@@ -228,6 +228,8 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	[Bootstrap4](https://www.bootstrapcdn.com/) v4.4.1 to enable ease of website responsiveness and simplify coding structure
 
+•	[SweetAlert2](https://www.jsdelivr.com/package/npm/sweetalert2?path=dist) used as an alternative solution to Javascripts pop-up boxes
+
 
 ### Tools
 •	[AWS Cloud9](https://aws.amazon.com/cloud9/) a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser.
@@ -259,6 +261,8 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 •	[psycopg2](https://pypi.org/project/psycopg2/) a PostgreSQL production database adapter for Python
 
 •	[Stripe](https://stripe.com/gb) payment platform to validate debit and credit card payments securely
+
+•	[Sweetify](https://pypi.org/project/sweetify/) allows you to use SweetAlert2 for your temporary messages
 
 •	[Travis](https://travis-ci.com/) for continuous integration via GitHub and autonomous testing of project code  
 
