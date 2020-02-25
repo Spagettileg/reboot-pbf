@@ -19,6 +19,7 @@ def contact(request):
         form = ContactForm()
     else:
         form = ContactForm(request.POST)
+        print(form)
         if form.is_valid():
             subject = form.cleaned_data['subject']
             from_email = settings.EMAIL_HOST_USER
@@ -34,7 +35,7 @@ def contact(request):
             sweetify.info(
                 request,
                 """We\'ve received your message,
-                and shall be back with you shortly""", button='Ok', timer=3000)
+                and shall be back with you shortly""")
         return redirect('products')
     context = {'contact_form': form}
     return render(request, 'contact.html', context)
