@@ -23,7 +23,7 @@
     </div>
     <div class="col-md-6 container">
         <div class="row">
-            <img class="card-img-right flex-auto" src="{% static 'img/megaphone.jpg' %}" alt="call for boots" >
+            <img class="card-img-right flex-auto" src="{% static 'img/megaphone.jpg' %}" alt="call for boots">
         </div>
     </div>
 </div>
@@ -54,7 +54,6 @@
     </div>
 </div>
 
-
 <!-- Both order and payment forms are added to the html page -->
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
     <div class="pt-2 pb-1 col-12 product-category text-center">
@@ -64,12 +63,15 @@
         <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
 
-    <div class="px-3 py-3 col col-12">
+    <div class="pt-3 container">
         <div class="row">
-            <div class="px-2 py-2 form-group col-md-6 bg-light">
+            <div class="form-group col-md-4 shadow p-4 mb-4 bg-white rounded border border-dark">
                 {{ order_form|as_bootstrap }}
             </div>
-            <div class="px-2 py-2 form-group col-md-6 bg-light">
+            <div class="mt-5 mb-5 px-3 py-3 col-md-4 adults-image text-center">
+                <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
+            </div>
+            <div class="form-group col-md-4 shadow p-4 mb-4 bg-white rounded border border-dark">
                 {{ payment_form|as_bootstrap }}
             </div>
         </div>
