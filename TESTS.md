@@ -489,3 +489,6 @@ Opera    |66.0.3515.72
 1. SweetAlert2 continually generates a warning message in the browser console. Unable to find a fix, however, the bug is not affecting the performance of the Re-Boot website
 
 `SweetAlert2: Unknown parameter "type"` 
+
+2. Contact form email address relies upon the user adding their own email address. Once Re-Boot has their very own email, then the user can use that addess to ensure their message is received. The current contact form has been built with email sending capability, albeit the message will go direct to the users nominated email address.  
+ 
