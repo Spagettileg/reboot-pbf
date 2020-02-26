@@ -1,14 +1,24 @@
-{% extends 'base.html' %} {% load bootstrap_tags %} {% block title %}Create a product{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block title %}Create a product{% endblock %} {% block content %}
 <!-- Form structure to enable user to donate their unwanted rugby boots -->
-<div class="pt-3 pb-1 col-12 text-center">
+<div class="pt-3 pb-3 container">
+<div class="row">
+<div class="pt-2 pb-2 col-12 text-center">
     <h4>Donate rugby boots | <i class="far fa-handshake"></i></h4>
 </div>
-<div class="mt-3 mb-3 col col-sm-8 container bg-light adults-image">
+<div class="mb-5 mt-5 px-3 py-3 col-md-4 adults-image text-center">
+            <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
+        </div>
+<div class="px-2 py-2 col-md-4 shadow p-4 mb-4 bg-white rounded border border-dark">
     <div class="pt-3 pb-3 row">
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %} {{ form | as_bootstrap }}
             <button type="submit" class="btn btn-add-review">Submit</button>
         </form>
     </div>
+</div>
+<div class="mt-5 mb-5 px-3 py-3 col-md-4 adults-image text-center">
+            <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
+        </div>
+</div>
 </div>
 {% endblock %}
