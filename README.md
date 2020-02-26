@@ -59,21 +59,21 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 ### Wireframes
 My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.com/) to showcase the 'Re-Boot' website responsivenesson mobile, tablet and desktop devices.
 
-•	[Home](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Home_v1.zip)
+•	[Home](https://github.com/Spagettileg/reboot/blob/master/wireframes/homev1.zip)
 
-•	[About](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/About_v1.zip)
+•	[About](https://github.com/Spagettileg/reboot/blob/master/wireframes/aboutv1.zip)
 
-•	[BootRoom](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/BootShop_v1.zip)
+•	[BootRoom](https://github.com/Spagettileg/reboot/blob/master/wireframes/bootshopv1.zip)
 
-•	[Help](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Help_v1.zip)
+•	[Help](https://github.com/Spagettileg/reboot/blob/master/wireframes/helpv1.zip)
 
-•	[Search](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Search_v1.zip)
+•	[Search](https://github.com/Spagettileg/reboot/blob/master/wireframes/searchv1.zip)
 
-•	[Register & Login](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/RegisterandLogin_v1.zip)
+•	[Register & Login](https://github.com/Spagettileg/reboot/blob/master/wireframes/registerandloginv1.zip)
 
-•	[MyReBoot](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/MyReBoot_v1.zip)
+•	[MyReBoot](https://github.com/Spagettileg/reboot/blob/master/wireframes/myrebootv1.zip)
 
-•	[Cart](https://github.com/Spagettileg/reboot/blob/master/Plans/wireframes/Cart_v1.zip)
+•	[Cart](https://github.com/Spagettileg/reboot/blob/master/wireframes/cartv1.zip)
 
 
 ### User Stories
