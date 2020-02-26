@@ -21,10 +21,10 @@ class Product(models.Model):
     make = models.CharField(max_length=254)
     """ No default product will be added into the database """
     category = models.CharField(max_length=254, choices=category_choices)
-    """ Category choices include view all, juniors and adults """
+    """ Category choices include juniors and adults only """
     customer = models.CharField(max_length=50, choices=category_choices,
                                 null=True)
-    """ Junior rugby players """
+    """ Junior or adult rugby players """
     size = models.IntegerField()
     """ Size of the product """
     colour = models.CharField(max_length=50)
