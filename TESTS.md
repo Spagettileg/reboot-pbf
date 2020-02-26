@@ -11,7 +11,7 @@ View [Re-Boot](https://reboot-pbf.herokuapp.com/) as a deployed project in Herok
 
 [Manual Testing](#manual-testing) || [Registration Testing](#registration-testing) | [Password reset testing](#password-reset-testing) | [Product Testing](#product-testing) | [Navigation Testing](#navigation-testing) 
 
-[Code Validation](#code-validation) 
+[Code Validation](#code-validation) || [Responsiveness and Rendering](#responsiveness-and-rendering) | [Browser Compatability](#browser-compatability) | [Known Bugs](#known-bugs)
 
 ## Testing
 
@@ -465,7 +465,7 @@ CSS3       |https://jigsaw.w3.org/       |Static                    |style.css  
 Javascript |https://jshint.com/          |Static                    |stripe.js                     |Pass     |No errors found
 Javascript |https://jshint.com/          |Checkout                  |checkout.html                 |Pass     |Code recognised by Stripe.com = ok    
 
-## Responsiveness & Rendering
+## Responsiveness and Rendering
 Chrome DevTools together with a selection of mobile, table and desktop devices were relied upon through the entire software development cycle. A key objective was to test both the rendering and responsiveness of the software application against multiple screen resolutions and web browser platforms. Any bugs identified were debugged in real time with special observations noted in a [testing matrix control document](https://github.com/Spagettileg/reboot-pbf/tree/master/tests).
 
 The Re-Boot application has been tested by students from the Slack community, together with friends and family members. Feedback on what worked well and what did not was recorded and suitable corrections to the code were keyed.
@@ -483,3 +483,9 @@ Edge     |44.18362.449.0
 Firefox  |74.0.2
 Safari   |12.4.5
 Opera    |66.0.3515.72
+
+## Known Bugs
+
+1. SweetAlert2 continually generates a warning message in the browser console. Unable to find a fix, however, the bug is not affecting the performance of the Re-Boot website
+
+`SweetAlert2: Unknown parameter "type"` 
