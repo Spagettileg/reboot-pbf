@@ -254,6 +254,12 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	[Gunicorn](https://pypi.org/project/gunicorn/) enables deployment of the Django project to heroku via UNXI WSGI HTTP Server
 
+•	[Jigsaw - CSS validation](https://jigsaw.w3.org/css-validator/) this validator checks the markup validity of CSS style sheet and ensure coding convention is upheld
+
+•	[JS Hint](https://jshint.com/) a tool that helps to detect errors and potential problems in the javascript code
+
+•	[PEP8](http://pep8online.com/) checks python code to ensure compliance with PEP8 requirements. PEP8 is the latest accepted standard code structure convention  
+
 •	[Pillow](https://pillow.readthedocs.io/en/stable/) a python imaging library enabling image files to store in database
 
 •	[PIP](https://pip.pypa.io/en/stable/installing/) enabling installation of tools and packages required for this project to function correctly
@@ -267,6 +273,8 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 •	[Travis](https://travis-ci.com/) for continuous integration via GitHub and autonomous testing of project code  
 
 •	[Whitenoise](http://whitenoise.evans.io/en/stable/) allowing the web app to serve its own static files
+
+•	[W3C - HTML validation](https://validator.w3.org/) this validator checks the markup validity of HTML web documents
 
 
 ### Hosting
