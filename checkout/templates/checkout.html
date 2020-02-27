@@ -13,16 +13,22 @@
 
 <!-- Message to user to browse Re-Boot stock if they have an empty shopping cart -->
 {% if total == 0 %}
-<div class="pt-4 col-md-6 container">
-    <div class="row">
+<div class="pt-3 col-md-6 container">
+    <div class="pt-3 row">
         <h3>Empty Shopping Cart?</h3>
         <div class="row">
             <p>Please note you're unable to proceed with an empty shopping cart.</p>
             <p>Our <strong>Bootshop</strong> has many products you may be interested in.</p>
         </div>
-    </div>
-    <div class="col-md-6 container">
         <div class="row">
+            <p>If you're unable to locate a product that meets your immediate requirements, </p>
+            <p>then we would suggest you <strong>Contact Us</strong> or formally register</p>
+            <p>to take advantage of the Re-Boot <strong>Blog</strong>. Here you can connect </p>
+            <p>with Re-Boot members to check if your required product can be secured.</p>
+        </div>
+    </div>
+    <div class="pb-5 col-md-6 container">
+        <div class="pt-5 row">
             <img class="card-img-right flex-auto" src="{% static 'img/megaphone.jpg' %}" alt="call for boots">
         </div>
     </div>
