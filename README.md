@@ -37,7 +37,7 @@ A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 #### User
 - The registered customer belongs to a community of rugby enthusiasts
 - Value for money product offerings made available
-- Access to well known brands to support anyy concerns upon product quality
+- Access to well known brands to support any concerns upon product quality
 - Fulfil a moral obligation to not throw away good quality products and seek to recycle
 - Start a blog conversation upon availability of rugby boots not yet appearing on Re-Boot website, etc
 - Happy to browse current stock, without obligation to purchase
@@ -132,6 +132,8 @@ Font Awesome 5 icon graphics were used in conjunction with Bootstrap 4, primaril
 - donate rugby boots - `far fa-handshake`
 - blog post - `far fa-envelope`
 
+### Navbar design
+For Desktop view only, the navbar splits into 2 areas. There is an analogy here where rugby posts are split into 2, but connected bya crossbar. Re-Boot app is the crossbar supporting the split navbar posts. I appreciate this analogy maybe difficult to understand for anyone not following rugby.    
 
 ## Information Architecture
 ### Application Framework
