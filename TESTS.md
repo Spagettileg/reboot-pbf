@@ -7,7 +7,7 @@ View [Re-Boot](https://reboot-pbf.herokuapp.com/) as a deployed project in Herok
 ## Navigate to detail
 [Introduction](#introduction)    
 
-[Systems Based Testing](#systems-based-testing) || [Python3](#python3) | [Coverage](#coverage) | [Travis CI](#travis-ci)
+[Systems Based Testing](#systems-based-testing) || [Python3](#python3) | [Javascript](#javascript) | [Coverage](#coverage) | [Travis CI](#travis-ci)
 
 [Manual Testing](#manual-testing) || [Registration Testing](#registration-testing) | [Password reset testing](#password-reset-testing) | [Product Testing](#product-testing) | [Navigation Testing](#navigation-testing) 
 
@@ -65,6 +65,9 @@ To run the existing Python tests:
 `python manage.py test <app name here>`. Results of test(s) will show in the console
 
 **Important**: The `python` component assumes you are working with a windows operating system. Your `python` command may differ, such as `python3` or `py`
+
+#### Javascript
+Javascript was not used in abundance for this project, as the major burden of coding fell to python. All incidences of Javascript code was tested through use of [JS Hint](). All code tested appears in [Code Validation](#code-validation) report. 
 
 #### Coverage
 [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) was used to provide alerts on tests that were complete and tests that remained oustanding. It's not always possible to achieve 100% success, yet Re-Boot excellent performance is supported by a good range of tests per app. 
@@ -464,6 +467,7 @@ Code       | Url Link                    | App / Directory          | Filename  
 CSS3       |https://jigsaw.w3.org/       |Static                    |style.css                     |Pass     |W3C CSS Validator results - CSS level 3 + SVG - negative padding -1rem triggered a warning message = ok
 Javascript |https://jshint.com/          |Static                    |stripe.js                     |Pass     |No errors found
 Javascript |https://jshint.com/          |Checkout                  |checkout.html                 |Pass     |Code recognised by Stripe.com = ok    
+Javascript |https://jshint.com/          |Static                    |main.js                       |Pass     |No errors found
 
 ## Responsiveness and Rendering
 Chrome DevTools together with a selection of mobile, table and desktop devices were relied upon through the entire software development cycle. A key objective was to test both the rendering and responsiveness of the software application against multiple screen resolutions and web browser platforms. Any bugs identified were debugged in real time with special observations noted in a [testing matrix control document](https://github.com/Spagettileg/reboot-pbf/tree/master/tests).
