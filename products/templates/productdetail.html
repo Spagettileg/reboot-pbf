@@ -33,7 +33,9 @@
                     <div class="py-2 pr-2 input-group-addon text-center"><strong>Qty</strong></div>
                     <input name="quantity" type="number" min="0" max="1" class="form-control" placeholder="Quantity" value="1">
                 </div>
+                <div class="pt-2 pb-2">
                 <button class="btn btn-cart-add" type="submit">Add To Cart</button>
+                </div>
             </form>
         </div>
         {% else %} {% endif %}
@@ -41,6 +43,13 @@
     <div class="pb-5 col-xs-12 col-md-2 adults-image text-center">
         <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
     </div>
+</div>
+<div class="pt-2 pb-2 container">
+    <div class="row">
+        <p><strong>Please note</strong> that all donated rugby boot products are unique, therefore these products can only be bought as a single quantity. </p>
+        <p>Thank you for your understanding and ongoing commitment to use Re-Boot to purchase your replacement rugby boots. </p>
+    </div>
+    
 </div>
 
 {% endblock %}
