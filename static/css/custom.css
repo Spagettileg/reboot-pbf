@@ -102,6 +102,15 @@ ul {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
+#navbarSupportedContent ul li a {
+  color: #001514;
+}
+
+#navbarSupportedContent ul li a:hover {
+  color: #F26826;
+  cursor: pointer;
+}
+
 .banner {
   /*Intense rugby image depicting energy & coordination that flows into this application*/
   background-repeat: repeat-x;
