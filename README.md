@@ -99,6 +99,12 @@ My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.co
 
 > Replacement boots - I'm willing to pay £5.00 for junior boots and £10.00 for adult boots [READ]
 
+### Database Schema
+Both SQLite3 (developemnt) and postgreSQL (production) databases store the following tables
+
+![Data conversion model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/convmodelv1.pdf)
+
+![Schema model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/schemamodelv1.pdf)
 
 ### CSS Framework
 Bootstrap 4 was the chosen framework for styling my project. I used the bootstrap grid extensively to support responsiveness on mobile, tablet and desktop devices.  
