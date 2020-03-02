@@ -104,10 +104,13 @@ ul {
 
 #navbarSupportedContent ul li a {
   color: #001514;
+  /* Rich Black */
 }
 
 #navbarSupportedContent ul li a:hover {
+  /* Navbar text changes from black to orange upon user hovering their cursor */
   color: #F26826;
+  /* vivid tangelo - orange */
   cursor: pointer;
 }
 
