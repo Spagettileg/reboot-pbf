@@ -168,11 +168,12 @@ ul {
 }
 
 .card-style {
-  border: 1px solid #F2F2F2;
+  border: 0.1rem solid #F26826;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
   margin: 0.5rem;
   max-width: 18.125rem;
+  box-shadow: 0 4px 8px 0 rgba(199, 204, 235, 0.5), 0 6px 20px 0 rgba(199, 204, 235, 0.49);
 }
 
 .panel-body {
