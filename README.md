@@ -15,7 +15,7 @@ Furthermore, a reduced carbon footprint can be achieved through avoiding the pur
 A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 
 ## Navigate to detail
-[UXD Considerations](#uxd-considerations) || [User](#user) | [Business](#business) | [Next Stage Generation](#next-stage-generation) | [Wireframes](#wireframes) | [User Stories](#user-stories) | [CSS Framework](#css-framework) | [Colour Palette](#colour-palette) | [Typography](#typography) | [Icon Graphics](#icon-graphics)  
+[UXD Considerations](#uxd-considerations) || [User](#user) | [Business](#business) | [Next Stage Generation](#next-stage-generation) | [Wireframes](#wireframes) | [User Stories](#user-stories) | [Database Schema](#database-schema) | [CSS Framework](#css-framework) | [Colour Palette](#colour-palette) | [Typography](#typography) | [Icon Graphics](#icon-graphics)  
 
 [Information Architecture](#information-architecture) || [Application Framework](#application-framework) | [Database Selection](#database-selection) | [Data Models](#data-models)
 
@@ -100,11 +100,18 @@ My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.co
 > Replacement boots - I'm willing to pay £5.00 for junior boots and £10.00 for adult boots [READ]
 
 ### Database Schema
-Both SQLite3 (developemnt) and postgreSQL (production) databases store the following tables
+Both SQLite3 (development) and postgreSQL (production) databases store the following tables:
 
-![Data conversion model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/convmodelv1.pdf)
+`auth_user`
+`blog_posts`
+`checkout_orders`
+`products_products`
 
-![Schema model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/schemamodelv1.pdf)
+1. [Schema Plan](https://github.com/Spagettileg/reboot-pbf/blob/master/schema/schemaplanv1.pdf) takes the original user stories to create a data conversion model. This model is then used to produce a formal database schema model, as shown in the plan and separated out below
+
+2. [Data conversion model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/convmodelv1.pdf)
+
+3. [Schema model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/schemamodelv1.pdf)
 
 ### CSS Framework
 Bootstrap 4 was the chosen framework for styling my project. I used the bootstrap grid extensively to support responsiveness on mobile, tablet and desktop devices.  
