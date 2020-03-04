@@ -285,7 +285,7 @@ script:
 6. `BootShop` selector provides a navbar dropdown function for the following:
     - 'Juniors` collection of donated rugby boot products
     - `Adults` collection of donated rugby boot products
-7. 'Help' selector provides a navbar dropdown function for the following:
+7. `Help` selector provides a navbar dropdown function for the following:
     - `FAQ's` series of questions and answers targeted to help users understanding of Re-Boot 
         - Click 'Get in touch' button for user to raise a question with Re-Boot, if not covered in FAQ's page
     - `Contact Us` form created to enable user to send message direct to Re-Boot. Other means of connecting with Re-Boot are also available
@@ -295,9 +295,10 @@ script:
 10. `Logout` logged in users click on selector narrative to formally log out of Re-Boot
 11. `Register` all users can click on selector narrative to commence the Re-Boot registration process
 12. `Login` all users can click on selector narrative to commence the Re-Boot login process
-13. 'Cart' icon for a shopping cart positioned to far right of navbar. A product counter appears to top-right of cart when user starts adding products to the cart. Confirmed product purchases are removed from the cart  
+13. `Cart` icon for a shopping cart positioned to far right of navbar. A product counter appears to top-right of cart when user starts adding products to the cart. Confirmed product purchases are removed from the cart  
+14. `Cart Pop-Over` is accessed by clicking on the `cart icon`, offering User ID (Username), current GBP value of cart content and button to view cart content detail. 
 
-*Observation*: The presence of all navbar options clearly takes up considerable estate space. Therefore, the navbar does collapse in mobile view only with a hamburger icon on show. Full navbar menu appears when icon is clicked    
+*Observations*: The presence of all navbar options clearly takes up considerable estate space. Therefore, the navbar does collapse in mobile view only with a hamburger icon on show. Full navbar menu appears when icon is clicked. Empty cart creeps slightly above the line of cart items, but then returns to a linear position, once cart is filled with product.    
 
 ###### •	Homepage introduction 'Why Re-Boot?' tests
 - CRUD Operations tested = **READ**
@@ -467,7 +468,8 @@ Code       | Url Link                    | App / Directory          | Filename  
 CSS3       |https://jigsaw.w3.org/       |Static                    |style.css                     |Pass     |W3C CSS Validator results - CSS level 3 + SVG - negative padding -1rem triggered a warning message = ok
 Javascript |https://jshint.com/          |Static                    |stripe.js                     |Pass     |No errors found
 Javascript |https://jshint.com/          |Checkout                  |checkout.html                 |Pass     |Code recognised by Stripe.com = ok    
-Javascript |https://jshint.com/          |Static                    |main.js                       |Pass     |No errors found
+Javascript |https://jshint.com/          |Static                    |main.js                       |Pass     |No errors found in `trading year` function
+Javascript |https://jshint.com/          |Static                    |main.js                       |Pass     |No errors found in `cart pop over` function
 
 ## Responsiveness and Rendering
 Chrome DevTools together with a selection of mobile, table and desktop devices were relied upon through the entire software development cycle. A key objective was to test both the rendering and responsiveness of the software application against multiple screen resolutions and web browser platforms. Any bugs identified were debugged in real time with special observations noted in a [testing matrix control document](https://github.com/Spagettileg/reboot-pbf/tree/master/tests).
@@ -495,4 +497,5 @@ Opera    |66.0.3515.72
 `SweetAlert2: Unknown parameter "type"` 
 
 2. Contact form email address relies upon the user adding their own email address. Once Re-Boot has their very own email, then the user can use that addess to ensure their message is received. The current contact form has been built with email sending capability, albeit the message will go direct to the users nominated email address.  
- 
+
+3. Empty cart creeps slightly above the line of cart items, but then returns to a linear position, once cart is filled with product. UXD not adversely affected 
