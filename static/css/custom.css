@@ -132,17 +132,21 @@ ul {
 }
 
 .cart {
+  /* moves the cart closer to the product counter */
+  margin-top: -1rem;
   font-size: 2rem;
   color: #F26826;
   /* vivid tangelo - orange */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .badge {
-  margin: -1rem;
-  /* moves the product counter to slightly overlap shopping cart */
+  /* moves the product counter closer to the shopping cart */
+  margin-left: 2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-bottom: 2rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
@@ -338,13 +342,14 @@ ul {
 /* Media Queries */
 
 @media (max-width: 768px) {
-  /*Mobile - Move product counter to top right corner of shopping cart icon*/
-  .badge {
-    margin: -6.5rem;
-    margin-bottom: 2rem;
-  }
-  /*Mobile - Move shopping cart icon slightly to left */
-  .nav-link-icon {
-    padding: 0;
-}
+    /*mobile - moves shopping cart to left and aligned to remaining nav items*/
+    #cart-popover {
+        padding-left: 0;
+    }
+    .cart {
+      margin-left: -0.25rem;
+    }
+    .badge {
+      margin-right: -0.25rem;
+    }
 }
