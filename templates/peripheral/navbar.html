@@ -69,14 +69,13 @@
             </li>
             <li>
                 <a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
-                    <!-- Product counter positioned at top right corner of shopping cart -->
-                    {% if product_count > 0 %}
-                    <div class="badge">{{ product_count }}</div>
-                    {% endif %}
                     <!-- Cart icon positioned to right of navbar for uncollapsed navbar -->
                     <span class="cart fas fa-shopping-cart navbar-icon"></span>
                 </a>
             </li>
+            <!-- Product counter positioned at top right corner of shopping cart -->
+            <li class="badge-spacer">{% if product_count > 0 %}<span class="badge"> {{ product_count }} </span>{% endif %}</li>
+                    
             <!-- Pop over view powerered by jQuery. Informs user of the GBP value of their cart & button to view cart contents -->
             <div id="popover_content_wrapper" style="display: none">
                 <p><strong>{{ user|capfirst }}'s spend:</strong></p>
