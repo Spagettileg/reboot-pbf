@@ -653,6 +653,7 @@ Expert guidance on how to do these steps can be found in the [heroku devcenter d
 - Shoe sizes reported in both UK and Euro systems sourced from [Shoe sizing charts](https://www.shoesizingcharts.com/)  
 
 ### Content
+- [Cart popover](https://jsfiddle.net/DTcHh/5011/) Javascript snippet that helps a user understand the GBP value of their shopping cart from the navbar. The CSS & HTML code was reworked by myself
 
 ### Media
 - Rugby boot images were taken from [prodirectrugby](https://www.prodirectrugby.com/)
@@ -675,7 +676,8 @@ Expert guidance on how to do these steps can be found in the [heroku devcenter d
 Slack Community and the following experts to keep me honest and focused.
 
 **Stephen Moody** - Tutor,
-**Michael Park** - Tutor &
-**Samantha Dartnell** - Tutor 
+**Michael Park** - Tutor 
+**Samantha Dartnell** - Tutor &
+**Faidon Minas Dermesonoglou** - @ Feddie_alumni
 
 *This is for educational use.* 
