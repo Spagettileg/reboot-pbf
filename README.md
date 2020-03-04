@@ -148,6 +148,12 @@ Font Awesome 5 icon graphics were used in conjunction with Bootstrap 4, primaril
 ### Navbar design
 For Desktop view only, the navbar splits into 2 areas. There is an analogy here where rugby posts are split into 2, but connected bya crossbar. Re-Boot app is the crossbar supporting the split navbar posts. I appreciate this analogy maybe difficult to understand for anyone not following rugby.    
 
+The logged in user also benefits from a cart pop-over function that informs the user of the following:
+
+* User ID (Username)
+* GBP value of cart contents
+* Button to view detailed cart contents 
+
 ## Information Architecture
 ### Application Framework
 Django application framework was a prerequisite in the design of this project, according to the project brief.
