@@ -132,8 +132,7 @@ ul {
 }
 
 .cart {
-  /* moves the cart closer to the product counter */
-  margin-top: -1rem;
+  /* cart is positioned to far right of navbar */
   font-size: 2rem;
   color: #F26826;
   /* vivid tangelo - orange */
@@ -144,7 +143,7 @@ ul {
 
 .badge {
   /* moves the product counter closer to the shopping cart */
-  margin-left: 2rem;
+  margin-left: -1.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -349,7 +348,7 @@ ul {
     .cart {
       margin-left: -0.25rem;
     }
-    .badge {
-      margin-right: -0.25rem;
+    .badge-spacer {
+      padding-left: 1.5rem;
     }
 }
