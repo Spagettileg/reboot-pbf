@@ -8,14 +8,6 @@
     </a>
     </div>
 
-    <!-- Cart icon positioned to left of toggler for mobile devices -->
-    <div class="d-lg-none">
-        <a class="pr-1 nav-link nav-link-icon" href="{% url 'view_cart' %}" title="Shopping cart" aria-label="View shopping cart">
-            <div>
-                <i class="cart fas fa-shopping-cart navbar-icon"></i>
-            </div>
-        </a>
-    </div>
     <!-- Navbar collapses in a mobile view. Full navbar restored in both tablet & desktop views -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -69,12 +61,33 @@
 
             <!-- User registration and authentication -->
             {% if user.is_authenticated %}
-            <li class="nav-item">
+            <li class="pt-1 nav-item">
                 <a class="nav-link" href="{% url 'profile' %}">MyReBoot</a>
             </li>
-            <li class="nav-item">
+            <li class="pt-1 nav-item">
                 <a class="nav-link" href="{% url 'logout' %}">Logout</a>
             </li>
+            <li>
+                <a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
+                    <!-- Product counter positioned at top right corner of shopping cart -->
+                    {% if product_count > 0 %}
+                    <div class="badge">{{ product_count }}</div>
+                    {% endif %}
+                    <!-- Cart icon positioned to right of navbar for uncollapsed navbar -->
+                    <span class="cart fas fa-shopping-cart navbar-icon"></span>
+                </a>
+            </li>
+            <!-- Pop over view powerered by jQuery. Informs user of the GBP value of their cart & button to view cart contents -->
+            <div id="popover_content_wrapper" style="display: none">
+                <p><strong>{{ user|capfirst }}'s spend:</strong></p>
+                <div>
+                    <h5>Total: £ {{ total }}</h5>
+
+                    <a href="{% url 'view_cart' %}" class="btn btn-add-review">
+                    <span class="fas fa-shopping-cart"></span> View Cart
+                </a>
+                </div>
+            </div>
             {% else %}
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'register' %}">Register</a>
@@ -84,20 +97,5 @@
             </li>
             {% endif %}
         </ul>
-    </div>
-
-    <!-- Cart icon positioned to right of navbar for uncollapsed navbar -->
-    <div class="d-none d-lg-inline-block">
-        <a class="pr-1 nav-link nav-link-icon" href="{% url 'view_cart' %}" title="Shopping cart" aria-label="View shopping cart">
-            <div>
-                <i class="cart fas fa-shopping-cart navbar-icon"></i>
-            </div>
-        </a>
-    </div>
-    <!-- Product counter positioned at top right corner of shopping cart -->
-    <div class="pr-3">
-        {% if product_count > 0 %}
-        <div class="badge">{{ product_count }}</div>
-        {% endif %}
     </div>
 </nav>
