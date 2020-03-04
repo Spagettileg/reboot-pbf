@@ -498,4 +498,4 @@ Opera    |66.0.3515.72
 
 2. Contact form email address relies upon the user adding their own email address. Once Re-Boot has their very own email, then the user can use that addess to ensure their message is received. The current contact form has been built with email sending capability, albeit the message will go direct to the users nominated email address.  
 
-3. Empty cart creeps slightly above the line of cart items, but then returns to a linear position, once cart is filled with product. UXD not adversely affected 
+3. Empty cart creeps slightly above the line of cart items, but then returns to a linear position, once cart is filled with product. UXD not adversely affected. This was fixed by splitting both shopping cart and product counter into separate list elements.  
