@@ -10,26 +10,43 @@ Once registered, customers will enjoy secure access to their own 'MyReBoot' webp
 
 Furthermore, a reduced carbon footprint can be achieved through avoiding the purchase of brand new rugby boots and shift to product reuse to reduce unecessary landfill waste.
 
-
 ## Demo
 A live demo of [Re-Boot](https://reboot-pbf.herokuapp.com/) can be found.
 
-## Navigate to detail
-[UXD Considerations](#uxd-considerations) || [User](#user) | [Business](#business) | [Next Stage Generation](#next-stage-generation) | [Wireframes](#wireframes) | [User Stories](#user-stories) | [Database Schema](#database-schema) | [CSS Framework](#css-framework) | [Colour Palette](#colour-palette) | [Typography](#typography) | [Icon Graphics](#icon-graphics)  
+## Table of Contents
 
-[Information Architecture](#information-architecture) || [Application Framework](#application-framework) | [Database Selection](#database-selection) | [Data Models](#data-models)
-
-[Technologies Applied](#technologies-applied) || [Databases](#databases) | [Languages](#languages) | [Libraries](#libraries) | [Tools](#tools) | [Hosting](#hosting)
-
-[ReBoot Summary Functions](#reboot-summary-functions) 
-
-[Features](#features) || [Features Left to Implement](#features-left-to-implement)
-
-[Tests](#tests)
-
-[Deployment](#deployment) || [Local Deployment](#local-deployment) | [Deployment To Heroku](#deployment-to-heroku)
-
-[Credits](#credits) || [Content](#content) | [Media](#media) | [Acknowledgements](#acknowledgements)
+1. [UXD Considerations](#uxd-considerations)
+    * [User](#user)
+    * [Business](#business)
+    * [Next Stage Generation](#next-stage-generation)
+    * [Wireframes](#wireframes)
+    * [User Stories](#user-stories)
+    * [Database Schema](#database-schema)
+    * [CSS Framework](#css-framework)
+    * [Colour Palette](#colour-palette)
+    * [Typography](#typography)
+    * [Icon Graphics](#icon-graphics) 
+2. [Information Architecture](#information-architecture)
+    * [Application Framework](#application-framework)
+    * [Database Selection](#database-selection)
+    * [Data Models](#data-models)
+3. [Technologies Applied](#technologies-applied)
+    * [Databases](#databases)
+    * [Languages](#languages)
+    * [Libraries](#libraries)
+    * [Tools](#tools)
+    * [Hosting](#hosting)
+4. [Re-Boot Summary Functions](#reboot-summary-functions) 
+5. [Features](#features)
+    * [Features Left to Implement](#features-left-to-implement) 
+6. [Tests](#tests)
+7. [Deployment](#deployment)
+    * [Local Deployment](#local-deployment)
+    * [Deployment To Heroku](#deployment-to-heroku)
+8. [Credits](#credits)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgements](#acknowledgements)
 
 ## UXD Considerations
 ### User & Business Objectives

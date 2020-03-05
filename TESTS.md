@@ -4,14 +4,22 @@ Access main [READEME](https://github.com/Spagettileg/reboot-pbf/blob/master/READ
 
 View [Re-Boot](https://reboot-pbf.herokuapp.com/) as a deployed project in Heroku
 
-## Navigate to detail
-[Introduction](#introduction)    
-
-[Systems Based Testing](#systems-based-testing) || [Python3](#python3) | [Javascript](#javascript) | [Coverage](#coverage) | [Travis CI](#travis-ci)
-
-[Manual Testing](#manual-testing) || [Registration Testing](#registration-testing) | [Password reset testing](#password-reset-testing) | [Product Testing](#product-testing) | [Navigation Testing](#navigation-testing) 
-
-[Code Validation](#code-validation) || [Responsiveness and Rendering](#responsiveness-and-rendering) | [Browser Compatability](#browser-compatability) | [Known Bugs](#known-bugs)
+## Table of Contents
+1. [Introduction](#introduction) 
+2. [Systems Based Testing](#systems-based-testing)
+    * [Python3](#python3)
+    * [Javascript](#javascript)
+    * [Coverage](#coverage)
+    * [Travis CI](#travis-ci)
+3. [Manual Testing](#manual-testing)
+    * [Registration Testing](#registration-testing)
+    * [Password reset testing](#password-reset-testing)
+    * [Product Testing](#product-testing)
+    * [Navigation Testing](#navigation-testing)
+4. [Code Validation](#code-validation)
+    * [Responsiveness and Rendering](#responsiveness-and-rendering)
+    * [Browser Compatability](#browser-compatability)
+    * [Known Bugs](#known-bugs)
 
 ## Testing
 
