@@ -131,7 +131,7 @@ Both SQLite3 (development) and postgreSQL (production) databases store the follo
 3. [Schema model](https://github.com/Spagettileg/reboot-pbf/blob/master/static/img/schemamodelv1.pdf)
 
 ### CSS Framework
-Bootstrap 4 was the chosen framework for styling my project. I used the bootstrap grid extensively to support responsiveness on mobile, tablet and desktop devices.  
+Bootstrap was the chosen framework for styling my project. I used the Bootstrap grid extensively to support responsiveness on mobile, tablet and desktop devices.  
 
 ### Colour Palette
 Colours used in this project were sourced through consultation with my mentor [Simen Daehlin](simen.dehlin@gmail.com). Essentially, the colours are seeking to capture key attrbutes of rugby through energy, assertiveness and co-ordination.
@@ -145,11 +145,11 @@ Blue Sapphire (Dark Green)   | #135A68
 Space Cadet (Dark Blue)      | #21295C
 
 ### Typography
-Open Sans & Sans Serif fonts were used throughout this project. H1 header was used in the home page to help qualify 'Why Re-Boot?'to the user. Thereafter, H2 & H3 was used for sub-heading narrative. 
+[Open Sans](https://fonts.google.com/) & [Sans Serif](https://fonts.google.com/) fonts were used throughout this project. `H1` header was used in the home page to help qualify 'Why Re-Boot?'to the user. Thereafter, `H2` & `H3` was used for sub-heading narrative. 
 
-Font-weight of 400 & 700 was used to help draw attention to the user for both branding and instruction too.
+`Font-weight` of `400` & `700` was used to help draw attention to the user for both branding and instruction too.
 
-[Re-Boot](https://github.com/Spagettileg/reboot-pbf/tree/master/plans/art) brand was self-built through use of MS Powerpoint tools.
+[Re-Boot](https://github.com/Spagettileg/reboot-pbf/blob/master/schema/typographyandcolourscheme.pdf) brand was self-built through use of MS Powerpoint tools.
 
 ### Icon Graphics
 Font Awesome 5 icon graphics were used in conjunction with Bootstrap 4, primarily to support information page headers
@@ -244,29 +244,30 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 ## Technologies Applied
 ### Databases
-•	[SQLITE3](https://www.sqlite.org/index.html) provided by Django for a developemnt database
+•	[SQLite3](https://www.sqlite.org/index.html) provided by Django for a developemnt database
+
 •	[PostgresSQL](https://www.postgresql.org/) provided by Heroku for a production database
 
 ### Languages
-•	[HTML5](https://html.spec.whatwg.org/multipage/) used as the markup language
+•	[HTML](https://html.spec.whatwg.org/multipage/) used as the markup language
 
 •	[CSS3](https://www.w3.org/Style/CSS/) used to style the HTML
 
 •	[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) used mostly for DOM manipulation
 
-•	[Python3](https://www.python.org/) used to run the backend application
+•	[Python](https://www.python.org/) used to run the backend application
 
 
 ### Libraries
-•	[Font Awesome](https://fontawesome.com/) v5.11.2 to provide the icon set for Re-Boot website
+•	[Font Awesome](https://fontawesome.com/) to provide the icon set for Re-Boot website
 
 •	[Google Fonts](https://fonts.google.com/) provided the fonts used throughout the project
 
 •	[jQuery](https://jquery.com/) is used to manipulate the DOM, for example buttons, and showing / hiding elements
 
-•	[Bootstrap4](https://www.bootstrapcdn.com/) v4.4.1 to enable ease of website responsiveness and simplify coding structure
+•	[Bootstrap](https://www.bootstrapcdn.com/) to enable ease of website responsiveness and simplify coding structure
 
-•	[SweetAlert2](https://www.jsdelivr.com/package/npm/sweetalert2?path=dist) used as an alternative solution to Javascripts pop-up boxes
+•	[SweetAlert](https://www.jsdelivr.com/package/npm/sweetalert2?path=dist) used as an alternative solution to Javascripts pop-up boxes
 
 
 ### Tools
@@ -316,7 +317,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 
 ### Hosting
-•	[Heroku](https://heroku.com) is used to host the deployed application - 're-boot'
+•	[Heroku](https://heroku.com) is used to host the deployed application - 'Re-Boot'
 
 ## ReBoot Summary Functions
 
@@ -512,10 +513,10 @@ Ensure you have the following tools:
 Your advised to click the links above for guidance on installation and retrieval of the necessary environment variables.
 
 ##### Instructions
-1. Save a copy of your GitHub repository located at https://github.com/Spagettileg/reboot-pbf by clicking the "download zip" button at the top of the page, then extract the zip file to your chosen local folder. Alternatively, you can clone the repository with the following command, if you have Git installed on your system
+1. Save a copy of your [GitHub repository](https://github.com/Spagettileg/reboot-pbf) by clicking the "download zip" button at the top of the page, then extract the zip file to your chosen local folder. Alternatively, you can clone the repository with the following command, if you have Git installed on your system
 
 ```
-git clone https://github.com/Spagettileg/reboot-pbf
+git clone https://github.com/username/filename
 ```
 
 2. From your preferred IDE, open a new terminal session in the unzip folder or cd to the correct location
@@ -527,9 +528,9 @@ python3 -m .venv venv
 ```
 >NOTE: The `python` part of this command and the ones in other steps below assumes you are working with a windows operating system. Your Python command may differ, such as `python3` or `py`
 
-4. Activate the .venv with the command:
+4. Activate the .venv with the command in Linux Ubuntu. The /bin directory contains the activate file
 ``` 
-.venv\Scripts\activate 
+source ./bin/activate 
 ```
 This command may differ depending on your operating system. Suggest you refer to [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further guidance.
 
@@ -687,14 +688,12 @@ Expert guidance on how to do these steps can be found in the [heroku devcenter d
 
 ### Acknowledgements
 
-**Simen Daehlin** (Current Mentor) - For clear guidance on opportunities to improve website design using improved normal HTML & CSS conventions. Simpler coding practice makes for better output. 
-**Theo Despoudis** (Previous Mentor) - For his guidance in previous milestone projects and helping understand the finer detail of Javascript & Python coding 
+[Simen Daehlin](https://github.com/Eventyret) (Current Mentor) - For clear guidance on opportunities to improve website design using improved normal HTML & CSS conventions. Simpler coding practice makes for better output. 
+[Theo Despoudis](https://www.linkedin.com/in/theofanis-despoudis-7bb30913/) (Previous Mentor) - For his guidance in previous milestone projects and helping understand the finer detail of Javascript & Python coding 
 
 Slack Community and the following experts to keep me honest and focused.
 
-**Stephen Moody** - Tutor,
-**Michael Park** - Tutor 
-**Samantha Dartnell** - Tutor &
-**Faidon Minas Dermesonoglou** - @ Feddie_alumni
+[Samantha Dartnell](https://github.com/SammyDartnall10) - @ Sammy Dartnell_lead &
+[Faidon Minas Dermesonoglou](https://github.com/feddieminas) - @ Feddie_alumni
 
 *This is for educational use.* 
