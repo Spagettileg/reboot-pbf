@@ -394,13 +394,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	Each product card includes a adults name tag, full colour product image, boot make, boot size, price and a 'read more' button to access further product information
 
-### Feature 12 - Favourite recipe tickbox 
-
-•	Logged in user to navigate to either 'Edit Recipe' or 'Add Recipe' page to mark their given recipe as a favourite. A simple tickbox has been created to record the User actions in both the application and cloud database too. Tick for favourite and untick for non-favourite   
-
-•	Summary favourite count statistics can be viewed in the navbar by both logged in and non-logged in users. The cursor has been set to default as the data is only intended for read only purposes   
-
-### Feature 13 - 'Help' > FAQ's 
+### Feature 12 - 'Help' > FAQ's 
 
 •	Any user has access to full page of Re-Boot FAQ's
 
@@ -408,7 +402,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	If a question cannot be answered in FAQ page, then the user is invited to click a 'get in touch' button. The user is then presented with a contact form. Once completed the form will be sent directly to Re-Boot email address.     
 
-### Feature 14 - 'Help' > Contact us 
+### Feature 13 - 'Help' > Contact us 
 
 •	All users can complete a contact form to alert Re-Boot of any question, concern, note of appreciation, etc  
 
@@ -418,7 +412,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	The user is invited to click a 'submit enquiry' button. The form will be sent directly to Re-Boot email address
 
-### Feature 15 - Search 
+### Feature 14 - Search 
 
 •	User is requested to key in either a partial or complete rugby boot brand name to initiate a search within the current BootShop   
 
@@ -426,7 +420,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	Leaving the search field blank will result in all available BootShop products being shown to the user
 
-### Feature 16 - MyReBoot page
+### Feature 15 - MyReBoot page
 
 •	Logged in users are allocated their own portal space to donate rugby boots, create ther own blog message and reset their password  
 
@@ -436,7 +430,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	Password resets are initiated by the registered user. The user will be asked for their email address, where upon a response email is submitted to the user with a link to enable their password to be securely changed       
 
-### Feature 17 - Shopping Cart
+### Feature 16 - Shopping Cart
 
 •	Logged in users have full access to the BootShop to browse collection of rugby boots for sale  
 
@@ -468,7 +462,7 @@ Image     | product.image    | ImageField    | upload_to='images', blank=True, n
 
 •	Payment process is managed via Stripe vendor
 
-### Feature 18 - Footer 
+### Feature 17 - Footer 
 
 •	Provides a social media link to LinkedIn and a link to my Facebook page. Fonts (icons) secured from bootstrap 4 / font awesome 5. The links are wired to the website designers’ respective social media sites    
 
