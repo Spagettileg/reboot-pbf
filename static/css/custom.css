@@ -118,7 +118,7 @@ ul {
   /*Intense rugby image depicting energy & coordination that flows into this application*/
   background-repeat: repeat-x;
   position: relative;
-  height: 60vh;
+  height: 30vh;
   background: url(../../static/img/scrumtime.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
