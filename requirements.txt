@@ -29,5 +29,4 @@ sqlparse==0.3.0
 stripe==2.42.0
 sweetify==2.0.0
 urllib3==1.25.7
-whitenoise==5.0.1
 wrapt==1.11.2
