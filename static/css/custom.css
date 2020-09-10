@@ -287,6 +287,57 @@ ul {
     group image design*/
 }
 
+.login-background {
+  /*Image used for terms & conditions information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/login-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.register-background {
+  /*Image used for terms & conditions information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/register-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.profile-background {
+  /*Image used for terms & conditions information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/profile-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
 /* Shopping Cart */
 
 .cart {
