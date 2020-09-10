@@ -134,6 +134,40 @@ ul {
     group image design*/
 }
 
+.adults-background {
+  /*Image used for adults information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/adults-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.junior-background {
+  /*Image used for juniors information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/junior-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
 /* Shopping Cart */
 
 .cart {
