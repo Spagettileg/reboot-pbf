@@ -355,6 +355,23 @@ ul {
     group image design*/
 }
 
+.blog-background {
+  /*Image used for terms & conditions information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/blog-background1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
 /* Shopping Cart */
 
 .cart {
