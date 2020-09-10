@@ -121,7 +121,7 @@ ul {
   /*Image used for homepage, cart & checkout pages too*/
   background-repeat: repeat-x;
   position: relative;
-  height: 30vh;
+  height: 50vh;
   background: url(../../static/img/scrumtime.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
