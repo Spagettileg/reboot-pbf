@@ -114,8 +114,11 @@ ul {
   cursor: pointer;
 }
 
+/* Images */
+
 .banner {
   /*Intense rugby image depicting energy & coordination that flows into this application*/
+  /*Image used for homepage, cart & checkout pages too*/
   background-repeat: repeat-x;
   position: relative;
   height: 30vh;
@@ -130,6 +133,8 @@ ul {
   /*required to manage the horixontal centering of the 
     group image design*/
 }
+
+/* Shopping Cart */
 
 .cart {
   /* cart is positioned to far right of navbar */
