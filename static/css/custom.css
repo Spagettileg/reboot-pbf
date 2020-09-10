@@ -168,6 +168,125 @@ ul {
     group image design*/
 }
 
+.explained-background {
+  /*Image used for Re-Boot explained information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/explained-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.bootquality-background {
+  /*Image used for rugby boot quality information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/bootquality-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.contact-background {
+  /*Image used for contact Re-Boot information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/contact-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.cookie-background {
+  /*Image used for cookies information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/cookie-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.faq-background {
+  /*Image used for frequently asked questions information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/faq-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.privacy-background {
+  /*Image used for user privacy information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/privacy-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
+.terms-background {
+  /*Image used for terms & conditions information page*/
+  background-repeat: repeat-x;
+  position: relative;
+  height: 65vh;
+  background: url(../../static/img/terms-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*required to manage the horixontal centering of the 
+    group image design*/
+}
+
 /* Shopping Cart */
 
 .cart {
