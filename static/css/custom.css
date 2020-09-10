@@ -156,7 +156,7 @@ ul {
   background-repeat: repeat-x;
   position: relative;
   height: 65vh;
-  background: url(../../static/img/junior-background.jpg) no-repeat center center fixed;
+  background: url(../../static/img/junior-background1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -207,7 +207,7 @@ ul {
   background-repeat: repeat-x;
   position: relative;
   height: 65vh;
-  background: url(../../static/img/contact-background.jpg) no-repeat center center fixed;
+  background: url(../../static/img/contact-background1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -241,7 +241,7 @@ ul {
   background-repeat: repeat-x;
   position: relative;
   height: 65vh;
-  background: url(../../static/img/faq-background.jpg) no-repeat center center fixed;
+  background: url(../../static/img/faq-background1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -275,7 +275,7 @@ ul {
   background-repeat: repeat-x;
   position: relative;
   height: 65vh;
-  background: url(../../static/img/terms-background.jpg) no-repeat center center fixed;
+  background: url(../../static/img/terms-background1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
