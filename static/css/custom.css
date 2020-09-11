@@ -600,6 +600,15 @@ ul {
 
 /* Media Queries */
 
+@media (max-width: 667px) and (orientation: landscape) {
+    /*Mobile view in landscape mode*/
+    .contact-spacer,
+    .register-spacer {
+        /*Create improved viewing of image*/
+        padding-top: 5rem;
+    }
+}
+
 @media (max-width: 768px) {
     /*mobile - moves shopping cart to left and aligned to remaining nav items*/
     #cart-popover {
