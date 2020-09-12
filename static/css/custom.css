@@ -121,7 +121,8 @@ ul {
   /*Image used for homepage, cart & checkout pages too*/
   background-repeat: no-repeat;
   position: relative;
-  height: 65vh;
+  width: 100%;
+  height: auto;
   background: url(../../static/img/scrumtime2.jpg) no-repeat center center fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -599,17 +600,6 @@ ul {
 }
 
 /* Media Queries */
-
-@media (max-width: 667px) and (orientation: landscape) {
-    /*Mobile view in landscape mode*/
-    .banner {
-        /*Aligns containers*/
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}
 
 @media (max-width: 768px) {
     /*mobile - moves shopping cart to left and aligned to remaining nav items*/
