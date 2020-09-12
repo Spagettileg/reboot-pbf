@@ -119,7 +119,7 @@ ul {
 .banner {
   /*Intense rugby image depicting energy & coordination that flows into this application*/
   /*Image used for homepage, cart & checkout pages too*/
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   position: relative;
   height: 65vh;
   background: url(../../static/img/scrumtime2.jpg) no-repeat center center fixed;
