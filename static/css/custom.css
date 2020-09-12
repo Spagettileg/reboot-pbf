@@ -123,10 +123,10 @@ ul {
   position: relative;
   height: 65vh;
   background: url(../../static/img/scrumtime2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;
