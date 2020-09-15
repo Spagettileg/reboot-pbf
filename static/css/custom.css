@@ -127,7 +127,7 @@ ul {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center 50%;
+  background-position: center center;
 }
 
 .adults-background {
