@@ -116,6 +116,12 @@ ul {
 
 /* Images */
 
+img {
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+
 .adults-background {
   /*Image used for adults information page*/
   background-repeat: no-repeat;
