@@ -116,23 +116,6 @@ ul {
 
 /* Images */
 
-.wrapper {
-  height: 433.55px;
-  width: 375px;
-}
-
-.banner {
-  /*Intense rugby image depicting energy & coordination that flows into this application*/
-  /*Image used for homepage, cart & checkout pages too*/
-  background-repeat: no-repeat;
-  background-image: url(../../static/img/scrumtime2.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-}
-
 .adults-background {
   /*Image used for adults information page*/
   background-repeat: no-repeat;
