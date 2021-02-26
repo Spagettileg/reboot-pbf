@@ -40,17 +40,11 @@
 
     <noscript>This website will run when Javascript has been enabled.</noscript> {% if navbar != False %} {% include 'peripheral/navbar.html' %}
     
-    {% endif %}
-    {% block content %}
-    
+    {% endif %} {% block content %} {% endblock %} {% if footer != False %} {% include 'peripheral/footer.html' %} {% endif %}
     
     <!-- Scroll to top of page button -->
     <a href="#move-up" class="btn btn-up move-top" title="Move to top"><i
             class="fas fa-angle-double-up"></i></a>
-    
-    {% endblock %}
-    
-    {% if footer != False %} {% include 'peripheral/footer.html' %} {% endif %}
 
     <!-- JS Library for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
