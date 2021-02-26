@@ -42,12 +42,13 @@
     
     {% endif %}
     {% block content %}
+    {% endblock %}
     
     <!-- Scroll to top of page button -->
     <a href="#move-up" class="btn btn-up move-top" title="Move to top"><i
             class="fas fa-angle-double-up"></i></a>
     
-    {% endblock %}
+    
     {% if footer != False %} {% include 'peripheral/footer.html' %} {% endif %}
 
     <!-- JS Library for Bootstrap -->
