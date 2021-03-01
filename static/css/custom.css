@@ -374,7 +374,6 @@ img {
     text-decoration: none;
     width: 8rem;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-back:hover {
@@ -392,6 +391,7 @@ img {
     /*Windows*/
     -webkit-transition: all 0.5s ease-in-out;
     /*Apple*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-back,
