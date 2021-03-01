@@ -351,6 +351,13 @@ img {
     display: none;
 }
 
+.main-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .btn-back {
     /*Back button found at the bottom of the web page*/
     padding: 0.5rem;
