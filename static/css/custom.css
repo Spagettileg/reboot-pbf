@@ -351,6 +351,48 @@ img {
     display: none;
 }
 
+.btn-back {
+    /*Back button found at the bottom of the web page*/
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #FFF;
+    /*White*/
+    border-color: #F26826;
+    /*Vivid Tangelo - Orange*/
+    color: #F26826;
+    /*Vivid Tangelo - Orange*/
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 8rem;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-back:hover {
+    /* Back button change colour when hovered & clicked */
+    background-color: #F26826;
+    /*Vivid Tangelo - Orange*/
+    border-color: #F26826;
+    color: #FFF;
+    /*White*/
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    /*Opera*/
+    -moz-transition: all 0.5s ease-in-out;
+    /*Windows*/
+    -webkit-transition: all 0.5s ease-in-out;
+    /*Apple*/
+}
+
+.btn-back,
+input[value="&larr;"] {
+    /* Format back button */ 
+    font-weight: 600;
+}
+
 /* Social Media */
 
 .fa-facebook-square,
