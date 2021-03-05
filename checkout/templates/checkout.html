@@ -89,6 +89,7 @@
     {% csrf_token %}
     <div class="pb-3 pl-0 pr-0 form-group col-md-12 text-center">
         <input class="btn btn-submit-payment" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+        <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
     </div>
 </form>
 {% endif %} {% endblock %}
