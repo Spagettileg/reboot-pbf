@@ -17,6 +17,7 @@
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %} {{ form | as_bootstrap }}
             <button type="submit" class="btn btn-add-review">Submit</button>
+            <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
         </form>
     </div>
 </div>
