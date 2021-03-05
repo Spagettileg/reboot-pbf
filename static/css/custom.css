@@ -152,10 +152,10 @@ img {
 
 /* Containers */
 
-/* #frontpage-header { */
-/*  background-color: #F26826; */
+#frontpage-header {
+  background-color: #F26826;
   /* vivid tangelo - orange */
-/* } */
+}
 
 .quick-steps,
 .latest-arrivals,
