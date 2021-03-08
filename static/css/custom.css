@@ -153,6 +153,7 @@ img {
 /* Containers */
 
 #frontpage-header {
+  background-image: url(/static/img/scrumtime4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
