@@ -157,6 +157,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  opacity: 0.5;
 }
 
 .quick-steps,
