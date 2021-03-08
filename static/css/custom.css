@@ -153,8 +153,9 @@ img {
 /* Containers */
 
 #frontpage-header {
-  background-color: #F26826;
-  /* vivid tangelo - orange */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .quick-steps,
