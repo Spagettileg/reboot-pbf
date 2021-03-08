@@ -177,7 +177,7 @@ AWS_S3_ADDRESSING_STYLE = "path"
 # STATICFILES_DIRS - Look for static files here
 # STATICFILES_STORAGE - The file storage engine to use when collecting static
 # files with the collectstatic management command.
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATICFILES_LOCATION = 'static'
 STATIC_URL = '/static/'
