@@ -153,6 +153,16 @@ img {
 /* Containers */
 
 #frontpage-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#frontpage-header::before {
+  content: "";
+  position: absolute;
   background-image: url(/static/img/scrumtime4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
