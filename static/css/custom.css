@@ -17,8 +17,8 @@ body {
 h1,
 .cheer-title {
   font-weight: 700;
-  color: #FAFAFA;
-  /* off-white */
+  color: #FFF;
+  /* White */
 }
 
 h2 {
@@ -45,8 +45,8 @@ h6 {
 }
 
 .cheer-text {
-  color: #FAFAFA;
-  /* off-white */
+  color: #FFF;
+  /* White */
 }
 
 .cheer-text p {
@@ -153,7 +153,11 @@ img {
 /* Containers */
 
 #frontpage-header {
-  background-image: url(/static/img/scrumtime4.jpg);
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/scrumtime4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
