@@ -476,4 +476,7 @@ input[value="&larr;"] {
     #login-image {
       min-height: 80vh;
     }
+    .form-view {
+      padding-top: 6rem;
+    }
 }
