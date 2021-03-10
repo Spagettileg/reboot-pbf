@@ -155,6 +155,17 @@ img {
   background-position: top;
 }
 
+#explained-image {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/explained-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -273,6 +284,12 @@ img {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
+}
+
+.explained-header-text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #FFF;
 }
 
 /* Blog */
