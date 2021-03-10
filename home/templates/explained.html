@@ -1,12 +1,9 @@
 {% extends 'base.html' %} {% load static %} {% block title %} Re-boot Explained {% endblock %} {% block content %}
 
-<!-- Re-Boot explained background image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/explained-background.jpg' %}" alt="Re-Boot Explained">
-
-<div class="pt-3 container">
+<div class="pt-3" id="explained-image" alt="Re-Boot explained">
     <div class="row">
         <div class="col-12">
-            <h4 class="title">Re-Boot Explained...</h4>
+            <div class="explained-header-text">Re-Boot Explained...</div>
             <hr>
         </div>
         <!-- Users guide to explain Re-Boot and what to expect -->
@@ -27,8 +24,10 @@
                 help grow Re-Boot for the benefit of our rugby playing community. If your browsing experience has been good, then why not go ahead and register today.
 
             </p>
-            <h5 class="text-center"><em>Reboot will be with you every step of the way. </em></h5>
         </div>
+    </div>
+</div>
+        <h5 class="text-center"><em>Reboot will be with you every step of the way. </em></h5>
         <!-- Recap of quick step guide to using Re-Boot -->
         <div class="pt-3 container text-center">
             <div class="row">
@@ -87,7 +86,5 @@
                 <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
             </div>
         </div>
-    </div>
-</div>
 
 {% endblock %}
