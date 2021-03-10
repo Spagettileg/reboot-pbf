@@ -1,44 +1,35 @@
 {% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block page_title %}Login Page{% endblock %} {% block page_heading %}User Login{% endblock %} {% block content %}
 
-<!-- Logon background image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/login-background1.jpg' %}" alt="User Login">
-
 <!-- User Login form requesting username and password -->
-<div class="pt-3 pb-3 container">
+<div class="pt-3 pb-3 container" id="login-image" alt="User Login">
     <div class="pt-4"></div>
-<div class="row">
-    <div class="mb-5 mt-5 px-3 py-3 col-md-4 adults-image text-center">
-            <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
-        </div>
-    <div class="col-md-4 shadow p-4 mb-4 bg-dark rounded border border-dark text-white">
         <div class="row">
-            <div class="pt-2 col col-12 text-center">
-                <h4>Sign In</h4>
-                <p><small>"Re-Boot is just a click away..."</small></p>
+            <div class="col-md-4 shadow p-4 mb-4 bg-dark rounded border border-dark text-white">
+                <div class="row">
+                    <div class="pt-2 col col-12 text-center">
+                        <h4>Sign In</h4>
+                        <p><small>"Re-Boot is just a click away..."</small></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{ login_form | as_bootstrap }}
+                            <div class="text-left"><small>Click
+                                <a href="{% url 'password_reset' %}" class="text-warning"><strong>here</strong></a> if password forgotten</small>
+                            </div>
+                            <div class="pt-2">
+                            <button class="btn btn-read-more" type="submit">Log in</button>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p><small>Not yet registered? <a class="text-warning" href="{% url 'register' %}">Join Re-Boot</a></small></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col col-12">
-                <form method="POST">
-                    {% csrf_token %}
-                    {{ login_form | as_bootstrap }}
-                    <div class="text-left"><small>Click
-                        <a href="{% url 'password_reset' %}" class="text-warning"><strong>here</strong></a> if password forgotten</small>
-                    </div>
-                    <div class="pt-2">
-                    <button class="btn btn-read-more" type="submit">Log in</button>
-                    </div>
-                    <div class="text-center mt-4">
-                        <p><small>Not yet registered? <a class="text-warning" href="{% url 'register' %}">Join Re-Boot</a></small></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="mt-5 mb-5 px-3 py-3 col-md-4 adults-image text-center">
-            <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
-        </div>
-</div>
-<div class="pb-4"></div>
+    <div class="pb-4"></div>
 </div>
 {% endblock %}
