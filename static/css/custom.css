@@ -251,6 +251,10 @@ img {
   text-align: center;
 }
 
+.bg-login {
+  background-color: transparent;
+}
+
 /* Blog */
 
 .story-img {
