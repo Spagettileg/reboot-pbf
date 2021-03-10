@@ -474,6 +474,6 @@ input[value="&larr;"] {
 @media (min-width: 1800px) {
   /*large desktop device - removes white space beneath footer*/
     #login-image {
-      min-height: 110vh;
+      min-height: 80vh;
     }
 }
