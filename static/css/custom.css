@@ -256,6 +256,12 @@ img {
   margin: 0 2rem 0 2rem;
 }
 
+.login-header-text {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #F26826;
+}
+
 /* Blog */
 
 .story-img {
