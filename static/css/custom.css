@@ -269,8 +269,7 @@ img {
 }
 
 .login-header-text,
-.register-header-text,
-.register-main-text {
+.register-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
@@ -498,5 +497,9 @@ input[value="&larr;"] {
     }
     .form-view {
       padding-top: 6rem;
+    }
+    .login-header-text,
+    .register-header-text {
+      font-size: 3rem;
     }
 }
