@@ -144,6 +144,17 @@ img {
   background-position: top;
 }
 
+#register-image {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/register-background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -251,12 +262,14 @@ img {
   text-align: center;
 }
 
-.bg-login {
+.bg-login,
+.bg-register {
   background-color: transparent;
   margin: 0 2rem 0 2rem;
 }
 
-.login-header-text {
+.login-header-text,
+.register-header-text {
   font-size: 3rem;
   font-weight: 500;
   color: #F26826;
