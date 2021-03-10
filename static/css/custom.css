@@ -122,6 +122,28 @@ img {
   height: auto ;
 }
 
+#frontpage-header {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/scrumtime4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#login-image {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/login-background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -151,17 +173,6 @@ img {
 }
 
 /* Containers */
-
-#frontpage-header {
-  background-image: linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)
-  ),
-  url(/static/img/scrumtime4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
 
 .quick-steps,
 .latest-arrivals,
