@@ -1,26 +1,21 @@
 {% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block page_title %}Registration Page{% endblock %} {% block page_heading %}User Registration{% endblock %} {% block content %}
 
-<!-- Register background image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/register-background1.jpg' %}" alt="User Registration Page">
-
 <!-- Form created to collect User's email, username, password & repeat password -->
-<div class="pt-3 pb-3 container">
+<div class="pt-3 pb-3" id="register-image" alt="User Registration Page">
     <div class="pt-4"></div>
-    <div class="row">
-        <div class="pl-1 pr-1 pb-3 col-md-5 text-center">
-            <div class="shadow p-4 mb-4 bg-dark rounded border border-dark text-white">
-                <h4>Welcome to Re-Boot!</h4>
+    <div class="row form-view bg-register">
+        <div class="text-center">
+            <div class="shadow p-4 mb-4 rounded border text-white">
+                <div class="register-header-text">Welcome to Re-Boot!</div>
                 <p>We're thrilled that you are about to become a Re-Boot member and can't wait for you to get involved. </p>
                 <p>Simply register below.</p>
             </div>
-            <div class="pt-4 pb-4"></div>
-            <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
-            <div class="pt-4 pb-4"></div>
         </div>
-        <div class="col-md-7 shadow p-4 mb-4 bg-dark rounded border border-dark text-white">
+        <div class="pt-4 pb-4"></div>
+        <div class="shadow p-4 mb-4 rounded border text-white">
             <div class="row">
                 <div class="pt-2 col col-12 text-center">
-                    <h4>Register here</h4>
+                    <div class="register-header-text">Register here</div>
                     <p><small>"Re-Boot membership is so close..."</small></p>
                 </div>
             </div>
