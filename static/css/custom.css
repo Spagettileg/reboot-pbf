@@ -244,6 +244,13 @@ img {
   text-align: center;
 }
 
+.form-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Blog */
 
 .story-img {
