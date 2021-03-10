@@ -271,7 +271,7 @@ img {
 .login-header-text,
 .register-header-text,
 .register-main-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
 }
@@ -478,13 +478,6 @@ input[value="&larr;"] {
 
 /* Media Queries */
 
-@media (max-width: 390px) {
-    /*mobile portrait - Intro text fits better in viewpoint*/
-    .register-header-text {
-      font-size: 2.5rem;
-    }
-}
-
 @media (max-width: 768px) {
     /*mobile - moves shopping cart to left and aligned to remaining nav items*/
     #cart-popover {
@@ -495,13 +488,6 @@ input[value="&larr;"] {
     }
     .badge-spacer {
       padding-left: 1.5rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    /*Tablet landscape - Intro text fits better in viewpoint*/
-    .register-header-text {
-      font-size: 2.5rem;
     }
 }
 
