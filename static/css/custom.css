@@ -498,6 +498,13 @@ input[value="&larr;"] {
     }
 }
 
+@media (max-width: 1024px) {
+    /*Tablet landscape - Intro text fits better in viewpoint*/
+    .register-header-text {
+      font-size: 2.5rem;
+    }
+}
+
 @media (min-width: 1800px) {
   /*large desktop device - removes white space beneath footer*/
     #login-image {
