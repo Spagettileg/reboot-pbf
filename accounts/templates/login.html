@@ -16,7 +16,7 @@
                         <form method="POST">
                             {% csrf_token %}
                             {{ login_form | as_bootstrap }}
-                            <div class="text-left"><small>Click
+                            <div class="text-center"><small>Click
                                 <a href="{% url 'password_reset' %}" class="text-warning"><strong>here</strong></a> if password forgotten</small>
                             </div>
                             <div class="pt-2">
