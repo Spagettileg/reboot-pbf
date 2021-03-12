@@ -324,6 +324,12 @@ img {
   /*Off-White*/
 }
 
+/* Table formatting */
+
+th, td {
+  color: #FFF;
+} 
+
 /* Buttons */
 
 .btn-learn-more,
