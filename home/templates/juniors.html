@@ -1,11 +1,9 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<!-- Juniors background image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/junior-background10.jpg' %}" alt="Juniors">
-
 <!-- Junior Rugby Image -->
+<header id="juniors-image" class="col-12" alt="Juniors">
 <div class="pt-3 pb-1 col-12 text-center">
-    <h4>Juniors - Price & Boot Sizes</h4>
+    <div classs="juniors-header-text">Juniors - Price & Boot Sizes</div>
 </div>
 <div class="row">
     <!-- Juniors clipart image of rugby group -->
@@ -20,7 +18,7 @@
     <div class="px-3 py-3 col-sm-9">
         
         <table class="table table-sm table-hover text-center">
-            <thead class="thead-dark">
+            <thead class="thead-light">
                 <tr>
                     <th>UK</th>
                     <th>Euro</th>
@@ -88,4 +86,5 @@
             </div>
         </div>
 </div>
+</header>
 {% endblock %}
