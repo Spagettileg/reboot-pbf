@@ -255,7 +255,7 @@ img {
 .cart-contents-outer,
 .checkout-total-outer,
 .gravatar-image,
-.juniors-image,
+.junior-image,
 .adults-image {
   /* Ensures the payemnt summary views are centre of screen */
   display: flex;
@@ -291,14 +291,14 @@ img {
 }
 
 .login-header-text,
-.register-header-text {
+.register-header-text,
+.juniors-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
 }
 
-.explained-header-text,
-.juniors-header-text {
+.explained-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FFF;
