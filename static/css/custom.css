@@ -527,7 +527,8 @@ input[value="&larr;"] {
 
 @media (min-width: 1800px) {
   /*large desktop device - removes white space beneath footer*/
-    #login-image {
+    #login-image,
+    #juniors-image {
       min-height: 80vh;
     }
     .form-view {
