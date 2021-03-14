@@ -166,12 +166,23 @@ img {
   background-position: top;
 }
 
-#juniors-image {
+#juniors-boots {
   background-image: linear-gradient(
   rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5)
   ),
   url(/static/img/junior-background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#adults-boots {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/adults-background1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -292,7 +303,8 @@ img {
 
 .login-header-text,
 .register-header-text,
-.juniors-header-text {
+.juniors-header-text,
+.adults-headr-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
