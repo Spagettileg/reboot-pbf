@@ -4,8 +4,9 @@
     <img class="img-fluid m-0 p-0" src="{% static 'img/adults-background1.jpg' %}" alt="Adults Rugby Boot Page">
     
 <!-- Adult Rugby Image -->
+<header id="adults-boots" class="pt-3 col-12" alt="Adults">
 <div class="pt-3 pb-1 col-12 text-center">
-    <h4>Adults - Price & Boot Sizes</h4>
+    <div class="adults-header-text">Adults - Price & Boot Sizes</div>
 </div>
 <div class="row">
     <!-- Adults clipart image of rugby player -->
@@ -20,7 +21,7 @@
     <div class="px-3 py-3 col-sm-9">
         
         <table class="table table-sm table-hover text-center">
-            <thead class="thead-dark">
+            <thead class="thead-light">
                 <tr>
                     <th>UK</th>
                     <th>Euro</th>
@@ -94,10 +95,11 @@
 
     </div>
      <!-- Button to help user navigate back to home page --> 
-        <div class="container">
+        <div class="pt-3 pb-3 container">
             <div class="row pl-2 pb-3 main-menu-btn">
                 <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
             </div>
         </div>
 </div>
+</header>
 {% endblock %}
