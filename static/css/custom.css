@@ -201,10 +201,9 @@ img {
 
 #faq-image {
   background-image: linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)
-  ),
-  url(/static/img/faq-background1.jpg);
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5)
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -363,13 +362,9 @@ img {
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: transparent;
+  background-color: #FFF;
   overflow: hidden;
   color: #001514;
-}
-
-.panel p {
-  color: #FFF;
 }
 
 /* Blog */
