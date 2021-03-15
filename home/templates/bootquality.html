@@ -1,15 +1,13 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<!-- Boot quality background image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/bootquality-background.jpg' %}" alt="Rugby Boot Quality">
-
 <!-- Rugby boot quality overview -->
+<header id="quality-image" class="pt-3 col-12" alt="Quality">
 <div class="pt-3 pb-1 col-12 text-center">
-    <h4>Rugby boot quality</h4>
+    <div class="quality-header-text">Rugby boot quality</div>
 </div>
 <div class="container">
     <div class="row justify-content-center text-center">
-        <!-- latest rugby boot arrivals on show -->
+        <!-- Overview of rugby boot quality for Re-Boot products -->
         <div class="col-md-4 col-lg-4 card-style">
             <div class="text-center">
                 <img src="{% static 'img/brandnew.png' %}" class="px-3 py-3 img-fluid" alt="brand new">
@@ -52,5 +50,6 @@
         </div>
     </div>
 </div>
+</header>
 
 {% endblock %}
