@@ -328,7 +328,8 @@ img {
 .register-header-text,
 .juniors-header-text,
 .adults-header-text,
-.quality-header-text {
+.quality-header-text,
+.faq-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
