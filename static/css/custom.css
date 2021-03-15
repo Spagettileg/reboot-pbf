@@ -250,7 +250,7 @@ img {
 .card-style {
   /* Latest arrival cards on home page with orange shadow border */
   border: 0.1rem solid #F26826;
-  background-image: linear-gradient(to bottom, rgba(242,104,38,0), rgba(242,104,38,1));
+  background-image: linear-gradient(to bottom, rgba(242,104,38,1), rgba(242,104,38,0));
   border-radius: 0.5rem;
   padding-bottom: 1rem;
   margin: 0.5rem;
