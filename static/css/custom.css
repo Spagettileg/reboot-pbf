@@ -363,7 +363,7 @@ img {
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
   color: #001514;
 }
