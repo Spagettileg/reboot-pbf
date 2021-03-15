@@ -368,6 +368,10 @@ img {
   color: #001514;
 }
 
+.panel p {
+  color: #FFF;
+}
+
 /* Blog */
 
 .story-img {
