@@ -188,6 +188,17 @@ img {
   background-position: top;
 }
 
+#quality-image {
+  background-image: linear-gradient(
+  rgba(33, 41, 92, 0.5),
+  rgba(33, 41, 92, 0.5)
+  ),
+  url(/static/img/bootquality-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -304,7 +315,8 @@ img {
 .login-header-text,
 .register-header-text,
 .juniors-header-text,
-.adults-header-text {
+.adults-header-text,
+.quality-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
@@ -336,7 +348,7 @@ img {
   /*Off-White*/
 }
 
-/* Table formatting */
+/* Table formatting - Rugby Boot Size Charts */
 
 th, td {
   color: #FFF;
