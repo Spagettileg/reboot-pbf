@@ -2,12 +2,11 @@
 {% block title %}Frequently Asked Questions | ReBoot{% endblock %}
 {% block content %}
 
-<!-- All frequently asked questions show in h5 headers -->
 <!-- All answers appear in paragraph text, with built in links, where required -->
-<div class="pt-3 container">
+<header id="faq-image" class="pt-3 col-12" alt="Frequently asked questions">
     <div class="row">
-        <div class="col-12">
-            <h4>Frequently Asked Questions <i class="fas fa-comments"></i></h4>
+        
+            <div class="faq-header-text">Frequently Asked Questions <i class="fas fa-comments"></i></div>
             <hr>
             <button class="accordion">Is Re-Boot free to join?</button>
             <div class="panel">
@@ -123,8 +122,8 @@
                 <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
             </div>
             
-        </div>
+        
     </div>
-</div>
+</header>
 
 {% endblock %}
