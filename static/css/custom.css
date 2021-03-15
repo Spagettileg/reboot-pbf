@@ -250,6 +250,7 @@ img {
 .card-style {
   /* Latest arrival cards on home page with orange shadow border */
   border: 0.1rem solid #F26826;
+  background-color: #FFF;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
   margin: 0.5rem;
