@@ -21,6 +21,16 @@ class UserRegistrationForm(UserCreationForm):
     """
     Form used to register a new user
     """
+    username = forms.CharField(label='Username *',
+                               widget=forms.TextInput
+                               ({'placeholder': 'Enter your Username'}),
+                               required=True)
+
+    email = forms.CharField(label='Email *',
+                               widget=forms.EmailInput
+                               ({'placeholder': 'Enter your Email'}),
+                               required=True)
+
     password1 = forms.CharField(
         label="Password",
         widget=forms.PasswordInput({'placeholder': 'Enter Password'}),
