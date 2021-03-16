@@ -53,7 +53,7 @@ h6 {
   font-size: 1.1rem;
 }
 
-.cheer-intro p b::first-letter {
+.cheer-intro b {
   /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
   font-size: 2rem;
   font-style: oblique;
