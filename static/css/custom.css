@@ -17,8 +17,8 @@ body {
 h1,
 .cheer-title {
   font-weight: 700;
-  color: #FFF;
-  /* White */
+  color: #FAFAFA;
+  /* Off-White */
 }
 
 h2 {
@@ -45,12 +45,19 @@ h6 {
 }
 
 .cheer-text {
-  color: #FFF;
-  /* White */
+  color: #FAFAFA;
+  /* Off-White */
 }
 
 .cheer-text p {
   font-size: 1.1rem;
+}
+
+.cheer-text p::first-letter {
+  /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
+  font-size: 2rem;
+  font-style: oblique;
+  color: #F26826;
 }
 
 .card-text {
