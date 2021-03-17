@@ -603,6 +603,13 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
+.list-group {
+  background-image: linear-gradient(
+  rgba(255, 255, 255, 0.25),
+  rgba(255, 255, 255, 0.25)
+  );
+}
+
 /* Footer */
 
 #footer {
