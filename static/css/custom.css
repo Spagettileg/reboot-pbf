@@ -222,6 +222,17 @@ img {
   background-position: top;
 }
 
+#contact-image {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/contact-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -341,7 +352,8 @@ img {
 .juniors-header-text,
 .adults-header-text,
 .quality-header-text,
-.faq-header-text {
+.faq-header-text,
+.contact-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
