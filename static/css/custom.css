@@ -582,6 +582,19 @@ input[value="&larr;"] {
   /*Off-White*/
 }
 
+/* Contact Form */
+
+.c-form input[type=text] {
+  background-color: transparent;
+  color: #001514;
+  border: 1px solid #001514;
+}
+
+.c-form input[type=text]:focus {
+  background-color: #FAFAFA;
+  border: 3px solid #001514;
+}
+
 /* Footer */
 
 #footer {
