@@ -53,7 +53,8 @@ h6 {
   font-size: 1.1rem;
 }
 
-.cheer-intro b {
+.cheer-intro b,
+.cookie-intro {
   /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
   font-size: 2rem;
   font-style: oblique;
@@ -233,6 +234,17 @@ img {
   background-position: top;
 }
 
+#cookie-image {
+  background-image: linear-gradient(
+  rgba(33, 41, 92, 0.5),
+  rgba(33, 41, 92, 0.5)
+  ),
+  url(/static/img/cookie-background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -359,7 +371,8 @@ img {
 }
 
 .explained-header-text,
-.contact-header-text {
+.contact-header-text,
+.cookies-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
