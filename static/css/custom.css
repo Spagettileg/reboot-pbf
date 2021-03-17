@@ -604,10 +604,8 @@ input[value="&larr;"] {
 }
 
 .list-group {
-  background-image: linear-gradient(
-  rgba(255, 255, 255, 0.25),
-  rgba(255, 255, 255, 0.25)
-  );
+  background-color: transparent;
+  color: #FAFAFA;
 }
 
 /* Footer */
