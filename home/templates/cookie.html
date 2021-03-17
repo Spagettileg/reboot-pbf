@@ -1,11 +1,9 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<!-- Cookies background image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/cookie-background1.jpg' %}" alt="Cookies">
-
 <!-- Junior Rugby Image -->
-<div class="pt-3 pb-1 col-12 text-center">
-    <h4>Cookies explained...</h4>
+<header id="cookie-image" class="pt-3 col-12" alt="Cookies">
+<div class="pt-3 pb-1 col-12 form-view">
+    <div class="cookies-header-text">Cookies explained...</div>
 </div>
 <div class="row">
     <!-- Cookies clipart image -->
@@ -19,17 +17,17 @@
     </div>
     <!-- Cookies information -->
     <div class="px-3 py-3 col-sm-9">
-        <div class="jumbotron px-3 py-3 m-2">
-        <p>"Cookies" are small pieces of information sent by a web server to a web browser, which enables the server to collect
+        <div class="px-3 py-3 m-2 cookie-intro">
+        <p><b>C</b>ookies are small pieces of information sent by a web server to a web browser, which enables the server to collect
         information from the browser. You can find out more about the way cookies work on http://www.cookiecentral.com. Re-Boot
         uses cookies for a number of purposes, for instance to enable us to simplify the logging on process for registered users,
         to help ensure the security and authenticity of registered users, to provide the mechanisms for online shopping and to
         enable traffic monitoring. </p>
         <hr>
-        <p>Non-registered visitors of the site are sent anonymous cookies to keep track of their browsing patterns and build up
+        <p><b>N</b>on-registered visitors of the site are sent anonymous cookies to keep track of their browsing patterns and build up
         a demographic profile. </p>
         <hr>
-        <p>Whilst you do not need to allow your browser to accept cookies in order to browse much of our web site or to access
+        <p><b>W</b>hilst you do not need to allow your browser to accept cookies in order to browse much of our web site or to access
         many of our services, you must have cookies enabled if you wish to shop online or access any areas reserved for registered
         users. </p>
     </div>
@@ -41,4 +39,5 @@
             </div>
         </div>
 </div>
+</header>
 {% endblock %}
