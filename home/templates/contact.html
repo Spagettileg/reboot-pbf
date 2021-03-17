@@ -7,7 +7,7 @@
 
     <div class="pt-2 pb-3 row">
         <!-- User to input full name, email address, subject and detailed message -->
-        <div class="pt-3 pb-3 col-md-6 text-black">
+        <div class="pt-3 pb-3 col-md-6 text-white">
             <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
                 <h3>Fill Form</h3>
                 {% csrf_token %} {{ contact_form | as_bootstrap }}
