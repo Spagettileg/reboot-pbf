@@ -603,9 +603,8 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
-ul list-group  {
+fieldset  {
   background-color: transparent;
-  color: #FAFAFA;
 }
 
 /* Footer */
