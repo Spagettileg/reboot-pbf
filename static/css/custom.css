@@ -44,17 +44,19 @@ h6 {
   font-weight: 500;
 }
 
-.cheer-text {
+.cheer-text,
+.cookie-text {
   color: #FAFAFA;
   /* Off-White */
 }
 
-.cheer-text p {
+.cheer-text p,
+.cookie-text p {
   font-size: 1.1rem;
 }
 
 .cheer-intro b,
-.cookie-intro {
+.cookie-intro b {
   /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
   font-size: 2rem;
   font-style: oblique;
