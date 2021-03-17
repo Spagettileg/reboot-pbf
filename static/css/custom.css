@@ -584,14 +584,16 @@ input[value="&larr;"] {
 
 /* Contact Form */
 
-.c-form input[type=text] {
+.c-form input[type=text],
+.c-form textarea {
   background-color: transparent;
   color: #001514;
   border: 1px solid #001514;
   cursor: pointer;
 }
 
-.c-form input[type=text]:focus {
+.c-form input[type=text]:focus,
+.c-form textarea:focus {
   background-color: #FAFAFA;
   border: 3px solid #001514;
 }
