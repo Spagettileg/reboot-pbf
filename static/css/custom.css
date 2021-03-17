@@ -603,7 +603,7 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
-.list-group {
+ul list-group  {
   background-color: transparent;
   color: #FAFAFA;
 }
