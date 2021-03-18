@@ -143,17 +143,14 @@ img {
 }
 
 #frontpage-header {
-  -webkit-background-image: linear-gradient(
+  background-image: linear-gradient(
   rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5)
   ),
   url(/static/img/scrum-time.jpg);
   background-size: cover;
-  -webkit-background-size: cover;
   background-repeat: no-repeat;
-  -webkit-background-repeat: no-repeat;
   background-position: top;
-  -webkit-background-position: top;
 }
 
 #login-image {
