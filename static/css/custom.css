@@ -148,9 +148,13 @@ img {
   rgba(0, 0, 0, 0.5)
   ),
   url(/static/img/scrum-time.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top;
+  background-attachment: scroll;
 }
 
 #login-image {
