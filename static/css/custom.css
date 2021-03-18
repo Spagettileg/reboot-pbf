@@ -268,8 +268,8 @@ img {
 
 #terms-image {
   background-image: linear-gradient(
-  rgba(33, 41, 92, 0.5),
-  rgba(33, 41, 92, 0.5)
+  rgba(33, 41, 92, 0.8),
+  rgba(33, 41, 92, 0.8)
   ),
   url(/static/img/terms-background1.jpg);
   background-size: cover;
