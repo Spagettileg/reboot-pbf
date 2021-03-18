@@ -45,13 +45,15 @@ h6 {
 }
 
 .cheer-text,
-.cookie-text {
+.cookie-text,
+.privacy-text {
   color: #FAFAFA;
   /* Off-White */
 }
 
 .cheer-text p,
-.cookie-text p {
+.cookie-text p,
+.privacy-text p {
   font-size: 1.1rem;
 }
 
@@ -247,6 +249,17 @@ img {
   background-position: top;
 }
 
+#privacy-image {
+  background-image: linear-gradient(
+  rgba(33, 41, 92, 0.5),
+  rgba(33, 41, 92, 0.5)
+  ),
+  url(/static/img/privacy-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -374,7 +387,8 @@ img {
 
 .explained-header-text,
 .contact-header-text,
-.cookies-header-text {
+.cookies-header-text,
+.privacy-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
