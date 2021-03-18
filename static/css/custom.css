@@ -260,6 +260,10 @@ img {
   background-position: top;
 }
 
+.lock-image {
+  border-radius: 50%;
+}
+
 /* Shopping Cart */
 
 .cart {
