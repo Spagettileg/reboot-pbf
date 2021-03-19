@@ -291,6 +291,17 @@ img {
   background-position: top;
 }
 
+#donate-image {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/product-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -421,7 +432,8 @@ img {
 .contact-header-text,
 .cookies-header-text,
 .privacy-header-text,
-.terms-header-text {
+.terms-header-text,
+.donate-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
