@@ -687,13 +687,12 @@ input[value="&larr;"] {
       padding-left: 1.5rem;
     }
     #frontpage-header {
-      background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-  url(/static/img/scrum-time.jpg);
-    background-size: auto;
+      background-color: #135A68; 
     }
+    .cheer-intro b {
+      color: #F26826
+    }
+    
 }
 
 @media (min-width: 1800px) {
