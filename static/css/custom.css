@@ -282,8 +282,8 @@ img {
 
 #profile-image {
   background-image: linear-gradient(
-  rgba(33, 41, 92, 0.5),
-  rgba(33, 41, 92, 0.5)
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5)
   ),
   url(/static/img/profile-background1.jpg);
   background-size: cover;
@@ -410,7 +410,8 @@ img {
 .juniors-header-text,
 .adults-header-text,
 .quality-header-text,
-.faq-header-text {
+.faq-header-text,
+.profile-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
@@ -420,8 +421,7 @@ img {
 .contact-header-text,
 .cookies-header-text,
 .privacy-header-text,
-.terms-header-text,
-.profile-header-text {
+.terms-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
