@@ -675,6 +675,17 @@ input[value="&larr;"] {
 
 /* Media Queries */
 
+@media (max-width: 375px) {
+  /*mobile - portrait: Render background image*/
+    #frontpage-header {
+      background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+  url(/static/img/scrum-time375.jpg);
+  }
+}
+
 @media (max-width: 768px) {
     /*mobile - moves shopping cart to left and aligned to remaining nav items*/
     #cart-popover {
@@ -686,13 +697,6 @@ input[value="&larr;"] {
     .badge-spacer {
       padding-left: 1.5rem;
     }
-    #frontpage-header {
-      background-color: #135A68; 
-    }
-    .cheer-intro b {
-      color: #F26826
-    }
-    
 }
 
 @media (min-width: 1800px) {
