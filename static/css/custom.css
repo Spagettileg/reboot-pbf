@@ -686,6 +686,14 @@ input[value="&larr;"] {
     .badge-spacer {
       padding-left: 1.5rem;
     }
+    #frontpage-header {
+      background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+  url(/static/img/scrum-time.jpg);
+    background-size: auto;
+    }
 }
 
 @media (min-width: 1800px) {
