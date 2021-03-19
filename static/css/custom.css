@@ -147,7 +147,7 @@ img {
   rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5)
   ),
-  url(/static/img/scrum-time.jpg);
+  url(/static/img/scrumtime4.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -674,17 +674,6 @@ input[value="&larr;"] {
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 375px) {
-  /*mobile - portrait: Render background image*/
-    #frontpage-header {
-      background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-  url(/static/img/scrum-time375a.jpg);
-  }
-}
 
 @media (max-width: 768px) {
     /*mobile - moves shopping cart to left and aligned to remaining nav items*/
