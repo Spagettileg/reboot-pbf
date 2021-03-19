@@ -3,13 +3,16 @@
 <!-- Profile background image banner -->
     <img class="img-fluid m-0 p-0" src="{% static 'img/profile-background1.jpg' %}" alt="Re-Boot Member Profile">
 
-<h4 class="pt-3 pb-1 col-12 text-center">{{ user|capfirst }}'s Re-Boot:</h4>
+<header id="profile-image" class="pt-3 col-12" alt="User Profile">
+<div class="pt-3 pb-1 col-12 text-center">    
+    <div class="profile-header-text">{{ user|capfirst }}'s Re-Boot:</div>
+</div>
 <hr>
 <div class="row">
     <!-- Users image and ID -->
     <div class="col-lg-3">
         <div class="px-3 py-3 gravatar-image text-center">
-            <img src="{% static 'img/gravatar.png' %}" alt="gravatar image">
+            <img src="{% static 'img/gravatar1.png' %}" alt="gravatar image">
         </div>
         <p class="user-intro text-center"><strong>Welcome, {{ user|capfirst }}</strong></p>
     </div>
@@ -17,7 +20,7 @@
     <div class="col-lg-3">
         <h5 class="text-center">Unwanted Boots</h5>
         <div class="px-3 py-3 text-center">
-            <img src="{% static 'img/stepthree.png' %}" alt="donate">
+            <img src="{% static 'img/donate.png' %}" alt="donate">
 
             <div class="pt-3"></div>
             <div class="text-center"><a href="{% url 'create_a_product' %} " class="btn btn-read-more">Donate</a></div>
@@ -27,7 +30,7 @@
     <div class="col-lg-3">
         <h5 class="text-center">Start a Blog</h5>
         <div class="px-3 py-3 text-center">
-            <img src="{% static 'img/blog.png' %}" alt="blog">
+            <img src="{% static 'img/blog1.png' %}" alt="blog">
 
             <div class="pt-3"></div>
             <div class="text-center"><a href="{% url 'new_post' %}" class="btn btn-read-more">Blog</a></div>
@@ -37,11 +40,12 @@
     <div class="col-lg-3">
         <h5 class="text-center">Password Change</h5>
         <div class="px-3 py-3 text-center">
-            <img src="{% static 'img/privacy.png' %}" alt="change password">
+            <img src="{% static 'img/password.png' %}" alt="change password">
 
             <div class="pt-3"></div>
             <div class="text-center"><a href="{% url 'password_reset' %}" class="btn btn-read-more">Reset</a></div>
         </div>
     </div>
 </div>
+</header>
 {% endblock %}
