@@ -675,7 +675,7 @@ input[value="&larr;"] {
 
 /* Media Queries */
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   /*mobile - portrait: Render background image*/
     #frontpage-header {
       background-image: linear-gradient(
