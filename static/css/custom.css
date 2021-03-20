@@ -681,6 +681,12 @@ input[value="&larr;"] {
   background-color: transparent;
 }
 
+/* Donate product form */
+
+.donate form-control {
+  width:auto;
+}
+
 /* Footer */
 
 #footer {
