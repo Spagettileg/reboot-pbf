@@ -10,7 +10,7 @@
             <div class="container col-md-6">
                 <div class="px-2 py-2 shadow p-4 mb-4 bg-white rounded border border-dark">
                     <div class="pt-3 pb-3 row">
-                        <form method="POST" enctype="multipart/form-data">
+                        <form method="POST" class="donate" enctype="multipart/form-data">
                             {% csrf_token %} {{ form | as_bootstrap }}
                             <button type="submit" class="btn btn-add-review">Submit</button>
                             <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
