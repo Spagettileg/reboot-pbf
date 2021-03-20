@@ -719,7 +719,7 @@ input[value="&larr;"] {
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   /*tablet - landscape*/
   .donate {
     width: 24.0625rem;
