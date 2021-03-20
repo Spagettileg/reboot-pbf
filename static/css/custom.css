@@ -681,12 +681,6 @@ input[value="&larr;"] {
   background-color: transparent;
 }
 
-/* Donate product form */
-
-.donate form-control {
-  width:auto;
-}
-
 /* Footer */
 
 #footer {
@@ -704,6 +698,13 @@ input[value="&larr;"] {
 }
 
 /* Media Queries */
+
+@media (max-width: 667px) {
+  /*mobile - landscape*/
+  .donate {
+    width: 26.875rem;
+  }
+}
 
 @media (max-width: 768px) {
     /*mobile - moves shopping cart to left and aligned to remaining nav items*/
