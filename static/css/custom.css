@@ -726,6 +726,13 @@ input[value="&larr;"] {
   }
 }
 
+@media (min-width: 1200px) {
+  /*desktop - landscape*/
+  .donate {
+    width: 29.6875rem;
+  }
+}
+
 @media (min-width: 1800px) {
   /*large desktop device - removes white space beneath footer*/
     #login-image,
