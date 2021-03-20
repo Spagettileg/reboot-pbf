@@ -2,21 +2,23 @@
 
 <!-- Form structure to enable user to donate their unwanted rugby boots -->
 <header id="donate-image" class="pt-3 col-12" alt="Donate rugby boots">
-<div class="pt-3 pb-3 container">
-    <div class="row">
-        <div class="pt-2 pb-2 col-12 text-center">
-            <div class="donate-header-text">Donate rugby boots | <i class="far fa-handshake"></i></div>
-        </div>
-        <div class="px-2 py-2 col-md-6 shadow p-4 mb-4 bg-white rounded border border-dark">
-            <div class="pt-3 pb-3 row">
-                <form method="POST" enctype="multipart/form-data">
-                    {% csrf_token %} {{ form | as_bootstrap }}
-                    <button type="submit" class="btn btn-add-review">Submit</button>
-                    <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
-                </form>
+    <div class="pt-3 pb-3 container">
+        <div class="row">
+            <div class="pt-2 pb-2 col-12 text-center">
+                <div class="donate-header-text">Donate rugby boots | <i class="far fa-handshake"></i></div>
+            </div>
+            <div class="container col-md-6">
+                <div class="px-2 py-2 shadow p-4 mb-4 bg-white rounded border border-dark">
+                    <div class="pt-3 pb-3 row">
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %} {{ form | as_bootstrap }}
+                            <button type="submit" class="btn btn-add-review">Submit</button>
+                            <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </header>
 {% endblock %}
