@@ -678,11 +678,11 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
-.make.form-group {
+#make.form-group {
   background-color: transparent;
 }
 
-.make.form-group [type=label] {
+#make.form-group [type=label] {
   color: #FAFAFA;
 }
 
