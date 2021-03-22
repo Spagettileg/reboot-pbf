@@ -682,9 +682,9 @@ input[value="&larr;"] {
   background-color: transparent;
 }
 
-#id_make.form-control ::placeholder {
+.donate index ::placeholder {
   /*vivid tangelo - orange*/
-  color: #F26826 !important;
+  color: #F26826;
 }
 
 .required-field {
