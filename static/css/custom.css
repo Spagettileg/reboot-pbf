@@ -678,11 +678,11 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
-#make.form-group {
+#id_make.form-control {
   background-color: transparent;
 }
 
-#make.form-group [type=label] {
+.required-field {
   color: #FAFAFA;
 }
 
