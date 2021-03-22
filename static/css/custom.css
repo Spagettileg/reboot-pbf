@@ -411,7 +411,8 @@ img {
 }
 
 .bg-login,
-.bg-register {
+.bg-register,
+.bg-donate {
   background-color: transparent;
   margin: 0 2rem 0 2rem;
 }
@@ -659,8 +660,7 @@ input[value="&larr;"] {
 /* Forms - Contact & Donate Product */
 
 .c-form input[type=text],
-.c-form textarea,
-.donate input[type=text] {
+.c-form textarea {
   background-color: transparent;
   color: #FFF;
   border: 1px solid #001514;
@@ -668,15 +668,13 @@ input[value="&larr;"] {
 }
 
 .c-form input[type=text]:focus,
-.c-form textarea:focus,
-.donate input[typre=text] {
+.c-form textarea:focus {
   background-color: #FAFAFA;
   border: 3px solid #001514;
   color: #001514;
 }
 
-.c-form ::placeholder,
-.donate ::placeholder {
+.c-form ::placeholder {
   color: #FAFAFA;
 }
 
