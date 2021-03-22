@@ -678,17 +678,11 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
-.donate form-control {
+.make.form-group {
   background-color: transparent;
-  border: 1px solid #FAFAFA;
-  cursor: pointer;
 }
 
-.donate control-label {
-  color: #FAFAFA;
-}
-
-.donate ::placeholder {
+.make.form-group [type=label] {
   color: #FAFAFA;
 }
 
