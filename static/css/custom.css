@@ -682,7 +682,7 @@ input[value="&larr;"] {
   background-color: transparent;
 }
 
-#id_make input::placeholder {
+#id_make.form-control ::placeholder {
   /*vivid tangelo - orange*/
   color: #F26826;
 }
