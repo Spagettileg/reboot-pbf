@@ -659,7 +659,8 @@ input[value="&larr;"] {
 /* Forms - Contact & Donate Product */
 
 .c-form input[type=text],
-.c-form textarea {
+.c-form textarea,
+.donate input[type=text] {
   background-color: transparent;
   color: #FFF;
   border: 1px solid #001514;
@@ -667,13 +668,15 @@ input[value="&larr;"] {
 }
 
 .c-form input[type=text]:focus,
-.c-form textarea:focus {
+.c-form textarea:focus,
+.donate input[typre=text] {
   background-color: #FAFAFA;
   border: 3px solid #001514;
   color: #001514;
 }
 
-.c-form ::placeholder {
+.c-form ::placeholder,
+.donate ::placeholder {
   color: #FAFAFA;
 }
 
