@@ -699,6 +699,8 @@ input[value="&larr;"] {
 .control-label {
   /*vivid tangelo - orange*/
   color: #F26826;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .found {
