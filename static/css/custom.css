@@ -678,6 +678,20 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
+.donate form-control {
+  background-color: transparent;
+  border: 1px solid #FAFAFA;
+  cursor: pointer;
+}
+
+.donate control-label {
+  color: #FAFAFA;
+}
+
+.donate ::placeholder {
+  color: #FAFAFA;
+}
+
 .found {
   background-color: transparent;
 }
