@@ -293,8 +293,8 @@ img {
 
 #donate-image {
   background-image: linear-gradient(
-  rgba(0, 0, 0, 1),
-  rgba(0, 0, 0, 1)
+  rgba(0, 0, 0, 0.9),
+  rgba(0, 0, 0, 0.9)
   ),
   url(/static/img/product-background.jpg);
   background-size: cover;
