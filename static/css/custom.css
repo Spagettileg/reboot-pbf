@@ -678,17 +678,27 @@ input[value="&larr;"] {
   color: #FAFAFA;
 }
 
-#id_make.form-control {
+#id_make.form-control,
+#id_category.form-control,
+#id_customer.form-control,
+#id_size.form-control,
+#id_colour.form-control,
+#id_studs.form-control,
+#id_quality.form-control,
+#id_price.form-control,
+#id_image.form-control {
   background-color: transparent;
 }
 
 .bg-donate ::placeholder {
-  /*vivid tangelo - orange*/
-  color: #F26826;
+  /*off-white*/
+  color: #FAFAFA;
 }
 
-.required-field {
-  color: #FAFAFA;
+.required-field,
+.control-label {
+  /*vivid tangelo - orange*/
+  color: #F26826;
 }
 
 .found {
