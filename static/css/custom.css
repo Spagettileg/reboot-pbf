@@ -684,7 +684,7 @@ input[value="&larr;"] {
 
 #id_make.form-control ::placeholder {
   /*vivid tangelo - orange*/
-  color: #F26826;
+  color: #F26826 !important;
 }
 
 .required-field {
