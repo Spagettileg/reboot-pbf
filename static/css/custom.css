@@ -96,8 +96,8 @@ h6 {
 .brand-text {
   background-color: #FAFAFA;
   opacity: 0.25;
-  color: transparent;
-  font-size: 4rem;
+  color: #FAFAFA;
+  font-size: 6rem;
   font-weight: 600;
   text-align: center;
   position: absolute;
