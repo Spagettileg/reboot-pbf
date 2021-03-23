@@ -555,97 +555,97 @@ th, td {
 }
 
 .btn-up {
-    /*top of page button found at the bottom of all the webpages*/
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #001514;
-    /*Rich Black*/
-    border: 2px solid #001514;
-    color: #F26826;
-    /*Vivid Tangelo - Orange*/
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    width: 3rem;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*top of page button found at the bottom of all the webpages*/
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #001514;
+  /*Rich Black*/
+  border: 2px solid #001514;
+  color: #F26826;
+  /*Vivid Tangelo - Orange*/
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  width: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-up:hover {
-    /* top of page button change colour when hovered & clicked */
-    color: #F26826;
-    transform: scale(1.25);
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    /*Opera*/
-    -moz-transition: all 0.5s ease-in-out;
-    /*Windows*/
-    -webkit-transition: all 0.5s ease-in-out;
-    /*Apple*/
+  /* top of page button change colour when hovered & clicked */
+  color: #F26826;
+  transform: scale(1.25);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  /*Opera*/
+  -moz-transition: all 0.5s ease-in-out;
+  /*Windows*/
+  -webkit-transition: all 0.5s ease-in-out;
+  /*Apple*/
 }
 
 .fa-angle-double-up:hover {
-    transform: scale(1.25);
-    color: #F26826;
+  transform: scale(1.25);
+  color: #F26826;
 }
 
 .move-top {
-    z-index: 99;
-	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
-    display: none;
+  z-index: 99;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
 }
 
 .main-menu-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-back {
-    /*Back button found at the bottom of the web page*/
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #FFF;
-    /*White*/
-    border-color: #F26826;
-    /*Vivid Tangelo - Orange*/
-    color: #F26826;
-    /*Vivid Tangelo - Orange*/
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    width: 6rem;
-    text-align: center;
+  /*Back button found at the bottom of the web page*/
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #FFF;
+  /*White*/
+  border-color: #F26826;
+  /*Vivid Tangelo - Orange*/
+  color: #F26826;
+  /*Vivid Tangelo - Orange*/
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  width: 6rem;
+  text-align: center;
 }
 
 .btn-back:hover {
-    /* Back button change colour when hovered & clicked */
-    background-color: #F26826;
-    /*Vivid Tangelo - Orange*/
-    border-color: #F26826;
-    color: #FFF;
-    /*White*/
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    /*Opera*/
-    -moz-transition: all 0.5s ease-in-out;
-    /*Windows*/
-    -webkit-transition: all 0.5s ease-in-out;
-    /*Apple*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Back button change colour when hovered & clicked */
+  background-color: #F26826;
+  /*Vivid Tangelo - Orange*/
+  border-color: #F26826;
+  color: #FFF;
+  /*White*/
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  /*Opera*/
+  -moz-transition: all 0.5s ease-in-out;
+  /*Windows*/
+  -webkit-transition: all 0.5s ease-in-out;
+  /*Apple*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-back,
-input[value="&larr;"] {
-    /* Format back button */ 
-    font-weight: 600;
+  input[value="&larr;"] {
+  /* Format back button */ 
+  font-weight: 600;
 }
 
 /* Social Media */
@@ -740,16 +740,16 @@ input[value="&larr;"] {
 }
 
 @media (max-width: 768px) {
-    /*mobile - moves shopping cart to left and aligned to remaining nav items*/
-    #cart-popover {
-        padding-left: 0;
-    }
-    .cart {
-      margin-left: -0.25rem;
-    }
-    .badge-spacer {
-      padding-left: 1.5rem;
-    }
+  /*mobile - moves shopping cart to left and aligned to remaining nav items*/
+  #cart-popover {
+      padding-left: 0;
+  }
+  .cart {
+    margin-left: -0.25rem;
+  }
+  .badge-spacer {
+    padding-left: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -768,15 +768,15 @@ input[value="&larr;"] {
 
 @media (min-width: 1800px) {
   /*large desktop device - removes white space beneath footer*/
-    #login-image,
-    #juniors-image {
-      min-height: 80vh;
-    }
-    .form-view {
-      padding-top: 6rem;
-    }
-    .login-header-text,
-    .register-header-text {
-      font-size: 3rem;
-    }
+  #login-image,
+  #juniors-image {
+    min-height: 80vh;
+  }
+  .form-view {
+    padding-top: 6rem;
+  }
+  .login-header-text,
+  .register-header-text {
+    font-size: 3rem;
+  }
 }
