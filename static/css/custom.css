@@ -701,6 +701,7 @@ th, td {
 }
 
 #file-upload-button {
+  padding-top: 1rem;
   cursor: pointer;
   color: #F26826;
   border: 1px solid #F26826;
