@@ -690,6 +690,10 @@ th, td {
   background-color: transparent;
 }
 
+#id_image.form-control {
+  height: 3rem;
+}
+
 .bg-donate ::placeholder {
   /*off-white*/
   color: #FAFAFA;
