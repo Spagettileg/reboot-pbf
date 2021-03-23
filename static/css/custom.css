@@ -692,23 +692,12 @@ th, td {
 
 #id_image.form-control {
   height: 3rem;
-  padding-top: 0.1rem; 
+  padding-top: 0.5rem; 
 }
 
 .bg-donate input[type=file] ::placeholder,
 #id_image ::placeholder{
   /*off-white*/
-  color: #FAFAFA;
-}
-
-#file-upload-button input[type=file] {
-  cursor: pointer;
-  color: #F26826;
-  border: 1px solid #F26826;
-}
-
-#file-upload-button input[type=file]:hover {
-  background: #F26826;
   color: #FAFAFA;
 }
 
