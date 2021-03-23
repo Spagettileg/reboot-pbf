@@ -90,7 +90,16 @@ h6 {
   /*Introduction welcome message to user in their MyReBoot page*/
   font-size: 1.8rem;
   color: #F26826;
-  /*viv9d tangelo - orange*/
+  /*vivid tangelo - orange*/
+}
+
+.brand-text {
+  background-color: #FAFAFA;
+  opacity: 0.25;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 ul {
@@ -333,13 +342,17 @@ img {
 /* Containers */
 
 .home-banner {
-  height: 60vh;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #bg-why {
   background-image: linear-gradient(
-  rgba(19, 90, 104, 0.5),
-  rgba(242, 104, 38, 0.5)
+  rgba(19, 90, 104, 0.75),
+  rgba(242, 104, 38, 0.75)
   );
   background-size: cover;
   background-repeat: no-repeat;
