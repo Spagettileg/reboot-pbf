@@ -694,8 +694,20 @@ th, td {
   height: 3rem;
 }
 
-.bg-donate ::placeholder {
+.bg-donate ::placeholder,
+#id_image ::placeholder{
   /*off-white*/
+  color: #FAFAFA;
+}
+
+#file-upload-button {
+  cursor: pointer;
+  color: #F26826;
+  border: 1px solid #F26826;
+}
+
+#file-upload-button:hover {
+  background-color: #F26826;
   color: #FAFAFA;
 }
 
