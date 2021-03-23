@@ -13,8 +13,8 @@
                         <form method="POST" class="donate" enctype="multipart/form-data">
                             {% csrf_token %} {{ form | as_bootstrap }}
                             <div class="form-view">
-                                <button type="submit" class="btn btn-add-review">Submit</button>
                                 <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
+                                <button type="submit" class="btn btn-add-review">Submit</button>
                             </div>
                         </form>
                     </div>
