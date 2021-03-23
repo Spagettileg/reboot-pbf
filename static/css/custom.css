@@ -693,9 +693,10 @@ th, td {
 #id_image.form-control {
   height: 3rem;
   padding-top: 0.5rem; 
+  color: #FAFAFA;
 }
 
-.bg-donate input[type=file] ::placeholder,
+.bg-donate ::placeholder,
 #id_image ::placeholder{
   /*off-white*/
   color: #FAFAFA;
