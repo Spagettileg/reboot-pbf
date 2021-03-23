@@ -332,6 +332,10 @@ img {
 
 /* Containers */
 
+.home-banner {
+  height: 60vh;
+}
+
 .quick-steps,
 .latest-arrivals,
 .customer-reviews,
