@@ -692,7 +692,7 @@ th, td {
 
 #id_image.form-control {
   height: 3rem;
-  padding-top: 1rem; 
+  padding-top: 0.1rem; 
 }
 
 .bg-donate input[type=file] ::placeholder,
