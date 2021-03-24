@@ -158,14 +158,18 @@ ul {
 }
 
 .brand-text span {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FAFAFA;
-  background-color: #135A68;
-  opacity: 0.5;
-  width: 2rem;
-  height: 2rem;
+  text-shadow: rgb(0, 21, 20);
+  color: #F26826;
+  background-image: linear-gradient(
+  rgba(19, 90, 104, 0.75),
+  rgba(19, 90, 104, 0.25),
+  rgba(19, 90, 104, 0.75)
+  );
+  width: 2.5rem;
+  height: 4rem;
   margin: 0.2rem;
   border-radius: 50%;
 }
