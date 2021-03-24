@@ -142,15 +142,13 @@ ul {
   align-items: center;
 }
 
-.brand-header {
+.brand-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.brand-text {
   display: flex;
+  flex-direction: row;
 }
 
 .brand-text span {
