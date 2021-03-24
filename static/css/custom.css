@@ -59,12 +59,18 @@ h6 {
   font-size: 1.1rem;
 }
 
-.cheer-intro b,
 .cookie-intro b {
   /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
   font-size: 2rem;
   font-style: oblique;
   color: #F26826;
+}
+
+.cheer-intro b {
+  /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
+  font-size: 2rem;
+  font-style: oblique;
+  color: #FAFAFA;
 }
 
 .card-text {
@@ -152,7 +158,7 @@ ul {
 }
 
 .brand-text span {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #FAFAFA;
   background-color: #135A68;
@@ -437,8 +443,8 @@ img {
 
 #bg-why {
   background-image: linear-gradient(
-  rgba(19, 90, 104, 0.75),
-  rgba(242, 104, 38, 0.75)
+  rgba(19, 90, 104),
+  rgba(242, 104, 38)
   );
   background-size: cover;
   background-repeat: no-repeat;
