@@ -452,6 +452,16 @@ img {
   background-position: top;
 }
 
+#bg-arrivals {
+  background-image: linear-gradient(
+  rgba(242, 104, 38),
+  rgba(19, 90, 104)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .quick-steps,
 .latest-arrivals,
 .customer-reviews,
