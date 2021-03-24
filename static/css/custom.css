@@ -466,7 +466,6 @@ img {
   background-position: top;
 }
 
-.quick-steps,
 .customer-reviews,
 .customer-blog,
 .product-category {
@@ -480,6 +479,13 @@ img {
 .latest-arrivals {
   background-color: #135A68;
   /*Green*/
+  color: #FAFAFA;
+  /*Off-White*/
+}
+
+.quick-steps {
+  background-color: #F26826;
+  /*vivid tangelo - orange*/
   color: #FAFAFA;
   /*Off-White*/
 }
