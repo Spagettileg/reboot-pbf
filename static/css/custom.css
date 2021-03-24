@@ -45,6 +45,8 @@ h6 {
 }
 
 .cheer-text,
+.arrivals-text,
+.arrivals-text i,
 .cookie-text,
 .privacy-text,
 .terms-text {
@@ -53,6 +55,8 @@ h6 {
 }
 
 .cheer-text p,
+.arrivals-text p,
+.arrivals-text i,
 .cookie-text p,
 .privacy-text p,
 .terms-text p {
