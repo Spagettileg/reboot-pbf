@@ -467,13 +467,19 @@ img {
 }
 
 .quick-steps,
-.latest-arrivals,
 .customer-reviews,
 .customer-blog,
 .product-category {
   /*Front page block headers signposting important ReBoot features*/
   background-color: #21295C;
   /*Blue*/
+  color: #FAFAFA;
+  /*Off-White*/
+}
+
+.latest-arrivals {
+  background-color: #135A68;
+  /*Green*/
   color: #FAFAFA;
   /*Off-White*/
 }
