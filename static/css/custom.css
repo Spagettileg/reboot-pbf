@@ -866,6 +866,16 @@ th, td {
   }
 }
 
+@media (min-width: 768px) {
+  /*tablet - portrait*/
+  .brand-text span {
+    font-size:4.5rem;
+    width: 5rem;
+    height: 8rem;
+    margin: 0.4rem; 
+  }
+}
+
 @media (max-width: 768px) {
   /*tablet - moves shopping cart to left and aligned to remaining nav items*/
   #cart-popover {
@@ -876,12 +886,6 @@ th, td {
   }
   .badge-spacer {
     padding-left: 1.5rem;
-  }
-  .brand-text span {
-    font-size:4.5rem;
-    width: 5rem;
-    height: 8rem;
-    margin: 0.4rem; 
   }
 }
 
