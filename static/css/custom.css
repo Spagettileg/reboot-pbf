@@ -859,6 +859,16 @@ th, td {
   }
 }
 
+@media (min-width: 700px) {
+  /*desktop - portrait*/
+  .brand-text span {
+    font-size:4.5rem;
+    width: 5rem;
+    height: 8rem;
+    margin: 0.4rem; 
+  }
+}
+
 @media (max-width: 700px) {
   /*desktop - portrait*/
   .donate {
