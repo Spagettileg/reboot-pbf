@@ -169,11 +169,11 @@ ul {
   rgba(19, 90, 104, 0.25),
   rgba(19, 90, 104, 0.75)
   );
-  -webkit-transform: rotate(-70deg);
-  -moz-transform: rotate(-70deg);
-  -ms-transform: rotate(-70deg);
-  -o-transform: rotate(-70deg);
-  transform: rotate(-70deg);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
   width: 2.5rem;
   height: 4rem;
   margin: 0.2rem;
