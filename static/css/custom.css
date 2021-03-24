@@ -59,18 +59,12 @@ h6 {
   font-size: 1.1rem;
 }
 
+.cheer-intro b,
 .cookie-intro b {
   /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
   font-size: 2rem;
   font-style: oblique;
   color: #F26826;
-}
-
-.cheer-intro b {
-  /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
-  font-size: 2rem;
-  font-style: oblique;
-  color: #FAFAFA;
 }
 
 .card-text {
@@ -873,7 +867,7 @@ th, td {
 }
 
 @media (max-width: 768px) {
-  /*mobile - moves shopping cart to left and aligned to remaining nav items*/
+  /*tablet - moves shopping cart to left and aligned to remaining nav items*/
   #cart-popover {
       padding-left: 0;
   }
@@ -882,6 +876,12 @@ th, td {
   }
   .badge-spacer {
     padding-left: 1.5rem;
+  }
+  .brand-text span {
+    font-size:4.5rem;
+    width: 5rem;
+    height: 8rem;
+    margin: 0.4rem; 
   }
 }
 
