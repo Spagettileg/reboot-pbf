@@ -63,6 +63,12 @@ h6 {
   font-size: 1.1rem;
 }
 
+.arrivals-card-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FAFAFA;
+}
+
 .cheer-intro b,
 .cookie-intro b {
   /*Introduction narrative 1st letter of the paragraph text formatted to stand out to user*/
