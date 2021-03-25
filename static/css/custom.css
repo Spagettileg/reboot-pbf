@@ -580,7 +580,9 @@ img {
 .cookies-header-text,
 .privacy-header-text,
 .terms-header-text,
-.donate-header-text {
+.donate-header-text,
+.quick-steps-header-text,
+.arrivals-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
