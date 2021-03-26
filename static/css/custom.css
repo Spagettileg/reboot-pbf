@@ -944,6 +944,9 @@ th, td {
   .donate {
     width: 26.875rem;
   }
+  .blogform {
+    width: 30.75rem;
+  }
 }
 
 @media (min-width: 700px) {
@@ -960,6 +963,9 @@ th, td {
   /*desktop - portrait*/
   .donate {
     width: 28.73rem;
+  }
+  .blogform {
+    width: 30.75rem;
   }
 }
 
@@ -991,12 +997,18 @@ th, td {
   .donate {
     width: 24.0625rem;
   }
+  .blogform {
+    width: 27.9375rem;
+  }
 }
 
 @media (min-width: 1200px) {
   /*desktop - landscape*/
   .donate {
     width: 29.6875rem;
+  }
+  .blogform {
+    width: 33.5625;
   }
 }
 
