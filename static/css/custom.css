@@ -892,7 +892,8 @@ th, td {
 }
 
 .bg-donate ::placeholder,
-#id_image ::placeholder{
+.bg-blogpost ::placeholder,
+#id_image ::placeholder {
   /*off-white*/
   color: #FAFAFA;
 }
