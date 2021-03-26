@@ -892,6 +892,7 @@ th, td {
 #id_published_date.form-control,
 #id_image.form-control {
   background-color: transparent;
+  color: #FAFAFA;
 }
 
 #id_image.form-control {
