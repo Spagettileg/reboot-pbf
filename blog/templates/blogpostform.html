@@ -12,8 +12,10 @@
                     <div class="pt-3 pb-3 row">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %} {{ form | as_bootstrap }}
-                            <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
-                            <button type="submit" class="btn btn-add-review">Save</button>
+                            <div class="form-view">
+                                <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
+                                <button type="submit" class="btn btn-add-review">Save</button>
+                            </div>
                         </form>
                     </div>
                 </div>
