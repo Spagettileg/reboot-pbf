@@ -894,7 +894,7 @@ th, td {
 .bg-donate ::placeholder,
 .bg-blogpost ::placeholder,
 #id_image ::placeholder,
-#id_published_date ::placeholder {
+#id_published_date.form-control {
   /*off-white*/
   color: #FAFAFA;
 }
