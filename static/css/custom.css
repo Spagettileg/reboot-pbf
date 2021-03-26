@@ -81,6 +81,7 @@ h6 {
   font-size: 0.9rem;
   font-weight: 500;
   margin: 0.25rem;
+  color: #FAFAFA;
 }
 
 .arrivals-header-text {
@@ -472,6 +473,16 @@ img {
   background-position: top;
 }
 
+#bg-quick-steps {
+  background-image: linear-gradient(
+  rgba(242, 104, 38),
+  rgba(19, 90, 104)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .customer-reviews,
 .customer-blog,
 .product-category {
@@ -496,10 +507,18 @@ img {
   /*Off-White*/
 }
 
+.card-title {
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #FAFAFA;
+}
+
 .card-header {
-  background-color: #FFFFFF;
-  /*White*/
-  font-weight: 600;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  /*Off-White*/
+  font-weight: 500;
 }
 
 .card-style {
