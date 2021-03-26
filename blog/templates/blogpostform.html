@@ -8,7 +8,7 @@
                 <div class="blogpost-header-text">Blog Post <i class="far fa-envelope"></i></div>
             </div>
             <div class="container col-md-6">
-                <div class="shadow mb-4 bg-blogpost rounded-border border-light">
+                <div class="shadow mb-4 bg-blogpost rounded border border-light">
                     <div class="pt-3 pb-3 row">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %} {{ form | as_bootstrap }}
