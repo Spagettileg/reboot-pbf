@@ -691,6 +691,7 @@ th, td {
 .btn-product-detail,
 .btn-submit-payment,
 .btn-checkout {
+  width: 5rem;
   padding: 0.5rem;
   margin: 0.5rem;
   background-color: #FFFFFF;
@@ -710,7 +711,6 @@ th, td {
 .btn-product-detail:hover,
 .btn-submit-payment:hover,
 .btn-checkout:hover {
-  width: 5rem;
   background-color: #135A68;
   border: 0.1rem solid #135A68;
   color: #FAFAFA;
