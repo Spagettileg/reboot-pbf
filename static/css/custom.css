@@ -419,6 +419,17 @@ img {
   background-position: top;
 }
 
+#blogpost-image {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(/static/img/blog-background3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -595,10 +606,12 @@ img {
 .adults-header-text,
 .quality-header-text,
 .faq-header-text,
-.profile-header-text {
+.profile-header-text,
+.blogpost-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
+  /*vivid tangelo - orange*/
 }
 
 .explained-header-text,
@@ -612,6 +625,7 @@ img {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
+  /*off-white*/
 }
 
 /* Accordian - FAQ's webpage */
