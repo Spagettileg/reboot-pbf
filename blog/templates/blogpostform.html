@@ -2,19 +2,23 @@
 
 <!-- Form structure to enable user to add their blog message -->
 <header id="blogpost-image" class="pt-3 col-12" alt="Blog home page">
-<div class="row">
-    <div class="pt-3 pb-1 col-12 text-center">
-        <div class="blogpost-header-text">Blog Post <i class="far fa-envelope"></i></div>
-    </div>
-    <div class="mt-3 mb-3 col col-sm-4 container text-white rounded-border border-light form-view bg-blogpost">
-        <div class="pt-3 pb-3 row">
-            <form method="POST" enctype="multipart/form-data">
-                {% csrf_token %} {{ form | as_bootstrap }}
-                <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
-                <button type="submit" class="btn btn-add-review">Save</button>
-            </form>
+    <div class="pt-3 pb-3 container">
+        <div class="row">
+            <div class="pt-3 pb-1 col-12 text-center">
+                <div class="blogpost-header-text">Blog Post <i class="far fa-envelope"></i></div>
+            </div>
+            <div class="container col-md-6">
+                <div class="px-2 py-2 shadow p-4 mb-4 bg-blogpost rounded-border border-light">
+                    <div class="pt-3 pb-3 row">
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %} {{ form | as_bootstrap }}
+                            <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
+                            <button type="submit" class="btn btn-add-review">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 </header>
 {% endblock %}
