@@ -421,8 +421,8 @@ img {
 
 #blogpost-image {
   background-image: linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)
+  rgba(0, 0, 0, 0.85),
+  rgba(33, 41, 92, 0.85)
   ),
   url(/static/img/blog-background3.jpg);
   background-size: cover;
@@ -595,7 +595,8 @@ img {
 
 .bg-login,
 .bg-register,
-.bg-donate {
+.bg-donate,
+.bg-blogpost {
   background-color: transparent;
   margin: 0 2rem 0 2rem;
 }
@@ -709,6 +710,7 @@ th, td {
 .btn-product-detail:hover,
 .btn-submit-payment:hover,
 .btn-checkout:hover {
+  width: 5rem;
   background-color: #135A68;
   border: 0.1rem solid #135A68;
   color: #FAFAFA;
@@ -867,6 +869,8 @@ th, td {
 }
 
 #id_make.form-control,
+#id_title.form-control,
+#id_author.form-control,
 #id_category.form-control,
 #id_customer.form-control,
 #id_size.form-control,
@@ -874,6 +878,9 @@ th, td {
 #id_studs.form-control,
 #id_quality.form-control,
 #id_price.form-control,
+#id_content.form-control,
+#id_tag.form-control,
+#id_published_date.form-control,
 #id_image.form-control {
   background-color: transparent;
 }
