@@ -10,7 +10,7 @@
             <div class="container col-md-6 p-0">
                 <div class="px-2 py-4 shadow m-0 bg-blogpost rounded border border-light">
                     <div class="pt-3 pb-3 row">
-                        <form method="POST" enctype="multipart/form-data">
+                        <form method="POST" class="blogform" enctype="multipart/form-data">
                             {% csrf_token %} {{ form | as_bootstrap }}
                             <div class="form-view">
                                 <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
