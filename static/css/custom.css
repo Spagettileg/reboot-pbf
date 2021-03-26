@@ -78,7 +78,7 @@ h6 {
 }
 
 .card-text {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin: 0.25rem;
   color: #FAFAFA;
@@ -510,7 +510,7 @@ img {
 .card-title {
   padding-bottom: 0.75rem;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #FAFAFA;
 }
 
@@ -518,7 +518,7 @@ img {
   font-size: 1.5rem;
   color: #FAFAFA;
   /*Off-White*/
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .card-style {
