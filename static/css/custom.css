@@ -516,6 +516,7 @@ img {
 
 .card-header {
   font-size: 1.5rem;
+  background-color: transparent;
   color: #FAFAFA;
   /*Off-White*/
   font-weight: 600;
@@ -978,5 +979,8 @@ th, td {
   .login-header-text,
   .register-header-text {
     font-size: 3rem;
+  }
+  #profile-image {
+    height: 120vh;
   }
 }
