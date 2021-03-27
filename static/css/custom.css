@@ -995,7 +995,7 @@ th, td {
 @media (min-width: 1024px) {
   /*tablet - landscape*/
   .donate {
-    width: 24.0625rem;
+    width: 25.9375rem;
   }
   .blogform {
     width: 27.9375rem;
@@ -1005,7 +1005,7 @@ th, td {
 @media (min-width: 1200px) {
   /*desktop - landscape*/
   .donate {
-    width: 29.6875rem;
+    width: 31.5625rem;
   }
   .blogform {
     width: 33.5625rem;
