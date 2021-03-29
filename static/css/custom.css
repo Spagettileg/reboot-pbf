@@ -649,7 +649,8 @@ img {
 .terms-header-text,
 .donate-header-text,
 .quick-header-text,
-.arrivals-header-text {
+.arrivals-header-text,
+.checkzero-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
