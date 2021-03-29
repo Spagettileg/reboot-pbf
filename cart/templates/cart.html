@@ -53,8 +53,8 @@
         <span>Total: </span><i class="fas fa-pound-sign pl-2" aria-hidden="true"><span class="pl-1"></span>{{ total }}</i>
     </div>
     <div class="px-3 py-3 row">
-        <a href="{% url 'checkout' %}" class="btn btn-checkout" role="button" aria-hidden="true">Checkout</a>
         <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
+        <a href="{% url 'checkout' %}" class="btn btn-checkout" role="button" aria-hidden="true">Checkout</a>
     </div>
 </div>
 <hr>
