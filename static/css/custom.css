@@ -49,7 +49,8 @@ h6 {
 .arrivals-text i,
 .cookie-text,
 .privacy-text,
-.terms-text {
+.terms-text,
+.checkout-text {
   color: #FAFAFA;
   /* Off-White */
 }
@@ -59,7 +60,8 @@ h6 {
 .arrivals-text i,
 .cookie-text p,
 .privacy-text p,
-.terms-text p {
+.terms-text p,
+.checkout-text p {
   font-size: 1.1rem;
 }
 
