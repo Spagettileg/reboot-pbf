@@ -634,7 +634,8 @@ img {
 .quality-header-text,
 .faq-header-text,
 .profile-header-text,
-.blogpost-header-text {
+.blogpost-header-text,
+.checkout-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
@@ -648,8 +649,7 @@ img {
 .terms-header-text,
 .donate-header-text,
 .quick-header-text,
-.arrivals-header-text,
-.checkout-header-text {
+.arrivals-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
@@ -701,6 +701,11 @@ img {
   border: 0;
   background-color: #fafafa;
   /*Off-White*/
+}
+
+.short-orange {
+  border-top: 2px solid #F26826;
+  width: 50%;
 }
 
 /* Table formatting - Rugby Boot Size Charts */
