@@ -886,6 +886,13 @@ th, td {
   /*Off-White*/
 }
 
+/* Checkout */
+
+.lets-play:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 /* Forms - Contact, Donate Product & Blog*/
 
 .c-form input[type=text],
