@@ -1014,8 +1014,7 @@ th, td {
 
 @media (min-width: 1800px) {
   /*large desktop device - removes white space beneath footer*/
-  #login-image,
-  #juniors-image {
+  #login-image {
     min-height: 80vh;
   }
   .form-view {
@@ -1025,7 +1024,8 @@ th, td {
   .register-header-text {
     font-size: 3rem;
   }
-  #profile-image {
+  #profile-image,
+  #juniors-boots {
     height: 65vh;
   }
 }
