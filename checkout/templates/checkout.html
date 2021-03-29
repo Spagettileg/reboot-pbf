@@ -16,7 +16,7 @@
 <!-- Message to user to browse Re-Boot stock if they have an empty shopping cart -->
 {% if total == 0 %}
 
-<div class="pt-3 col-md-6 container checkout-text">
+<div class="pt-3 col-md-6 container form-view checkout-text">
     <div class="pt-3 row">
         <div class="checkout-header-text">Empty Shopping Cart?</div>
         <div class="row">
@@ -28,6 +28,7 @@
             <p> to take advantage of the Re-Boot <strong>Blog</strong>. Here you can connect<br>with Re-Boot members to check if your required product can be secured.</p>
         </div>
     </div>
+    <hr class="short-orange"></hr>
     <div class="pb-5 col-md-6 container">
         <div class="pt-5 row">
             <img class="card-img-right flex-auto" src="{% static 'img/megaphone.jpg' %}" alt="call for boots">
