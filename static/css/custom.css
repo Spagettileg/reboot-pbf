@@ -649,11 +649,18 @@ img {
 .terms-header-text,
 .donate-header-text,
 .quick-header-text,
-.arrivals-header-text,
-.checkzero-header-text {
+.arrivals-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #FAFAFA;
+  /*off-white*/
+}
+
+.checkzero-header-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #FAFAFA;
+  text-align: center;
   /*off-white*/
 }
 
