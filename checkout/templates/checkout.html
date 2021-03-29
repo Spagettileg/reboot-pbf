@@ -32,12 +32,14 @@
     </div>
 </div>
 <hr class="short-orange"></hr>
-<div class="pt-1 pb-3 col-12 text-center">
+<div class="pt-1 pb-1 col-12 text-center">
         <div class="checkzero-header-text">Lets Play!</div>
     </div>
 <div class="pb-5 col-md-6 container">
     <div class="pt-5 row product-image">
-        <img class="flex-auto" src="{% static 'img/power.png' %}" alt="Boot power">
+        <a href="{% url 'index' %}">
+            <img class="flex-auto lets-play" src="{% static 'img/power.png' %}" alt="Boot power">
+        </a>
     </div>
 </div>
 
