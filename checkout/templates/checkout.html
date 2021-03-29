@@ -9,16 +9,16 @@
 {% endblock %} {% block content %}
 
 <header id="checkout-image" class="pt-3 col-12" alt="Checkout">
-<div class="pt-3 pb-1 col-12 product-category text-center">
+<div class="pt-3 pb-1 col-12 text-center">
     <div class="checkout-header-text">Checkout</div>
 </div>
 
 <!-- Message to user to browse Re-Boot stock if they have an empty shopping cart -->
 {% if total == 0 %}
 
-<div class="pt-3 col-md-6 container">
+<div class="pt-3 col-md-6 container checkout-text">
     <div class="pt-3 row">
-        <h3>Empty Shopping Cart?</h3>
+        <div class="checkout-header-text">Empty Shopping Cart?</div>
         <div class="row">
             <p>Please note you're unable to proceed with an empty shopping cart.</p>
             <p>Our <strong>Bootshop</strong> has many products you may be interested in.</p>
