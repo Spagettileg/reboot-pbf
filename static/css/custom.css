@@ -918,8 +918,8 @@ th, td {
 }
 
 .c-form ::placeholder {
-  color: #CCCCCC;
-  /* Light Grey */
+  color: #808080;
+  /* Mid Grey */
 }
 
 #id_make.form-control,
@@ -949,8 +949,8 @@ th, td {
 .bg-donate ::placeholder,
 .bg-blogpost ::placeholder,
 #id_image ::placeholder {
-  /* Light grey */
-  color: #CCCCCC;
+  /* Mid grey */
+  color: #808080;
 }
 
 #id_published_date.form-control {
