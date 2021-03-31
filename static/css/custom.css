@@ -904,7 +904,7 @@ th, td {
 
 .fa-lock {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0;
   font-size: 3.5rem;
   color: #F26826;
 }
