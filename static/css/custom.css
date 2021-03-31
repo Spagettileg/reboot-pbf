@@ -50,7 +50,8 @@ h6 {
 .cookie-text,
 .privacy-text,
 .terms-text,
-.checkout-text {
+.checkout-text,
+.password-text {
   color: #FAFAFA;
   /* Off-White */
 }
@@ -61,7 +62,8 @@ h6 {
 .cookie-text p,
 .privacy-text p,
 .terms-text p,
-.checkout-text p {
+.checkout-text p,
+.password-text p {
   font-size: 1.1rem;
 }
 
