@@ -925,6 +925,10 @@ th, td {
   /* Mid Grey */
 }
 
+.btn-learn-more input[type=submit] {
+  height: 2.625rem; 
+} 
+
 #id_make.form-control,
 #id_title.form-control,
 #id_author.form-control,
