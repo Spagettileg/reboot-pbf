@@ -1080,7 +1080,8 @@ th, td {
     font-size: 3rem;
   }
   #profile-image,
-  #juniors-boots {
+  #juniors-boots,
+  #privacy-image {
     height: 65vh;
   }
 }
