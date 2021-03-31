@@ -903,7 +903,9 @@ th, td {
 /* Password Reset */
 
 .fa-lock {
-  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 3.5rem;
   color: #F26826;
 }
 
