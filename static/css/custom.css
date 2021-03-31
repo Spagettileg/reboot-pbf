@@ -448,6 +448,17 @@ img {
   background-position: top;
 }
 
+#password-image {
+  background-image: linear-gradient(
+  rgba(33, 41, 92, 0.8),
+  rgba(33, 41, 92, 0.8)
+  ),
+  url(/static/img/privacy-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Shopping Cart */
 
 .cart {
@@ -1055,7 +1066,7 @@ th, td {
   .blogform {
     width: 27.9375rem;
   }
-  #privacy-image {
+  #password-image {
     height: 50vh;
   }
 }
@@ -1084,7 +1095,7 @@ th, td {
   }
   #profile-image,
   #juniors-boots,
-  #privacy-image {
+  #password-image {
     height: 65vh;
   }
 }
