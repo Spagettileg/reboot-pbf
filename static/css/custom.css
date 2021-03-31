@@ -1055,6 +1055,9 @@ th, td {
   .blogform {
     width: 27.9375rem;
   }
+  #privacy-image {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 1200px) {
