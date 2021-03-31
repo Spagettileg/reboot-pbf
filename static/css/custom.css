@@ -900,6 +900,13 @@ th, td {
   /*Off-White*/
 }
 
+/* Password Reset */
+
+.fa-lock {
+  font-size: 3rem;
+  color: #F26826;
+}
+
 /* Checkout */
 
 .lets-play:hover {
