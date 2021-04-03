@@ -1,10 +1,8 @@
 {% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block content %}
 
-<!-- Rugby image banner -->
-    <img class="img-fluid m-0 p-0" src="{% static 'img/scrumtime4.jpg' %}" alt="Shopping Cart">
-
-<div class="pt-2 pb-1 col-12 product-category text-center">
-    <h3>Cart Contents</h3>
+<header id="bg-cart" class="pt-3 col-12" alt="Shopping Cart">
+<div class="pt-3 pb-1 col-12 product-category text-center">
+    <div class="cart-header-text">Cart Contents</div>
 </div>
 
 <div class="pt-3 row row-cols-1 row-cols-md-3">
@@ -58,4 +56,5 @@
     </div>
 </div>
 <hr>
+</header>
 {% endblock %}
