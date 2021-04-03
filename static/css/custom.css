@@ -548,13 +548,6 @@ img {
 #single-product {
   background-image: linear-gradient(
   rgba(255, 255, 255),
-  rgba(255, 255, 255),
-  rgba(255, 255, 255),
-  rgba(236, 238, 248),
-  rgba(236, 238, 248),
-  rgba(236, 238, 248),
-  rgba(33, 41, 92),
-  rgba(33, 41, 92),
   rgba(33, 41, 92)
   );
   background-size: cover;
