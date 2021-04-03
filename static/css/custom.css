@@ -533,6 +533,16 @@ img {
   background-position: top;
 }
 
+#bg-cart {
+  background-image: linear-gradient(
+  rgba(255, 255, 255),
+  rgba(33, 41, 92)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .customer-reviews,
 .customer-blog,
 .product-category {
@@ -648,7 +658,8 @@ img {
 .faq-header-text,
 .profile-header-text,
 .blogpost-header-text,
-.checkout-header-text {
+.checkout-header-text,
+.cart-header-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #F26826;
