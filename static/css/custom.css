@@ -536,6 +536,9 @@ img {
 #bg-cart {
   background-image: linear-gradient(
   rgba(255, 255, 255),
+  rgba(255, 255, 255),
+  rgba(255, 255, 255),
+  rgba(255, 255, 255),
   rgba(33, 41, 92)
   );
   background-size: cover;
