@@ -609,8 +609,9 @@ img {
   /* All rugby boot product container views given blue border and slight box shadow to elevate the display */
   padding: 0.3rem;
   margin: 0.3rem;
-  border: 0.1rem solid #21295C;
-  /*Blue*/
+  border: 2px solid #F26826;
+  /*vivid tangelo - orange*/
+  background-color: #FFF;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(199, 204, 235, 0.5), 0 6px 20px 0 rgba(199, 204, 235, 0.49);
 }
