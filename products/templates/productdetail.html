@@ -1,7 +1,8 @@
 {% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block content %}
 
 <!-- Product detail view includes all product model field names -->
-<div class="pt-3 row single-product">
+<header id="single-product" class="pt-3 col-12" alt="Product Details">
+<div class="pt-3 row">
     <!-- Product customer is either junior or an adult -->
     <div class="pt-3 col-xs-12 col-md-2">
         <div class="text-center">
@@ -52,5 +53,5 @@
     </div>
     
 </div>
-
+</header>
 {% endblock %}
