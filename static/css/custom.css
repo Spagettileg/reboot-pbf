@@ -533,7 +533,8 @@ img {
   background-position: top;
 }
 
-#bg-cart {
+#bg-cart,
+#single-product {
   background-image: linear-gradient(
   rgba(255, 255, 255),
   rgba(255, 255, 255),
