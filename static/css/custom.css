@@ -974,6 +974,8 @@ th, td {
 #id_county.form-control,
 #id_credit_card_number.form-control,
 #id_cvv.form-control,
+#id_expiry_month.form-control,
+#id_expiry_year.form-control,
 #id_title.form-control,
 #id_author.form-control,
 #id_category.form-control,
