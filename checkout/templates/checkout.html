@@ -8,7 +8,7 @@
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %} {% block content %}
 
-<header id="checkout-image" class="pt-3 col-12" alt="Checkout">
+<header id="bg-checkout" class="pt-3 col-12" alt="Checkout">
 <div class="pt-3 pb-1 col-12 text-center">
     <div class="checkout-header-text">Checkout</div>
 </div>
@@ -72,8 +72,8 @@
 
 <!-- Both order and payment forms are added to the html page -->
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <div class="pt-2 pb-1 col-12 product-category text-center">
-        <h3>Payment Details</h3>
+    <div class="pt-3 pb-1 col-12 text-center">
+        <div class="checkout-header-text">Payment Details</div>
     </div>
     <div id="credit-card-errors" style="display:none">
         <div class="alert-message block-message error" id="stripe-error-message"></div>
@@ -81,13 +81,10 @@
 
     <div class="pt-3 container">
         <div class="row">
-            <div class="form-group col-md-4 shadow p-4 mb-4 bg-white rounded border border-dark">
+            <div class="form-group col-md-4 shadow p-4 mb-4 bg-payments rounded border border-light">
                 {{ order_form|as_bootstrap }}
             </div>
-            <div class="mt-5 mb-5 px-3 py-3 col-md-4 adults-image text-center">
-                <img src="{% static 'img/hello.png' %}" alt="ball carrier image">
-            </div>
-            <div class="form-group col-md-4 shadow p-4 mb-4 bg-white rounded border border-dark">
+            <div class="form-group col-md-4 shadow p-4 mb-4 bg-payments rounded border border-light">
                 {{ payment_form|as_bootstrap }}
             </div>
         </div>
