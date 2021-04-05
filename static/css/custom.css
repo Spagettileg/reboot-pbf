@@ -1146,7 +1146,8 @@ th, td {
   #profile-image,
   #juniors-boots,
   #password-image,
-  #single-product {
+  #single-product,
+  #bg-arrivals {
     height: 65vh;
   }
 }
