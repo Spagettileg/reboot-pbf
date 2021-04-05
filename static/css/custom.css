@@ -436,20 +436,6 @@ img {
   background-position: top;
 }
 
-#checkout-image {
-  background-image: linear-gradient(
-  rgba(0, 0, 0, 0.85),
-  rgba(0, 0, 0, 0.85)
-  ),
-  url(/static/img/scrumtime4.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
 #password-image {
   background-image: linear-gradient(
   rgba(33, 41, 92, 0.8),
@@ -535,7 +521,8 @@ img {
   background-position: top;
 }
 
-#bg-cart {
+#bg-cart,
+#bg-checkout {
   background-image: linear-gradient(
   rgba(255, 255, 255),
   rgba(255, 255, 255),
@@ -660,7 +647,8 @@ img {
 .bg-login,
 .bg-register,
 .bg-donate,
-.bg-blogpost {
+.bg-blogpost,
+.bg-payments {
   background-color: transparent;
   margin: 0 2rem 0 2rem;
 }
@@ -949,7 +937,7 @@ th, td {
   /*Apple*/
 }
 
-/* Forms - Contact, Donate Product & Blog*/
+/* Forms - Contact, Donate Product, Blog & Checkout*/
 
 .c-form input[type=text],
 .c-form textarea {
@@ -976,6 +964,16 @@ th, td {
 } 
 
 #id_make.form-control,
+#id_full_name.form-control,
+#id_phone_number.form-control,
+#id_country.form-control,
+#id_postcode.form-control,
+#id_town_or_city.form-control,
+#id_street_address1.form-control,
+#id_street_address2.form-control,
+#id_county.form-control,
+#id_credit_card_number.form-control,
+#id_cvv.form-control,
 #id_title.form-control,
 #id_author.form-control,
 #id_category.form-control,
@@ -1001,7 +999,10 @@ th, td {
 
 .bg-donate ::placeholder,
 .bg-blogpost ::placeholder,
-#id_image ::placeholder {
+.bg-payments ::placeholder,
+#id_image ::placeholder,
+#id_expiry_month ::placeholder,
+#id_expiry_year ::placeholder {
   /* Mid grey */
   color: #808080;
 }
