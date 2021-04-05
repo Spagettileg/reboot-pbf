@@ -992,9 +992,11 @@ th, td {
 #id_credit_card_number.form-control,
 #id_cvv.form-control,
 #id_expiry_month.form-control,
-#id_expiry_year.form-control {
+#id_expiry_year.form-control,
+#id_expiry_month ::placeholder,
+#id_expiry_year ::placeholder {
   background-color: transparent;
-  color: #808080;
+  color: #000;
 }
 
 #id_image.form-control {
@@ -1006,9 +1008,7 @@ th, td {
 .bg-donate ::placeholder,
 .bg-blogpost ::placeholder,
 .bg-payments ::placeholder,
-#id_image ::placeholder,
-#id_expiry_month ::placeholder,
-#id_expiry_year ::placeholder {
+#id_image ::placeholder {
   /* Mid grey */
   color: #808080;
 }
