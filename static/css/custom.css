@@ -964,18 +964,6 @@ th, td {
 } 
 
 #id_make.form-control,
-#id_full_name.form-control,
-#id_phone_number.form-control,
-#id_country.form-control,
-#id_postcode.form-control,
-#id_town_or_city.form-control,
-#id_street_address1.form-control,
-#id_street_address2.form-control,
-#id_county.form-control,
-#id_credit_card_number.form-control,
-#id_cvv.form-control,
-#id_expiry_month.form-control,
-#id_expiry_year.form-control,
 #id_title.form-control,
 #id_author.form-control,
 #id_category.form-control,
@@ -991,6 +979,22 @@ th, td {
 #id_image.form-control {
   background-color: transparent;
   color: #FAFAFA;
+}
+
+#id_full_name.form-control,
+#id_phone_number.form-control,
+#id_country.form-control,
+#id_postcode.form-control,
+#id_town_or_city.form-control,
+#id_street_address1.form-control,
+#id_street_address2.form-control,
+#id_county.form-control,
+#id_credit_card_number.form-control,
+#id_cvv.form-control,
+#id_expiry_month.form-control,
+#id_expiry_year.form-control {
+  background-color: transparent;
+  color: #808080;
 }
 
 #id_image.form-control {
