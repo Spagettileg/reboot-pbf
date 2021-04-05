@@ -50,7 +50,6 @@ h6 {
 .cookie-text,
 .privacy-text,
 .terms-text,
-.checkout-text,
 .password-text,
 .product-text {
   color: #FAFAFA;
@@ -63,9 +62,15 @@ h6 {
 .cookie-text p,
 .privacy-text p,
 .terms-text p,
-.checkout-text p,
 .password-text p,
 .product-text p {
+  font-size: 1.1rem;
+}
+
+.checkout-text,
+.checkout-text p {
+  color: #21295C;
+  /* space cadet - blue */
   font-size: 1.1rem;
 }
 
@@ -687,9 +692,9 @@ img {
 .checkzero-header-text {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #F26826;
+  /*vivid tangelo - orange*/
   text-align: center;
-  /*off-white*/
 }
 
 /* Accordian - FAQ's webpage */
