@@ -23,5 +23,5 @@ six==1.15.0
 sqlparse==0.4.1
 stripe==2.56.0
 sweetify==2.0.0
-urllib3==1.26.3
+urllib3==1.26.4
 wrapt==1.12.1
