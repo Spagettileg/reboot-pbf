@@ -50,6 +50,6 @@ def search(request):
             'count': product_count,
         }
 
-        return render(request, 'search/search.html', context)
+        return render(request, 'search.html', context)
 
     return redirect(reverse('products'))
