@@ -55,8 +55,8 @@
         <ul class="navbar-nav ml-auto">
             <!-- Search function enables user to locate rugby boot products by product make -->
             <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="GET">
-                <input class="form-control" type="text" placeholder="Search..." name="search" style="width: 120px; height: 36.88px;">
-                <button type "submit"><i class="btn btn-outline-dark fas fa-search" style="color:orange"></i></button>
+                <input class="form-control" type="text" placeholder="Search..." name="q" style="width: 120px; height: 36.88px;" aria-label="search">
+                <button type "submit"><i class="btn btn-outline-dark fas fa-search" style="color:orange" aria-label="search"></i></button>
             </form>
 
             <!-- User registration and authentication -->
