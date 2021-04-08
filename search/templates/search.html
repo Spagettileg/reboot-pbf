@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% load static %}
+	{% block head_title %}Search : {{ query }}{% endblock %}
+
+{% block content %}
+<section class="container">
+    <div class="row text-center search-row">
+        <div class="col-12">
+                <h2 class="m-2">Showing {{ count }} result{% if count > 1 %}s{% endif %} for the search: "{{ query }}"</h2>
+        </div>
+    </div>
+    <div class="row">
+        {% include 'products.html' %}
+        <div class="col-12">
+            <hr class="short-orange" data-aos="fade-left"></hr>
+        </div>
+    </div>
+</section>
+{% endblock %}
