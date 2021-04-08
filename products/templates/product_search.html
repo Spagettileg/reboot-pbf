@@ -1,0 +1,31 @@
+<div class="pt-3 pb-3 row row-cols-1 row-cols-md-2 row-cols-lg-4">
+    <!-- Loop created to ensure user is presented with same product template, per product -->
+    {% for product in products %}
+    <!-- Summary of selected rugby boot product -->
+    <div class="col mb-1">
+        <!-- Rugby boot product view includes customer reference, image, make, size and price -->
+        <!-- Price information is held in 'About' dropdown menu in navbar -->
+        <!-- Junior boots = £5.00 & Adults boots = £10.00 -->
+        <div class="panel-body">
+            <h5 class="px-2 py-2">{{ product.customer }}</h5>
+            <div class="product-image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height:200px; width:200px"></div>
+            <p class="pl-2"><strong>Make: </strong>{{ product.make }}</p>
+            <p class="pl-2"><strong>Size: </strong>{{ product.size }}</p>
+            <strong>
+                    <span class="pl-2 fas fa-pound-sign"
+                        aria-hidden="true"></span>{{ product.price }}
+                </strong>
+            <div class="pt-2 pb-2 text-center">
+                <a class="btn btn-product-detail" role="button" href="{% url 'product-detail' product.id %}">Read More</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Button to help user navigate back to home page --> 
+        <div class="container">
+            <div class="row pl-2 pb-3 main-menu-btn">
+                <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
+            </div>
+        </div>
