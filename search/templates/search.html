@@ -1,5 +1,6 @@
-{% extends 'base.html' %}{% load static %}
-	{% block head_title %}Search : {{ query }}{% endblock %}
+{% extends 'base.html' %}
+{% load static %}
+{% block head_title %}Search : {{ query }}{% endblock %}
 
 {% block content %}
 <section class="container">
@@ -9,7 +10,7 @@
         </div>
     </div>
     <div class="row">
-        {% include 'products.html' %}
+        {% include 'product_search.html' %}
         <div class="col-12">
             <hr class="short-orange" data-aos="fade-left"></hr>
         </div>
