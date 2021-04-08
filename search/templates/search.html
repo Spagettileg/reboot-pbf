@@ -9,11 +9,8 @@
                 <h2 class="m-2">Showing {{ count }} result{% if count > 1 %}s{% endif %} for the search: "{{ query }}"</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row pb-3">
         {% include 'product_search.html' %}
-        <div class="col-12">
-            <hr class="short-orange" data-aos="fade-left"></hr>
-        </div>
     </div>
 </section>
 {% endblock %}
