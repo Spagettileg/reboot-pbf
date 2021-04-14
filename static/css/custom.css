@@ -362,8 +362,8 @@ img {
 
 #contact-image {
   background-image: linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)
+  rgba(0, 0, 0, 0.15),
+  rgba(0, 0, 0, 0.15)
   ),
   url(/static/img/contact-background.jpg);
   background-size: cover;
@@ -664,6 +664,7 @@ img {
 .adults-header-text,
 .quality-header-text,
 .faq-header-text,
+.contact-header-text,
 .profile-header-text,
 .blogpost-header-text,
 .checkout-header-text,
@@ -676,7 +677,6 @@ img {
 }
 
 .explained-header-text,
-.contact-header-text,
 .cookies-header-text,
 .privacy-header-text,
 .terms-header-text,
@@ -1033,6 +1033,22 @@ th, td {
 
 .found {
   background-color: transparent;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid #001514;
+}
+
+.list-group-item a {
+  /* Email address in contact page set to black text */
+  color: #001514;
+}
+
+.list-group-item a {
+  /* Email address in contact page set to black text */
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* Footer */
