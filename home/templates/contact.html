@@ -9,14 +9,14 @@
 
     <div class="pt-2 pb-3 row">
         <!-- User to input full name, email address, subject and detailed message -->
-        <div class="pt-3 pb-3 col-md-6 text-white">
+        <div class="pt-3 pb-3 col-md-6 text-black">
             <form role="form" method="POST" action="{% url 'contact' %}" class="c-form">
-                <h3>Fill Form</h3>
+                <h4 class="text-left">Fill Form</h4>
                 {% csrf_token %} {{ contact_form | as_bootstrap }}
-                <p class="text-left"><small><em><strong>Important:</strong> Only <a class="text-warning" href="{% url 'register' %}">
+                <p class="text-left"><small><em><strong>Important:</strong> Only <a class="text-info" href="{% url 'register' %}">
                     registered</a> Re-Boot members are permitted to donate rugby boots. Re-Boot hopes you have found
                     everything you've been looking for. If your question remains unanswered, then please refer to 
-                    <a class="text-warning" href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
+                    <a class="text-info" href="{% url 'faqs' %}">frequently asked questions</a> to further help.</em></small></p>
                 <div class="d-flex justify-content-center">
                     <input type=button class="btn btn-back" value="&larr; Back" onClick="history.go(-1)">
                     <input class="btn btn-add-review mx-2 my-2" id="submit_enquiry_btn" name="enquiry" type="submit" value="Submit Enquiry">
@@ -27,7 +27,7 @@
         <!-- Contact card to help user access ReBoot -->
         <div class="pt-3 pb-3 col-md-6">
             <fieldset class="found">
-                <h3 class="text-white">Find us</h3>
+                <h4 class="text-left">Find us</h4>
                 <ul class="list-group">
                     <li class="list-group-item first-one">
                         <h5><b> Address</b></h5> ReBoot, Unit 15, Scrum Business Centre, Hooker Lane, Hampshire, SP15 0AA </li>
