@@ -704,12 +704,12 @@ img {
   background-color: #eee;
   color: #F26826;
   cursor: pointer;
-  padding: 18px;
+  padding: 1.125rem;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: 0.4s;
 }
 
@@ -718,11 +718,24 @@ img {
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 1.125rem;
   display: none;
   background-color: #FFF;
   overflow: hidden;
   color: #001514;
+}
+
+.accordion:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #F26826;
+  float: right;
+  margin-left: 0.3125rem;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
 }
 
 /* Blog */
@@ -756,7 +769,7 @@ th, td {
   color: #FFF;
 } 
 
-/* Buttons */
+/* Buttons & Toggle Switches */
 
 .btn-learn-more,
 .btn-read-more,
