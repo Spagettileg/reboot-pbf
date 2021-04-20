@@ -466,7 +466,7 @@ img {
 
 .badge {
   /* moves the product counter closer to the shopping cart */
-  margin-left: -1.5rem;
+  margin-left: -0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -1082,6 +1082,14 @@ th, td {
 
 /* Media Queries */
 
+@media (max-width: 375px) {
+  .badge-spacer {
+    padding-left: 2.5rem;
+    position: absolute;
+    padding-top: 9rem;
+  }
+}
+
 @media (max-width: 667px) {
   /*mobile - landscape*/
   .donate {
@@ -1115,7 +1123,7 @@ th, td {
 @media (min-width: 768px) {
   /*tablet - portrait*/
   .brand-text span {
-    font-size:4.5rem;
+    font-size: 4.5rem;
     width: 5rem;
     height: 8rem;
     margin: 0.4rem; 
@@ -1131,7 +1139,15 @@ th, td {
     margin-left: -0.25rem;
   }
   .badge-spacer {
-    padding-left: 1.5rem;
+    padding-left: 2.75rem;
+    position: absolute;
+    padding-top: 9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .badge {
+    margin-left: -1.6rem;
   }
 }
 
@@ -1158,6 +1174,9 @@ th, td {
   }
   .blogform {
     width: 33.5625rem;
+  }
+  .badge {
+    margin-left: -1.5rem;
   }
 }
 
