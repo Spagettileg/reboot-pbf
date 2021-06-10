@@ -80,7 +80,7 @@ My wireframe mock-up designs have been created in [Balsamiq](https://balsamiq.co
 
 •	[About](https://github.com/Spagettileg/reboot/blob/master/wireframes/aboutv1.zip)
 
-•	[BootRoom](https://github.com/Spagettileg/reboot/blob/master/wireframes/bootshopv1.zip)
+•	[BootShop](https://github.com/Spagettileg/reboot/blob/master/wireframes/bootshopv1.zip)
 
 •	[Help](https://github.com/Spagettileg/reboot/blob/master/wireframes/helpv1.zip)
 
